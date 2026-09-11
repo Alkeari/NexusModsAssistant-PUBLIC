@@ -1,0 +1,18 @@
+{
+  "gameDomain": "site",
+  "modId": 1588,
+  "managerDownload": false,
+  "files": [
+    {
+      "fileName": "Nexus Mods Assistant (Chrome)",
+      "file": "packages/Nexus Mods Assistant (Chrome) {version}.zip",
+      "primary": true
+    },
+    {
+      "fileName": "Nexus Mods Assistant (Firefox)",
+      "file": "packages/Nexus Mods Assistant (Firefox) {version}.zip"
+    }
+  ],
+  "buildCommand": "npm run build:all; if ($LASTEXITCODE) { throw \"npm run build:all failed\" }; node scripts/package-nexus.js; if ($LASTEXITCODE) { throw \"package-nexus failed\" }",
+  "publishedVersion": "3.4.0"
+}

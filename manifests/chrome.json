@@ -1,0 +1,66 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "3.4.0",
+  "description": "__MSG_extDescription__",
+  "permissions": [
+    "storage",
+    "downloads",
+    "activeTab",
+    "scripting",
+    "alarms"
+  ],
+  "host_permissions": [
+    "https://api.nexusmods.com/*",
+    "https://www.nexusmods.com/*",
+    "https://store.steampowered.com/*",
+    "https://api.steampowered.com/*",
+    "https://api.steamcmd.net/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/Nexus Mods Assistant - Icon - 16x16.png",
+      "32": "icons/Nexus Mods Assistant - Icon - 32x32.png",
+      "48": "icons/Nexus Mods Assistant - Icon - 48x48.png",
+      "128": "icons/Nexus Mods Assistant - Icon - 128x128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.nexusmods.com/games/*/mods*"
+      ],
+      "js": [
+        "content/content.js"
+      ],
+      "css": [
+        "content/content.css"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/Nexus Mods Assistant - Icon - 16x16.png",
+    "32": "icons/Nexus Mods Assistant - Icon - 32x32.png",
+    "48": "icons/Nexus Mods Assistant - Icon - 48x48.png",
+    "128": "icons/Nexus Mods Assistant - Icon - 128x128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/Nexus Mods Assistant - Icon - 128x128 - Compatible.png",
+        "icons/Nexus Mods Assistant - Icon - 128x128 - Incompatible.png",
+        "icons/Nexus Mods Assistant - Icon - 128x128 - Unknown.png"
+      ],
+      "matches": [
+        "https://www.nexusmods.com/*",
+        "https://next.nexusmods.com/*"
+      ]
+    }
+  ],
+  "default_locale": "en"
+}

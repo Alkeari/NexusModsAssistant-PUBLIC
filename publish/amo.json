@@ -1,0 +1,9 @@
+{
+  "addonId": "nexus-mods-assistant@alkearilabs.com",
+  "file": "packages/nexus-mods-assistant-firefox-v{version}.zip",
+  "channel": "listed",
+  "publishedBy": "project",
+  "publishedVersion": "3.4.0",
+  "submittedVersion": null,
+  "slug": "nexus-mods-assistant"
+}

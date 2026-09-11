@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Minden Nexus modhoz kompatibilitási ítéletet kapsz az általad játszott játékverzióhoz, így szűrhetsz a működőkre."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "A kérés $seconds$ másodpercnél tovább tartott, ezért félbeszakadt.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Elérted a Nexus API korlátját. Ekkor áll vissza: $resetTime$.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Elérted a Nexus API korlátját. Az ellenőrzések a korlát visszaállása után folytatódnak."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Elérted a Nexus API korlátját."
+  },
+  "background_errorInvalidKey": {
+    "message": "A Nexus elutasította az API kulcsodat. Add meg újra a bővítmény felugró ablakában."
+  },
+  "background_errorForbidden": {
+    "message": "A Nexus elutasította ezt a kérést. Premium fiók vagy aktív nexusmods.com bejelentkezés lehet szükséges."
+  },
+  "background_errorNotFound": {
+    "message": "A Nexuson nincs ilyen mod ehhez a játékhoz (törölt, rejtett vagy másik játék)."
+  },
+  "background_errorServerError": {
+    "message": "A Nexus most nem válaszol (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "A Nexus elutasította a kérést (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "A kérés túl sokáig tartott, ezért félbeszakadt."
+  },
+  "background_errorOffline": {
+    "message": "Nincs kapcsolat a Nexusszal."
+  },
+  "background_errorDisabled": {
+    "message": "A bővítmény ki van kapcsolva."
+  },
+  "background_errorUnexpected": {
+    "message": "Valami hiba történt."
+  },
+  "background_errorNoApiKey": {
+    "message": "Nincs API kulcs. Add meg a Nexus API kulcsodat a bővítmény felugró ablakában."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "A letöltési hivatkozásból hiányzik a cím."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "Nem található NXM hivatkozás."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Ehhez a modhoz nincs megfelelő fájl."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "Nem sikerült elolvasni a mod oldalának követelmények szakaszát. Ezt a Nexus oldalelrendezést az NMA nem ismeri."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Oldalváltás történt"
+  },
+  "background_errorNotConfigured": {
+    "message": "A Nexus Mods Assistantnak $missing$ kell, mielőtt modokat ellenőrizhetne. Nyisd meg a bővítmény felugró ablakát a beállítás befejezéséhez.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "egy API kulcs"
+  },
+  "background_setupNeedsGame": {
+    "message": "egy játék"
+  },
+  "background_setupNeedsVersion": {
+    "message": "egy játékverzió"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ és $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Ez az oldal a $pageGame$ játékhoz tartozik, az NMA viszont a $configuredGame$ játékra van beállítva. Válts játékot a bővítmény felugró ablakában, hogy ezeket a modokat ellenőrizze.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "Az NMA nem tudja játékverzióként értelmezni ezt: \"$version$\", ezért egyetlen modot sem tud hozzá mérni. Adj meg számokból álló verziót, például 1.6.1170, a bővítmény felugró ablakában.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "Egyetlen nyilvános forrás sem nevez meg játékverziót a $gameDomain$ játékhoz, ezért az NMA itt nem tud a mod verziójából játékverzióra következtetni. Ez az adatokban lévő hiány, nem a bővítményben, és mindenkinél ugyanez. Írd be a bővítmény felugró ablakába, milyen verziót játszol, ha mégis ellenőriznéd.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Egyetlen verzióforrás sem volt elérhető, ezért ehhez a játékhoz még semmi sem született."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Előbb játék kell, hogy verziókat lehessen levezetni hozzá."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Egyetlen bolti oldal sem illik elég pontosan ehhez a játékhoz, ezért egyik sem lett elmentve."
+  },
+  "background_sourceFileVersion": {
+    "message": "Egy fájlverzió"
+  },
+  "background_sourceFileName": {
+    "message": "Egy fájlnév"
+  },
+  "background_sourceChangelog": {
+    "message": "A változásnapló"
+  },
+  "background_sourceDescription": {
+    "message": "A leírás"
+  },
+  "background_sourceUploadDate": {
+    "message": "A feltöltés dátuma"
+  },
+  "background_sourceNone": {
+    "message": "Semmi"
+  },
+  "background_verdictPartialNote": {
+    "message": "Az egyik forrás nem volt olvasható ($cause$), ezért ez az ellenőrzés részleges.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Sehol nincs megadva játékverzió, de a legújabb fájl feltöltése $uploadDate$ napján, a $gameVersion$ játékverzió után történt. Következtetés, nem megerősítés.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ ezt adja meg: \"$evidence$\", ami a kiválasztott tartományon belül van.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ ezt említi: \"$evidence$\", ami a kiválasztott tartományon belül van. Ez következtetés, nem megadott játékverzió.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Sehol nincs megadva játékverzió, és a legújabb fájl feltöltési dátuma ($uploadDate$) nem esik a kiválasztott tartományba.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ ezt adja meg: \"$evidence$\", ez a legújabb játékverzió, amit a mod említ, és a kiválasztott tartományon kívül esik.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ ezt említi: \"$evidence$\", ez a legújabb játékverzió, amit a mod említ, és a kiválasztott tartományon kívül esik. Ez következtetés, nem megadott játékverzió.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Ez a mod sem a fájljaiban, sem a változásnaplójában, sem a leírásában nem nevez meg játékverziót."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Ez a mod a leírásában és a változásnaplójában nem nevez meg játékverziót. A fájljait ehhez az ellenőrzéshez nem nyitottuk meg."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "A bolti keresés nem válaszolt, ezért a bolti források kimaradtak."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Egyetlen bolti oldal sem illett elég pontosan ehhez a játékhoz, ezért a bolti források kimaradtak."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "A játék bolti bejegyzése nem volt olvasható, ezért a bolti források most kimaradtak."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "A legközelebbi bolti oldal nem játék, ezért a bolti források kimaradtak, hogy ne egy másik termék verziói kerüljenek be."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "A legközelebbi bolti oldal másik alkalmazáshoz tartozik, ezért a bolti források kimaradtak."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "A bolti oldal más játékot nevez meg, mint a katalógus, ezért a bolti források kimaradtak."
+  },
+  "background_ssoConnecting": {
+    "message": "Kapcsolódás a Nexus Mods SSO-hoz..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Várakozás a jóváhagyásodra a Nexus Mods lapon..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "Az SSO kézfogás nem indult el."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "Az SSO kapcsolat nem nyílt meg."
+  },
+  "background_ssoRejected": {
+    "message": "Az SSO elutasította a kézfogást."
+  },
+  "background_ssoConnectionReady": {
+    "message": "A kapcsolat kész. Várakozás a jóváhagyásodra..."
+  },
+  "background_ssoComplete": {
+    "message": "Az API kulcs elmentve SSO-n keresztül."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Váratlan válasz az SSO-tól."
+  },
+  "background_ssoLostConnection": {
+    "message": "Több újrapróbálkozás után megszakadt a kapcsolat az SSO-val."
+  },
+  "background_ssoReconnecting": {
+    "message": "Újrakapcsolódás ($attempt$/$total$. próbálkozás)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO megszakítva."
+  },
+  "content_statusCompatible": {
+    "message": "Kompatibilis"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Valószínűleg kompatibilis"
+  },
+  "content_statusIncompatible": {
+    "message": "Nem kompatibilis"
+  },
+  "content_statusUnknown": {
+    "message": "Nincs verzióadat"
+  },
+  "content_statusFailed": {
+    "message": "Nem ellenőrizhető"
+  },
+  "content_statusNotConfigured": {
+    "message": "Nincs beállítva"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Ismeretlen"
+  },
+  "content_evidenceFileVersion": {
+    "message": "fájlverzió"
+  },
+  "content_evidenceFileName": {
+    "message": "fájlnév"
+  },
+  "content_evidenceChangelog": {
+    "message": "változásnapló"
+  },
+  "content_evidenceDescription": {
+    "message": "mod leírása"
+  },
+  "content_evidenceUploadDate": {
+    "message": "feltöltés dátuma"
+  },
+  "content_evidenceNone": {
+    "message": "nincs verzióra utaló jel"
+  },
+  "content_confidenceExact": {
+    "message": "pontos egyezés"
+  },
+  "content_confidenceInferred": {
+    "message": "következtetett"
+  },
+  "content_confidenceNone": {
+    "message": "nincs megállapítva"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Talált verzió: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Alap: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Biztonság: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Találat: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - nincs kiválasztott verzió",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "nincs megadott verzió"
+  },
+  "content_versionNotReportedShort": {
+    "message": "nincs megadva"
+  },
+  "content_checking": {
+    "message": "Ellenőrzés..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Kompatibilitás ellenőrzése..."
+  },
+  "content_scrollToCheck": {
+    "message": "Görgess az ellenőrzéshez"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Ezt a modot akkor ellenőrizzük, amikor láthatóvá válik."
+  },
+  "content_noResponse": {
+    "message": "Nincs válasz"
+  },
+  "content_compatibilityColumn": {
+    "message": "Kompatibilitás"
+  },
+  "content_setVersionInPopup": {
+    "message": "Ítélethez állítsd be a játékverziót a bővítmény felugró ablakában."
+  },
+  "content_pickVersionInPopup": {
+    "message": "A modhoz tartozó ítélethez válaszd ki a játékverziót a felugró ablakban."
+  },
+  "content_filesButton": {
+    "message": "Fájlok"
+  },
+  "content_filesButtonForMod": {
+    "message": "$MODNAME$ fájljai",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Ennek a modnak a fájljai"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Ennek a szükséges modnak a fájljai"
+  },
+  "content_filesDropdownLabel": {
+    "message": "Letölthető fájlok"
+  },
+  "content_filesLoading": {
+    "message": "Fájlok betöltése..."
+  },
+  "content_filesFetchFailed": {
+    "message": "A fájlok lekérése nem sikerült"
+  },
+  "content_filesLoadFailed": {
+    "message": "A fájllistát nem sikerült betölteni: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "A fájllistát nem sikerült betölteni"
+  },
+  "content_fileListUnreadable": {
+    "message": "A fájllista nem volt olvasható."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "Nincs fájl a bekapcsolt kategóriákban. Rejtve: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Ehhez a modhoz nem található fájl."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "A fájlszűrőid elrejtették: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Fájl"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Ismeretlen méret"
+  },
+  "content_fileDateUnknown": {
+    "message": "Ismeretlen dátum"
+  },
+  "content_downloadSelected": {
+    "message": "Kijelöltek letöltése"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Kijelöltek letöltése ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Kijelöltek letöltése ($MODS$ mod / $FILES$ fájl)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Letöltés ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Letöltés..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "Sorba állítva"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Sikertelen: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "ismeretlen ok"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ fájl sorba állítva.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ fájl sorba állítva.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ sorba állítva, $FAILED$ sikertelen.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Válogatás kompatibilitás szerint"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistant szűrők"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistant letöltések"
+  },
+  "content_refresh": {
+    "message": "Frissítés"
+  },
+  "content_pageNavigation": {
+    "message": "Lapozás"
+  },
+  "content_prevPage": {
+    "message": "Előző"
+  },
+  "content_nextPage": {
+    "message": "Következő"
+  },
+  "content_pageNumber": {
+    "message": "Oldalszám"
+  },
+  "content_goToPage": {
+    "message": "Ugrás az oldalra"
+  },
+  "content_collapseFilters": {
+    "message": "Szűrők összecsukása"
+  },
+  "content_expandFilters": {
+    "message": "Szűrők kibontása"
+  },
+  "content_showUpdateFiles": {
+    "message": "Frissítési fájlok megjelenítése"
+  },
+  "content_showOptionalFiles": {
+    "message": "Választható fájlok megjelenítése"
+  },
+  "content_showMiscFiles": {
+    "message": "Egyéb fájlok megjelenítése"
+  },
+  "content_showOldFiles": {
+    "message": "Régi verziók és archivált fájlok megjelenítése"
+  },
+  "content_exclusionLabel": {
+    "message": "Modok elrejtése, ha a nevük tartalmazza"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Modok elrejtése (pl. javítás, fordítás)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "A kulcsszavakat vesszővel válaszd el"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Utolsó frissítés tartománya"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Utolsó frissítés:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Ekkor vagy ezután frissítve"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Ekkor vagy ezelőtt frissítve"
+  },
+  "content_startDateTooltip": {
+    "message": "Kezdő dátum (beleértve)"
+  },
+  "content_endDateTooltip": {
+    "message": "Záró dátum (beleértve)"
+  },
+  "content_clearDateRange": {
+    "message": "Dátumtartomány törlése"
+  },
+  "content_clearButton": {
+    "message": "Törlés"
+  },
+  "content_noModsSelected": {
+    "message": "Nincs kijelölt mod"
+  },
+  "content_modsSelectedOne": {
+    "message": "$COUNT$ mod kijelölve",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "$COUNT$ mod kijelölve",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Kijelölés törlése"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Minden kijelölt mod jelölésének megszüntetése"
+  },
+  "content_downloadAll": {
+    "message": "Összes letöltése"
+  },
+  "content_downloadMode": {
+    "message": "Letöltési mód"
+  },
+  "content_downloadModeManual": {
+    "message": "Kézi"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Leállítás"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Leállítja a futó letöltési sorozatot. A már elindult fájlok nem szakadnak meg."
+  },
+  "content_apiRemaining": {
+    "message": "API: $REMAINING$ maradt",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Kijelölés"
+  },
+  "content_selectModNamed": {
+    "message": "$MODNAME$ kijelölése",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Ennek a modnak a kijelölése"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Utolsó ellenőrzés: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Letöltés előkészítése..."
+  },
+  "content_downloadStarted": {
+    "message": "A letöltés elindult"
+  },
+  "content_downloadStartedDetail": {
+    "message": "A fájlt a böngésző letöltései között találod."
+  },
+  "content_downloadFailed": {
+    "message": "A letöltés nem sikerült"
+  },
+  "content_noFileToDownload": {
+    "message": "Nem található letöltendő fájl"
+  },
+  "content_noDownloadableFile": {
+    "message": "Nem található letölthető fájl"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "Lehet, hogy ennek a modnak nincs elsődleges fájlja, vagy kézzel kell fájlt választani."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Kihagyva a fájlválasztásnál"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Ehhez a modhoz nem lett fájl kiválasztva."
+  },
+  "content_downloadRunStopped": {
+    "message": "A letöltési sorozat leállt"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "A sorozat véget ért, mielőtt ehhez a modhoz fájl lett volna kiválasztva."
+  },
+  "content_vortexUnavailable": {
+    "message": "A Vortex letöltés nem érhető el"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "Nem sikerült NXM hivatkozást előállítani. Győződj meg róla, hogy be vagy jelentkezve a nexusmods.com oldalra."
+  },
+  "content_handedToVortex": {
+    "message": "Átadva a Vortexnek"
+  },
+  "content_handedToVortexDetail": {
+    "message": "A böngésző átadott egy nxm:// hivatkozást a Vortexnek. A böngésző nem tudja megerősíteni, hogy a Vortex megkapta."
+  },
+  "content_vortexBlocked": {
+    "message": "A Vortexnek átadás blokkolva"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "A böngésző nem nyitotta meg az nxm:// hivatkozást."
+  },
+  "content_vortexHandoff": {
+    "message": "Ezek a modok nxm:// hivatkozásokon keresztül mennek a Vortexhez."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Semmi sem történik, ha a Vortex nincs telepítve és nincs regisztrálva az nxm hivatkozásokra, és a böngészők blokkolhatják az egy kattintásból induló ismételt protokollindításokat. Ha semmi sem érkezik meg, állítsd a módot \"Kézi\" értékre."
+  },
+  "content_batchEmpty": {
+    "message": "Nincs mit letölteni: egyetlen mod sem felel meg a jelenlegi kijelölésnek és szűrőknek."
+  },
+  "content_batchBusy": {
+    "message": "Már fut egy letöltési sorozat."
+  },
+  "content_batchVerbQueued": {
+    "message": "sorba állítva"
+  },
+  "content_batchVerbVortex": {
+    "message": "átadva a Vortexnek"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ sikertelen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Letöltés"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Összes letöltése"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "már letöltés alatt"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "nincs letölthető fájl"
+  },
+  "content_reasonRunStopped": {
+    "message": "a sorozat leállt"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "kihagyva a követelmények kérdésnél"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "kihagyva a fájlválasztásnál"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "a fájllistát nem sikerült betölteni"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "nincs NXM hivatkozás"
+  },
+  "content_reasonNxmRefused": {
+    "message": "a böngésző elutasította az nxm:// hivatkozást"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "a jelenlegi szűrők elrejtették"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "másik letöltési sorozat fut"
+  },
+  "content_modalOk": {
+    "message": "OK"
+  },
+  "content_selectFilesTitle": {
+    "message": "Válaszd ki a letöltendő fájlokat"
+  },
+  "content_skipMod": {
+    "message": "Mod kihagyása"
+  },
+  "content_skipThisMod": {
+    "message": "Ennek a modnak a kihagyása"
+  },
+  "content_skipTheseMods": {
+    "message": "Ezeknek a modoknak a kihagyása"
+  },
+  "content_downloadAnyway": {
+    "message": "Letöltés mindenképp"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "A követelmények nem ellenőrizhetők"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ igényelhet további modokat, de a listát nem sikerült betölteni: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " Ez általában az egész sorozatnál kudarcot vall, ezért a válaszod a sorozat többi részére is érvényes."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ a következő követelményekkel rendelkezik. Válaszd ki, melyeket telepítsük:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Ez a mod"
+  },
+  "content_quotedModName": {
+    "message": "„$MODNAME$”",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "$MODNAME$ követelményei",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Követelmények észlelve"
+  },
+  "content_installWithRequirements": {
+    "message": "Telepítés a követelményekkel"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Telepítés követelmények nélkül"
+  },
+  "content_unknownMod": {
+    "message": "Ismeretlen mod"
+  },
+  "content_noLinkProvided": {
+    "message": "Nincs megadva hivatkozás"
+  },
+  "content_requirementsUnreadable": {
+    "message": "A követelménylista nem volt olvasható."
+  },
+  "content_requirementsPartial": {
+    "message": "$TOTAL$ követelményből $STARTED$ indult el, $FAILED$ sikertelen.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "A Nexus API kulcsodat elutasították. Add meg újra a bővítmény felugró ablakában."
+  },
+  "content_errorForbidden": {
+    "message": "A Nexus elutasította ezt a kérést. Premium fiók vagy aktív nexusmods.com bejelentkezés lehet szükséges."
+  },
+  "content_errorNotFound": {
+    "message": "Ez a mod nem érhető el (törölt, rejtett vagy másik játék)."
+  },
+  "content_errorRateLimited": {
+    "message": "Elérted a Nexus API korlátját. Az ellenőrzések a korlát visszaállása után folytatódnak."
+  },
+  "content_errorNexusDown": {
+    "message": "A Nexus most nem válaszol."
+  },
+  "content_errorOffline": {
+    "message": "Nincs kapcsolat a Nexusszal."
+  },
+  "content_errorNoApiKey": {
+    "message": "Nincs beállítva Nexus API kulcs. Adj meg egyet a bővítmény felugró ablakában."
+  },
+  "content_errorUnexpected": {
+    "message": "Valami hiba történt."
+  },
+  "content_errorPortTimeout": {
+    "message": "Az ellenőrzés túl sokáig tartott, ezért félbeszakadt."
+  },
+  "content_errorNoBackground": {
+    "message": "Megszakadt a kapcsolat a bővítmény háttérrészével. Újrapróbálkozás."
+  },
+  "content_errorContextInvalid": {
+    "message": "A bővítmény frissült. Töltsd újra ezt az oldalt."
+  },
+  "content_errorDisabled": {
+    "message": "A bővítmény ki van kapcsolva."
+  },
+  "content_errorCanceled": {
+    "message": "Az ellenőrzés megszakítva."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Ismeretlen üzenetküldési hiba."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Túl sok függőben lévő kérés."
+  },
+  "content_errorBackground": {
+    "message": "Háttérhiba."
+  },
+  "content_shortKeyRejected": {
+    "message": "kulcs elutasítva"
+  },
+  "content_shortAccessRefused": {
+    "message": "hozzáférés megtagadva"
+  },
+  "content_shortNotAvailable": {
+    "message": "nem érhető el"
+  },
+  "content_shortRateLimited": {
+    "message": "korlát elérve"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus nem elérhető"
+  },
+  "content_shortOffline": {
+    "message": "nincs kapcsolat"
+  },
+  "content_shortTimedOut": {
+    "message": "időtúllépés"
+  },
+  "content_shortNoBackground": {
+    "message": "nincs háttér"
+  },
+  "content_shortNeedsReload": {
+    "message": "újratöltés kell"
+  },
+  "content_shortSwitchedOff": {
+    "message": "kikapcsolva"
+  },
+  "content_shortCanceled": {
+    "message": "megszakítva"
+  },
+  "content_shortCheckFailed": {
+    "message": "ellenőrzés meghiúsult"
+  },
+  "content_shortRequestRefused": {
+    "message": "kérés elutasítva"
+  },
+  "content_shortNotSetUp": {
+    "message": "nincs beállítva"
+  },
+  "content_shortOtherGame": {
+    "message": "másik játék"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "nincs levezetett verzió"
+  },
+  "content_shortSuperseded": {
+    "message": "újabb váltotta fel"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "ismeretlen oldal"
+  },
+  "content_dismiss": {
+    "message": "Bezárás"
+  },
+  "content_reloadPage": {
+    "message": "Oldal újratöltése"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "A Nexus Mods Assistant frissült. Töltsd újra ezt az oldalt a folytatáshoz."
+  },
+  "content_selectionRestoredOne": {
+    "message": "A korábban kijelölt $COUNT$ mod továbbra is ki van jelölve.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "A korábban kijelölt $COUNT$ mod továbbra is ki van jelölve.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "A kijelölések ezen a lapon megmaradnak, amíg nem törlöd őket, vagy be nem zárod a lapot."
+  },
+  "content_clearSelectionAction": {
+    "message": "Kijelölés törlése"
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ másik játékhoz tartozó kijelölt mod kimaradt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "$COUNT$ másik játékhoz tartozó kijelölt mod kimaradt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "A kompatibilitási ellenőrzések ki vannak kapcsolva, amíg nem adsz meg Nexus API kulcsot."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Az oldalon minden más továbbra is működik."
+  },
+  "content_openSettings": {
+    "message": "Beállítások megnyitása"
+  },
+  "content_noticeOtherGame": {
+    "message": "A kompatibilitás a $TARGETGAME$ játékra van beállítva, ez az oldal pedig $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Válaszd ki a játszott játékverziót, hogy kompatibilitási jelvényeket kapj."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Inkább nem jelenik meg ítélet, mint egy másik játékhoz mért ítélet."
+  },
+  "content_useThisGame": {
+    "message": "Ezt a játékot használom"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "A beállítások módosításához nyisd meg a Nexus Mods Assistant felugró ablakát a böngésző eszköztárából."
+  },
+  "content_targetModalTitle": {
+    "message": "Játék beállítása célként"
+  },
+  "content_targetPromptQuestion": {
+    "message": "A $GAME$ melyik változatát játszod? A modokat ehhez a verzióhoz mérjük.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "pl. 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "A játék verzióinak levezetése nyilvános forrásokból..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Egyetlen nyilvános forrás sem nevez meg verziót ehhez a játékhoz, így nincs mit felkínálni. Írd be a játszott változatot, ha tudod."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "$COUNT$ verzió lett levezetve ehhez a játékhoz. Nyisd meg a listát a fenti mezőben, vagy írd be a sajátodat.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "$COUNT$ verzió lett levezetve ehhez a játékhoz. Nyisd meg a listát a fenti mezőben, vagy írd be a sajátodat.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "A verziókeresés nem tudott befejeződni ($REASON$), ezért a lista nem adathiány, hanem válaszhiány miatt üres. Írd be a játszott változatot.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Mentés"
+  },
+  "content_cancel": {
+    "message": "Mégse"
+  },
+  "content_targetNotSaved": {
+    "message": "Nem adtál meg verziót, ezért semmi sem lett elmentve, és ez az oldal továbbra is cél nélküli."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Válassz a levezetett verziók közül, vagy írd be a játszott változatot."
+  },
+  "content_tryAgain": {
+    "message": "Próbáld újra"
+  },
+  "content_noModsOnPage": {
+    "message": "Ezen az oldalon nincs mod."
+  },
+  "content_layoutStillLoading": {
+    "message": "A modlista még nem töltődött be. Ha így marad, a Nexus megváltoztathatta az elrendezését."
+  },
+  "content_layoutNotFound": {
+    "message": "Nem található modlista ezen az oldalon. A Nexus megváltoztathatta az elrendezését."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Már nem illeszkedő szelektorok: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Ez a mod oldal nem olyan elrendezésnek tűnik, amit a segéd ismer, ezért nem került rá jelvény."
+  },
+  "content_translationSignalMissing": {
+    "message": "A fordítások elrejtése be van kapcsolva, de ezen az oldalon egyetlen mod sem árulja el, milyen kategóriában van, ezért semmi sem lett elrejtve."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "A Nexus megváltoztathatta a jelölését. Semmit sem rejtettünk el előled."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "A dátumszűrő nem érvényesül: ezen az oldalon egyetlen mod sem mutat frissítési dátumot."
+  },
+  "content_dateSelectorBroken": {
+    "message": "Az „Utolsó frissítés” szűrő egyetlen dátumot sem tudott kiolvasni ezen az oldalon, ezért nem érvényesült."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "A Nexus megváltoztathatta a jelölését."
+  },
+  "content_undatedHiddenOne": {
+    "message": "$COUNT$ mod elrejtve: nincs frissítési dátum, amihez mérni lehetne.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "$COUNT$ mod elrejtve: nincs frissítési dátum, amihez mérni lehetne.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ fordítási mod elrejtve a felugró ablak beállítása miatt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "$COUNT$ fordítási mod elrejtve a felugró ablak beállítása miatt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "A beállítások megváltoztak. A jelvények a futó letöltési sorozat végeztével frissülnek."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Kompatibilitási társ"
+  },
+  "popup_extensionToggle": {
+    "message": "A segéd be- vagy kikapcsolása"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Játék és verzió"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "A megnyitott lapod egy Nexus játékoldal."
+  },
+  "popup_useThisGame": {
+    "message": "Ezt a játékot használom"
+  },
+  "popup_gameLabel": {
+    "message": "Játék"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Keresés név szerint"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Illeszkedő játékok"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Verziótartomány"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Legkorábbi játékverzió"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Kezdet (pl. 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Legkésőbbi játékverzió, nem kötelező"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Vég, nem kötelező"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Levezetett játékverziók"
+  },
+  "popup_refreshVersions": {
+    "message": "Verziók frissítése"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "A játék verzióinak újbóli keresése a nyilvános forrásokban"
+  },
+  "popup_exclusionLabel": {
+    "message": "Modok elrejtése, ha tartalmazzák"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "pl. javítás, fordítás"
+  },
+  "popup_exclusionTitle": {
+    "message": "Több kulcsszót vesszővel válassz el"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Hozzáadja a Nexus saját fordításszűrőjét ahhoz a listához, amit ez a gomb megnyit"
+  },
+  "popup_hideTranslations": {
+    "message": "A lista megnyitása fordítások nélkül"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Kompatibilis modok megnyitása"
+  },
+  "popup_sectionConnection": {
+    "message": "Kapcsolat"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus API kulcs"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Tárolt Nexus API kulcs"
+  },
+  "popup_revealKey": {
+    "message": "A tárolt API kulcs megjelenítése"
+  },
+  "popup_hideKey": {
+    "message": "A tárolt API kulcs elrejtése"
+  },
+  "popup_show": {
+    "message": "Mutat"
+  },
+  "popup_hide": {
+    "message": "Rejt"
+  },
+  "popup_replaceKey": {
+    "message": "Kulcs cseréje"
+  },
+  "popup_disconnect": {
+    "message": "Leválasztás"
+  },
+  "popup_disconnectExplain": {
+    "message": "A leválasztás törli a kulcsot és minden gyorsítótárazott Nexus választ ebből a böngészőből. A Nexus fiókodhoz nem nyúlunk."
+  },
+  "popup_keepKey": {
+    "message": "Kulcs megtartása"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Nexus személyes API kulcs"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Illeszd be az API kulcsodat"
+  },
+  "popup_save": {
+    "message": "Mentés"
+  },
+  "popup_needKey": {
+    "message": "Kulcs kell?"
+  },
+  "popup_cancel": {
+    "message": "Mégse"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Nem kötelező. A böngészés, a szűrők és a verziócél kulcs nélkül is működik. A kompatibilitási jelvényekhez és a letöltésekhez kulcs kell, mert a Nexus csak fióknak válaszol."
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods egyszeri bejelentkezés"
+  },
+  "popup_ssoDescription": {
+    "message": "Adj engedélyt egyszer, és a kulcs magától bekerül. Ezt bármikor újra lefuttathatod a tárolt kulcs cseréjéhez."
+  },
+  "popup_authorizeSso": {
+    "message": "SSO engedélyezése"
+  },
+  "popup_cancelSso": {
+    "message": "SSO megszakítása"
+  },
+  "popup_ssoReady": {
+    "message": "Készen áll a Nexus Mods SSO kézfogás indítására."
+  },
+  "popup_startingSso": {
+    "message": "SSO indítása..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO megszakítva."
+  },
+  "popup_sectionDownloads": {
+    "message": "Letöltések"
+  },
+  "popup_downloadModeLabel": {
+    "message": "Letöltési mód"
+  },
+  "popup_downloadModeManual": {
+    "message": "Kézi: a fájlt a böngésző menti"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: a hivatkozást a modkezelőd kapja"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Ugyanaz a beállítás, mint a Nexus listaoldal műveletsávjában: itt megváltoztatva ott is megváltozik, és fordítva. A Vortex mód egy"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "hivatkozást nyit meg, amelyet az operációs rendszered átad annak a modkezelőnek, amelyik regisztrálta ezt a protokollt."
+  },
+  "popup_fileListsLegend": {
+    "message": "Fájllisták"
+  },
+  "popup_fileListsNote": {
+    "message": "Mely fájlkategóriák jelenjenek meg egy mod fájllistájának megnyitásakor. Ugyanez a négy kapcsoló ott van az oldalba illesztett panelen is."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Egy mod fájljai régebbi verzióinak megjelenítése"
+  },
+  "popup_showOldFiles": {
+    "message": "Régi fájlok"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Egy mod frissítési fájljainak megjelenítése"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Frissítési fájlok"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Egy mod választható fájljainak megjelenítése"
+  },
+  "popup_showOptionalFiles": {
+    "message": "Választható fájlok"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Egy mod egyéb fájljainak megjelenítése"
+  },
+  "popup_showMiscFiles": {
+    "message": "Egyéb fájlok"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Speciális"
+  },
+  "popup_advancedNote": {
+    "message": "Helyi tárolás és diagnosztika. A gyorsítótár törlése azonnal újraolvassa a játéklistát a Nexustól, ha van csatlakoztatott kulcs; itt semmi más nem megy ki a hálózatra."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "A háttérfolyamat részletes tevékenységét a service worker konzolba írja"
+  },
+  "popup_debugLogging": {
+    "message": "Részletes konzolnapló"
+  },
+  "popup_clearCache": {
+    "message": "Gyorsítótárazott Nexus adatok törlése"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "bolti javítási jegyzet"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "bolti ág"
+  },
+  "popup_sourceArticleText": {
+    "message": "cikkszöveg, ellenőrizetlen"
+  },
+  "popup_sourceModText": {
+    "message": "mod szövege"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "gyűjtemény metaadatai"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, forrás: $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "Nincs csatlakoztatott API kulcs, ezért a Nexus nem válaszol. Adj meg egyet a Kapcsolat kártyán."
+  },
+  "popup_failureInvalidKey": {
+    "message": "A Nexus elutasította az API kulcsodat. Cseréld ki a Kapcsolat kártyán."
+  },
+  "popup_failureForbidden": {
+    "message": "A Nexus elutasította a kérést. Premium fiók vagy aktív nexusmods.com bejelentkezés lehet szükséges."
+  },
+  "popup_failureNotFound": {
+    "message": "A Nexus nem ismer ilyen játékot vagy modot. Lehet, hogy elrejtették vagy eltávolították."
+  },
+  "popup_failureRateLimited": {
+    "message": "Elhasználtad a Nexus API keretedet. Az ellenőrzések a keret visszaállása után folytatódnak, általában egy órán belül."
+  },
+  "popup_failureServerError": {
+    "message": "A Nexus most nem válaszol. Próbáld újra néhány perc múlva."
+  },
+  "popup_failureBadRequest": {
+    "message": "A Nexus hibás formátumúként utasította el a kérést. Ellenőrizd a játékot és a verziót, majd próbáld újra."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Még nincs mit ellenőrizni. Válassz fent egy játékot és egy kezdő verziót."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Ehhez a játékhoz még nem lett levezetve játékverzió, így nincs mihez mérni egy modot. Minden játék támogatott; ehhez egyszerűen nincs nyilvános verzióadat, amit a segéd megtalálna. Írd be a játszott verziót, ha mégis ellenőriznéd."
+  },
+  "popup_failureOffline": {
+    "message": "Nincs kapcsolat a Nexusszal. Ellenőrizd a hálózatot, majd próbáld újra."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "A bővítmény nem érheti el a nexusmods.com oldalt. A hálózattal nincs baj: a webhely-hozzáférési engedélyt elutasították vagy visszavonták. Add meg újra a böngésző bővítménybeállításaiban (Firefox: about:addons, majd ez a bővítmény, majd Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "A Nexus túl sokáig válaszolt. Próbáld újra."
+  },
+  "popup_failureDisabled": {
+    "message": "A segéd ki van kapcsolva. Kapcsold vissza a jobb felső kapcsolóval."
+  },
+  "popup_failureNoBackground": {
+    "message": "A bővítmény háttérrésze nem válaszolt. Nyisd meg újra ezt az ablakot, vagy töltsd újra a bővítményt."
+  },
+  "popup_failureCanceled": {
+    "message": "Az a kérés megszakadt, mielőtt befejeződött volna."
+  },
+  "popup_failureBackgroundError": {
+    "message": "A bővítmény háttérrésze nem tudta végrehajtani a kérést."
+  },
+  "popup_failureContextInvalid": {
+    "message": "A bővítmény frissült. Töltsd újra a nyitott Nexus lapokat."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Váratlan hiba: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Váratlan hiba, részletek nélkül."
+  },
+  "popup_requestFailed": {
+    "message": "A kérés nem sikerült."
+  },
+  "popup_settingsReadFailed": {
+    "message": "A felugró ablak nem tudta beolvasni a beállításaidat: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "A tárolt beállításokat nem sikerült frissíteni: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "A tároló megtelt, ezért az a beállítás nem lett elmentve. Használd lent a „Gyorsítótárazott Nexus adatok törlése” gombot, majd próbáld újra."
+  },
+  "popup_settingSaveFailed": {
+    "message": "Azt a beállítást nem sikerült elmenteni: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "API kulcs nélkül a nyitott Nexus lapod játékát célozhatod, de a teljes Nexus katalógusban nem lehet keresni, és kompatibilitási jelvények sem kérhetők le."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Illeszd be az új kulcsot, majd nyomd meg a Mentés gombot."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Előbb illessz be egy kulcsot. A „Kulcs kell?” gombbal tudsz létrehozni egyet."
+  },
+  "popup_keySaved": {
+    "message": "Kulcs elmentve."
+  },
+  "popup_keyUpdated": {
+    "message": "Kulcs frissítve."
+  },
+  "popup_disconnecting": {
+    "message": "Leválasztás..."
+  },
+  "popup_keyClearFailed": {
+    "message": "A kulcsot nem sikerült törölni: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Kulcs eltávolítva. A játék és a verziócél megmaradt."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Kulcs eltávolítva, a játék és a verziócél megmaradt. Azonban $ISSUES$: használd lent a „Gyorsítótárazott Nexus adatok törlése” gombot.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "a háttérrész nem válaszolt, ezért a gyorsítótárazott Nexus válaszok még a lemezen vannak"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "a Steam verzió-gyorsítótár nem volt olvasható, ezért még a lemezen van"
+  },
+  "popup_leftBehindSeparator": {
+    "message": ", és "
+  },
+  "popup_noReadableVersion": {
+    "message": "A játékhoz levezetett verziók egyike sem volt verziószámként olvasható, ezért egyik sem került be. Írd be a játszott játékverziót."
+  },
+  "popup_startVersionFilled": {
+    "message": "A kezdő verzió $VERSION$ értékre lett kitöltve, ez a játékhoz talált legújabb változat. Módosítsd, ha régebbivel játszol.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "A záró verzió, $END$, korábbi a kezdő verziónál, $START$, így egyetlen mod sem felelhet meg. Ez a tartomány nem lett elmentve, a meglévő célod változatlan.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Előbb válassz játékot: egy verziónak önmagában nincs mihez mérnie magát."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Előbb válassz játékot, utána lehet verziókat levezetni hozzá."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "A folytatás előtt válassz játékot."
+  },
+  "popup_openTabIsGame": {
+    "message": "A nyitott Nexus lapod: $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Elmentve. A nyitott Nexus lapod $GAME$, így ez a cél nem vonatkozik rá.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Elmentve."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "A játéklistához API kulcs kell. A fenti gombbal célozhatod a nyitott lapod játékát."
+  },
+  "popup_derivingVersions": {
+    "message": "Verziók levezetése nyilvános forrásokból..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "A verziókeresés nem tudott befejeződni, ezért itt semmi sem számít megállapításnak."
+  },
+  "popup_noVersionsFound": {
+    "message": "Egyetlen nyilvános forrás sem nevez meg verziót ehhez a játékhoz. Ez a lista nem azért üres, mert a játék nem támogatott, hanem mert az adat nem létezik."
+  },
+  "popup_searching": {
+    "message": "Nyilvános források keresése..."
+  },
+  "popup_searchingAgain": {
+    "message": "Nyilvános források újbóli keresése..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Verziókeresés: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "$COUNT$ verzió levezetve.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "$COUNT$ verzió levezetve.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "$COUNT$ verzió levezetve $SOURCES$ forrásból.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "$COUNT$ verzió levezetve $SOURCES$ forrásból.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "$COUNT$ verzió levezetve $SOURCES$ forrásból.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "$COUNT$ verzió levezetve $SOURCES$ forrásból.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Egyetlen nyilvános forrás sem nevez meg verziót ehhez a játékhoz, ezért semmi sem került be. Írd be a játszott verziót, ha tudod; üresen hagyni is rendben van."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ kérés ebben a frissítésben.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "$COUNT$ kérés ebben a frissítésben.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "A játék bolti oldalát nem lehetett biztosan azonosítani, ezért a bolti források kimaradtak, hogy ne egy másik játék számai kerüljenek be."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "A letöltéseket nxm:// hivatkozásként kapja a modkezelőd, itt és minden nyitott Nexus lapon."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "A letöltéseket a böngésző menti, itt és minden nyitott Nexus lapon."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "A részletes naplózás a háttérfolyamat következő indulásától be van kapcsolva."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "A részletes naplózás a háttérfolyamat következő indulásától ki van kapcsolva."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Megnyitás verziócél nélkül"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Nincs beállítva kezdő verzió, ezért a jelvények nem a modot értékelik, hanem azt jelzik, hogy nincs mihez mérni. A szűrés és a letöltések működnek. Nyomd meg újra a lista megnyitásához."
+  },
+  "popup_clearing": {
+    "message": "Törlés..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "A bővítmény háttérrésze nem válaszolt, és a Steam verzió-gyorsítótár sem volt olvasható, ezért egyiket sem sikerült törölni. A tárolt játéklista törölve."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "A bővítmény háttérrésze nem válaszolt, ezért a mod válaszok gyorsítótára nem lett törölve. A tárolt játéklista és a Steam verzió-gyorsítótár törölve."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "$COUNT$ gyorsítótárazott bejegyzés törölve, $KB$ KB felszabadítva. A Steam verzió-gyorsítótár nem volt olvasható, ezért lehet, hogy még a lemezen van.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "$COUNT$ gyorsítótárazott bejegyzés törölve, $KB$ KB felszabadítva.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Nem érkezett jelzés gyorsítótárazott bejegyzésről, ezért semmi sem szabadult fel."
+  },
+  "popup_noGameListCached": {
+    "message": "Még nincs gyorsítótárazott játéklista."
+  },
+  "popup_gameListCached": {
+    "message": "A játéklista gyorsítótárazva: $WHEN$.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "épp most"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ perce",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ perce",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ órája",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ órája",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ napja",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ napja",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "$COUNT$ cím betöltve.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Játéklista: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "A háttérrész váratlan játéklistát adott vissza."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "1 cím betöltve."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "1 gyorsítótárazott bejegyzés törölve, $KB$ KB felszabadítva.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "1 gyorsítótárazott bejegyzés törölve, $KB$ KB felszabadítva. A Steam verzió-gyorsítótár nem volt olvasható, ezért lehet, hogy még a lemezen van.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

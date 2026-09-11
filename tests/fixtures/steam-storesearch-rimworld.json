@@ -1,0 +1,185 @@
+{
+ "total": 10,
+ "items": [
+  {
+   "type": "app",
+   "name": "RimWorld",
+   "id": 294100,
+   "price": {
+    "currency": "USD",
+    "initial": 3499,
+    "final": 3499
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/a805ac5e3ceb54a2d7d3e1c1049907f1ef8bbb89/capsule_231x87.jpg?t=1782756789",
+   "metascore": "87",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld - Odyssey",
+   "id": 3022790,
+   "price": {
+    "currency": "USD",
+    "initial": 2499,
+    "final": 2499
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3022790/0ec2e24dc7d478bef541ef6f93ec7d24a1f8cffd/capsule_231x87.jpg?t=1782756963",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld - Biotech",
+   "id": 1826140,
+   "price": {
+    "currency": "USD",
+    "initial": 2499,
+    "final": 2499
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1826140/0c271719d8e5b0db5083cf321560f73981278ac2/capsule_231x87.jpg?t=1782756849",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld - Anomaly",
+   "id": 2380740,
+   "price": {
+    "currency": "USD",
+    "initial": 2499,
+    "final": 2499
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2380740/58c6bb560d99b2b0b642291571571befa9d7687a/capsule_231x87.jpg?t=1782756913",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld - Ideology",
+   "id": 1392840,
+   "price": {
+    "currency": "USD",
+    "initial": 1999,
+    "final": 1999
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1392840/63a61725ada471857cbf21280c9c943c74c813f9/capsule_231x87.jpg?t=1776193654",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld - Royalty",
+   "id": 1149640,
+   "price": {
+    "currency": "USD",
+    "initial": 1999,
+    "final": 1999
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1149640/2d203f2e5320df50901f843a4908e3f8dd2f7e45/capsule_231x87.jpg?t=1779288400",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld Soundtrack",
+   "id": 990430,
+   "price": {
+    "currency": "USD",
+    "initial": 799,
+    "final": 799
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990430/e13c1d64ad5d04f59f06993567228e8017438b2c/capsule_231x87.jpg?t=1776703804",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld - Odyssey Soundtrack",
+   "id": 3689230,
+   "price": {
+    "currency": "USD",
+    "initial": 499,
+    "final": 499
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3689230/f38ff6952de481ed6f5cbc91b15c73eaa1c80eb4/capsule_231x87.jpg?t=1782497706",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld - Royalty Soundtrack",
+   "id": 1244270,
+   "price": {
+    "currency": "USD",
+    "initial": 499,
+    "final": 499
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1244270/03322cec86ee289b6ac72b1f362cac638caec224/capsule_231x87.jpg?t=1779305278",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  },
+  {
+   "type": "app",
+   "name": "RimWorld - Anomaly Soundtrack",
+   "id": 2914900,
+   "price": {
+    "currency": "USD",
+    "initial": 499,
+    "final": 499
+   },
+   "tiny_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2914900/0dceb084735df827ad13a5c8767e5a7a4970da34/capsule_231x87.jpg?t=1776705983",
+   "metascore": "",
+   "platforms": {
+    "windows": true,
+    "mac": true,
+    "linux": true
+   },
+   "streamingvideo": false
+  }
+ ]
+}

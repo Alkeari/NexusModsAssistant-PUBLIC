@@ -1,0 +1,22 @@
+{
+ "recordedAt": "2026-08-14",
+ "recordedBy": "tests/fixtures/record.js",
+ "sources": {
+  "steam-news-294100.json": "ISteamNews GetNewsForApp for appid 294100 (RimWorld), feeds=steam_community_announcements. First 20 newsitems kept whole.",
+  "steam-news-261550.json": "ISteamNews GetNewsForApp for appid 261550 (Mount & Blade II: Bannerlord), feeds=steam_community_announcements. First 20 newsitems kept whole.",
+  "steam-news-1091500.json": "ISteamNews GetNewsForApp for appid 1091500 (Cyberpunk 2077), feeds=steam_community_announcements. First 45 newsitems kept whole. That window reaches from the newest announcement back past 2.0, so it holds both the zero-padded builds (2.01, 2.02) and the pair a generic comparator cannot rank (2.2 announced after 2.13).",
+  "steamcmd-261550.json": "api.steamcmd.net app info for 261550. Whole response: 47 branches, most of them version names.",
+  "steamcmd-294100.json": "api.steamcmd.net app info for 294100. Whole response: 21 branches, none of them version-shaped.",
+  "nexus-mods-rimworld.json": "Nexus GraphQL mods for gameDomainName \"rimworld\", keyless, count 50. Whole response, nodes untouched, fields as queried. Mods use gameDomainName; collections use gameDomain.",
+  "nexus-collections-skyrimspecialedition.json": "Nexus GraphQL collectionsV2 for gameDomain \"skyrimspecialedition\", keyless. Whole response.",
+  "nexus-collections-rimworld.json": "Nexus GraphQL collectionsV2 for gameDomain \"rimworld\", keyless. Whole response.",
+  "nexus-collections-cyberpunk2077.json": "Nexus GraphQL collectionsV2 for gameDomain \"cyberpunk2077\", keyless. Whole response.",
+  "nexus-collections-starfield.json": "Nexus GraphQL collectionsV2 for gameDomain \"starfield\", keyless. Whole response.",
+  "nexus-collections-fallout4.json": "Nexus GraphQL collectionsV2 for gameDomain \"fallout4\", keyless. Whole response.",
+  "nexus-collections-baldursgate3.json": "Nexus GraphQL collectionsV2 for gameDomain \"baldursgate3\", keyless. Whole response.",
+  "nexus-collections-mountandblade2bannerlord.json": "Nexus GraphQL collectionsV2 for gameDomain \"mountandblade2bannerlord\", keyless. Whole response.",
+  "nexus-games-by-name.json": "One keyless Nexus GraphQL games query per search term, each response kept whole and stored under its term. The games query is the only place a game display name can be derived from, and the display name is what the mod-text cue is built out of.",
+  "steam-storesearch-dirt2.json": "Steam store search for the term \"DiRT 2\". Whole response. This is the mis-bind: the first app is DiRT Rally 2.0, appid 690790, a different game.",
+  "steam-storesearch-rimworld.json": "Steam store search for the term \"RimWorld\". Whole response. The first app is an exact name match, appid 294100."
+ }
+}

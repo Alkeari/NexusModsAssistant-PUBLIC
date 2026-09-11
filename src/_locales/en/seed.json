@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant",
+    "description": "The extension name, shown in the browser and on the store listings."
+  },
+  "extDescription": {
+    "message": "Every Nexus mod tile gets a compatibility verdict for the game build you actually play, so you can filter down to what will run.",
+    "description": "The store short description. Chrome caps this at 132 characters, so a translation must stay under it."
+  }
+}

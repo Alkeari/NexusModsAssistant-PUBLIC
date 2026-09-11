@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Nexus の各 Mod タイルに、実際に遊んでいるゲームビルドとの互換性判定を表示。動作する Mod だけに絞り込めます。"
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "リクエストが $seconds$ 秒を超えたため中止しました。",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Nexus API の上限に達しました。$resetTime$ にリセットされます。",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Nexus API の上限に達しました。上限がリセットされると確認を再開します。"
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Nexus API の上限に達しました。"
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus が API キーを拒否しました。拡張機能のポップアップで入力し直してください。"
+  },
+  "background_errorForbidden": {
+    "message": "Nexus がこのリクエストを拒否しました。Premium アカウント、または nexusmods.com へのログインが必要な場合があります。"
+  },
+  "background_errorNotFound": {
+    "message": "このゲームに該当する Mod が Nexus にありません（削除済み、非公開、またはゲーム違い）。"
+  },
+  "background_errorServerError": {
+    "message": "Nexus が現在応答していません（HTTP $status$）。",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus がリクエストを拒否しました（HTTP $status$）。$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "リクエストに時間がかかりすぎたため中止しました。"
+  },
+  "background_errorOffline": {
+    "message": "Nexus に接続できません。"
+  },
+  "background_errorDisabled": {
+    "message": "拡張機能はオフになっています。"
+  },
+  "background_errorUnexpected": {
+    "message": "問題が発生しました。"
+  },
+  "background_errorNoApiKey": {
+    "message": "API キーが見つかりません。拡張機能のポップアップで Nexus API キーを追加してください。"
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "ダウンロードリンクに URI がありません。"
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "NXM リンクが見つかりません。"
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "この Mod にダウンロードできるファイルが見つかりません。"
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "この Mod ページの必要 Mod 欄を読み取れませんでした。NMA が認識できない Nexus のページ構成です。"
+  },
+  "background_errorNavigationChanged": {
+    "message": "ページが移動しました"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant が Mod を確認するには $missing$ が必要です。拡張機能のポップアップで設定を完了してください。",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "API キー"
+  },
+  "background_setupNeedsGame": {
+    "message": "ゲーム"
+  },
+  "background_setupNeedsVersion": {
+    "message": "ゲームバージョン"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ と $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "このページは $pageGame$ ですが、NMA は $configuredGame$ 用に設定されています。これらの Mod を確認するには、拡張機能のポップアップでゲームを切り替えてください。",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA は「$version$」をゲームバージョンとして読み取れないため、Mod を判定できません。拡張機能のポップアップで 1.6.1170 のような数字のバージョンを設定してください。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "$gameDomain$ のゲームバージョンを示す公開情報がないため、NMA は Mod のバージョンからゲームバージョンを判断できません。これは拡張機能ではなくデータ側の空白で、誰にとっても同じです。それでも確認するには、拡張機能のポップアップで遊んでいるバージョンを入力してください。",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "バージョンの情報源に一つも接続できなかったため、このゲームについてはまだ何も導き出せていません。"
+  },
+  "background_errorNoGameDomain": {
+    "message": "バージョンを導き出すには、先にゲームドメインが必要です。"
+  },
+  "background_errorNoStoreListing": {
+    "message": "そのゲームと確実に一致するストアページがないため、何も保存しませんでした。"
+  },
+  "background_sourceFileVersion": {
+    "message": "ファイルのバージョン"
+  },
+  "background_sourceFileName": {
+    "message": "ファイル名"
+  },
+  "background_sourceChangelog": {
+    "message": "変更履歴"
+  },
+  "background_sourceDescription": {
+    "message": "説明"
+  },
+  "background_sourceUploadDate": {
+    "message": "アップロード日"
+  },
+  "background_sourceNone": {
+    "message": "情報源なし"
+  },
+  "background_verdictPartialNote": {
+    "message": "情報源の 1 つを読み取れなかったため（$cause$）、この確認は部分的です。",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "ゲームバージョンはどこにも記載されていませんが、最新ファイルのアップロード日が $uploadDate$ で、ゲームバージョン $gameVersion$ より後です。確認ではなく推測です。",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$：「$evidence$」と記載されており、選択した範囲内です。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$：「$evidence$」への言及があり、選択した範囲内です。これは推測であり、明示されたゲームバージョンではありません。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "ゲームバージョンはどこにも記載されておらず、最新ファイルのアップロード日（$uploadDate$）も選択した範囲内には入りません。",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$：「$evidence$」と記載されており、この Mod が挙げる最も新しいゲームバージョンですが、選択した範囲外です。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$：「$evidence$」への言及があり、この Mod が挙げる最も新しいゲームバージョンですが、選択した範囲外です。これは推測であり、明示されたゲームバージョンではありません。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "この Mod はファイル、変更履歴、説明のいずれにもゲームバージョンを記載していません。"
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "この Mod は説明にも変更履歴にもゲームバージョンを記載していません。この確認ではファイル一覧を開いていません。"
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "ストア検索が応答しなかったため、ストアの情報源はスキップしました。"
+  },
+  "background_storeNoteNoMatch": {
+    "message": "このゲームと確実に一致するストアページがなかったため、ストアの情報源はスキップしました。"
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "このゲームのストア情報を読み取れなかったため、今回はストアの情報源をスキップしました。"
+  },
+  "background_storeNoteNotAGame": {
+    "message": "最も近いストアページがゲーム本体ではないため、別製品のビルドを読み取らずにストアの情報源をスキップしました。"
+  },
+  "background_storeNoteWrongApp": {
+    "message": "最も近いストアページが別のアプリのものだったため、ストアの情報源はスキップしました。"
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "ストアページのゲーム名がカタログのものと異なるため、ストアの情報源はスキップしました。"
+  },
+  "background_ssoConnecting": {
+    "message": "Nexus Mods SSO に接続しています..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Nexus Mods のタブでの承認をお待ちしています..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "SSO ハンドシェイクを開始できませんでした。"
+  },
+  "background_ssoConnectionFailed": {
+    "message": "SSO 接続を開けませんでした。"
+  },
+  "background_ssoRejected": {
+    "message": "SSO がハンドシェイクを拒否しました。"
+  },
+  "background_ssoConnectionReady": {
+    "message": "接続できました。承認をお待ちしています..."
+  },
+  "background_ssoComplete": {
+    "message": "SSO で API キーを保存しました。"
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "SSO から予期しない応答がありました。"
+  },
+  "background_ssoLostConnection": {
+    "message": "再試行を重ねましたが、SSO への接続が失われました。"
+  },
+  "background_ssoReconnecting": {
+    "message": "再接続しています（$attempt$/$total$ 回目）...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO をキャンセルしました。"
+  },
+  "content_statusCompatible": {
+    "message": "互換あり"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "互換の可能性"
+  },
+  "content_statusIncompatible": {
+    "message": "互換なし"
+  },
+  "content_statusUnknown": {
+    "message": "バージョン情報なし"
+  },
+  "content_statusFailed": {
+    "message": "確認できず"
+  },
+  "content_statusNotConfigured": {
+    "message": "未設定"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "不明"
+  },
+  "content_evidenceFileVersion": {
+    "message": "ファイルのバージョン"
+  },
+  "content_evidenceFileName": {
+    "message": "ファイル名"
+  },
+  "content_evidenceChangelog": {
+    "message": "変更履歴"
+  },
+  "content_evidenceDescription": {
+    "message": "Mod の説明"
+  },
+  "content_evidenceUploadDate": {
+    "message": "アップロード日"
+  },
+  "content_evidenceNone": {
+    "message": "バージョンの根拠なし"
+  },
+  "content_confidenceExact": {
+    "message": "完全一致"
+  },
+  "content_confidenceInferred": {
+    "message": "推測"
+  },
+  "content_confidenceNone": {
+    "message": "判定不能"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "検出したバージョン: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "根拠: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "確度: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "一致箇所: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - バージョン未選択",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "バージョンの記載なし"
+  },
+  "content_versionNotReportedShort": {
+    "message": "記載なし"
+  },
+  "content_checking": {
+    "message": "確認中..."
+  },
+  "content_checkingCompatibility": {
+    "message": "互換性を確認中..."
+  },
+  "content_scrollToCheck": {
+    "message": "スクロールで確認"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "この Mod は画面に入ったときに確認します。"
+  },
+  "content_noResponse": {
+    "message": "応答なし"
+  },
+  "content_compatibilityColumn": {
+    "message": "互換性"
+  },
+  "content_setVersionInPopup": {
+    "message": "判定を表示するには、拡張機能のポップアップでゲームバージョンを設定してください。"
+  },
+  "content_pickVersionInPopup": {
+    "message": "この Mod の判定を表示するには、ポップアップでゲームバージョンを選んでください。"
+  },
+  "content_filesButton": {
+    "message": "ファイル"
+  },
+  "content_filesButtonForMod": {
+    "message": "$MODNAME$ のファイル",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "この Mod のファイル"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "この必要 Mod のファイル"
+  },
+  "content_filesDropdownLabel": {
+    "message": "ダウンロードするファイル"
+  },
+  "content_filesLoading": {
+    "message": "ファイルを読み込み中..."
+  },
+  "content_filesFetchFailed": {
+    "message": "ファイルを取得できませんでした"
+  },
+  "content_filesLoadFailed": {
+    "message": "ファイル一覧を読み込めませんでした: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "ファイル一覧を読み込めませんでした"
+  },
+  "content_fileListUnreadable": {
+    "message": "ファイル一覧を読み取れませんでした。"
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$（$COUNT$）",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "オンにしているカテゴリーにファイルがありません。非表示: $CATEGORIES$。",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "この Mod にファイルが見つかりません。"
+  },
+  "content_filesHiddenByFilters": {
+    "message": "ファイルフィルターで非表示: $CATEGORIES$。",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$（$CATEGORY$）",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "ファイル"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "サイズ不明"
+  },
+  "content_fileDateUnknown": {
+    "message": "日付不明"
+  },
+  "content_downloadSelected": {
+    "message": "選択したものをダウンロード"
+  },
+  "content_downloadSelectedCount": {
+    "message": "選択したものをダウンロード（$COUNT$）",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "選択したものをダウンロード（Mod $MODS$ 件 / ファイル $FILES$ 件）",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "ダウンロード中（$DONE$/$TOTAL$）...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "ダウンロード中..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "キューに追加"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "失敗: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "理由不明"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ 件のファイルをキューに追加しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ 件のファイルをキューに追加しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ 件をキューに追加、$FAILED$ 件が失敗しました。",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "互換性で選び分ける"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistant のフィルター"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistant のダウンロード"
+  },
+  "content_refresh": {
+    "message": "再読み込み"
+  },
+  "content_pageNavigation": {
+    "message": "ページ移動"
+  },
+  "content_prevPage": {
+    "message": "前へ"
+  },
+  "content_nextPage": {
+    "message": "次へ"
+  },
+  "content_pageNumber": {
+    "message": "ページ番号"
+  },
+  "content_goToPage": {
+    "message": "指定ページへ移動"
+  },
+  "content_collapseFilters": {
+    "message": "フィルターを折りたたむ"
+  },
+  "content_expandFilters": {
+    "message": "フィルターを開く"
+  },
+  "content_showUpdateFiles": {
+    "message": "アップデートファイルを表示"
+  },
+  "content_showOptionalFiles": {
+    "message": "オプションファイルを表示"
+  },
+  "content_showMiscFiles": {
+    "message": "その他のファイルを表示"
+  },
+  "content_showOldFiles": {
+    "message": "旧バージョンとアーカイブ済みファイルを表示"
+  },
+  "content_exclusionLabel": {
+    "message": "名前に次を含む Mod を除外"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Mod を除外（例: patch、translation）..."
+  },
+  "content_exclusionTooltip": {
+    "message": "キーワードはカンマで区切ります"
+  },
+  "content_lastUpdatedRange": {
+    "message": "最終更新日の範囲"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "最終更新:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "この日以降に更新"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "この日以前に更新"
+  },
+  "content_startDateTooltip": {
+    "message": "開始日（当日を含む）"
+  },
+  "content_endDateTooltip": {
+    "message": "終了日（当日を含む）"
+  },
+  "content_clearDateRange": {
+    "message": "日付範囲をクリア"
+  },
+  "content_clearButton": {
+    "message": "クリア"
+  },
+  "content_noModsSelected": {
+    "message": "Mod を選択していません"
+  },
+  "content_modsSelectedOne": {
+    "message": "$COUNT$ 件の Mod を選択中",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "$COUNT$ 件の Mod を選択中",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "選択を解除"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "選択したすべての Mod のチェックを外します"
+  },
+  "content_downloadAll": {
+    "message": "すべてダウンロード"
+  },
+  "content_downloadMode": {
+    "message": "ダウンロード方法"
+  },
+  "content_downloadModeManual": {
+    "message": "手動"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "停止"
+  },
+  "content_stopButtonTooltip": {
+    "message": "現在のダウンロードを停止します。開始済みのファイルはキャンセルされません。"
+  },
+  "content_apiRemaining": {
+    "message": "API: 残り $REMAINING$",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "選択"
+  },
+  "content_selectModNamed": {
+    "message": "$MODNAME$ を選択",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "この Mod を選択"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "最後の確認: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "ダウンロードを準備中..."
+  },
+  "content_downloadStarted": {
+    "message": "ダウンロードを開始しました"
+  },
+  "content_downloadStartedDetail": {
+    "message": "ファイルはブラウザーのダウンロードで確認してください。"
+  },
+  "content_downloadFailed": {
+    "message": "ダウンロードに失敗しました"
+  },
+  "content_noFileToDownload": {
+    "message": "ダウンロードするファイルを特定できませんでした"
+  },
+  "content_noDownloadableFile": {
+    "message": "ダウンロードできるファイルがありません"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "この Mod にはメインファイルがないか、手動での選択が必要な可能性があります。"
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "ファイル選択でスキップ"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "この Mod にはファイルが選ばれませんでした。"
+  },
+  "content_downloadRunStopped": {
+    "message": "ダウンロードを停止しました"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "この Mod のファイルが選ばれる前に処理が終了しました。"
+  },
+  "content_vortexUnavailable": {
+    "message": "Vortex でのダウンロード不可"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "NXM リンクを解決できません。nexusmods.com にログインしているか確認してください。"
+  },
+  "content_handedToVortex": {
+    "message": "Vortex に渡しました"
+  },
+  "content_handedToVortexDetail": {
+    "message": "ブラウザーが nxm:// リンクを Vortex に渡しました。Vortex が受け取ったかどうかはブラウザーからは確認できません。"
+  },
+  "content_vortexBlocked": {
+    "message": "Vortex への受け渡しがブロックされました"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "ブラウザーが nxm:// リンクを開くことを拒否しました。"
+  },
+  "content_vortexHandoff": {
+    "message": "これらの Mod を nxm:// リンクで Vortex に送ります。"
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Vortex がインストールされておらず nxm リンクに関連付けられていない場合は、何も起こりません。また、1 回の操作でプロトコルを繰り返し起動するとブラウザーが遮断することがあります。何も届かない場合は、方法を「手動」に切り替えてください。"
+  },
+  "content_batchEmpty": {
+    "message": "ダウンロードするものがありません: 現在の選択とフィルターに一致する Mod がありません。"
+  },
+  "content_batchBusy": {
+    "message": "すでにダウンロードを実行中です。"
+  },
+  "content_batchVerbQueued": {
+    "message": "件をキューに追加"
+  },
+  "content_batchVerbVortex": {
+    "message": "件を Vortex に受け渡し"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$、$FAILED$ 件が失敗しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "ダウンロード中"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "すべてダウンロード中"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$（$DONE$/$TOTAL$）...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "すでにダウンロード中"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "ダウンロードできるファイルなし"
+  },
+  "content_reasonRunStopped": {
+    "message": "処理が停止された"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "必要 Mod の確認でスキップ"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "ファイル選択でスキップ"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "ファイル一覧を読み込めなかった"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "NXM リンクなし"
+  },
+  "content_reasonNxmRefused": {
+    "message": "ブラウザーが nxm:// リンクを拒否"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "現在のフィルターで非表示"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "別のダウンロードを実行中"
+  },
+  "content_modalOk": {
+    "message": "OK"
+  },
+  "content_selectFilesTitle": {
+    "message": "ダウンロードするファイルを選択"
+  },
+  "content_skipMod": {
+    "message": "この Mod をスキップ"
+  },
+  "content_skipThisMod": {
+    "message": "この Mod をスキップ"
+  },
+  "content_skipTheseMods": {
+    "message": "これらの Mod をスキップ"
+  },
+  "content_downloadAnyway": {
+    "message": "それでもダウンロード"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "必要 Mod を確認できませんでした"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ には必要な Mod があるかもしれませんが、その一覧を読み込めませんでした: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": "これは実行全体で失敗することが多いため、ここでの選択は残りの Mod にも適用されます。"
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ には次の必要 Mod があります。インストールするものを選んでください:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "この Mod"
+  },
+  "content_quotedModName": {
+    "message": "「$MODNAME$」",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "$MODNAME$ の必要 Mod",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "必要 Mod を検出しました"
+  },
+  "content_installWithRequirements": {
+    "message": "必要 Mod も含めてインストール"
+  },
+  "content_installWithoutRequirements": {
+    "message": "必要 Mod なしでインストール"
+  },
+  "content_unknownMod": {
+    "message": "不明な Mod"
+  },
+  "content_noLinkProvided": {
+    "message": "リンクなし"
+  },
+  "content_requirementsUnreadable": {
+    "message": "必要 Mod の一覧を読み取れませんでした。"
+  },
+  "content_requirementsPartial": {
+    "message": "必要 Mod $TOTAL$ 件のうち $STARTED$ 件を開始、$FAILED$ 件が失敗しました。",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Nexus API キーが拒否されました。拡張機能のポップアップで入力し直してください。"
+  },
+  "content_errorForbidden": {
+    "message": "Nexus がこのリクエストを拒否しました。Premium アカウント、または nexusmods.com へのログインが必要な場合があります。"
+  },
+  "content_errorNotFound": {
+    "message": "この Mod は利用できません（削除済み、非公開、またはゲーム違い）。"
+  },
+  "content_errorRateLimited": {
+    "message": "Nexus API の上限に達しました。上限がリセットされると確認を再開します。"
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus が現在応答していません。"
+  },
+  "content_errorOffline": {
+    "message": "Nexus に接続できません。"
+  },
+  "content_errorNoApiKey": {
+    "message": "Nexus API キーが設定されていません。拡張機能のポップアップで追加してください。"
+  },
+  "content_errorUnexpected": {
+    "message": "問題が発生しました。"
+  },
+  "content_errorPortTimeout": {
+    "message": "確認に時間がかかりすぎたため中止しました。"
+  },
+  "content_errorNoBackground": {
+    "message": "拡張機能のバックグラウンドとの接続が切れました。再試行します。"
+  },
+  "content_errorContextInvalid": {
+    "message": "拡張機能が更新されました。このページを再読み込みしてください。"
+  },
+  "content_errorDisabled": {
+    "message": "拡張機能はオフになっています。"
+  },
+  "content_errorCanceled": {
+    "message": "確認をキャンセルしました。"
+  },
+  "content_errorUnknownMessaging": {
+    "message": "不明な通信エラーです。"
+  },
+  "content_errorTooManyRequests": {
+    "message": "未処理のリクエストが多すぎます。"
+  },
+  "content_errorBackground": {
+    "message": "バックグラウンドのエラーです。"
+  },
+  "content_shortKeyRejected": {
+    "message": "キー拒否"
+  },
+  "content_shortAccessRefused": {
+    "message": "アクセス拒否"
+  },
+  "content_shortNotAvailable": {
+    "message": "利用不可"
+  },
+  "content_shortRateLimited": {
+    "message": "上限到達"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus 停止中"
+  },
+  "content_shortOffline": {
+    "message": "オフライン"
+  },
+  "content_shortTimedOut": {
+    "message": "タイムアウト"
+  },
+  "content_shortNoBackground": {
+    "message": "バックグラウンド不通"
+  },
+  "content_shortNeedsReload": {
+    "message": "再読み込みが必要"
+  },
+  "content_shortSwitchedOff": {
+    "message": "オフ"
+  },
+  "content_shortCanceled": {
+    "message": "キャンセル"
+  },
+  "content_shortCheckFailed": {
+    "message": "確認失敗"
+  },
+  "content_shortRequestRefused": {
+    "message": "リクエスト拒否"
+  },
+  "content_shortNotSetUp": {
+    "message": "未設定"
+  },
+  "content_shortOtherGame": {
+    "message": "別のゲーム"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "バージョン未検出"
+  },
+  "content_shortSuperseded": {
+    "message": "更新済み"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "ページ未対応"
+  },
+  "content_dismiss": {
+    "message": "閉じる"
+  },
+  "content_reloadPage": {
+    "message": "ページを再読み込み"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant が更新されました。続けるには、このページを再読み込みしてください。"
+  },
+  "content_selectionRestoredOne": {
+    "message": "以前に選択した $COUNT$ 件の Mod が選択されたままです。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "以前に選択した $COUNT$ 件の Mod が選択されたままです。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "選択はこのタブで、解除するか閉じるまで保持されます。"
+  },
+  "content_clearSelectionAction": {
+    "message": "選択を解除"
+  },
+  "content_selectionDroppedOne": {
+    "message": "別のゲームで選択していた Mod $COUNT$ 件は解除されました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "別のゲームで選択していた Mod $COUNT$ 件は解除されました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Nexus API キーを追加するまで、互換性の確認はオフです。"
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "このページのそれ以外の機能は引き続き使えます。"
+  },
+  "content_openSettings": {
+    "message": "設定を開く"
+  },
+  "content_noticeOtherGame": {
+    "message": "互換性は $TARGETGAME$ 用に設定されていますが、このページは $PAGEGAME$ です。",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "互換性バッジを表示するには、遊んでいるゲームバージョンを選んでください。"
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "別のゲームを基準に判定するくらいなら、判定を表示しません。"
+  },
+  "content_useThisGame": {
+    "message": "このゲームを使う"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "設定を変更するには、ブラウザーのツールバーから Nexus Mods Assistant のポップアップを開いてください。"
+  },
+  "content_targetModalTitle": {
+    "message": "このゲームを対象にする"
+  },
+  "content_targetPromptQuestion": {
+    "message": "$GAME$ のどのビルドを遊んでいますか。Mod はこのバージョンを基準に判定されます。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "例: 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "公開情報からこのゲームのバージョンを収集しています..."
+  },
+  "content_targetVersionsNone": {
+    "message": "このゲームのバージョンを示す公開情報がないため、提示できるものがありません。分かっていれば、遊んでいるビルドを入力してください。"
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "このゲームのバージョンを $COUNT$ 件収集しました。上のボックスで一覧を開くか、自分で入力してください。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "このゲームのバージョンを $COUNT$ 件収集しました。上のボックスで一覧を開くか、自分で入力してください。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "バージョンの検索を完了できませんでした（$REASON$）。この一覧が空なのは、データがないからではなく答えが得られなかったからです。遊んでいるビルドを入力してください。",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "保存"
+  },
+  "content_cancel": {
+    "message": "キャンセル"
+  },
+  "content_targetNotSaved": {
+    "message": "バージョンが入力されなかったため何も保存されず、このページは対象未設定のままです。"
+  },
+  "content_targetNotSavedDetail": {
+    "message": "収集されたバージョンから選ぶか、遊んでいるビルドを入力してください。"
+  },
+  "content_tryAgain": {
+    "message": "やり直す"
+  },
+  "content_noModsOnPage": {
+    "message": "このページに Mod はありません。"
+  },
+  "content_layoutStillLoading": {
+    "message": "Mod 一覧の読み込みが終わっていません。この状態が続く場合は、Nexus がページ構成を変更した可能性があります。"
+  },
+  "content_layoutNotFound": {
+    "message": "このページで Mod 一覧が見つかりませんでした。Nexus がページ構成を変更した可能性があります。"
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "一致しなくなったセレクター: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "この Mod ページは本アシスタントが認識できる構成ではないため、バッジを追加しませんでした。"
+  },
+  "content_translationSignalMissing": {
+    "message": "翻訳 Mod を隠す設定ですが、このページのどの Mod タイルもカテゴリーを示していないため、何も隠していません。"
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus がマークアップを変更した可能性があります。除外されたものはありません。"
+  },
+  "content_dateFilterNotApplied": {
+    "message": "日付フィルターは適用されていません: このページのどの Mod タイルにも更新日がありません。"
+  },
+  "content_dateSelectorBroken": {
+    "message": "「最終更新」フィルターはこのページで日付を 1 つも読み取れなかったため、適用されませんでした。"
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus がマークアップを変更した可能性があります。"
+  },
+  "content_undatedHiddenOne": {
+    "message": "$COUNT$ 件の Mod を非表示: 判定に使える更新日がありません。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "$COUNT$ 件の Mod を非表示: 判定に使える更新日がありません。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "ポップアップの設定により、翻訳 Mod $COUNT$ 件を非表示にしました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "ポップアップの設定により、翻訳 Mod $COUNT$ 件を非表示にしました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "設定が変更されました。バッジは現在のダウンロードが終わってから更新されます。"
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · 互換性コンパニオン"
+  },
+  "popup_extensionToggle": {
+    "message": "アシスタントの有効・無効を切り替える"
+  },
+  "popup_sectionGameVersion": {
+    "message": "ゲームとバージョン"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "開いているタブは Nexus のゲームページです。"
+  },
+  "popup_useThisGame": {
+    "message": "このゲームを使う"
+  },
+  "popup_gameLabel": {
+    "message": "ゲーム"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "名前で検索"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "一致するゲーム"
+  },
+  "popup_versionRangeLabel": {
+    "message": "バージョン範囲"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "最も古いゲームバージョン"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "開始（例: 1.3.8）"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "最も新しいゲームバージョン（任意）"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "終了（任意）"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "収集したゲームバージョン"
+  },
+  "popup_refreshVersions": {
+    "message": "バージョンを再取得"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "このゲームのバージョンを公開情報からもう一度検索します"
+  },
+  "popup_exclusionLabel": {
+    "message": "次を含む Mod を除外"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "例: patch、translation"
+  },
+  "popup_exclusionTitle": {
+    "message": "複数のキーワードはカンマで区切ります"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "このボタンで開く一覧に、Nexus 自身の翻訳フィルターを適用します"
+  },
+  "popup_hideTranslations": {
+    "message": "翻訳 Mod を除いて一覧を開く"
+  },
+  "popup_openCompatibleMods": {
+    "message": "互換性のある Mod を開く"
+  },
+  "popup_sectionConnection": {
+    "message": "接続"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus API キー"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "保存済みの Nexus API キー"
+  },
+  "popup_revealKey": {
+    "message": "保存済みの API キーを表示する"
+  },
+  "popup_hideKey": {
+    "message": "保存済みの API キーを隠す"
+  },
+  "popup_show": {
+    "message": "表示"
+  },
+  "popup_hide": {
+    "message": "非表示"
+  },
+  "popup_replaceKey": {
+    "message": "キーを変更"
+  },
+  "popup_disconnect": {
+    "message": "接続を解除"
+  },
+  "popup_disconnectExplain": {
+    "message": "接続を解除すると、キーとこのブラウザーに保存された Nexus の応答がすべて削除されます。Nexus アカウントには影響しません。"
+  },
+  "popup_keepKey": {
+    "message": "キーを保持"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Nexus の個人用 API キー"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "API キーを貼り付け"
+  },
+  "popup_save": {
+    "message": "保存"
+  },
+  "popup_needKey": {
+    "message": "キーが必要ですか"
+  },
+  "popup_cancel": {
+    "message": "キャンセル"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "任意です。閲覧、フィルター、バージョンの設定はキーなしでも動きます。互換性バッジとダウンロードにはキーが必要です。Nexus はアカウントに対してのみ応答するためです。"
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods シングルサインオン"
+  },
+  "popup_ssoDescription": {
+    "message": "一度承認すれば、キーは自動的に入力されます。いつでもやり直して、保存済みのキーを置き換えられます。"
+  },
+  "popup_authorizeSso": {
+    "message": "SSO を承認"
+  },
+  "popup_cancelSso": {
+    "message": "SSO をキャンセル"
+  },
+  "popup_ssoReady": {
+    "message": "Nexus Mods の SSO ハンドシェイクを開始できます。"
+  },
+  "popup_startingSso": {
+    "message": "SSO を開始しています..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO をキャンセルしました。"
+  },
+  "popup_sectionDownloads": {
+    "message": "ダウンロード"
+  },
+  "popup_downloadModeLabel": {
+    "message": "ダウンロード方法"
+  },
+  "popup_downloadModeManual": {
+    "message": "手動: ブラウザーがファイルを保存"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: Mod マネージャーがリンクを受け取る"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Nexus の一覧ページにあるアクションバーの設定と同じものです。ここで変えるとあちらも変わり、その逆も同じです。Vortex モードでは"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "リンクを開き、OS がそのプロトコルを登録している Mod マネージャーに渡します。"
+  },
+  "popup_fileListsLegend": {
+    "message": "ファイル一覧"
+  },
+  "popup_fileListsNote": {
+    "message": "Mod のファイル一覧を開いたときに表示するカテゴリーです。同じ 4 つのスイッチがページ上のパネルにもあります。"
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Mod の古いバージョンのファイルを表示します"
+  },
+  "popup_showOldFiles": {
+    "message": "古いファイル"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Mod のアップデートファイルを表示します"
+  },
+  "popup_showUpdateFiles": {
+    "message": "アップデートファイル"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Mod のオプションファイルを表示します"
+  },
+  "popup_showOptionalFiles": {
+    "message": "オプションファイル"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Mod のその他のファイルを表示します"
+  },
+  "popup_showMiscFiles": {
+    "message": "その他のファイル"
+  },
+  "popup_sectionAdvanced": {
+    "message": "詳細設定"
+  },
+  "popup_advancedNote": {
+    "message": "ローカル保存と診断です。キーが接続されているときにキャッシュを消去すると、ゲーム一覧を Nexus からすぐに読み直します。それ以外はネットワークに接続しません。"
+  },
+  "popup_debugLoggingTitle": {
+    "message": "バックグラウンドワーカーの詳細な動作を Service Worker のコンソールに書き出します"
+  },
+  "popup_debugLogging": {
+    "message": "詳細なコンソールログ"
+  },
+  "popup_clearCache": {
+    "message": "キャッシュした Nexus データを消去"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "ストアのパッチノート"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "ストアのブランチ"
+  },
+  "popup_sourceArticleText": {
+    "message": "記事本文、未確認"
+  },
+  "popup_sourceModText": {
+    "message": "Mod の本文"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "コレクションのメタデータ"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$、出典: $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$（$DOMAIN$）",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "API キーが接続されていないため、Nexus は応答しません。「接続」で追加してください。"
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus が API キーを拒否しました。「接続」で入れ替えてください。"
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus がリクエストを拒否しました。Premium アカウント、または nexusmods.com へのログインが必要な場合があります。"
+  },
+  "popup_failureNotFound": {
+    "message": "そのゲームまたは Mod は Nexus に記録がありません。非公開になったか削除された可能性があります。"
+  },
+  "popup_failureRateLimited": {
+    "message": "Nexus API の割り当てを使い切りました。リセットされれば確認を再開します。通常は 1 時間以内です。"
+  },
+  "popup_failureServerError": {
+    "message": "Nexus が現在応答していません。数分後にもう一度お試しください。"
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus がリクエストの形式を拒否しました。ゲームとバージョンを確認してから、もう一度お試しください。"
+  },
+  "popup_failureNotConfigured": {
+    "message": "確認する対象がまだ設定されていません。上でゲームと開始バージョンを選んでください。"
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "このゲームのゲームバージョンはまだ導き出せていないため、Mod と比較する基準がありません。すべてのゲームに対応していますが、このゲームは本アシスタントが見つけられる公開バージョン情報がありません。それでも確認するには、遊んでいるバージョンを入力してください。"
+  },
+  "popup_failureOffline": {
+    "message": "Nexus に接続できません。ネットワークを確認してから、もう一度お試しください。"
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "拡張機能が nexusmods.com にアクセスできません。ネットワークの問題ではなく、サイトへのアクセス権限が拒否または取り消されています。ブラウザーの拡張機能設定で許可し直してください（Firefox: about:addons を開き、この拡張機能の Permissions）。"
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus の応答に時間がかかりすぎました。もう一度お試しください。"
+  },
+  "popup_failureDisabled": {
+    "message": "アシスタントはオフになっています。右上のスイッチでオンに戻してください。"
+  },
+  "popup_failureNoBackground": {
+    "message": "拡張機能のバックグラウンドが応答しませんでした。このポップアップを開き直すか、拡張機能を再読み込みしてください。"
+  },
+  "popup_failureCanceled": {
+    "message": "そのリクエストは完了前にキャンセルされました。"
+  },
+  "popup_failureBackgroundError": {
+    "message": "拡張機能のバックグラウンドは、そのリクエストを完了できませんでした。"
+  },
+  "popup_failureContextInvalid": {
+    "message": "拡張機能が更新されました。開いている Nexus のタブを再読み込みしてください。"
+  },
+  "popup_unexpectedFailure": {
+    "message": "予期しないエラー: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "予期しないエラーが発生しましたが、詳細は報告されていません。"
+  },
+  "popup_requestFailed": {
+    "message": "リクエストに失敗しました。"
+  },
+  "popup_settingsReadFailed": {
+    "message": "ポップアップが設定を読み込めませんでした: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "保存された設定を更新できませんでした: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "保存領域がいっぱいのため、その設定は保存されませんでした。下の「キャッシュした Nexus データを消去」を使ってから、もう一度お試しください。"
+  },
+  "popup_settingSaveFailed": {
+    "message": "その設定を保存できませんでした: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "API キーがなくても、開いている Nexus タブのゲームを対象に設定できます。ただし Nexus のカタログ全体は検索できず、互換性バッジも取得できません。"
+  },
+  "popup_pasteReplacementKey": {
+    "message": "新しいキーを貼り付けてから「保存」を押してください。"
+  },
+  "popup_pasteKeyFirst": {
+    "message": "先にキーを貼り付けてください。「キーが必要ですか」から発行できます。"
+  },
+  "popup_keySaved": {
+    "message": "キーを保存しました。"
+  },
+  "popup_keyUpdated": {
+    "message": "キーが更新されました。"
+  },
+  "popup_disconnecting": {
+    "message": "接続を解除しています..."
+  },
+  "popup_keyClearFailed": {
+    "message": "キーを削除できませんでした: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "キーを削除しました。ゲームとバージョンの設定は保持しています。"
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "キーを削除し、ゲームとバージョンの設定は保持しました。ただし$ISSUES$。下の「キャッシュした Nexus データを消去」を使ってください。",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "バックグラウンドが応答しなかったため、キャッシュされた Nexus の応答がディスクに残っています"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "Steam バージョンのキャッシュを読み取れなかったため、ディスクに残っています"
+  },
+  "popup_leftBehindSeparator": {
+    "message": "、また"
+  },
+  "popup_noReadableVersion": {
+    "message": "このゲームについて収集したバージョンのうち、バージョン番号として読み取れるものがなかったため、何も入力しませんでした。遊んでいるゲームバージョンを入力してください。"
+  },
+  "popup_startVersionFilled": {
+    "message": "開始バージョンに、このゲームで見つかった最も新しいビルド $VERSION$ を入力しました。それより古いバージョンで遊んでいる場合は変更してください。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "終了バージョン $END$ が開始バージョン $START$ より古いため、一致する Mod は存在し得ません。この範囲は保存せず、設定済みの対象も変更していません。",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "先にゲームを選んでください。バージョンだけでは比較する対象がありません。"
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "先にゲームを選ぶと、そのゲームのバージョンを収集できます。"
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "続ける前にゲームを選んでください。"
+  },
+  "popup_openTabIsGame": {
+    "message": "開いている Nexus のタブは $GAME$ です。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "保存しました。開いている Nexus のタブは $GAME$ のため、この設定はそこには適用されません。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "保存しました。"
+  },
+  "popup_gameListNeedsKey": {
+    "message": "ゲーム一覧には API キーが必要です。上のボタンで、開いているタブのゲームを対象にしてください。"
+  },
+  "popup_derivingVersions": {
+    "message": "公開情報からバージョンを収集しています..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "バージョンの検索を完了できなかったため、ここに何もないことは結果を意味しません。"
+  },
+  "popup_noVersionsFound": {
+    "message": "このゲームのバージョンを示す公開情報がありません。この一覧が空なのはデータが存在しないからで、ゲームが非対応だからではありません。"
+  },
+  "popup_searching": {
+    "message": "公開情報を検索しています..."
+  },
+  "popup_searchingAgain": {
+    "message": "公開情報をもう一度検索しています..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "バージョン検索: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "バージョンを $COUNT$ 件収集しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "バージョンを $COUNT$ 件収集しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "$SOURCES$ 件の情報源からバージョンを $COUNT$ 件収集しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "$SOURCES$ 件の情報源からバージョンを $COUNT$ 件収集しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "$SOURCES$ 件の情報源からバージョンを $COUNT$ 件収集しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "$SOURCES$ 件の情報源からバージョンを $COUNT$ 件収集しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "このゲームのバージョンを示す公開情報がないため、何も入力しませんでした。分かっていれば遊んでいるバージョンを入力してください。空のままでも構いません。"
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "今回の更新でのリクエストは $COUNT$ 件です。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "今回の更新でのリクエストは $COUNT$ 件です。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "このゲームのストアページを確実に特定できなかったため、別のゲームの数値を取り込む危険を避けて、ストアの情報源はスキップしました。"
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "ダウンロードは nxm:// リンクとして Mod マネージャーに渡されます。ここでも、開いている Nexus のタブでも同じです。"
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "ダウンロードはブラウザーが保存します。ここでも、開いている Nexus のタブでも同じです。"
+  },
+  "popup_verboseLoggingOn": {
+    "message": "詳細ログは、次回のバックグラウンドワーカー起動から有効になります。"
+  },
+  "popup_verboseLoggingOff": {
+    "message": "詳細ログは、次回のバックグラウンドワーカー起動から無効になります。"
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "バージョン未設定のまま開く"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "開始バージョンが設定されていないため、バッジは Mod を判定せず、比較する対象がないと表示します。フィルターとダウンロードは引き続き使えます。もう一度押すと、そのまま一覧を開きます。"
+  },
+  "popup_clearing": {
+    "message": "消去しています..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "拡張機能のバックグラウンドが応答せず、Steam バージョンのキャッシュも読み取れなかったため、どちらも消去できませんでした。保存されていたゲーム一覧は消去しました。"
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "拡張機能のバックグラウンドが応答しなかったため、Mod の応答キャッシュを消去できませんでした。保存されていたゲーム一覧と Steam バージョンのキャッシュは消去しました。"
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "$COUNT$ 件のキャッシュを消去し、$KB$ KB を解放しました。Steam バージョンのキャッシュは読み取れなかったため、ディスクに残っている可能性があります。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "$COUNT$ 件のキャッシュを消去し、$KB$ KB を解放しました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "キャッシュの報告がなかったため、解放されたものはありません。"
+  },
+  "popup_noGameListCached": {
+    "message": "ゲーム一覧はまだキャッシュされていません。"
+  },
+  "popup_gameListCached": {
+    "message": "ゲーム一覧を $WHEN$ にキャッシュしました。",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "たった今"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ 分前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ 分前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ 時間前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ 時間前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ 日前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ 日前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "$COUNT$ 件のタイトルを読み込みました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "ゲーム一覧: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "バックグラウンドから予期しないゲーム一覧が返されました。"
+  },
+  "popup_loadedTitlesOne": {
+    "message": "1 件のタイトルを読み込みました。"
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "1 件のキャッシュを消去し、$KB$ KB を解放しました。",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "1 件のキャッシュを消去し、$KB$ KB を解放しました。Steam バージョンのキャッシュは読み取れなかったため、ディスクに残っている可能性があります。",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

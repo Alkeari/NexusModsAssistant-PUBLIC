@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Каждый мод на Nexus получает оценку совместимости с вашей сборкой игры, чтобы вы могли отфильтровать подходящее."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "Запрос выполнялся дольше $seconds$ с и был прерван.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Достигнут лимит API Nexus. Он сбрасывается в $resetTime$.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Достигнут лимит API Nexus. Проверки возобновятся после сброса лимита."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Достигнут лимит API Nexus."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus отклонил ваш ключ API. Введите его заново во всплывающем окне расширения."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus отказал в этом запросе. Может потребоваться аккаунт Premium или активный вход на nexusmods.com."
+  },
+  "background_errorNotFound": {
+    "message": "На Nexus нет такого мода для этой игры (удалён, скрыт или выбрана не та игра)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus сейчас не отвечает (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus отклонил запрос (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "Запрос выполнялся слишком долго и был прерван."
+  },
+  "background_errorOffline": {
+    "message": "Нет соединения с Nexus."
+  },
+  "background_errorDisabled": {
+    "message": "Расширение выключено."
+  },
+  "background_errorUnexpected": {
+    "message": "Что-то пошло не так."
+  },
+  "background_errorNoApiKey": {
+    "message": "Ключ API не найден. Добавьте свой ключ API Nexus во всплывающем окне расширения."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "В ссылке на загрузку нет адреса."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "Ссылка NXM не найдена."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Для этого мода не найдено подходящих файлов."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "Не удалось прочитать раздел требований на этой странице мода. NMA не распознаёт такую вёрстку страницы Nexus."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Переход на другую страницу"
+  },
+  "background_errorNotConfigured": {
+    "message": "Для проверки модов Nexus Mods Assistant не хватает: $missing$. Откройте всплывающее окно расширения и завершите настройку.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "ключа API"
+  },
+  "background_setupNeedsGame": {
+    "message": "игры"
+  },
+  "background_setupNeedsVersion": {
+    "message": "версии игры"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ и $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Эта страница относится к $pageGame$, а NMA настроен на $configuredGame$. Смените игру во всплывающем окне расширения, чтобы проверять эти моды.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA не может прочитать \"$version$\" как версию игры и поэтому не может оценить ни один мод. Укажите числовую версию, например 1.6.1170, во всплывающем окне расширения.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "Ни один открытый источник не называет версию игры для $gameDomain$, поэтому NMA не может определить версию игры по версии мода. Это пробел в данных, а не в расширении, и он одинаков для всех. Впишите версию, в которую вы играете, во всплывающем окне расширения, чтобы всё же выполнить проверку.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Ни один источник версий недоступен, поэтому для этой игры пока ничего не выведено."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Чтобы вывести версии, сначала нужно выбрать игру."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Ни одна страница магазина не совпадает с этой игрой достаточно точно, поэтому ничего не сохранено."
+  },
+  "background_sourceFileVersion": {
+    "message": "Версия файла"
+  },
+  "background_sourceFileName": {
+    "message": "Имя файла"
+  },
+  "background_sourceChangelog": {
+    "message": "Список изменений"
+  },
+  "background_sourceDescription": {
+    "message": "Описание"
+  },
+  "background_sourceUploadDate": {
+    "message": "Дата загрузки"
+  },
+  "background_sourceNone": {
+    "message": "Ничего"
+  },
+  "background_verdictPartialNote": {
+    "message": "Один из источников не удалось прочитать ($cause$), поэтому проверка неполная.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Версия игры нигде не указана, но самый новый файл загружен $uploadDate$, после версии игры $gameVersion$. Это предположение, а не подтверждение.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ указывает \"$evidence$\", и это значение входит в выбранный вами диапазон.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ упоминает \"$evidence$\", и это значение входит в выбранный вами диапазон. Это вывод, а не указанная версия игры.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Версия игры нигде не указана, а дата загрузки самого нового файла ($uploadDate$) не помещает его в выбранный вами диапазон.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ указывает \"$evidence$\", самую новую версию игры из упомянутых в этом моде, и она вне выбранного вами диапазона.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ упоминает \"$evidence$\", самую новую версию игры из упомянутых в этом моде, и она вне выбранного вами диапазона. Это вывод, а не указанная версия игры.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Этот мод не называет версию игры ни в файлах, ни в списке изменений, ни в описании."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Этот мод не называет версию игры в описании или списке изменений. Его файлы для этой проверки не открывались."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "Поиск по магазину не ответил, поэтому источники магазина пропущены."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Ни одна страница магазина не совпала с этой игрой достаточно точно, поэтому источники магазина пропущены."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "Не удалось прочитать запись магазина для этой игры, поэтому в этот раз источники магазина пропущены."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "Ближайшая страница магазина не является игрой, поэтому источники магазина пропущены, чтобы не читать сборки другого продукта."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "Ближайшая страница магазина принадлежит другому приложению, поэтому источники магазина пропущены."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "Страница магазина называет не ту игру, что каталог, поэтому источники магазина пропущены."
+  },
+  "background_ssoConnecting": {
+    "message": "Подключение к Nexus Mods SSO..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Ожидание вашего подтверждения на вкладке Nexus Mods..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "Не удалось начать рукопожатие SSO."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "Не удалось открыть соединение SSO."
+  },
+  "background_ssoRejected": {
+    "message": "SSO отклонил рукопожатие."
+  },
+  "background_ssoConnectionReady": {
+    "message": "Соединение готово. Ожидание вашего подтверждения..."
+  },
+  "background_ssoComplete": {
+    "message": "Ключ API сохранён через SSO."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Неожиданный ответ от SSO."
+  },
+  "background_ssoLostConnection": {
+    "message": "Связь с SSO потеряна после нескольких попыток."
+  },
+  "background_ssoReconnecting": {
+    "message": "Повторное подключение (попытка $attempt$/$total$)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO отменён."
+  },
+  "content_statusCompatible": {
+    "message": "Совместим"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Скорее совместим"
+  },
+  "content_statusIncompatible": {
+    "message": "Несовместим"
+  },
+  "content_statusUnknown": {
+    "message": "Нет данных о версии"
+  },
+  "content_statusFailed": {
+    "message": "Не удалось проверить"
+  },
+  "content_statusNotConfigured": {
+    "message": "Не настроено"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Неизвестно"
+  },
+  "content_evidenceFileVersion": {
+    "message": "версия файла"
+  },
+  "content_evidenceFileName": {
+    "message": "имя файла"
+  },
+  "content_evidenceChangelog": {
+    "message": "список изменений"
+  },
+  "content_evidenceDescription": {
+    "message": "описание мода"
+  },
+  "content_evidenceUploadDate": {
+    "message": "дата загрузки"
+  },
+  "content_evidenceNone": {
+    "message": "нет данных о версии"
+  },
+  "content_confidenceExact": {
+    "message": "точное совпадение"
+  },
+  "content_confidenceInferred": {
+    "message": "предположение"
+  },
+  "content_confidenceNone": {
+    "message": "не установлена"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Найденная версия: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Основание: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Уверенность: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Совпадение: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - версия не выбрана",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "версия не указана"
+  },
+  "content_versionNotReportedShort": {
+    "message": "не указана"
+  },
+  "content_checking": {
+    "message": "Проверка..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Проверка совместимости..."
+  },
+  "content_scrollToCheck": {
+    "message": "Прокрутите для проверки"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Этот мод проверяется, когда попадает в поле зрения."
+  },
+  "content_noResponse": {
+    "message": "Нет ответа"
+  },
+  "content_compatibilityColumn": {
+    "message": "Совместимость"
+  },
+  "content_setVersionInPopup": {
+    "message": "Укажите версию игры во всплывающем окне расширения, чтобы получить оценку."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Выберите версию игры во всплывающем окне, чтобы получить оценку для этого мода."
+  },
+  "content_filesButton": {
+    "message": "Файлы"
+  },
+  "content_filesButtonForMod": {
+    "message": "Файлы мода $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Файлы этого мода"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Файлы этого требуемого мода"
+  },
+  "content_filesDropdownLabel": {
+    "message": "Файлы для загрузки"
+  },
+  "content_filesLoading": {
+    "message": "Загрузка файлов..."
+  },
+  "content_filesFetchFailed": {
+    "message": "Не удалось получить файлы"
+  },
+  "content_filesLoadFailed": {
+    "message": "Не удалось загрузить список файлов: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "Не удалось загрузить список файлов"
+  },
+  "content_fileListUnreadable": {
+    "message": "Не удалось прочитать список файлов."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "Нет файлов во включённых вами категориях. Скрыто: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Для этого мода файлов не найдено."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Скрыто вашими фильтрами файлов: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Файл"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ МБ",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ КБ",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Размер неизвестен"
+  },
+  "content_fileDateUnknown": {
+    "message": "Дата неизвестна"
+  },
+  "content_downloadSelected": {
+    "message": "Скачать выбранное"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Скачать выбранное ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Скачать выбранное (модов: $MODS$ / файлов: $FILES$)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Скачивание ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Скачивание..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "В очереди"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Ошибка: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "причина неизвестна"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ файл поставлен в очередь.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "Файлов поставлено в очередь: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "В очереди: $QUEUED$, с ошибкой: $FAILED$.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Подбор по совместимости"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Фильтры Nexus Mods Assistant"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Загрузки Nexus Mods Assistant"
+  },
+  "content_refresh": {
+    "message": "Обновить"
+  },
+  "content_pageNavigation": {
+    "message": "Навигация по страницам"
+  },
+  "content_prevPage": {
+    "message": "Назад"
+  },
+  "content_nextPage": {
+    "message": "Вперёд"
+  },
+  "content_pageNumber": {
+    "message": "Номер страницы"
+  },
+  "content_goToPage": {
+    "message": "Перейти к странице"
+  },
+  "content_collapseFilters": {
+    "message": "Свернуть фильтры"
+  },
+  "content_expandFilters": {
+    "message": "Развернуть фильтры"
+  },
+  "content_showUpdateFiles": {
+    "message": "Показывать файлы обновлений"
+  },
+  "content_showOptionalFiles": {
+    "message": "Показывать необязательные файлы"
+  },
+  "content_showMiscFiles": {
+    "message": "Показывать прочие файлы"
+  },
+  "content_showOldFiles": {
+    "message": "Показывать старые версии и архивные файлы"
+  },
+  "content_exclusionLabel": {
+    "message": "Скрывать моды, в названии которых есть"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Скрыть моды (например, патч, перевод)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "Разделяйте ключевые слова запятыми"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Диапазон дат обновления"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Обновлено:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Обновлено не раньше"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Обновлено не позже"
+  },
+  "content_startDateTooltip": {
+    "message": "Начальная дата (включительно)"
+  },
+  "content_endDateTooltip": {
+    "message": "Конечная дата (включительно)"
+  },
+  "content_clearDateRange": {
+    "message": "Очистить диапазон дат"
+  },
+  "content_clearButton": {
+    "message": "Очистить"
+  },
+  "content_noModsSelected": {
+    "message": "Моды не выбраны"
+  },
+  "content_modsSelectedOne": {
+    "message": "Выбран $COUNT$ мод",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "Выбрано модов: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Снять выбор"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Снять отметки со всех выбранных модов"
+  },
+  "content_downloadAll": {
+    "message": "Скачать все"
+  },
+  "content_downloadMode": {
+    "message": "Режим загрузки"
+  },
+  "content_downloadModeManual": {
+    "message": "Вручную"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Стоп"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Остановить текущую серию загрузок. Уже начатые файлы не отменяются."
+  },
+  "content_apiRemaining": {
+    "message": "API: осталось $REMAINING$",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Выбрать"
+  },
+  "content_selectModNamed": {
+    "message": "Выбрать $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Выбрать этот мод"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Последняя проверка: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Подготовка загрузки..."
+  },
+  "content_downloadStarted": {
+    "message": "Загрузка начата"
+  },
+  "content_downloadStartedDetail": {
+    "message": "Файл ищите в загрузках браузера."
+  },
+  "content_downloadFailed": {
+    "message": "Загрузка не удалась"
+  },
+  "content_noFileToDownload": {
+    "message": "Не удалось найти файл для загрузки"
+  },
+  "content_noDownloadableFile": {
+    "message": "Файлов для загрузки не найдено"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "У этого мода может не быть основного файла, либо файл нужно выбрать вручную."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Пропущен при выборе файла"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Для этого мода файл не выбран."
+  },
+  "content_downloadRunStopped": {
+    "message": "Серия загрузок остановлена"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "Серия завершилась до того, как для этого мода был выбран файл."
+  },
+  "content_vortexUnavailable": {
+    "message": "Загрузка через Vortex недоступна"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "Не удалось получить ссылку NXM. Убедитесь, что вы вошли на nexusmods.com."
+  },
+  "content_handedToVortex": {
+    "message": "Передано в Vortex"
+  },
+  "content_handedToVortexDetail": {
+    "message": "Браузер передал ссылку nxm:// в Vortex. Браузер не может подтвердить, что Vortex её получил."
+  },
+  "content_vortexBlocked": {
+    "message": "Передача в Vortex заблокирована"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "Браузер отказался открыть ссылку nxm://."
+  },
+  "content_vortexHandoff": {
+    "message": "Эти моды отправляются в Vortex по ссылкам nxm://."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Ничего не произойдёт, если Vortex не установлен и не зарегистрирован для ссылок nxm, а браузеры могут блокировать повторные запуски протокола из одного клика. Если ничего не приходит, переключите режим на «Вручную»."
+  },
+  "content_batchEmpty": {
+    "message": "Нечего скачивать: ни один мод не подошёл под текущий выбор и фильтры."
+  },
+  "content_batchBusy": {
+    "message": "Серия загрузок уже выполняется."
+  },
+  "content_batchVerbQueued": {
+    "message": "поставлено в очередь"
+  },
+  "content_batchVerbVortex": {
+    "message": "передано в Vortex"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, с ошибкой: $FAILED$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Скачивание"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Скачивание всего"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "уже скачивается"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "нет файла для загрузки"
+  },
+  "content_reasonRunStopped": {
+    "message": "серия была остановлена"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "пропущен на запросе о требованиях"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "пропущен при выборе файла"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "не удалось загрузить список файлов"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "нет ссылки NXM"
+  },
+  "content_reasonNxmRefused": {
+    "message": "браузер отклонил ссылку nxm://"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "скрыт текущими фильтрами"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "выполняется другая серия загрузок"
+  },
+  "content_modalOk": {
+    "message": "ОК"
+  },
+  "content_selectFilesTitle": {
+    "message": "Выберите файлы для загрузки"
+  },
+  "content_skipMod": {
+    "message": "Пропустить мод"
+  },
+  "content_skipThisMod": {
+    "message": "Пропустить этот мод"
+  },
+  "content_skipTheseMods": {
+    "message": "Пропустить эти моды"
+  },
+  "content_downloadAnyway": {
+    "message": "Всё равно скачать"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Не удалось проверить требования"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ может требовать другие моды, но список не удалось загрузить: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " Обычно это не удаётся для всей серии, поэтому ваш ответ применяется к остальной её части."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ имеет следующие требования. Выберите, что установить:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Этот мод"
+  },
+  "content_quotedModName": {
+    "message": "«$MODNAME$»",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "Требования мода $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Обнаружены требования"
+  },
+  "content_installWithRequirements": {
+    "message": "Установить с требованиями"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Установить без требований"
+  },
+  "content_unknownMod": {
+    "message": "Неизвестный мод"
+  },
+  "content_noLinkProvided": {
+    "message": "Ссылка не указана"
+  },
+  "content_requirementsUnreadable": {
+    "message": "Не удалось прочитать список требований."
+  },
+  "content_requirementsPartial": {
+    "message": "Начато $STARTED$ из $TOTAL$ требований, с ошибкой: $FAILED$.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Ваш ключ API Nexus отклонён. Введите его заново во всплывающем окне расширения."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus отказал в этом запросе. Может потребоваться аккаунт Premium или активный вход на nexusmods.com."
+  },
+  "content_errorNotFound": {
+    "message": "Этот мод недоступен (удалён, скрыт или выбрана не та игра)."
+  },
+  "content_errorRateLimited": {
+    "message": "Достигнут лимит API Nexus. Проверки возобновятся после сброса лимита."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus сейчас не отвечает."
+  },
+  "content_errorOffline": {
+    "message": "Нет соединения с Nexus."
+  },
+  "content_errorNoApiKey": {
+    "message": "Ключ API Nexus не задан. Добавьте его во всплывающем окне расширения."
+  },
+  "content_errorUnexpected": {
+    "message": "Что-то пошло не так."
+  },
+  "content_errorPortTimeout": {
+    "message": "Проверка выполнялась слишком долго и была прервана."
+  },
+  "content_errorNoBackground": {
+    "message": "Потеряна связь с фоновой частью расширения. Повторная попытка."
+  },
+  "content_errorContextInvalid": {
+    "message": "Расширение обновилось. Перезагрузите эту страницу."
+  },
+  "content_errorDisabled": {
+    "message": "Расширение выключено."
+  },
+  "content_errorCanceled": {
+    "message": "Проверка отменена."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Неизвестная ошибка обмена сообщениями."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Слишком много незавершённых запросов."
+  },
+  "content_errorBackground": {
+    "message": "Ошибка фоновой части."
+  },
+  "content_shortKeyRejected": {
+    "message": "ключ отклонён"
+  },
+  "content_shortAccessRefused": {
+    "message": "доступ закрыт"
+  },
+  "content_shortNotAvailable": {
+    "message": "мод недоступен"
+  },
+  "content_shortRateLimited": {
+    "message": "лимит исчерпан"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus недоступен"
+  },
+  "content_shortOffline": {
+    "message": "нет сети"
+  },
+  "content_shortTimedOut": {
+    "message": "время вышло"
+  },
+  "content_shortNoBackground": {
+    "message": "нет фоновой части"
+  },
+  "content_shortNeedsReload": {
+    "message": "нужна перезагрузка"
+  },
+  "content_shortSwitchedOff": {
+    "message": "выключено"
+  },
+  "content_shortCanceled": {
+    "message": "отменено"
+  },
+  "content_shortCheckFailed": {
+    "message": "проверка не удалась"
+  },
+  "content_shortRequestRefused": {
+    "message": "запрос отклонён"
+  },
+  "content_shortNotSetUp": {
+    "message": "не настроено"
+  },
+  "content_shortOtherGame": {
+    "message": "другая игра"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "версии не выведены"
+  },
+  "content_shortSuperseded": {
+    "message": "заменена новой"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "страница не распознана"
+  },
+  "content_dismiss": {
+    "message": "Закрыть"
+  },
+  "content_reloadPage": {
+    "message": "Перезагрузить страницу"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant обновился. Перезагрузите эту страницу, чтобы продолжить."
+  },
+  "content_selectionRestoredOne": {
+    "message": "$COUNT$ мод, выбранный вами ранее, по-прежнему выбран.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "Модов, выбранных вами ранее и всё ещё выбранных: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "Выбор сохраняется для этой вкладки, пока вы его не снимете или не закроете вкладку."
+  },
+  "content_clearSelectionAction": {
+    "message": "Снять выбор"
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ выбранный мод из другой игры сброшен.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "Выбранных модов из другой игры сброшено: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Проверки совместимости выключены, пока вы не добавите ключ API Nexus."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Всё остальное на этой странице работает."
+  },
+  "content_openSettings": {
+    "message": "Открыть настройки"
+  },
+  "content_noticeOtherGame": {
+    "message": "Совместимость настроена для $TARGETGAME$, а эта страница относится к $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Выберите версию игры, в которую вы играете, чтобы получать значки совместимости."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Лучше не показывать оценок вовсе, чем считать их по другой игре."
+  },
+  "content_useThisGame": {
+    "message": "Использовать эту игру"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Откройте всплывающее окно Nexus Mods Assistant на панели браузера, чтобы изменить настройки."
+  },
+  "content_targetModalTitle": {
+    "message": "Выбрать эту игру"
+  },
+  "content_targetPromptQuestion": {
+    "message": "В какую сборку $GAME$ вы играете? Моды оцениваются по этой версии.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "например, 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Определение версий этой игры по открытым источникам..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Ни один открытый источник не называет версию для этой игры, поэтому предложить нечего. Впишите свою сборку, если знаете её."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "Для этой игры выведена $COUNT$ версия. Откройте список в поле выше или впишите свою.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "Для этой игры выведено версий: $COUNT$. Откройте список в поле выше или впишите свою.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "Поиск версий не удалось завершить ($REASON$), поэтому список пуст из-за отсутствия ответа, а не из-за отсутствия данных. Впишите свою сборку.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Сохранить"
+  },
+  "content_cancel": {
+    "message": "Отмена"
+  },
+  "content_targetNotSaved": {
+    "message": "Версия не введена, поэтому ничего не сохранено и для этой страницы игра по-прежнему не выбрана."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Выберите одну из выведенных версий или впишите свою сборку."
+  },
+  "content_tryAgain": {
+    "message": "Попробовать снова"
+  },
+  "content_noModsOnPage": {
+    "message": "На этой странице нет модов."
+  },
+  "content_layoutStillLoading": {
+    "message": "Список модов ещё не загрузился. Если так и останется, Nexus мог изменить вёрстку."
+  },
+  "content_layoutNotFound": {
+    "message": "Не удалось найти список модов на этой странице. Nexus мог изменить вёрстку."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Селекторы, переставшие совпадать: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Эта страница мода не похожа на вёрстку, которую распознаёт расширение, поэтому значок не добавлен."
+  },
+  "content_translationSignalMissing": {
+    "message": "Переводы должны скрываться, но ни один мод на этой странице не указывает свою категорию, поэтому ничего не скрыто."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus мог изменить разметку. От вас ничего не скрыто."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "Фильтр по дате не применяется: ни один мод на этой странице не показывает дату обновления."
+  },
+  "content_dateSelectorBroken": {
+    "message": "Фильтр «Обновлено» не смог прочитать ни одной даты на этой странице, поэтому он не применён."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus мог изменить разметку."
+  },
+  "content_undatedHiddenOne": {
+    "message": "Скрыт $COUNT$ мод: нет даты обновления для сравнения.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "Скрыто модов: $COUNT$, нет даты обновления для сравнения.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ мод-перевод скрыт настройкой во всплывающем окне.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "Модов-переводов скрыто настройкой во всплывающем окне: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Настройки изменены. Значки обновятся, когда закончится текущая серия загрузок."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Помощник по совместимости"
+  },
+  "popup_extensionToggle": {
+    "message": "Включить или выключить помощник"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Игра и версия"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "На открытой у вас вкладке страница игры Nexus."
+  },
+  "popup_useThisGame": {
+    "message": "Использовать эту игру"
+  },
+  "popup_gameLabel": {
+    "message": "Игра"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Поиск по названию"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Подходящие игры"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Диапазон версий"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Самая ранняя версия игры"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Начало (например, 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Самая поздняя версия игры, необязательно"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Конец, необязательно"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Выведенные версии игры"
+  },
+  "popup_refreshVersions": {
+    "message": "Обновить версии"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Снова поискать версии этой игры в открытых источниках"
+  },
+  "popup_exclusionLabel": {
+    "message": "Скрывать моды, содержащие"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "например, патч, перевод"
+  },
+  "popup_exclusionTitle": {
+    "message": "Разделяйте несколько ключевых слов запятыми"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Добавляет собственный фильтр переводов Nexus к списку, который открывает эта кнопка"
+  },
+  "popup_hideTranslations": {
+    "message": "Открывать список без переводов"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Открыть совместимые моды"
+  },
+  "popup_sectionConnection": {
+    "message": "Подключение"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Ключ API Nexus"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Сохранённый ключ API Nexus"
+  },
+  "popup_revealKey": {
+    "message": "Показать сохранённый ключ API"
+  },
+  "popup_hideKey": {
+    "message": "Скрыть сохранённый ключ API"
+  },
+  "popup_show": {
+    "message": "Показать"
+  },
+  "popup_hide": {
+    "message": "Скрыть"
+  },
+  "popup_replaceKey": {
+    "message": "Заменить ключ"
+  },
+  "popup_disconnect": {
+    "message": "Отключить"
+  },
+  "popup_disconnectExplain": {
+    "message": "Отключение удаляет ключ и все сохранённые ответы Nexus из этого браузера. Ваш аккаунт Nexus не затрагивается."
+  },
+  "popup_keepKey": {
+    "message": "Оставить ключ"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Личный ключ API Nexus"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Вставьте свой ключ API"
+  },
+  "popup_save": {
+    "message": "Сохранить"
+  },
+  "popup_needKey": {
+    "message": "Нужен ключ?"
+  },
+  "popup_cancel": {
+    "message": "Отмена"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Необязательно. Просмотр, фильтры и выбор версии работают и без ключа. Значки совместимости и загрузки требуют ключа, потому что Nexus отвечает только аккаунту."
+  },
+  "popup_ssoHeading": {
+    "message": "Единый вход Nexus Mods"
+  },
+  "popup_ssoDescription": {
+    "message": "Авторизуйтесь один раз, и ключ будет вписан за вас. Вы можете повторить это в любой момент, чтобы заменить сохранённый ключ."
+  },
+  "popup_authorizeSso": {
+    "message": "Авторизовать SSO"
+  },
+  "popup_cancelSso": {
+    "message": "Отменить SSO"
+  },
+  "popup_ssoReady": {
+    "message": "Готово к запуску рукопожатия Nexus Mods SSO."
+  },
+  "popup_startingSso": {
+    "message": "Запуск SSO..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO отменён."
+  },
+  "popup_sectionDownloads": {
+    "message": "Загрузки"
+  },
+  "popup_downloadModeLabel": {
+    "message": "Режим загрузки"
+  },
+  "popup_downloadModeManual": {
+    "message": "Вручную: файл сохраняет браузер"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: ссылку забирает ваш менеджер модов"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Та же настройка, что и на панели действий на странице списка Nexus: изменение здесь меняет её там и наоборот. Режим Vortex открывает ссылку вида"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "и передаёт её вашей операционной системе, которая отдаёт её тому менеджеру модов, что зарегистрировал этот протокол."
+  },
+  "popup_fileListsLegend": {
+    "message": "Списки файлов"
+  },
+  "popup_fileListsNote": {
+    "message": "Какие категории файлов появляются при открытии списка файлов мода. Те же четыре переключателя есть на панели, встроенной в страницу."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Показывать старые версии файлов мода"
+  },
+  "popup_showOldFiles": {
+    "message": "Старые файлы"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Показывать файлы обновлений мода"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Файлы обновлений"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Показывать необязательные файлы мода"
+  },
+  "popup_showOptionalFiles": {
+    "message": "Необязательные файлы"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Показывать прочие файлы мода"
+  },
+  "popup_showMiscFiles": {
+    "message": "Прочие файлы"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Дополнительно"
+  },
+  "popup_advancedNote": {
+    "message": "Локальное хранилище и диагностика. Очистка кеша сразу перечитывает список игр из Nexus, если ключ подключён; больше ничто здесь не обращается к сети."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Записывает подробную работу фонового процесса в консоль service worker"
+  },
+  "popup_debugLogging": {
+    "message": "Подробный вывод в консоль"
+  },
+  "popup_clearCache": {
+    "message": "Очистить кешированные данные Nexus"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "заметка о патче в магазине"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "ветка в магазине"
+  },
+  "popup_sourceArticleText": {
+    "message": "текст статьи, не проверено"
+  },
+  "popup_sourceModText": {
+    "message": "текст мода"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "метаданные коллекции"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, источник: $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "Ключ API не подключён, поэтому Nexus не ответит. Добавьте его в разделе «Подключение»."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus отклонил ваш ключ API. Замените его в разделе «Подключение»."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus отклонил запрос. Может потребоваться аккаунт Premium или активный вход на nexusmods.com."
+  },
+  "popup_failureNotFound": {
+    "message": "У Nexus нет записи об этой игре или моде. Возможно, они скрыты или удалены."
+  },
+  "popup_failureRateLimited": {
+    "message": "Вы израсходовали свой лимит API Nexus. Проверки возобновятся после его сброса, обычно в течение часа."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus сейчас не отвечает. Попробуйте через несколько минут."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus отклонил запрос как некорректный. Проверьте игру и версию, затем попробуйте снова."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Пока нечего проверять. Выберите игру и начальную версию выше."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Для этой игры пока не выведено ни одной версии, поэтому моду не с чем сравниваться. Поддерживаются все игры; просто для этой помощник не нашёл открытых данных о версиях. Впишите версию, в которую вы играете, чтобы всё же выполнить проверку."
+  },
+  "popup_failureOffline": {
+    "message": "Нет соединения с Nexus. Проверьте сеть и попробуйте снова."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "Расширению не разрешено обращаться к nexusmods.com. С сетью всё в порядке: разрешение на доступ к сайту отклонено или отозвано. Выдайте его снова в настройках расширений браузера (Firefox: about:addons, затем это расширение, затем Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus отвечал слишком долго. Попробуйте снова."
+  },
+  "popup_failureDisabled": {
+    "message": "Помощник выключен. Включите его переключателем справа вверху."
+  },
+  "popup_failureNoBackground": {
+    "message": "Фоновая часть расширения не ответила. Откройте это окно заново или перезагрузите расширение."
+  },
+  "popup_failureCanceled": {
+    "message": "Этот запрос был отменён до завершения."
+  },
+  "popup_failureBackgroundError": {
+    "message": "Фоновая часть расширения не смогла выполнить этот запрос."
+  },
+  "popup_failureContextInvalid": {
+    "message": "Расширение обновилось. Перезагрузите открытые вкладки Nexus."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Неожиданный сбой: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Неожиданный сбой без каких-либо подробностей."
+  },
+  "popup_requestFailed": {
+    "message": "Запрос не выполнен."
+  },
+  "popup_settingsReadFailed": {
+    "message": "Не удалось прочитать ваши настройки: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Не удалось обновить сохранённые настройки: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "Хранилище заполнено, поэтому настройка не сохранена. Нажмите «Очистить кешированные данные Nexus» ниже и попробуйте снова."
+  },
+  "popup_settingSaveFailed": {
+    "message": "Не удалось сохранить эту настройку: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "Без ключа API вы можете выбрать игру из открытой вкладки Nexus, но полный каталог Nexus недоступен для поиска, а значки совместимости получить нельзя."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Вставьте новый ключ и нажмите «Сохранить»."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Сначала вставьте ключ. Получить его можно по кнопке «Нужен ключ?»."
+  },
+  "popup_keySaved": {
+    "message": "Ключ сохранён."
+  },
+  "popup_keyUpdated": {
+    "message": "Ключ обновлён."
+  },
+  "popup_disconnecting": {
+    "message": "Отключение..."
+  },
+  "popup_keyClearFailed": {
+    "message": "Не удалось удалить ключ: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Ключ удалён. Выбранные игра и версия сохранены."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Ключ удалён, выбранные игра и версия сохранены. Однако $ISSUES$: нажмите «Очистить кешированные данные Nexus» ниже.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "фоновая часть не ответила, поэтому кешированные ответы Nexus остались на диске"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "не удалось прочитать кеш версий Steam, поэтому он остался на диске"
+  },
+  "popup_leftBehindSeparator": {
+    "message": ", и "
+  },
+  "popup_noReadableVersion": {
+    "message": "Ни одну из выведенных для этой игры версий не удалось прочитать как номер версии, поэтому ничего не вписано. Впишите версию игры, в которую вы играете."
+  },
+  "popup_startVersionFilled": {
+    "message": "Начальная версия заполнена как $VERSION$, самая новая найденная сборка этой игры. Измените её, если играете в более старую.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "Конечная версия $END$ старше начальной $START$, поэтому ни один мод не подойдёт. Такой диапазон не сохранён, прежний выбор не изменился.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Сначала выберите игру: версии самой по себе не с чем сравниваться."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Сначала выберите игру, тогда для неё можно вывести версии."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Прежде чем продолжить, выберите игру."
+  },
+  "popup_openTabIsGame": {
+    "message": "На вашей открытой вкладке Nexus сейчас $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Сохранено. На вашей открытой вкладке Nexus сейчас $GAME$, поэтому этот выбор к ней не относится.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Сохранено."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "Для списка игр нужен ключ API. Кнопкой выше выберите игру из открытой вкладки."
+  },
+  "popup_derivingVersions": {
+    "message": "Определение версий по открытым источникам..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "Поиск версий не удалось завершить, поэтому пустой список ничего не доказывает."
+  },
+  "popup_noVersionsFound": {
+    "message": "Ни один открытый источник не называет версию для этой игры. Список пуст потому, что данных не существует, а не потому, что игра не поддерживается."
+  },
+  "popup_searching": {
+    "message": "Поиск в открытых источниках..."
+  },
+  "popup_searchingAgain": {
+    "message": "Повторный поиск в открытых источниках..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Поиск версий: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "Выведена $COUNT$ версия.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "Выведено версий: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "Выведена $COUNT$ версия из $SOURCES$ источника.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "Выведена $COUNT$ версия, источников: $SOURCES$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "Выведено версий: $COUNT$ из $SOURCES$ источника.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "Выведено версий: $COUNT$, источников: $SOURCES$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Ни один открытый источник не называет версию для этой игры, поэтому ничего не вписано. Впишите версию, в которую вы играете, если знаете её; оставить поле пустым тоже можно."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ запрос за это обновление.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "Запросов за это обновление: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "Не удалось уверенно определить страницу магазина для этой игры, поэтому источники магазина пропущены, чтобы не взять номера другой игры."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "Загрузки передаются вашему менеджеру модов как ссылки nxm://, здесь и на любой открытой вкладке Nexus."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "Загрузки сохраняет браузер, здесь и на любой открытой вкладке Nexus."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Подробный вывод включён со следующего запуска фонового процесса."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Подробный вывод выключен со следующего запуска фонового процесса."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Открыть без выбранной версии"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Начальная версия не задана, поэтому вместо оценки мода значки сообщат, что сравнивать не с чем. Фильтрация и загрузки работают. Нажмите ещё раз, чтобы всё равно открыть список."
+  },
+  "popup_clearing": {
+    "message": "Очистка..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "Фоновая часть расширения не ответила и кеш версий Steam не удалось прочитать, поэтому ни то ни другое не очищено. Сохранённый список игр очищен."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "Фоновая часть расширения не ответила, поэтому кеш ответов о модах не очищен. Сохранённый список игр и кеш версий Steam очищены."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "Очищено записей кеша: $COUNT$, освобождено $KB$ КБ. Кеш версий Steam не удалось прочитать, поэтому он может остаться на диске.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "Очищено записей кеша: $COUNT$, освобождено $KB$ КБ.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Записей в кеше не обнаружено, поэтому ничего не освобождено."
+  },
+  "popup_noGameListCached": {
+    "message": "Список игр ещё не кеширован."
+  },
+  "popup_gameListCached": {
+    "message": "Список игр кеширован $WHEN$.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "только что"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ минуту назад",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ мин. назад",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ час назад",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ ч. назад",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ день назад",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ дн. назад",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "Загружено названий: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Список игр: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "Фоновая часть вернула неожиданный список игр."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "Загружено 1 название."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "Очищена 1 запись кеша, освобождено $KB$ КБ.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "Очищена 1 запись кеша, освобождено $KB$ КБ. Кеш версий Steam не удалось прочитать, поэтому он может остаться на диске.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

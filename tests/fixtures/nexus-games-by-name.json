@@ -1,0 +1,83 @@
+{
+ "RimWorld": {
+  "data": {
+   "games": {
+    "totalCount": 1,
+    "nodes": [
+     {
+      "id": 424,
+      "name": "Rimworld",
+      "domainName": "rimworld",
+      "modCount": 585
+     }
+    ]
+   }
+  }
+ },
+ "DiRT 2": {
+  "data": {
+   "games": {
+    "totalCount": 2,
+    "nodes": [
+     {
+      "id": 3600,
+      "name": "DiRT Rally 2.0",
+      "domainName": "dirtrally2",
+      "modCount": 8
+     },
+     {
+      "id": 3239,
+      "name": "DiRT 2",
+      "domainName": "dirt2",
+      "modCount": 17
+     }
+    ]
+   }
+  }
+ },
+ "Mount & Blade II: Bannerlord": {
+  "data": {
+   "games": {
+    "totalCount": 1,
+    "nodes": [
+     {
+      "id": 3174,
+      "name": "Mount & Blade II: Bannerlord",
+      "domainName": "mountandblade2bannerlord",
+      "modCount": 8538
+     }
+    ]
+   }
+  }
+ },
+ "Skyrim Special Edition": {
+  "data": {
+   "games": {
+    "totalCount": 1,
+    "nodes": [
+     {
+      "id": 1704,
+      "name": "Skyrim Special Edition",
+      "domainName": "skyrimspecialedition",
+      "modCount": 137008
+     }
+    ]
+   }
+  }
+ },
+ "Signalis": {
+  "data": {
+   "games": {
+    "totalCount": 1,
+    "nodes": [
+     {
+      "id": 4898,
+      "name": "SIGNALIS",
+      "domainName": "signalis",
+      "modCount": 41
+     }
+    ]
+   }
+  }
+ }
+}

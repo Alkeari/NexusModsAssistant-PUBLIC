@@ -1,0 +1,912 @@
+{
+  "popup_appName": {
+    "message": "Nexus Mods Assistant",
+    "description": "The product name. It is the popup window's document title and the heading at the top left of the popup. This is a brand name: keep it as it is unless the language needs a transliteration."
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Compatibility Companion",
+    "description": "The line under the popup heading. \"Alkeari Labs LLC\" is a company name and never changes; only \"Compatibility Companion\", the tagline, is translated."
+  },
+  "popup_extensionToggle": {
+    "message": "Enable or disable the assistant",
+    "description": "Tooltip and screen reader label for the on/off switch at the top right of the popup, which turns the whole extension on or off."
+  },
+  "popup_sectionGameVersion": {
+    "message": "Game & version",
+    "description": "Heading of the first card in the popup, where the user picks the game and the game version range their mods must be compatible with."
+  },
+  "popup_suggestedGameDefault": {
+    "message": "The tab you have open is a Nexus game page.",
+    "description": "Placeholder sentence in the hidden suggestion row at the top of the first card. At runtime it is replaced by popup_openTabIsGame, which names the game."
+  },
+  "popup_useThisGame": {
+    "message": "Use this game",
+    "description": "Button next to the suggestion row. It selects the game of the Nexus page the user has open in a browser tab."
+  },
+  "popup_gameLabel": {
+    "message": "Game",
+    "description": "Label of the text box where the user searches the Nexus game catalog by title."
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Search by name",
+    "description": "Placeholder inside the game search box, shown while it is empty."
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Matching games",
+    "description": "Screen reader label for the drop-down list of games matching what was typed in the game search box."
+  },
+  "popup_versionRangeLabel": {
+    "message": "Version range",
+    "description": "Label above the pair of boxes where the user enters the earliest and latest game version a mod must support."
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Earliest game version",
+    "description": "Screen reader label for the first of the two version boxes, the start of the range."
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Start (e.g., 1.3.8)",
+    "description": "Placeholder in the start-of-range version box. 1.3.8 is a sample version number and stays as it is."
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Latest game version, optional",
+    "description": "Screen reader label for the second of the two version boxes, the optional end of the range."
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Optional end",
+    "description": "Placeholder in the end-of-range version box, which the user may leave empty."
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Derived game versions",
+    "description": "Screen reader label for the drop-down list of game version numbers the extension found on public web sources."
+  },
+  "popup_refreshVersions": {
+    "message": "Refresh versions",
+    "description": "Button under the version boxes. It searches public sources again for this game's version numbers."
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Search the public sources again for this game's versions",
+    "description": "Tooltip on the Refresh versions button."
+  },
+  "popup_exclusionLabel": {
+    "message": "Exclude mods containing",
+    "description": "Label of the box where the user types keywords; mods whose titles contain them are hidden from Nexus listings."
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "e.g. patch, translation",
+    "description": "Placeholder in the exclusion keywords box, showing two sample keywords separated by a comma."
+  },
+  "popup_exclusionTitle": {
+    "message": "Separate multiple keywords with commas",
+    "description": "Tooltip on the exclusion keywords box."
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Adds Nexus's own translation filter to the listing this button opens",
+    "description": "Tooltip on the checkbox that excludes translation mods from the listing the popup opens."
+  },
+  "popup_hideTranslations": {
+    "message": "Open the listing with translations excluded",
+    "description": "Label of the checkbox that excludes translation mods from the Nexus listing the popup opens."
+  },
+  "popup_openCompatibleMods": {
+    "message": "Open compatible mods",
+    "description": "The main button of the popup. It opens a Nexus mod listing for the selected game in a new tab."
+  },
+  "popup_sectionConnection": {
+    "message": "Connection",
+    "description": "Heading of the card where the user stores or removes their Nexus API key."
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus API key",
+    "description": "Label of the read-only box showing the stored API key, masked until the user reveals it."
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Stored Nexus API key",
+    "description": "Screen reader label for the read-only box showing the stored API key."
+  },
+  "popup_revealKey": {
+    "message": "Reveal the stored API key",
+    "description": "Tooltip and screen reader label on the Show button, while the stored key is masked."
+  },
+  "popup_hideKey": {
+    "message": "Hide the stored API key",
+    "description": "Tooltip and screen reader label on the same button once the key is on screen, so pressing it masks the key again."
+  },
+  "popup_show": {
+    "message": "Show",
+    "description": "Small button next to the stored API key. It reveals the masked key. Keep it short: the button is narrow."
+  },
+  "popup_hide": {
+    "message": "Hide",
+    "description": "The same small button once the key is revealed. Pressing it masks the key again. Keep it short: the button is narrow."
+  },
+  "popup_replaceKey": {
+    "message": "Replace key",
+    "description": "Button that opens the entry box so the user can paste a different Nexus API key."
+  },
+  "popup_disconnect": {
+    "message": "Disconnect",
+    "description": "Button that starts removing the stored Nexus API key, and the confirming button in the panel it opens."
+  },
+  "popup_disconnectExplain": {
+    "message": "Disconnect removes the key and every cached Nexus response from this browser. Your Nexus account is untouched.",
+    "description": "Explanation shown in the confirmation panel before the stored API key is removed."
+  },
+  "popup_keepKey": {
+    "message": "Keep key",
+    "description": "Button that cancels the disconnect confirmation and leaves the stored key in place."
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Nexus personal API key",
+    "description": "Label of the password box where the user pastes a Nexus API key. \"Personal API Key\" is the name Nexus itself uses on its settings page."
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Paste your API key",
+    "description": "Placeholder in the box where the user pastes a Nexus API key."
+  },
+  "popup_save": {
+    "message": "Save",
+    "description": "Button that stores the API key the user pasted. Keep it short: the button sits beside the entry box."
+  },
+  "popup_needKey": {
+    "message": "Need a key?",
+    "description": "Button that opens the Nexus website page where an API key is generated."
+  },
+  "popup_cancel": {
+    "message": "Cancel",
+    "description": "Button that abandons entering a replacement API key and returns to the stored key view."
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Optional. Browsing, filters and the version target work without one. Compatibility badges and downloads need a key, because Nexus only answers for an account.",
+    "description": "Note under the API key entry box, saying which features work without a key."
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods single sign-on",
+    "description": "Heading of the block offering to fetch an API key by signing in to Nexus Mods instead of pasting one."
+  },
+  "popup_ssoDescription": {
+    "message": "Authorize once and the key is filled in for you. You can run this again at any time to replace the stored key.",
+    "description": "Explanation under the single sign-on heading."
+  },
+  "popup_authorizeSso": {
+    "message": "Authorize SSO",
+    "description": "Button that starts the Nexus Mods single sign-on handshake. SSO is the usual abbreviation of single sign-on."
+  },
+  "popup_cancelSso": {
+    "message": "Cancel SSO",
+    "description": "The same button while a single sign-on handshake is running. Pressing it abandons the handshake."
+  },
+  "popup_ssoReady": {
+    "message": "Ready to start the Nexus Mods SSO handshake.",
+    "description": "Status line under the single sign-on button before anything has been started."
+  },
+  "popup_startingSso": {
+    "message": "Starting SSO...",
+    "description": "Status line under the single sign-on button the moment the handshake is requested."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO canceled.",
+    "description": "Status line under the single sign-on button after the user cancels the handshake."
+  },
+  "popup_sectionDownloads": {
+    "message": "Downloads",
+    "description": "Heading of the card holding the download mode and the file list category switches."
+  },
+  "popup_downloadModeLabel": {
+    "message": "Download mode",
+    "description": "Label of the drop-down that chooses what happens when the user downloads a mod file."
+  },
+  "popup_downloadModeManual": {
+    "message": "Manual: the browser saves the file",
+    "description": "First option of the download mode drop-down: the browser downloads the file itself."
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: your mod manager takes the link",
+    "description": "Second option of the download mode drop-down. Vortex is the name of a mod manager application and stays as it is."
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "The same setting as the one in the action bar on a Nexus listing page: changing it here changes it there, and the other way round. Vortex mode opens an",
+    "description": "First half of the note under the download mode drop-down. The full sentence reads: \"... Vortex mode opens an nxm:// link, which your operating system hands to whichever mod manager registered that protocol.\" The literal nxm:// sits between this string and popup_downloadModeNoteAfter, in a monospace style, so this half must end where the link name begins."
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "link, which your operating system hands to whichever mod manager registered that protocol.",
+    "description": "Second half of the note under the download mode drop-down, following the literal nxm:// that ends popup_downloadModeNoteBefore."
+  },
+  "popup_fileListsLegend": {
+    "message": "File lists",
+    "description": "Heading of the group of switches choosing which file categories are shown in a mod's file list."
+  },
+  "popup_fileListsNote": {
+    "message": "Which file categories appear when a mod's file list is opened. The same four switches sit in the on-page panel.",
+    "description": "Note under the File lists heading, saying that the same switches appear in the panel the extension draws on Nexus pages."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Show older versions of a mod's files",
+    "description": "Tooltip on the Old files switch."
+  },
+  "popup_showOldFiles": {
+    "message": "Old files",
+    "description": "Label of the switch that shows the Old files category in a mod's file list. It is the category name Nexus itself uses."
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Show a mod's update files",
+    "description": "Tooltip on the Update files switch."
+  },
+  "popup_showUpdateFiles": {
+    "message": "Update files",
+    "description": "Label of the switch that shows the Update files category in a mod's file list. It is the category name Nexus itself uses."
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Show a mod's optional files",
+    "description": "Tooltip on the Optional files switch."
+  },
+  "popup_showOptionalFiles": {
+    "message": "Optional files",
+    "description": "Label of the switch that shows the Optional files category in a mod's file list. It is the category name Nexus itself uses."
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Show a mod's miscellaneous files",
+    "description": "Tooltip on the Miscellaneous files switch."
+  },
+  "popup_showMiscFiles": {
+    "message": "Miscellaneous files",
+    "description": "Label of the switch that shows the Miscellaneous files category in a mod's file list. It is the category name Nexus itself uses."
+  },
+  "popup_sectionAdvanced": {
+    "message": "Advanced",
+    "description": "Heading of the last card, holding verbose logging and the cache clearing button."
+  },
+  "popup_advancedNote": {
+    "message": "Local storage and diagnostics. Clearing the cache re-reads the game list from Nexus straight away when a key is connected; nothing else here reaches the network.",
+    "description": "Note under the Advanced heading, saying what the controls in that card do."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Writes detailed background worker activity to the service worker console",
+    "description": "Tooltip on the verbose logging switch. \"Service worker console\" is the browser's own developer tools term."
+  },
+  "popup_debugLogging": {
+    "message": "Verbose console logging",
+    "description": "Label of the switch that makes the extension's background write detailed diagnostics to the browser console."
+  },
+  "popup_clearCache": {
+    "message": "Clear cached Nexus data",
+    "description": "Button that deletes every Nexus answer the extension has stored on this computer. Its wording is quoted inside popup_storageFull and popup_keyRemovedWithLeftovers, so translate all three the same way."
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "store patch note",
+    "description": "Where a derived game version came from, shown as a small tag beside the version number in the suggestions list: a patch note published on the game's store page."
+  },
+  "popup_sourceStoreBranch": {
+    "message": "store branch",
+    "description": "Where a derived game version came from, shown as a small tag beside the version number: a named build branch on the game's store page."
+  },
+  "popup_sourceArticleText": {
+    "message": "article text, unverified",
+    "description": "Where a derived game version came from, shown as a small tag beside the version number: a number read out of the body of a news article, which may not be a real build number."
+  },
+  "popup_sourceModText": {
+    "message": "mod text",
+    "description": "Where a derived game version came from, shown as a small tag beside the version number: the text of mod pages that name the version."
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "collection metadata",
+    "description": "Where a derived game version came from, shown as a small tag beside the version number: the metadata of a Nexus mod collection. \"Collection\" is a Nexus feature name."
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "description": "The small tag beside a derived version number when more than one source reported it: the source names followed by how many sources agreed, for example \"store patch note x3\".",
+    "placeholders": {
+      "sources": {
+        "content": "$1",
+        "example": "store patch note + mod text"
+      },
+      "count": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, from $SOURCE$",
+    "description": "Screen reader label for one row of the derived versions list: the version number and where it came from.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.3.8"
+      },
+      "source": {
+        "content": "$2",
+        "example": "store patch note"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "description": "One row of the game search suggestions: the game's title followed by its Nexus web address name in parentheses.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "The Game Title"
+      },
+      "domain": {
+        "content": "$2",
+        "example": "gamedomain"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "No API key is connected, so Nexus will not answer. Add one under Connection.",
+    "description": "Error line shown when a request needed an API key and none is stored. \"Connection\" is the popup card named by popup_sectionConnection: use the same wording."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus rejected your API key. Replace it under Connection.",
+    "description": "Error line shown when Nexus refuses the stored API key. \"Connection\" is the popup card named by popup_sectionConnection: use the same wording."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus refused the request. A premium account or an active nexusmods.com login may be required.",
+    "description": "Error line shown when Nexus answers that the request is not allowed for this account."
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus has no record of that game or mod. It may have been hidden or removed.",
+    "description": "Error line shown when Nexus reports that the requested game or mod does not exist."
+  },
+  "popup_failureRateLimited": {
+    "message": "You have used up your Nexus API allowance. Checks resume once it resets, usually within the hour.",
+    "description": "Error line shown when Nexus refuses further requests because the account's hourly request allowance is spent."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus is not responding right now. Try again in a few minutes.",
+    "description": "Error line shown when the Nexus servers answer with a fault of their own."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus rejected the request as malformed. Check the game and version, then try again.",
+    "description": "Error line shown when Nexus rejects the request as badly formed."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Nothing is configured to check yet. Pick a game and a start version above.",
+    "description": "Error line shown when a compatibility check is asked for before a game and a start version have been chosen."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "No game version has been derived for this game yet, so there is nothing to compare a mod against. Every game is supported; this one has no public version data the assistant could find. Type the version you play to check anyway.",
+    "description": "Error line shown when no public source names any version number for the selected game. It is careful to say the game is not unsupported, only undocumented."
+  },
+  "popup_failureOffline": {
+    "message": "No connection to Nexus. Check your network, then try again.",
+    "description": "Error line shown when the computer appears to have no working network connection."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "The extension is not allowed to reach nexusmods.com. Your network is fine: the site access permission was declined or revoked. Grant it again in your browser's extension settings (Firefox: about:addons, then this extension, then Permissions).",
+    "description": "Error line shown when the browser blocks the extension from reaching nexusmods.com because the site access permission was refused. \"about:addons\" is a Firefox address and stays as it is; \"Permissions\" is the name of a tab in Firefox's own interface."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus took too long to answer. Try again.",
+    "description": "Error line shown when a request to Nexus, or to the extension's own background, ran out of time."
+  },
+  "popup_failureDisabled": {
+    "message": "The assistant is switched off. Turn it back on with the switch at the top right.",
+    "description": "Error line shown when something is asked of the extension while its main on/off switch is off."
+  },
+  "popup_failureNoBackground": {
+    "message": "The extension background did not respond. Reopen this popup, or reload the extension.",
+    "description": "Error line shown when the extension's own background worker cannot be reached."
+  },
+  "popup_failureCanceled": {
+    "message": "That request was canceled before it finished.",
+    "description": "Error line shown when a request was abandoned before it completed."
+  },
+  "popup_failureBackgroundError": {
+    "message": "The extension background could not complete that request.",
+    "description": "Error line shown when the extension's background worker answered but reported a fault."
+  },
+  "popup_failureContextInvalid": {
+    "message": "The extension was updated. Reload any open Nexus tabs.",
+    "description": "Error line shown when the extension was reloaded or updated while pages from the old version were still open."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Unexpected failure: $DETAIL$",
+    "description": "Error line used when a fault carries no recognized reason, so only its raw text can be shown.",
+    "placeholders": {
+      "detail": {
+        "content": "$1",
+        "example": "Failed to fetch"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Unexpected failure, with no detail reported.",
+    "description": "Error line used when a fault carries neither a recognized reason nor any text to quote."
+  },
+  "popup_requestFailed": {
+    "message": "The request failed.",
+    "description": "Fallback wording for a failed request that the extension background reported without a message of its own."
+  },
+  "popup_settingsReadFailed": {
+    "message": "The popup could not read your settings: $DETAIL$",
+    "description": "Error line in the first card when the popup could not load the stored settings as it opened.",
+    "placeholders": {
+      "detail": {
+        "content": "$1",
+        "example": "Nexus took too long to answer. Try again."
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Could not update stored settings: $DETAIL$",
+    "description": "Error line shown when the popup could not upgrade settings left by an earlier version of the extension.",
+    "placeholders": {
+      "detail": {
+        "content": "$1",
+        "example": "QUOTA_BYTES quota exceeded"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "Storage is full, so that setting was not saved. Use \"Clear cached Nexus data\" below, then try again.",
+    "description": "Error line shown when a setting could not be saved because the browser's storage for this extension is full. The quoted phrase is the button labeled by popup_clearCache: translate both the same way."
+  },
+  "popup_settingSaveFailed": {
+    "message": "Could not save that setting: $DETAIL$",
+    "description": "Error line shown when a setting could not be saved for any reason other than full storage.",
+    "placeholders": {
+      "detail": {
+        "content": "$1",
+        "example": "An unexpected error occurred"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "Without an API key you can target the game in your open Nexus tab, but the full Nexus catalog is not searchable and compatibility badges cannot be fetched.",
+    "description": "Note under the game search box while no API key is stored, saying what still works without one."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Paste the replacement key, then press Save.",
+    "description": "Status line in the Connection card after the user presses Replace key. \"Save\" is the button labeled by popup_save: use the same wording."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Paste a key first. You can generate one with \"Need a key?\".",
+    "description": "Error line shown when Save is pressed with the API key box empty. The quoted phrase is the button labeled by popup_needKey: translate both the same way."
+  },
+  "popup_keySaved": {
+    "message": "Key saved.",
+    "description": "Status line confirming that the pasted API key was stored."
+  },
+  "popup_keyUpdated": {
+    "message": "Key updated.",
+    "description": "Status line shown when the stored API key changed elsewhere, in another popup window or through single sign-on, while this popup was open."
+  },
+  "popup_disconnecting": {
+    "message": "Disconnecting...",
+    "description": "Status line shown while the stored API key and the cached Nexus data are being removed."
+  },
+  "popup_keyClearFailed": {
+    "message": "Could not clear the key: $DETAIL$",
+    "description": "Error line shown when removing the stored API key failed.",
+    "placeholders": {
+      "detail": {
+        "content": "$1",
+        "example": "An unexpected error occurred"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Key removed. Your game and version target were kept.",
+    "description": "Status line confirming that the API key and the cached Nexus data were removed cleanly."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Key removed, and your game and version target were kept. However $ISSUES$: use \"Clear cached Nexus data\" below.",
+    "description": "Status line shown when the API key was removed but some cached data could not be. The placeholder is one or two of popup_leftBehindBackground and popup_leftBehindSteamCache, joined by popup_leftBehindSeparator, so it reads as a clause in the middle of this sentence. The quoted phrase is the button labeled by popup_clearCache: translate both the same way.",
+    "placeholders": {
+      "issues": {
+        "content": "$1",
+        "example": "the background did not answer, so cached Nexus responses are still on disk"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "the background did not answer, so cached Nexus responses are still on disk",
+    "description": "One reason cached data survived a disconnect. It is inserted into the middle of popup_keyRemovedWithLeftovers, after the word \"However\", so it starts in lower case and carries no final period."
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "the Steam version cache could not be read, so it is still on disk",
+    "description": "One reason cached data survived a disconnect. It is inserted into the middle of popup_keyRemovedWithLeftovers, after the word \"However\", so it starts in lower case and carries no final period. Steam is the name of a game store and stays as it is."
+  },
+  "popup_leftBehindSeparator": {
+    "message": ", and ",
+    "description": "Joins the two reasons in popup_keyRemovedWithLeftovers when both apply. Keep the leading comma and the surrounding spaces that the sentence needs in your language."
+  },
+  "popup_noReadableVersion": {
+    "message": "None of the versions derived for this game could be read as a version number, so none was filled in. Type the game version you play.",
+    "description": "Status line shown when every version the extension found was text it cannot compare, such as a branch name, so the start version box was left empty."
+  },
+  "popup_startVersionFilled": {
+    "message": "Start version filled in as $VERSION$, the newest build found for this game. Change it if you play an older one.",
+    "description": "Status line announcing that the extension filled the start version box by itself, because the user did not type that value.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.3.8"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "The end version $END$ is earlier than the start version $START$, so no mod could ever match. That range was not saved and the target you had is unchanged.",
+    "description": "Error line shown when the end of the version range is older than its start.",
+    "placeholders": {
+      "end": {
+        "content": "$1",
+        "example": "1.2.0"
+      },
+      "start": {
+        "content": "$2",
+        "example": "1.3.8"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Choose a game first: a version on its own has nothing to compare against.",
+    "description": "Status line shown when a version is entered before any game has been selected."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Choose a game first, then versions can be derived for it.",
+    "description": "Error line shown when Refresh versions is pressed before any game has been selected."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Choose a game before continuing.",
+    "description": "Error line shown when the main Open compatible mods button is pressed with no game selected."
+  },
+  "popup_openTabIsGame": {
+    "message": "Your open Nexus tab is $GAME$.",
+    "description": "Sentence in the suggestion row at the top of the first card, naming the game of the Nexus page the user has open in a browser tab.",
+    "placeholders": {
+      "game": {
+        "content": "$1",
+        "example": "The Game Title"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Saved. Your open Nexus tab is $GAME$, so this target does not apply to it.",
+    "description": "Status line confirming the target was saved while warning that the Nexus page the user has open is for a different game.",
+    "placeholders": {
+      "game": {
+        "content": "$1",
+        "example": "The Game Title"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Saved.",
+    "description": "Status line confirming that the chosen game and version range were stored."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "The game list needs an API key. Use the button above to target the game in your open tab.",
+    "description": "Status line shown when the game search finds nothing because no API key is stored, so the catalog was never downloaded."
+  },
+  "popup_derivingVersions": {
+    "message": "Deriving versions from public sources...",
+    "description": "Note inside the empty versions list while the search of public sources is still running."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "The version search could not complete, so nothing here is a finding.",
+    "description": "Note inside the empty versions list when the search failed, making clear that the empty list proves nothing."
+  },
+  "popup_noVersionsFound": {
+    "message": "No public source names a version for this game. This list is empty because the data does not exist, not because the game is unsupported.",
+    "description": "Note inside the empty versions list when the search finished and found nothing."
+  },
+  "popup_searching": {
+    "message": "Searching public sources...",
+    "description": "Status line under the versions list while a first search of public sources is running."
+  },
+  "popup_searchingAgain": {
+    "message": "Searching public sources again...",
+    "description": "Status line under the versions list while a search started by the Refresh versions button is running."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Version search: $DETAIL$",
+    "description": "Status line under the versions list reporting why the search for game versions failed.",
+    "placeholders": {
+      "detail": {
+        "content": "$1",
+        "example": "Nexus took too long to answer. Try again."
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "Derived $COUNT$ version.",
+    "description": "Summary under the versions list when exactly one version was found and no source names were reported. COUNT is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "Derived $COUNT$ versions.",
+    "description": "Summary under the versions list when a number of versions other than one was found and no source names were reported.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "Derived $COUNT$ version from $SOURCES$ source.",
+    "description": "Summary under the versions list when one version was found from one source. Both numbers are always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      },
+      "sources": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "Derived $COUNT$ version from $SOURCES$ sources.",
+    "description": "Summary under the versions list when one version was found from a number of sources other than one. COUNT is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      },
+      "sources": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "Derived $COUNT$ versions from $SOURCES$ source.",
+    "description": "Summary under the versions list when several versions were found from one source. SOURCES is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      },
+      "sources": {
+        "content": "$2",
+        "example": "1"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "Derived $COUNT$ versions from $SOURCES$ sources.",
+    "description": "Summary under the versions list when several versions were found from several sources.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "42"
+      },
+      "sources": {
+        "content": "$2",
+        "example": "3"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "No public source names a version for this game, so nothing was filled in. Type the version you play if you know it; leaving it empty is also fine.",
+    "description": "Summary under the versions list when the search finished and found no version at all."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ request this refresh.",
+    "description": "Sentence appended to the version search summary, saying how many network requests the search cost. COUNT is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "$COUNT$ requests this refresh.",
+    "description": "Sentence appended to the version search summary, saying how many network requests the search cost, for any count other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "The store listing for this game could not be identified with confidence, so store sources were skipped rather than risk another game's numbers.",
+    "description": "Sentence appended to the version search summary when the extension could not be sure which store page belongs to the selected game, and so ignored the store."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "Downloads are handed to your mod manager as nxm:// links, here and on any open Nexus tab.",
+    "description": "Status line confirming the download mode was switched to Vortex. \"nxm://\" is a link protocol name and stays as it is."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "Downloads are saved by the browser, here and on any open Nexus tab.",
+    "description": "Status line confirming the download mode was switched back to the browser's own downloads."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Verbose logging on from the next background worker start.",
+    "description": "Status line in the Advanced card confirming verbose logging was switched on, and saying it applies from the next time the background worker starts."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Verbose logging off from the next background worker start.",
+    "description": "Status line in the Advanced card confirming verbose logging was switched off, and saying it applies from the next time the background worker starts."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Open without a version target",
+    "description": "Wording the main button takes on after it warns that no start version is set. Pressing it again opens the listing regardless."
+  },
+  "popup_noStartVersionWarning": {
+    "message": "No start version is set, so badges will report that there is nothing to compare against instead of judging a mod. Filtering and downloads still work. Press again to open the listing anyway.",
+    "description": "Warning shown the first time the main button is pressed with no start version, explaining what is lost before the listing opens."
+  },
+  "popup_clearing": {
+    "message": "Clearing...",
+    "description": "Status line in the Advanced card while the cached Nexus data is being deleted."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "The extension background did not answer and the Steam version cache could not be read, so neither could be cleared. The stored game list was cleared.",
+    "description": "Error line reporting that clearing the cache reached neither of its two stores. Steam is the name of a game store and stays as it is."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "The extension background did not answer, so the mod response cache could not be cleared. The stored game list and Steam version cache were cleared.",
+    "description": "Error line reporting that clearing the cache could not reach the extension's background, so only part of the cache was deleted."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "Cleared $COUNT$ cached entries, $KB$ KB freed. The Steam version cache could not be read, so it may still be on disk.",
+    "description": "Status line reporting how much cache was cleared while warning that the Steam part could not be read. KB is the kilobyte unit.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "128"
+      },
+      "kb": {
+        "content": "$2",
+        "example": "64"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "Cleared $COUNT$ cached entries, $KB$ KB freed.",
+    "description": "Status line reporting how many cached entries were deleted and how much space that freed. KB is the kilobyte unit.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "128"
+      },
+      "kb": {
+        "content": "$2",
+        "example": "64"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "No cached entries were reported, so nothing was freed.",
+    "description": "Status line shown when clearing the cache succeeded but there was nothing stored to delete."
+  },
+  "popup_noGameListCached": {
+    "message": "No game list cached yet.",
+    "description": "Status line in the Advanced card when an API key is stored but the Nexus game catalog has never been downloaded."
+  },
+  "popup_gameListCached": {
+    "message": "Game list cached $WHEN$.",
+    "description": "Status line in the Advanced card saying how long ago the Nexus game catalog was downloaded. The placeholder is one of the popup_timeAgo strings, such as \"3 hours ago\" or \"just now\".",
+    "placeholders": {
+      "when": {
+        "content": "$1",
+        "example": "3 hours ago"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "just now",
+    "description": "Fills the placeholder in popup_gameListCached when the game list was downloaded less than a minute ago, so it reads \"Game list cached just now.\""
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ minute ago",
+    "description": "Fills the placeholder in popup_gameListCached. COUNT is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ minutes ago",
+    "description": "Fills the placeholder in popup_gameListCached, for any number of minutes other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "45"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ hour ago",
+    "description": "Fills the placeholder in popup_gameListCached. COUNT is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ hours ago",
+    "description": "Fills the placeholder in popup_gameListCached, for any number of hours other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ day ago",
+    "description": "Fills the placeholder in popup_gameListCached. COUNT is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ days ago",
+    "description": "Fills the placeholder in popup_gameListCached, for any number of days other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "Loaded $COUNT$ titles.",
+    "description": "Status line in the first card confirming how many game titles were downloaded from the Nexus catalog.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3170"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Game list: $DETAIL$",
+    "description": "Status line in the first card reporting why the Nexus game catalog could not be downloaded.",
+    "placeholders": {
+      "detail": {
+        "content": "$1",
+        "example": "Nexus rejected your API key. Replace it under Connection."
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "The background returned an unexpected game list.",
+    "description": "Reason reported in the first card when the extension's background answered with something that is not a game list."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "Loaded 1 title.",
+    "description": "Status line after the game list is fetched, when exactly one title came back. Chrome's catalog has no plural rule, so the singular is a separate key from popup_loadedTitles."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "Cleared 1 cached entry, $KB$ KB freed.",
+    "description": "Status line after clearing the cache, when exactly one entry was removed. KB is the kilobyte unit and stays as it is. Singular counterpart of popup_clearCacheDone.",
+    "placeholders": {
+      "kb": {
+        "content": "$1",
+        "example": "64"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "Cleared 1 cached entry, $KB$ KB freed. The Steam version cache could not be read, so it may still be on disk.",
+    "description": "Status line after clearing the cache when exactly one entry was removed and the Steam cache could not be read. Singular counterpart of popup_clearCacheSteamFailed.",
+    "placeholders": {
+      "kb": {
+        "content": "$1",
+        "example": "64"
+      }
+    }
+  }
+}

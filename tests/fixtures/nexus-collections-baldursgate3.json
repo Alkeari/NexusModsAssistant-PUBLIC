@@ -1,0 +1,458 @@
+{
+ "data": {
+  "collectionsV2": {
+   "nodes": [
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.50.22.896"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.1.1.7209685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.67.58.295"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.67.58.295"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.67.58.295"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.67.58.295"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.67.58.295"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.1.1.7398727"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.1.1.7398727"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.46.847"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.71.51.330"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.68.48.561"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.1.1.7398727"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.68.97.358"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.46.847"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.31.813"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.46.847"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.46.847"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.1.1.7209685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.72.9.685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.69.95.620"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.1.1.7209685"
+       }
+      ]
+     }
+    },
+    {
+     "currentRevision": {
+      "gameVersions": [
+       {
+        "reference": "4.1.1.7209685"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ }
+}

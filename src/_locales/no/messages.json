@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Hver mod på Nexus får en kompatibilitetsdom for spillversjonen du faktisk spiller, så du kan filtrere fram det som virker."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "Forespørselen tok mer enn $seconds$ s og ble avbrutt.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Nexus-API-grensen er nådd. Den nullstilles $resetTime$.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Nexus-API-grensen er nådd. Sjekkene fortsetter når grensen nullstilles."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Nexus-API-grensen er nådd."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus avviste API-nøkkelen din. Skriv den inn på nytt i utvidelsens popup."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus avviste denne forespørselen. Det kan kreve en Premium-konto eller aktiv innlogging på nexusmods.com."
+  },
+  "background_errorNotFound": {
+    "message": "Nexus har ingen slik mod for dette spillet (slettet, skjult eller feil spill)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus svarer ikke akkurat nå (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus avviste forespørselen (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "Forespørselen tok for lang tid og ble avbrutt."
+  },
+  "background_errorOffline": {
+    "message": "Ingen forbindelse til Nexus."
+  },
+  "background_errorDisabled": {
+    "message": "Utvidelsen er slått av."
+  },
+  "background_errorUnexpected": {
+    "message": "Noe gikk galt."
+  },
+  "background_errorNoApiKey": {
+    "message": "Fant ingen API-nøkkel. Legg inn Nexus-API-nøkkelen din i utvidelsens popup."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "Nedlastingslenken mangler URI."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "Fant ingen NXM-lenke."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Fant ingen aktuelle filer for denne modden."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "Kunne ikke lese kravdelen på denne modsiden. Oppsettet på Nexus-siden er ikke et NMA kjenner igjen."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Navigasjonen endret seg"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant trenger $missing$ før den kan sjekke modder. Åpne utvidelsens popup for å fullføre oppsettet.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "en API-nøkkel"
+  },
+  "background_setupNeedsGame": {
+    "message": "et spill"
+  },
+  "background_setupNeedsVersion": {
+    "message": "en spillversjon"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ og $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Denne siden er $pageGame$, men NMA er satt opp for $configuredGame$. Bytt spill i utvidelsens popup for å sjekke disse moddene.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA kan ikke lese «$version$» som en spillversjon, og kan derfor ikke vurdere noen mod mot den. Sett en numerisk versjon som 1.6.1170 i utvidelsens popup.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "Ingen offentlig kilde oppgir en spillversjon for $gameDomain$, så NMA kan ikke utlede en spillversjon fra en modversjon her. Det er et hull i dataene og ikke i utvidelsen, og det er likt for alle. Skriv inn versjonen du spiller i utvidelsens popup for å sjekke likevel.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Ingen versjonskilde kunne nås, så ingenting kunne utledes for dette spillet ennå."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Et spilldomene må til før versjoner kan utledes for det."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Ingen butikkoppføring passer til det spillet godt nok til å være sikker, så ingen ble lagret."
+  },
+  "background_sourceFileVersion": {
+    "message": "En filversjon"
+  },
+  "background_sourceFileName": {
+    "message": "Et filnavn"
+  },
+  "background_sourceChangelog": {
+    "message": "Endringsloggen"
+  },
+  "background_sourceDescription": {
+    "message": "Beskrivelsen"
+  },
+  "background_sourceUploadDate": {
+    "message": "Opplastingsdatoen"
+  },
+  "background_sourceNone": {
+    "message": "Ingenting"
+  },
+  "background_verdictPartialNote": {
+    "message": "Én kilde kunne ikke leses ($cause$), så denne sjekken er ufullstendig.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Ingen spillversjon er oppgitt noe sted, men den nyeste filen ble lastet opp $uploadDate$, etter spillversjon $gameVersion$. Utledet, ikke bekreftet.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ oppgir «$evidence$», som er innenfor området du har valgt.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ nevner «$evidence$», som er innenfor området du har valgt. Det er en slutning, ikke en oppgitt spillversjon.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Ingen spillversjon er oppgitt noe sted, og opplastingsdatoen til den nyeste filen ($uploadDate$) plasserer den ikke innenfor området du har valgt.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ oppgir «$evidence$», den nyeste spillversjonen denne modden nevner, og den er utenfor området du har valgt.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ nevner «$evidence$», den nyeste spillversjonen denne modden nevner, og den er utenfor området du har valgt. Det er en slutning, ikke en oppgitt spillversjon.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Denne modden oppgir ingen spillversjon i filene, endringsloggen eller beskrivelsen."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Denne modden oppgir ingen spillversjon i beskrivelsen eller endringsloggen. Filene ble ikke åpnet for denne sjekken."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "Butikksøket svarte ikke, så butikkilder ble hoppet over."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Ingen butikkoppføring passet godt nok til dette spillet til å være sikker, så butikkilder ble hoppet over."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "Butikkoppføringen for dette spillet kunne ikke leses, så butikkilder ble hoppet over denne gangen."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "Den nærmeste butikkoppføringen er ikke en spilloppføring, så butikkilder ble hoppet over i stedet for å lese versjonene til et annet produkt."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "Den nærmeste butikkoppføringen tilhører en annen app, så butikkilder ble hoppet over."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "Butikkoppføringen oppgir et annet spill enn katalogen gjør, så butikkilder ble hoppet over."
+  },
+  "background_ssoConnecting": {
+    "message": "Kobler til Nexus Mods SSO..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Venter på godkjenningen din i Nexus Mods-fanen..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "Klarte ikke å starte SSO-håndtrykket."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "Klarte ikke å åpne SSO-forbindelsen."
+  },
+  "background_ssoRejected": {
+    "message": "SSO avviste håndtrykket."
+  },
+  "background_ssoConnectionReady": {
+    "message": "Forbindelsen er klar. Venter på godkjenningen din..."
+  },
+  "background_ssoComplete": {
+    "message": "API-nøkkel lagret via SSO."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Uventet svar fra SSO."
+  },
+  "background_ssoLostConnection": {
+    "message": "Mistet forbindelsen til SSO etter flere forsøk."
+  },
+  "background_ssoReconnecting": {
+    "message": "Kobler til på nytt (forsøk $attempt$/$total$)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO avbrutt."
+  },
+  "content_statusCompatible": {
+    "message": "Kompatibel"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Trolig kompatibel"
+  },
+  "content_statusIncompatible": {
+    "message": "Ikke kompatibel"
+  },
+  "content_statusUnknown": {
+    "message": "Ingen versjonsinfo"
+  },
+  "content_statusFailed": {
+    "message": "Kunne ikke sjekke"
+  },
+  "content_statusNotConfigured": {
+    "message": "Ikke satt opp"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Ukjent"
+  },
+  "content_evidenceFileVersion": {
+    "message": "filversjon"
+  },
+  "content_evidenceFileName": {
+    "message": "filnavn"
+  },
+  "content_evidenceChangelog": {
+    "message": "endringslogg"
+  },
+  "content_evidenceDescription": {
+    "message": "modbeskrivelse"
+  },
+  "content_evidenceUploadDate": {
+    "message": "opplastingsdato"
+  },
+  "content_evidenceNone": {
+    "message": "ingen versjonsholdepunkter"
+  },
+  "content_confidenceExact": {
+    "message": "eksakt treff"
+  },
+  "content_confidenceInferred": {
+    "message": "utledet"
+  },
+  "content_confidenceNone": {
+    "message": "ikke fastslått"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Oppdaget versjon: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Holdepunkt: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Sikkerhet: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Treff: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - ingen versjon valgt",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "versjon ikke oppgitt"
+  },
+  "content_versionNotReportedShort": {
+    "message": "ikke oppgitt"
+  },
+  "content_checking": {
+    "message": "Sjekker..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Sjekker kompatibilitet..."
+  },
+  "content_scrollToCheck": {
+    "message": "Bla for å sjekke"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Denne modden sjekkes når den kommer til syne."
+  },
+  "content_noResponse": {
+    "message": "Ingen respons"
+  },
+  "content_compatibilityColumn": {
+    "message": "Kompatibilitet"
+  },
+  "content_setVersionInPopup": {
+    "message": "Sett spillversjonen i utvidelsens popup for å få en dom."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Velg spillversjonen i popupen for å få en dom for denne modden."
+  },
+  "content_filesButton": {
+    "message": "Filer"
+  },
+  "content_filesButtonForMod": {
+    "message": "Filer for $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Filer for denne modden"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Filer for denne nødvendige modden"
+  },
+  "content_filesDropdownLabel": {
+    "message": "Filer å laste ned"
+  },
+  "content_filesLoading": {
+    "message": "Laster filer..."
+  },
+  "content_filesFetchFailed": {
+    "message": "Klarte ikke å hente filer"
+  },
+  "content_filesLoadFailed": {
+    "message": "Kunne ikke laste fillisten: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "Kunne ikke laste fillisten"
+  },
+  "content_fileListUnreadable": {
+    "message": "Fillisten kunne ikke leses."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "Ingen filer i kategoriene du har slått på. Skjult: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Fant ingen filer for denne modden."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Skjult av filfiltrene dine: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Fil"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Ukjent størrelse"
+  },
+  "content_fileDateUnknown": {
+    "message": "Ukjent dato"
+  },
+  "content_downloadSelected": {
+    "message": "Last ned valgte"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Last ned valgte ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Last ned valgte ($MODS$ modder / $FILES$ filer)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Laster ned ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Laster ned..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "I kø"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Mislyktes: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "ukjent årsak"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ fil lagt i kø.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ filer lagt i kø.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ i kø, $FAILED$ mislyktes.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Sorter etter kompatibilitet"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistant-filtre"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistant-nedlastinger"
+  },
+  "content_refresh": {
+    "message": "Oppdater"
+  },
+  "content_pageNavigation": {
+    "message": "Sidenavigasjon"
+  },
+  "content_prevPage": {
+    "message": "Forrige"
+  },
+  "content_nextPage": {
+    "message": "Neste"
+  },
+  "content_pageNumber": {
+    "message": "Sidetall"
+  },
+  "content_goToPage": {
+    "message": "Gå til side"
+  },
+  "content_collapseFilters": {
+    "message": "Skjul filtre"
+  },
+  "content_expandFilters": {
+    "message": "Vis filtre"
+  },
+  "content_showUpdateFiles": {
+    "message": "Vis oppdateringsfiler"
+  },
+  "content_showOptionalFiles": {
+    "message": "Vis valgfrie filer"
+  },
+  "content_showMiscFiles": {
+    "message": "Vis diverse filer"
+  },
+  "content_showOldFiles": {
+    "message": "Vis gamle versjoner og arkiverte filer"
+  },
+  "content_exclusionLabel": {
+    "message": "Utelat modder med navn som inneholder"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Utelat modder (f.eks. patch, translation)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "Skill nøkkelord med komma"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Intervall for sist oppdatert"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Sist oppdatert:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Oppdatert denne datoen eller senere"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Oppdatert denne datoen eller tidligere"
+  },
+  "content_startDateTooltip": {
+    "message": "Startdato (inkludert)"
+  },
+  "content_endDateTooltip": {
+    "message": "Sluttdato (inkludert)"
+  },
+  "content_clearDateRange": {
+    "message": "Tøm datointervallet"
+  },
+  "content_clearButton": {
+    "message": "Tøm"
+  },
+  "content_noModsSelected": {
+    "message": "Ingen modder valgt"
+  },
+  "content_modsSelectedOne": {
+    "message": "$COUNT$ mod valgt",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "$COUNT$ modder valgt",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Tøm utvalget"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Fjern haken fra alle valgte modder"
+  },
+  "content_downloadAll": {
+    "message": "Last ned alle"
+  },
+  "content_downloadMode": {
+    "message": "Nedlastingsmodus"
+  },
+  "content_downloadModeManual": {
+    "message": "Manuelt"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Stopp"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Stopper den pågående nedlastingsrunden. Filer som allerede er startet, avbrytes ikke."
+  },
+  "content_apiRemaining": {
+    "message": "API: $REMAINING$ igjen",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Velg"
+  },
+  "content_selectModNamed": {
+    "message": "Velg $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Velg denne modden"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Sist sjekket: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Forbereder nedlasting..."
+  },
+  "content_downloadStarted": {
+    "message": "Nedlasting startet"
+  },
+  "content_downloadStartedDetail": {
+    "message": "Se etter filen i nettleserens nedlastinger."
+  },
+  "content_downloadFailed": {
+    "message": "Nedlastingen mislyktes"
+  },
+  "content_noFileToDownload": {
+    "message": "Fant ikke ut hvilken fil som skulle lastes ned"
+  },
+  "content_noDownloadableFile": {
+    "message": "Fant ingen nedlastbar fil"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "Denne modden har kanskje ingen hovedfil, eller krever at du velger manuelt."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Hoppet over ved filvalget"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Ingen fil ble valgt for denne modden."
+  },
+  "content_downloadRunStopped": {
+    "message": "Nedlastingsrunden ble stoppet"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "Runden tok slutt før det ble valgt en fil for denne modden."
+  },
+  "content_vortexUnavailable": {
+    "message": "Vortex-nedlasting utilgjengelig"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "Klarte ikke å finne en NXM-lenke. Sørg for at du er logget inn på nexusmods.com."
+  },
+  "content_handedToVortex": {
+    "message": "Overlevert til Vortex"
+  },
+  "content_handedToVortexDetail": {
+    "message": "Nettleseren sendte en nxm://-lenke til Vortex. Nettleseren kan ikke bekrefte at Vortex mottok den."
+  },
+  "content_vortexBlocked": {
+    "message": "Vortex-overlevering blokkert"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "Nettleseren nektet å åpne nxm://-lenken."
+  },
+  "content_vortexHandoff": {
+    "message": "Sender disse moddene til Vortex over nxm://-lenker."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Ingenting skjer hvis Vortex ikke er installert og registrert for nxm-lenker, og nettlesere kan blokkere gjentatte protokollstarter fra ett klikk. Bytt modus til Manuelt hvis ingenting kommer fram."
+  },
+  "content_batchEmpty": {
+    "message": "Ingenting å laste ned: ingen mod passet til gjeldende utvalg og filtre."
+  },
+  "content_batchBusy": {
+    "message": "En nedlastingsrunde pågår allerede."
+  },
+  "content_batchVerbQueued": {
+    "message": "lagt i kø"
+  },
+  "content_batchVerbVortex": {
+    "message": "overlevert til Vortex"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ mislyktes.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Laster ned"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Laster ned alle"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "lastes ned allerede"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "ingen nedlastbar fil"
+  },
+  "content_reasonRunStopped": {
+    "message": "runden ble stoppet"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "hoppet over ved kravspørsmålet"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "hoppet over ved filvalget"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "fillisten kunne ikke lastes"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "ingen NXM-lenke"
+  },
+  "content_reasonNxmRefused": {
+    "message": "nettleseren nektet nxm://-lenken"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "skjult av gjeldende filtre"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "en annen nedlastingsrunde pågår"
+  },
+  "content_modalOk": {
+    "message": "OK"
+  },
+  "content_selectFilesTitle": {
+    "message": "Velg filer å laste ned"
+  },
+  "content_skipMod": {
+    "message": "Hopp over mod"
+  },
+  "content_skipThisMod": {
+    "message": "Hopp over denne modden"
+  },
+  "content_skipTheseMods": {
+    "message": "Hopp over disse moddene"
+  },
+  "content_downloadAnyway": {
+    "message": "Last ned likevel"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Kunne ikke bekrefte kravene"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ kan ha nødvendige modder, men listen kunne ikke lastes: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " Dette svikter som regel for en hel runde, så svaret ditt brukes på resten av den."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ har følgende krav. Velg hvilke som skal installeres:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Denne modden"
+  },
+  "content_quotedModName": {
+    "message": "«$MODNAME$»",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "Krav for $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Krav oppdaget"
+  },
+  "content_installWithRequirements": {
+    "message": "Installer med krav"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Installer uten krav"
+  },
+  "content_unknownMod": {
+    "message": "Ukjent mod"
+  },
+  "content_noLinkProvided": {
+    "message": "Ingen lenke oppgitt"
+  },
+  "content_requirementsUnreadable": {
+    "message": "Kravlisten kunne ikke leses."
+  },
+  "content_requirementsPartial": {
+    "message": "$STARTED$ av $TOTAL$ krav startet, $FAILED$ mislyktes.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Nexus-API-nøkkelen din ble avvist. Skriv den inn på nytt i utvidelsens popup."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus avviste denne forespørselen. Det kan kreve en Premium-konto eller aktiv innlogging på nexusmods.com."
+  },
+  "content_errorNotFound": {
+    "message": "Denne modden er ikke tilgjengelig (slettet, skjult eller feil spill)."
+  },
+  "content_errorRateLimited": {
+    "message": "Nexus-API-grensen er nådd. Sjekkene fortsetter etter at grensen nullstilles."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus svarer ikke akkurat nå."
+  },
+  "content_errorOffline": {
+    "message": "Ingen forbindelse til Nexus."
+  },
+  "content_errorNoApiKey": {
+    "message": "Ingen Nexus-API-nøkkel er satt. Legg inn en i utvidelsens popup."
+  },
+  "content_errorUnexpected": {
+    "message": "Noe gikk galt."
+  },
+  "content_errorPortTimeout": {
+    "message": "Sjekken tok for lang tid og ble avbrutt."
+  },
+  "content_errorNoBackground": {
+    "message": "Mistet kontakten med utvidelsens bakgrunnsprosess. Prøver på nytt."
+  },
+  "content_errorContextInvalid": {
+    "message": "Utvidelsen ble oppdatert. Last denne siden på nytt."
+  },
+  "content_errorDisabled": {
+    "message": "Utvidelsen er slått av."
+  },
+  "content_errorCanceled": {
+    "message": "Sjekken ble avbrutt."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Ukjent meldingsfeil."
+  },
+  "content_errorTooManyRequests": {
+    "message": "For mange utestående forespørsler."
+  },
+  "content_errorBackground": {
+    "message": "Feil i bakgrunnsprosessen."
+  },
+  "content_shortKeyRejected": {
+    "message": "nøkkel avvist"
+  },
+  "content_shortAccessRefused": {
+    "message": "tilgang nektet"
+  },
+  "content_shortNotAvailable": {
+    "message": "ikke tilgjengelig"
+  },
+  "content_shortRateLimited": {
+    "message": "grense nådd"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus nede"
+  },
+  "content_shortOffline": {
+    "message": "frakoblet"
+  },
+  "content_shortTimedOut": {
+    "message": "tidsavbrudd"
+  },
+  "content_shortNoBackground": {
+    "message": "ingen bakgrunnsprosess"
+  },
+  "content_shortNeedsReload": {
+    "message": "må lastes på nytt"
+  },
+  "content_shortSwitchedOff": {
+    "message": "slått av"
+  },
+  "content_shortCanceled": {
+    "message": "avbrutt"
+  },
+  "content_shortCheckFailed": {
+    "message": "sjekken mislyktes"
+  },
+  "content_shortRequestRefused": {
+    "message": "forespørsel avvist"
+  },
+  "content_shortNotSetUp": {
+    "message": "ikke satt opp"
+  },
+  "content_shortOtherGame": {
+    "message": "annet spill"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "ingen versjon utledet"
+  },
+  "content_shortSuperseded": {
+    "message": "erstattet"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "siden ikke gjenkjent"
+  },
+  "content_dismiss": {
+    "message": "Lukk"
+  },
+  "content_reloadPage": {
+    "message": "Last siden på nytt"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant ble oppdatert. Last denne siden på nytt for å fortsette."
+  },
+  "content_selectionRestoredOne": {
+    "message": "$COUNT$ mod du valgte tidligere er fortsatt valgt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "$COUNT$ modder du valgte tidligere er fortsatt valgt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "Valgene beholdes i denne fanen til du tømmer dem eller lukker den."
+  },
+  "content_clearSelectionAction": {
+    "message": "Tøm utvalget"
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ valgt mod fra et annet spill ble forkastet.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "$COUNT$ valgte modder fra et annet spill ble forkastet.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Kompatibilitetssjekker er av til du legger inn en Nexus-API-nøkkel."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Alt annet på denne siden virker fortsatt."
+  },
+  "content_openSettings": {
+    "message": "Åpne innstillinger"
+  },
+  "content_noticeOtherGame": {
+    "message": "Kompatibiliteten er satt opp for $TARGETGAME$, og denne siden er $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Velg spillversjonen du spiller for å få kompatibilitetsmerker."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Ingen dommer vises, framfor dommer regnet ut mot et annet spill."
+  },
+  "content_useThisGame": {
+    "message": "Bruk dette spillet"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Åpne Nexus Mods Assistant-popupen fra nettleserens verktøylinje for å endre innstillinger."
+  },
+  "content_targetModalTitle": {
+    "message": "Sikt mot dette spillet"
+  },
+  "content_targetPromptQuestion": {
+    "message": "Hvilken versjon av $GAME$ spiller du? Modder vurderes mot denne versjonen.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "f.eks. 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Utleder versjonene til dette spillet fra offentlige kilder..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Ingen offentlig kilde oppgir en versjon for dette spillet, så det finnes ingenting å tilby. Skriv inn versjonen du spiller hvis du vet den."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "$COUNT$ versjon ble utledet for dette spillet. Åpne listen i feltet over, eller skriv inn din egen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "$COUNT$ versjoner ble utledet for dette spillet. Åpne listen i feltet over, eller skriv inn din egen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "Versjonssøket kunne ikke fullføres ($REASON$), så denne listen er tom av mangel på svar, ikke av mangel på data. Skriv inn versjonen du spiller.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Lagre"
+  },
+  "content_cancel": {
+    "message": "Avbryt"
+  },
+  "content_targetNotSaved": {
+    "message": "Ingen versjon ble skrevet inn, så ingenting ble lagret, og denne siden har fortsatt ingen målversjon."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Velg en av de utledede versjonene, eller skriv inn versjonen du spiller."
+  },
+  "content_tryAgain": {
+    "message": "Prøv igjen"
+  },
+  "content_noModsOnPage": {
+    "message": "Ingen modder på denne siden."
+  },
+  "content_layoutStillLoading": {
+    "message": "Modlisten er ikke ferdig lastet. Hvis den blir stående slik, kan Nexus ha endret oppsettet sitt."
+  },
+  "content_layoutNotFound": {
+    "message": "Fant ikke modlisten på denne siden. Nexus kan ha endret oppsettet sitt."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Selektorer som sluttet å treffe: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Denne modsiden ser ikke ut som et oppsett assistenten kjenner igjen, så det ble ikke lagt til noe merke."
+  },
+  "content_translationSignalMissing": {
+    "message": "Oversettelser skal være skjult, men ingen mod på denne siden oppgir hvilken kategori den er i, så ingenting ble skjult."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus kan ha endret markeringen sin. Ingenting er skjult for deg."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "Datofilteret brukes ikke: ingen mod på denne siden viser en oppdateringsdato."
+  },
+  "content_dateSelectorBroken": {
+    "message": "Filteret «Sist oppdatert» klarte ikke å lese noen datoer på denne siden, så det ble ikke brukt."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus kan ha endret markeringen sin."
+  },
+  "content_undatedHiddenOne": {
+    "message": "$COUNT$ mod skjult: ingen oppdateringsdato å måle mot.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "$COUNT$ modder skjult: ingen oppdateringsdato å måle mot.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ oversettelsesmod skjult av innstillingen i popupen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "$COUNT$ oversettelsesmodder skjult av innstillingen i popupen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Innstillingene ble endret. Merkene oppdateres når den pågående nedlastingsrunden er ferdig."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Kompatibilitetshjelper"
+  },
+  "popup_extensionToggle": {
+    "message": "Slå assistenten på eller av"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Spill og versjon"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "Fanen du har åpen er en Nexus-spillside."
+  },
+  "popup_useThisGame": {
+    "message": "Bruk dette spillet"
+  },
+  "popup_gameLabel": {
+    "message": "Spill"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Søk etter navn"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Spill som passer"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Versjonsintervall"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Eldste spillversjon"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Start (f.eks. 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Nyeste spillversjon, valgfritt"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Slutt, valgfritt"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Utledede spillversjoner"
+  },
+  "popup_refreshVersions": {
+    "message": "Oppdater versjoner"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Søk i de offentlige kildene på nytt etter versjonene til dette spillet"
+  },
+  "popup_exclusionLabel": {
+    "message": "Utelat modder som inneholder"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "f.eks. patch, translation"
+  },
+  "popup_exclusionTitle": {
+    "message": "Skill flere nøkkelord med komma"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Legger Nexus sitt eget oversettelsesfilter til listen denne knappen åpner"
+  },
+  "popup_hideTranslations": {
+    "message": "Åpne listen med oversettelser utelatt"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Åpne kompatible modder"
+  },
+  "popup_sectionConnection": {
+    "message": "Tilkobling"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus-API-nøkkel"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Lagret Nexus-API-nøkkel"
+  },
+  "popup_revealKey": {
+    "message": "Vis den lagrede API-nøkkelen"
+  },
+  "popup_hideKey": {
+    "message": "Skjul den lagrede API-nøkkelen"
+  },
+  "popup_show": {
+    "message": "Vis"
+  },
+  "popup_hide": {
+    "message": "Skjul"
+  },
+  "popup_replaceKey": {
+    "message": "Bytt nøkkel"
+  },
+  "popup_disconnect": {
+    "message": "Koble fra"
+  },
+  "popup_disconnectExplain": {
+    "message": "Å koble fra fjerner nøkkelen og alle mellomlagrede Nexus-svar fra denne nettleseren. Nexus-kontoen din berøres ikke."
+  },
+  "popup_keepKey": {
+    "message": "Behold nøkkelen"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Personlig Nexus-API-nøkkel"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Lim inn API-nøkkelen din"
+  },
+  "popup_save": {
+    "message": "Lagre"
+  },
+  "popup_needKey": {
+    "message": "Trenger du en nøkkel?"
+  },
+  "popup_cancel": {
+    "message": "Avbryt"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Valgfritt. Surfing, filtre og versjonsmålet virker uten. Kompatibilitetsmerker og nedlastinger trenger en nøkkel, fordi Nexus bare svarer for en konto."
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods enkel pålogging"
+  },
+  "popup_ssoDescription": {
+    "message": "Autoriser én gang, så fylles nøkkelen inn for deg. Du kan kjøre dette igjen når som helst for å bytte ut den lagrede nøkkelen."
+  },
+  "popup_authorizeSso": {
+    "message": "Autoriser SSO"
+  },
+  "popup_cancelSso": {
+    "message": "Avbryt SSO"
+  },
+  "popup_ssoReady": {
+    "message": "Klar til å starte Nexus Mods SSO-håndtrykket."
+  },
+  "popup_startingSso": {
+    "message": "Starter SSO..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO avbrutt."
+  },
+  "popup_sectionDownloads": {
+    "message": "Nedlastinger"
+  },
+  "popup_downloadModeLabel": {
+    "message": "Nedlastingsmodus"
+  },
+  "popup_downloadModeManual": {
+    "message": "Manuelt: nettleseren lagrer filen"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: modbehandleren din tar lenken"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Samme innstilling som den i handlingslinjen på en Nexus-listeside: endrer du den her, endres den der, og omvendt. I Vortex-modus åpnes en lenke av typen"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "som operativsystemet ditt gir videre til den modbehandleren som har registrert den protokollen."
+  },
+  "popup_fileListsLegend": {
+    "message": "Fillister"
+  },
+  "popup_fileListsNote": {
+    "message": "Hvilke filkategorier som vises når fillisten til en mod åpnes. De samme fire bryterne finnes i panelet på siden."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Vis eldre versjoner av filene til en mod"
+  },
+  "popup_showOldFiles": {
+    "message": "Gamle filer"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Vis oppdateringsfilene til en mod"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Oppdateringsfiler"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Vis de valgfrie filene til en mod"
+  },
+  "popup_showOptionalFiles": {
+    "message": "Valgfrie filer"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Vis de diverse filene til en mod"
+  },
+  "popup_showMiscFiles": {
+    "message": "Diverse filer"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Avansert"
+  },
+  "popup_advancedNote": {
+    "message": "Lokal lagring og diagnostikk. Å tømme mellomlageret leser spillisten fra Nexus på nytt med én gang når en nøkkel er koblet til; ingenting annet her går ut på nettet."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Skriver detaljert aktivitet fra bakgrunnsprosessen til service worker-konsollen"
+  },
+  "popup_debugLogging": {
+    "message": "Detaljert konsollogging"
+  },
+  "popup_clearCache": {
+    "message": "Tøm mellomlagrede Nexus-data"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "oppdateringsnotat i butikken"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "butikkgren"
+  },
+  "popup_sourceArticleText": {
+    "message": "artikkeltekst, ubekreftet"
+  },
+  "popup_sourceModText": {
+    "message": "modtekst"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "Collection-metadata"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, fra $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "Ingen API-nøkkel er koblet til, så Nexus svarer ikke. Legg inn en under Tilkobling."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus avviste API-nøkkelen din. Bytt den ut under Tilkobling."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus avviste forespørselen. Det kan kreve en Premium-konto eller aktiv innlogging på nexusmods.com."
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus har ingen oppføring av det spillet eller den modden. Den kan ha blitt skjult eller fjernet."
+  },
+  "popup_failureRateLimited": {
+    "message": "Du har brukt opp Nexus-API-kvoten din. Sjekkene fortsetter når den nullstilles, vanligvis innen en time."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus svarer ikke akkurat nå. Prøv igjen om noen minutter."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus avviste forespørselen som feilformet. Sjekk spillet og versjonen, og prøv igjen."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Ingenting er satt opp å sjekke ennå. Velg et spill og en startversjon over."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Ingen spillversjon er utledet for dette spillet ennå, så det finnes ingenting å sammenligne en mod mot. Alle spill støttes; dette har bare ingen offentlige versjonsdata assistenten kunne finne. Skriv inn versjonen du spiller for å sjekke likevel."
+  },
+  "popup_failureOffline": {
+    "message": "Ingen forbindelse til Nexus. Sjekk nettverket ditt, og prøv igjen."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "Utvidelsen har ikke lov til å nå nexusmods.com. Nettverket ditt er i orden: tillatelsen til å bruke nettstedet ble avslått eller trukket tilbake. Gi den på nytt i nettleserens utvidelsesinnstillinger (Firefox: about:addons, så denne utvidelsen, så Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus brukte for lang tid på å svare. Prøv igjen."
+  },
+  "popup_failureDisabled": {
+    "message": "Assistenten er slått av. Slå den på igjen med bryteren øverst til høyre."
+  },
+  "popup_failureNoBackground": {
+    "message": "Utvidelsens bakgrunnsprosess svarte ikke. Åpne denne popupen på nytt, eller last utvidelsen på nytt."
+  },
+  "popup_failureCanceled": {
+    "message": "Den forespørselen ble avbrutt før den ble ferdig."
+  },
+  "popup_failureBackgroundError": {
+    "message": "Utvidelsens bakgrunnsprosess klarte ikke å fullføre den forespørselen."
+  },
+  "popup_failureContextInvalid": {
+    "message": "Utvidelsen ble oppdatert. Last inn åpne Nexus-faner på nytt."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Uventet feil: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Uventet feil, uten noen detaljer rapportert."
+  },
+  "popup_requestFailed": {
+    "message": "Forespørselen mislyktes."
+  },
+  "popup_settingsReadFailed": {
+    "message": "Popupen klarte ikke å lese innstillingene dine: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Klarte ikke å oppdatere lagrede innstillinger: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "Lagringsplassen er full, så den innstillingen ble ikke lagret. Bruk «Tøm mellomlagrede Nexus-data» under, og prøv igjen."
+  },
+  "popup_settingSaveFailed": {
+    "message": "Klarte ikke å lagre den innstillingen: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "Uten en API-nøkkel kan du sikte mot spillet i Nexus-fanen du har åpen, men hele Nexus-katalogen kan ikke søkes i, og kompatibilitetsmerker kan ikke hentes."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Lim inn den nye nøkkelen, og trykk Lagre."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Lim inn en nøkkel først. Du kan lage en med «Trenger du en nøkkel?»."
+  },
+  "popup_keySaved": {
+    "message": "Nøkkelen er lagret."
+  },
+  "popup_keyUpdated": {
+    "message": "Nøkkelen er oppdatert."
+  },
+  "popup_disconnecting": {
+    "message": "Kobler fra..."
+  },
+  "popup_keyClearFailed": {
+    "message": "Klarte ikke å fjerne nøkkelen: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Nøkkelen er fjernet. Spillet og versjonsmålet ditt ble beholdt."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Nøkkelen er fjernet, og spillet og versjonsmålet ditt ble beholdt. Men $ISSUES$: bruk «Tøm mellomlagrede Nexus-data» under.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "bakgrunnsprosessen svarte ikke, så mellomlagrede Nexus-svar ligger fortsatt på disken"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "Steam-versjonsmellomlageret kunne ikke leses, så det ligger fortsatt på disken"
+  },
+  "popup_leftBehindSeparator": {
+    "message": ", og "
+  },
+  "popup_noReadableVersion": {
+    "message": "Ingen av versjonene som ble utledet for dette spillet kunne leses som et versjonsnummer, så ingen ble fylt inn. Skriv inn spillversjonen du spiller."
+  },
+  "popup_startVersionFilled": {
+    "message": "Startversjonen er fylt inn som $VERSION$, den nyeste versjonen som ble funnet for dette spillet. Endre den hvis du spiller en eldre.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "Sluttversjonen $END$ er eldre enn startversjonen $START$, så ingen mod ville noensinne passe. Det intervallet ble ikke lagret, og målet du hadde er uendret.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Velg et spill først: en versjon alene har ingenting å sammenligne mot."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Velg et spill først, så kan versjoner utledes for det."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Velg et spill før du fortsetter."
+  },
+  "popup_openTabIsGame": {
+    "message": "Nexus-fanen du har åpen er $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Lagret. Nexus-fanen du har åpen er $GAME$, så dette målet gjelder ikke for den.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Lagret."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "Spillisten trenger en API-nøkkel. Bruk knappen over for å sikte mot spillet i fanen du har åpen."
+  },
+  "popup_derivingVersions": {
+    "message": "Utleder versjoner fra offentlige kilder..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "Versjonssøket kunne ikke fullføres, så ingenting her er et funn."
+  },
+  "popup_noVersionsFound": {
+    "message": "Ingen offentlig kilde oppgir en versjon for dette spillet. Denne listen er tom fordi dataene ikke finnes, ikke fordi spillet ikke støttes."
+  },
+  "popup_searching": {
+    "message": "Søker i offentlige kilder..."
+  },
+  "popup_searchingAgain": {
+    "message": "Søker i offentlige kilder på nytt..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Versjonssøk: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "Utledet $COUNT$ versjon.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "Utledet $COUNT$ versjoner.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "Utledet $COUNT$ versjon fra $SOURCES$ kilde.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "Utledet $COUNT$ versjon fra $SOURCES$ kilder.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "Utledet $COUNT$ versjoner fra $SOURCES$ kilde.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "Utledet $COUNT$ versjoner fra $SOURCES$ kilder.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Ingen offentlig kilde oppgir en versjon for dette spillet, så ingenting ble fylt inn. Skriv inn versjonen du spiller hvis du vet den; å la det stå tomt går også fint."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ forespørsel denne oppdateringen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "$COUNT$ forespørsler denne oppdateringen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "Butikkoppføringen for dette spillet kunne ikke identifiseres med sikkerhet, så butikkilder ble hoppet over framfor å risikere tallene til et annet spill."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "Nedlastinger gis videre til modbehandleren din som nxm://-lenker, her og i alle åpne Nexus-faner."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "Nedlastinger lagres av nettleseren, her og i alle åpne Nexus-faner."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Detaljert logging er på fra neste gang bakgrunnsprosessen starter."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Detaljert logging er av fra neste gang bakgrunnsprosessen starter."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Åpne uten versjonsmål"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Ingen startversjon er satt, så merkene vil melde at det ikke finnes noe å sammenligne mot i stedet for å vurdere en mod. Filtrering og nedlastinger virker fortsatt. Trykk en gang til for å åpne listen likevel."
+  },
+  "popup_clearing": {
+    "message": "Tømmer..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "Utvidelsens bakgrunnsprosess svarte ikke, og Steam-versjonsmellomlageret kunne ikke leses, så ingen av dem ble tømt. Den lagrede spillisten ble tømt."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "Utvidelsens bakgrunnsprosess svarte ikke, så mellomlageret med modsvar kunne ikke tømmes. Den lagrede spillisten og Steam-versjonsmellomlageret ble tømt."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "Tømte $COUNT$ mellomlagrede oppføringer, $KB$ KB frigjort. Steam-versjonsmellomlageret kunne ikke leses, så det ligger kanskje fortsatt på disken.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "Tømte $COUNT$ mellomlagrede oppføringer, $KB$ KB frigjort.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Ingen mellomlagrede oppføringer ble rapportert, så ingenting ble frigjort."
+  },
+  "popup_noGameListCached": {
+    "message": "Ingen spilliste er mellomlagret ennå."
+  },
+  "popup_gameListCached": {
+    "message": "Spillisten ble mellomlagret $WHEN$.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "nå nettopp"
+  },
+  "popup_timeAgoMinute": {
+    "message": "for $COUNT$ minutt siden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "for $COUNT$ minutter siden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "for $COUNT$ time siden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "for $COUNT$ timer siden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "for $COUNT$ dag siden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "for $COUNT$ dager siden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "Lastet inn $COUNT$ titler.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Spilliste: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "Bakgrunnsprosessen returnerte en uventet spilliste."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "Lastet inn 1 tittel."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "Tømte 1 mellomlagret oppføring, $KB$ KB frigjort.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "Tømte 1 mellomlagret oppføring, $KB$ KB frigjort. Steam-versjonsmellomlageret kunne ikke leses, så det ligger kanskje fortsatt på disken.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

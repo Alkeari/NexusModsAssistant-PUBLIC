@@ -1,0 +1,56 @@
+# Build output
+/dist/
+/dist-ts/
+/dist-chrome/
+/dist-firefox/
+/packages/
+
+# Dependencies
+/node_modules/
+
+# IDE / editor
+/.idea/
+/.vs/
+/.vscode/
+*.DotSettings.user
+
+# Support folders (never built or committed)
+/.REFERENCE/
+/.Assets/
+
+# Logs and temp
+*.log
+/logs/
+/tmp/
+/.cache/
+/.dist-logs/
+/.dist-stage-*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Release pipeline state and artifacts
+/.nma-state/
+/web-ext-artifacts/
+
+# Credentials must never be here. They live in %USERPROFILE%\.alkeari\.
+# This is a backstop, not the primary guard. See .githooks/pre-commit.
+*.env
+.env.*
+.env.submit
+*service-account*.json
+*.pem
+*.p12
+
+# Extracted store artifacts, for verifying the exact zip that ships
+/verify-chrome/
+/verify-firefox/
+
+# Staging directory for the Nexus upload bundle
+/packages/nexus-bundle/
+
+# Release packages and rendered listings (Mod Publisher)
+out/
+
+__pycache__/
