@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "為每個 Nexus 模組方塊標示你實際遊玩版本的相容性判定，讓你篩選出真正能執行的模組。"
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "要求超過 $seconds$ 秒仍未完成，已放棄。",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "已達 Nexus API 上限，將於 $resetTime$ 重設。",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "已達 Nexus API 上限。上限重設後會繼續檢查。"
+  },
+  "background_errorRateLimitedShort": {
+    "message": "已達 Nexus API 上限。"
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus 拒絕了你的 API 金鑰。請在擴充功能彈出視窗中重新輸入。"
+  },
+  "background_errorForbidden": {
+    "message": "Nexus 拒絕了這項要求。可能需要 Premium 帳戶或已登入的 nexusmods.com。"
+  },
+  "background_errorNotFound": {
+    "message": "Nexus 上沒有這個遊戲的此模組（已刪除、已隱藏，或遊戲不符）。"
+  },
+  "background_errorServerError": {
+    "message": "Nexus 目前沒有回應（HTTP $status$）。",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus 拒絕了這項要求（HTTP $status$）。$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "要求耗時過久，已放棄。"
+  },
+  "background_errorOffline": {
+    "message": "無法連線到 Nexus。"
+  },
+  "background_errorDisabled": {
+    "message": "擴充功能已關閉。"
+  },
+  "background_errorUnexpected": {
+    "message": "發生錯誤。"
+  },
+  "background_errorNoApiKey": {
+    "message": "找不到 API 金鑰。請在擴充功能彈出視窗中加入你的 Nexus API 金鑰。"
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "下載連結缺少 URI。"
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "找不到 NXM 連結。"
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "這個模組沒有可下載的合適檔案。"
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "無法讀取此模組頁面的需求區塊。這個 Nexus 頁面版面不是 NMA 認得的樣式。"
+  },
+  "background_errorNavigationChanged": {
+    "message": "頁面已切換"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant 需要$missing$才能檢查模組。請開啟擴充功能彈出視窗完成設定。",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "API 金鑰"
+  },
+  "background_setupNeedsGame": {
+    "message": "遊戲"
+  },
+  "background_setupNeedsVersion": {
+    "message": "遊戲版本"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$和$last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "這個頁面是 $pageGame$，但 NMA 設定的是 $configuredGame$。請在擴充功能彈出視窗中切換遊戲，才能檢查這些模組。",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA 無法將「$version$」解讀為遊戲版本，因此無法據此判定任何模組。請在擴充功能彈出視窗中設定數字版本，例如 1.6.1170。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "沒有任何公開來源說明 $gameDomain$ 的遊戲版本，因此 NMA 無法在這裡從模組版本推斷遊戲版本。這是資料上的缺口，而不是擴充功能的問題，所有人都一樣。請在擴充功能彈出視窗中輸入你遊玩的版本，仍可進行檢查。",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "無法連上任何版本來源，因此目前還無法為這個遊戲推導出版本。"
+  },
+  "background_errorNoGameDomain": {
+    "message": "必須先有遊戲網域，才能為它推導版本。"
+  },
+  "background_errorNoStoreListing": {
+    "message": "沒有任何商店頁面與該遊戲吻合到足以確定，因此沒有儲存任何項目。"
+  },
+  "background_sourceFileVersion": {
+    "message": "某個檔案版本"
+  },
+  "background_sourceFileName": {
+    "message": "某個檔案名稱"
+  },
+  "background_sourceChangelog": {
+    "message": "更新日誌"
+  },
+  "background_sourceDescription": {
+    "message": "模組說明"
+  },
+  "background_sourceUploadDate": {
+    "message": "上傳日期"
+  },
+  "background_sourceNone": {
+    "message": "沒有任何內容"
+  },
+  "background_verdictPartialNote": {
+    "message": "有一個來源無法讀取（$cause$），因此這次檢查並不完整。",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "任何地方都沒有標示遊戲版本，但最新檔案的上傳日期是 $uploadDate$，晚於遊戲版本 $gameVersion$。屬於推論，未經確認。",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$標示「$evidence$」，落在你選取的範圍內。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$提到「$evidence$」，落在你選取的範圍內。這是推論，而不是明確標示的遊戲版本。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "任何地方都沒有標示遊戲版本，而且最新檔案的上傳日期（$uploadDate$）並未落在你選取的範圍內。",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$標示「$evidence$」，這是此模組提到的最新遊戲版本，落在你選取的範圍之外。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$提到「$evidence$」，這是此模組提到的最新遊戲版本，落在你選取的範圍之外。這是推論，而不是明確標示的遊戲版本。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "這個模組在檔案、更新日誌或說明中都沒有標示遊戲版本。"
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "這個模組在說明或更新日誌中沒有標示遊戲版本。這次檢查沒有開啟它的檔案清單。"
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "商店搜尋沒有回應，因此略過商店來源。"
+  },
+  "background_storeNoteNoMatch": {
+    "message": "沒有商店頁面與這個遊戲吻合到足以確定，因此略過商店來源。"
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "無法讀取這個遊戲的商店資料，因此這次略過商店來源。"
+  },
+  "background_storeNoteNotAGame": {
+    "message": "最接近的商店頁面不是遊戲項目，因此略過商店來源，以免讀到其他產品的版本。"
+  },
+  "background_storeNoteWrongApp": {
+    "message": "最接近的商店頁面屬於另一個應用程式，因此略過商店來源。"
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "商店頁面標示的遊戲與目錄中的不同，因此略過商店來源。"
+  },
+  "background_ssoConnecting": {
+    "message": "正在連線至 Nexus Mods SSO…"
+  },
+  "background_ssoWaitingApproval": {
+    "message": "正在等待你在 Nexus Mods 分頁中核准…"
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "無法啟動 SSO 交握。"
+  },
+  "background_ssoConnectionFailed": {
+    "message": "無法開啟 SSO 連線。"
+  },
+  "background_ssoRejected": {
+    "message": "SSO 拒絕了這次交握。"
+  },
+  "background_ssoConnectionReady": {
+    "message": "連線已就緒。正在等待你的核准…"
+  },
+  "background_ssoComplete": {
+    "message": "已透過 SSO 儲存 API 金鑰。"
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "SSO 傳回了非預期的回應。"
+  },
+  "background_ssoLostConnection": {
+    "message": "多次重試後仍與 SSO 失去連線。"
+  },
+  "background_ssoReconnecting": {
+    "message": "正在重新連線（第 $attempt$/$total$ 次）…",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "已取消 SSO。"
+  },
+  "content_statusCompatible": {
+    "message": "相容"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "可能相容"
+  },
+  "content_statusIncompatible": {
+    "message": "不相容"
+  },
+  "content_statusUnknown": {
+    "message": "無版本資訊"
+  },
+  "content_statusFailed": {
+    "message": "無法檢查"
+  },
+  "content_statusNotConfigured": {
+    "message": "尚未設定"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "未知"
+  },
+  "content_evidenceFileVersion": {
+    "message": "檔案版本"
+  },
+  "content_evidenceFileName": {
+    "message": "檔案名稱"
+  },
+  "content_evidenceChangelog": {
+    "message": "更新日誌"
+  },
+  "content_evidenceDescription": {
+    "message": "模組說明"
+  },
+  "content_evidenceUploadDate": {
+    "message": "上傳日期"
+  },
+  "content_evidenceNone": {
+    "message": "沒有版本佐證"
+  },
+  "content_confidenceExact": {
+    "message": "完全符合"
+  },
+  "content_confidenceInferred": {
+    "message": "推論而得"
+  },
+  "content_confidenceNone": {
+    "message": "無法判定"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "偵測到的版本：$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "佐證：$SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "可信度：$LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "符合內容：$TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - 未選取版本",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "未提供版本"
+  },
+  "content_versionNotReportedShort": {
+    "message": "未提供"
+  },
+  "content_checking": {
+    "message": "檢查中…"
+  },
+  "content_checkingCompatibility": {
+    "message": "正在檢查相容性…"
+  },
+  "content_scrollToCheck": {
+    "message": "捲動以檢查"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "這個模組會在捲動到可見範圍時才檢查。"
+  },
+  "content_noResponse": {
+    "message": "沒有回應"
+  },
+  "content_compatibilityColumn": {
+    "message": "相容性"
+  },
+  "content_setVersionInPopup": {
+    "message": "請在擴充功能彈出視窗中設定遊戲版本，才能取得判定。"
+  },
+  "content_pickVersionInPopup": {
+    "message": "請在彈出視窗中選取遊戲版本，才能取得這個模組的判定。"
+  },
+  "content_filesButton": {
+    "message": "檔案"
+  },
+  "content_filesButtonForMod": {
+    "message": "$MODNAME$ 的檔案",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "這個模組的檔案"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "這個必要模組的檔案"
+  },
+  "content_filesDropdownLabel": {
+    "message": "可下載的檔案"
+  },
+  "content_filesLoading": {
+    "message": "正在載入檔案…"
+  },
+  "content_filesFetchFailed": {
+    "message": "無法取得檔案"
+  },
+  "content_filesLoadFailed": {
+    "message": "無法載入檔案清單：$REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "無法載入檔案清單"
+  },
+  "content_fileListUnreadable": {
+    "message": "無法讀取檔案清單。"
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$（$COUNT$）",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "你開啟的類別中沒有任何檔案。已隱藏：$CATEGORIES$。",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "找不到這個模組的檔案。"
+  },
+  "content_filesHiddenByFilters": {
+    "message": "已被你的檔案篩選條件隱藏：$CATEGORIES$。",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$（$CATEGORY$）",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "檔案"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "大小不明"
+  },
+  "content_fileDateUnknown": {
+    "message": "日期不明"
+  },
+  "content_downloadSelected": {
+    "message": "下載選取項目"
+  },
+  "content_downloadSelectedCount": {
+    "message": "下載選取項目（$COUNT$）",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "下載選取項目（$MODS$ 個模組／$FILES$ 個檔案）",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "下載中（$DONE$/$TOTAL$）…",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "下載中…"
+  },
+  "content_fileOutcomeQueued": {
+    "message": "已排入佇列"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "失敗：$REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "原因不明"
+  },
+  "content_filesQueuedOne": {
+    "message": "已將 $COUNT$ 個檔案排入佇列。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "已將 $COUNT$ 個檔案排入佇列。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ 個已排入佇列，$FAILED$ 個失敗。",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "依相容性整理模組"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistant 篩選器"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistant 下載"
+  },
+  "content_refresh": {
+    "message": "重新整理"
+  },
+  "content_pageNavigation": {
+    "message": "頁面導覽"
+  },
+  "content_prevPage": {
+    "message": "上一頁"
+  },
+  "content_nextPage": {
+    "message": "下一頁"
+  },
+  "content_pageNumber": {
+    "message": "頁碼"
+  },
+  "content_goToPage": {
+    "message": "前往頁面"
+  },
+  "content_collapseFilters": {
+    "message": "收合篩選器"
+  },
+  "content_expandFilters": {
+    "message": "展開篩選器"
+  },
+  "content_showUpdateFiles": {
+    "message": "顯示更新檔案"
+  },
+  "content_showOptionalFiles": {
+    "message": "顯示選用檔案"
+  },
+  "content_showMiscFiles": {
+    "message": "顯示其他檔案"
+  },
+  "content_showOldFiles": {
+    "message": "顯示舊版與封存檔案"
+  },
+  "content_exclusionLabel": {
+    "message": "排除名稱包含下列文字的模組"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "排除模組（例如 patch、translation）…"
+  },
+  "content_exclusionTooltip": {
+    "message": "以逗號分隔關鍵字"
+  },
+  "content_lastUpdatedRange": {
+    "message": "最後更新範圍"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "最後更新："
+  },
+  "content_updatedOnOrAfter": {
+    "message": "更新日期在此日或之後"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "更新日期在此日或之前"
+  },
+  "content_startDateTooltip": {
+    "message": "起始日期（含當日）"
+  },
+  "content_endDateTooltip": {
+    "message": "結束日期（含當日）"
+  },
+  "content_clearDateRange": {
+    "message": "清除日期範圍"
+  },
+  "content_clearButton": {
+    "message": "清除"
+  },
+  "content_noModsSelected": {
+    "message": "未選取模組"
+  },
+  "content_modsSelectedOne": {
+    "message": "已選取 $COUNT$ 個模組",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "已選取 $COUNT$ 個模組",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "清除選取"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "取消勾選所有已選取的模組"
+  },
+  "content_downloadAll": {
+    "message": "全部下載"
+  },
+  "content_downloadMode": {
+    "message": "下載模式"
+  },
+  "content_downloadModeManual": {
+    "message": "手動"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "停止"
+  },
+  "content_stopButtonTooltip": {
+    "message": "停止目前的下載作業。已經開始的檔案不會取消。"
+  },
+  "content_apiRemaining": {
+    "message": "API：剩餘 $REMAINING$ 次",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "選取"
+  },
+  "content_selectModNamed": {
+    "message": "選取 $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "選取這個模組"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$：$COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "最後檢查：$STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "正在準備下載…"
+  },
+  "content_downloadStarted": {
+    "message": "已開始下載"
+  },
+  "content_downloadStartedDetail": {
+    "message": "請到瀏覽器的下載項目中查看檔案。"
+  },
+  "content_downloadFailed": {
+    "message": "下載失敗"
+  },
+  "content_noFileToDownload": {
+    "message": "無法查出要下載的檔案"
+  },
+  "content_noDownloadableFile": {
+    "message": "找不到可下載的檔案"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "這個模組可能沒有主要檔案，或需要手動選擇。"
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "已在選擇檔案時略過"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "沒有為這個模組選擇任何檔案。"
+  },
+  "content_downloadRunStopped": {
+    "message": "下載作業已停止"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "在為這個模組選擇檔案之前，作業就結束了。"
+  },
+  "content_vortexUnavailable": {
+    "message": "無法使用 Vortex 下載"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "無法解析 NXM 連結。請確認你已登入 nexusmods.com。"
+  },
+  "content_handedToVortex": {
+    "message": "已交給 Vortex"
+  },
+  "content_handedToVortexDetail": {
+    "message": "瀏覽器已將 nxm:// 連結交給 Vortex。瀏覽器無法確認 Vortex 是否收到。"
+  },
+  "content_vortexBlocked": {
+    "message": "Vortex 交接遭封鎖"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "瀏覽器拒絕開啟 nxm:// 連結。"
+  },
+  "content_vortexHandoff": {
+    "message": "正透過 nxm:// 連結將這些模組傳送給 Vortex。"
+  },
+  "content_vortexHandoffDetail": {
+    "message": "如果沒有安裝 Vortex 並註冊 nxm 連結，就不會有任何反應；瀏覽器也可能封鎖同一次點擊觸發的多次通訊協定啟動。若什麼都沒收到，請將模式切換為「手動」。"
+  },
+  "content_batchEmpty": {
+    "message": "沒有可下載的項目：沒有模組符合目前的選取與篩選條件。"
+  },
+  "content_batchBusy": {
+    "message": "已有下載作業正在進行。"
+  },
+  "content_batchVerbQueued": {
+    "message": "個已排入佇列"
+  },
+  "content_batchVerbVortex": {
+    "message": "個已交給 Vortex"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$，$FAILED$ 個失敗。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$：$REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "下載中"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "全部下載中"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$（$DONE$/$TOTAL$）…",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "已在下載中"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "沒有可下載的檔案"
+  },
+  "content_reasonRunStopped": {
+    "message": "作業已停止"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "在前置需求提示中略過"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "在檔案選擇提示中略過"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "無法載入檔案清單"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "沒有 NXM 連結"
+  },
+  "content_reasonNxmRefused": {
+    "message": "瀏覽器拒絕了 nxm:// 連結"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "已被目前的篩選條件隱藏"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "另一項下載作業正在進行"
+  },
+  "content_modalOk": {
+    "message": "確定"
+  },
+  "content_selectFilesTitle": {
+    "message": "選擇要下載的檔案"
+  },
+  "content_skipMod": {
+    "message": "略過模組"
+  },
+  "content_skipThisMod": {
+    "message": "略過這個模組"
+  },
+  "content_skipTheseMods": {
+    "message": "略過這些模組"
+  },
+  "content_downloadAnyway": {
+    "message": "仍要下載"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "無法確認前置需求"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$可能有必要的前置模組，但無法載入清單：$REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": "這通常會影響整批作業，因此你的選擇會套用到其餘的項目。"
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$有下列前置需求。請選擇要安裝哪些：",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "這個模組"
+  },
+  "content_quotedModName": {
+    "message": "「$MODNAME$」",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "$MODNAME$ 的前置需求",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "偵測到前置需求"
+  },
+  "content_installWithRequirements": {
+    "message": "連同前置需求一起安裝"
+  },
+  "content_installWithoutRequirements": {
+    "message": "不安裝前置需求"
+  },
+  "content_unknownMod": {
+    "message": "未知模組"
+  },
+  "content_noLinkProvided": {
+    "message": "未提供連結"
+  },
+  "content_requirementsUnreadable": {
+    "message": "無法讀取前置需求清單。"
+  },
+  "content_requirementsPartial": {
+    "message": "$TOTAL$ 項前置需求中已開始 $STARTED$ 項，$FAILED$ 項失敗。",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "你的 Nexus API 金鑰遭到拒絕。請在擴充功能彈出視窗中重新輸入。"
+  },
+  "content_errorForbidden": {
+    "message": "Nexus 拒絕了這項要求。可能需要 Premium 帳戶或已登入的 nexusmods.com。"
+  },
+  "content_errorNotFound": {
+    "message": "無法取得這個模組（已刪除、已隱藏，或遊戲不符）。"
+  },
+  "content_errorRateLimited": {
+    "message": "已達 Nexus API 上限。上限重設後會繼續檢查。"
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus 目前沒有回應。"
+  },
+  "content_errorOffline": {
+    "message": "無法連線到 Nexus。"
+  },
+  "content_errorNoApiKey": {
+    "message": "尚未設定 Nexus API 金鑰。請在擴充功能彈出視窗中加入一組。"
+  },
+  "content_errorUnexpected": {
+    "message": "發生錯誤。"
+  },
+  "content_errorPortTimeout": {
+    "message": "這次檢查耗時過久，已放棄。"
+  },
+  "content_errorNoBackground": {
+    "message": "已與擴充功能的背景程序失去聯繫，正在重試。"
+  },
+  "content_errorContextInvalid": {
+    "message": "擴充功能已更新，請重新載入這個頁面。"
+  },
+  "content_errorDisabled": {
+    "message": "擴充功能已關閉。"
+  },
+  "content_errorCanceled": {
+    "message": "已取消檢查。"
+  },
+  "content_errorUnknownMessaging": {
+    "message": "未知的訊息傳遞錯誤。"
+  },
+  "content_errorTooManyRequests": {
+    "message": "未完成的要求過多。"
+  },
+  "content_errorBackground": {
+    "message": "背景程序錯誤。"
+  },
+  "content_shortKeyRejected": {
+    "message": "金鑰遭拒"
+  },
+  "content_shortAccessRefused": {
+    "message": "存取遭拒"
+  },
+  "content_shortNotAvailable": {
+    "message": "無法取得"
+  },
+  "content_shortRateLimited": {
+    "message": "已達速率上限"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus 停擺"
+  },
+  "content_shortOffline": {
+    "message": "離線"
+  },
+  "content_shortTimedOut": {
+    "message": "逾時"
+  },
+  "content_shortNoBackground": {
+    "message": "無背景程序"
+  },
+  "content_shortNeedsReload": {
+    "message": "需重新載入"
+  },
+  "content_shortSwitchedOff": {
+    "message": "已關閉"
+  },
+  "content_shortCanceled": {
+    "message": "已取消"
+  },
+  "content_shortCheckFailed": {
+    "message": "檢查失敗"
+  },
+  "content_shortRequestRefused": {
+    "message": "要求遭拒"
+  },
+  "content_shortNotSetUp": {
+    "message": "尚未設定"
+  },
+  "content_shortOtherGame": {
+    "message": "其他遊戲"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "無法推導版本"
+  },
+  "content_shortSuperseded": {
+    "message": "已被取代"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "版面無法辨識"
+  },
+  "content_dismiss": {
+    "message": "關閉"
+  },
+  "content_reloadPage": {
+    "message": "重新載入頁面"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant 已更新。請重新載入這個頁面以繼續。"
+  },
+  "content_selectionRestoredOne": {
+    "message": "你先前選取的 $COUNT$ 個模組仍在選取狀態。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "你先前選取的 $COUNT$ 個模組仍在選取狀態。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "選取狀態會保留在這個分頁，直到你清除或關閉它為止。"
+  },
+  "content_clearSelectionAction": {
+    "message": "清除選取"
+  },
+  "content_selectionDroppedOne": {
+    "message": "已捨棄 $COUNT$ 個屬於其他遊戲的已選取模組。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "已捨棄 $COUNT$ 個屬於其他遊戲的已選取模組。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "在你加入 Nexus API 金鑰之前，相容性檢查會停用。"
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "這個頁面上的其他功能仍可正常使用。"
+  },
+  "content_openSettings": {
+    "message": "開啟設定"
+  },
+  "content_noticeOtherGame": {
+    "message": "相容性設定的遊戲是 $TARGETGAME$，而這個頁面是 $PAGEGAME$。",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "請選取你正在遊玩的遊戲版本，才能取得相容性標記。"
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "寧可不顯示判定，也不會拿其他遊戲的版本來判定。"
+  },
+  "content_useThisGame": {
+    "message": "使用這個遊戲"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "請從瀏覽器工具列開啟 Nexus Mods Assistant 彈出視窗來變更設定。"
+  },
+  "content_targetModalTitle": {
+    "message": "設定這個遊戲"
+  },
+  "content_targetPromptQuestion": {
+    "message": "你正在玩哪一個 $GAME$ 版本？模組會依這個版本判定。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "例如 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "正在從公開來源推導這個遊戲的版本…"
+  },
+  "content_targetVersionsNone": {
+    "message": "沒有任何公開來源說明這個遊戲的版本，因此沒有可提供的選項。如果你知道，請直接輸入你遊玩的版本。"
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "已為這個遊戲推導出 $COUNT$ 個版本。請開啟上方欄位的清單，或自行輸入。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "已為這個遊戲推導出 $COUNT$ 個版本。請開啟上方欄位的清單，或自行輸入。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "版本搜尋無法完成（$REASON$），所以這份清單是空的，原因是沒有得到答案，而不是沒有資料。請輸入你遊玩的版本。",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "儲存"
+  },
+  "content_cancel": {
+    "message": "取消"
+  },
+  "content_targetNotSaved": {
+    "message": "沒有輸入版本，因此沒有儲存任何內容，這個頁面仍未設定目標版本。"
+  },
+  "content_targetNotSavedDetail": {
+    "message": "請選擇其中一個推導出的版本，或輸入你遊玩的版本。"
+  },
+  "content_tryAgain": {
+    "message": "再試一次"
+  },
+  "content_noModsOnPage": {
+    "message": "這個頁面沒有模組。"
+  },
+  "content_layoutStillLoading": {
+    "message": "模組清單尚未載入完成。如果一直維持這樣，可能是 Nexus 變更了版面。"
+  },
+  "content_layoutNotFound": {
+    "message": "在這個頁面上找不到模組清單。Nexus 可能變更了版面。"
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "已無法比對的選擇器：$NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "這個模組頁面的版面不是本擴充功能認得的樣式，因此沒有加上標記。"
+  },
+  "content_translationSignalMissing": {
+    "message": "設定為隱藏翻譯模組，但這個頁面上沒有任何模組方塊標示所屬類別，因此沒有隱藏任何項目。"
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus 可能變更了網頁結構。沒有任何內容對你隱藏。"
+  },
+  "content_dateFilterNotApplied": {
+    "message": "日期篩選沒有套用：這個頁面上沒有任何模組方塊提供更新日期。"
+  },
+  "content_dateSelectorBroken": {
+    "message": "「最後更新」篩選在這個頁面上讀不到任何日期，因此沒有套用。"
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus 可能變更了網頁結構。"
+  },
+  "content_undatedHiddenOne": {
+    "message": "已隱藏 $COUNT$ 個模組：沒有可比對的更新日期。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "已隱藏 $COUNT$ 個模組：沒有可比對的更新日期。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "已依彈出視窗的設定隱藏 $COUNT$ 個翻譯模組。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "已依彈出視窗的設定隱藏 $COUNT$ 個翻譯模組。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "設定已變更。目前的下載作業結束後，標記就會重新整理。"
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · 相容性小幫手"
+  },
+  "popup_extensionToggle": {
+    "message": "啟用或停用小幫手"
+  },
+  "popup_sectionGameVersion": {
+    "message": "遊戲與版本"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "你開啟的分頁是 Nexus 遊戲頁面。"
+  },
+  "popup_useThisGame": {
+    "message": "使用這個遊戲"
+  },
+  "popup_gameLabel": {
+    "message": "遊戲"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "以名稱搜尋"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "相符的遊戲"
+  },
+  "popup_versionRangeLabel": {
+    "message": "版本範圍"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "最早的遊戲版本"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "起始（例如 1.3.8）"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "最新的遊戲版本，選填"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "結束，選填"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "推導出的遊戲版本"
+  },
+  "popup_refreshVersions": {
+    "message": "重新整理版本"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "再次搜尋公開來源，取得這個遊戲的版本"
+  },
+  "popup_exclusionLabel": {
+    "message": "排除包含下列文字的模組"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "例如 patch、translation"
+  },
+  "popup_exclusionTitle": {
+    "message": "多個關鍵字請以逗號分隔"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "在這個按鈕開啟的清單中套用 Nexus 自己的翻譯篩選"
+  },
+  "popup_hideTranslations": {
+    "message": "開啟清單時排除翻譯模組"
+  },
+  "popup_openCompatibleMods": {
+    "message": "開啟相容的模組"
+  },
+  "popup_sectionConnection": {
+    "message": "連線"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus API 金鑰"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "已儲存的 Nexus API 金鑰"
+  },
+  "popup_revealKey": {
+    "message": "顯示已儲存的 API 金鑰"
+  },
+  "popup_hideKey": {
+    "message": "隱藏已儲存的 API 金鑰"
+  },
+  "popup_show": {
+    "message": "顯示"
+  },
+  "popup_hide": {
+    "message": "隱藏"
+  },
+  "popup_replaceKey": {
+    "message": "更換金鑰"
+  },
+  "popup_disconnect": {
+    "message": "中斷連線"
+  },
+  "popup_disconnectExplain": {
+    "message": "中斷連線會從這個瀏覽器移除金鑰，以及所有快取的 Nexus 回應。你的 Nexus 帳戶不受影響。"
+  },
+  "popup_keepKey": {
+    "message": "保留金鑰"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Nexus 個人 API 金鑰"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "貼上你的 API 金鑰"
+  },
+  "popup_save": {
+    "message": "儲存"
+  },
+  "popup_needKey": {
+    "message": "需要金鑰嗎？"
+  },
+  "popup_cancel": {
+    "message": "取消"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "選填。瀏覽、篩選與版本目標不用金鑰也能運作。相容性標記與下載則需要金鑰，因為 Nexus 只回應帳戶的要求。"
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods 單一登入"
+  },
+  "popup_ssoDescription": {
+    "message": "授權一次，金鑰就會自動填入。你隨時可以再執行一次，換掉已儲存的金鑰。"
+  },
+  "popup_authorizeSso": {
+    "message": "授權 SSO"
+  },
+  "popup_cancelSso": {
+    "message": "取消 SSO"
+  },
+  "popup_ssoReady": {
+    "message": "已可開始 Nexus Mods SSO 交握。"
+  },
+  "popup_startingSso": {
+    "message": "正在啟動 SSO…"
+  },
+  "popup_ssoCanceled": {
+    "message": "已取消 SSO。"
+  },
+  "popup_sectionDownloads": {
+    "message": "下載"
+  },
+  "popup_downloadModeLabel": {
+    "message": "下載模式"
+  },
+  "popup_downloadModeManual": {
+    "message": "手動：由瀏覽器儲存檔案"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex：由你的模組管理器接手連結"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "與 Nexus 清單頁面動作列中的設定相同：在這裡變更就會同時在那裡變更，反之亦然。Vortex 模式會開啟"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "連結，由你的作業系統交給註冊該通訊協定的模組管理器。"
+  },
+  "popup_fileListsLegend": {
+    "message": "檔案清單"
+  },
+  "popup_fileListsNote": {
+    "message": "決定開啟模組檔案清單時會顯示哪些檔案類別。頁面上的面板也有同樣的四個開關。"
+  },
+  "popup_showOldFilesTitle": {
+    "message": "顯示模組的舊版檔案"
+  },
+  "popup_showOldFiles": {
+    "message": "舊版檔案"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "顯示模組的更新檔案"
+  },
+  "popup_showUpdateFiles": {
+    "message": "更新檔案"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "顯示模組的選用檔案"
+  },
+  "popup_showOptionalFiles": {
+    "message": "選用檔案"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "顯示模組的其他檔案"
+  },
+  "popup_showMiscFiles": {
+    "message": "其他檔案"
+  },
+  "popup_sectionAdvanced": {
+    "message": "進階"
+  },
+  "popup_advancedNote": {
+    "message": "本機儲存與診斷。清除快取後，若已連接金鑰，會立刻重新從 Nexus 讀取遊戲清單；這裡的其他項目都不會連線。"
+  },
+  "popup_debugLoggingTitle": {
+    "message": "將背景工作程序的詳細活動寫入 service worker 主控台"
+  },
+  "popup_debugLogging": {
+    "message": "詳細主控台記錄"
+  },
+  "popup_clearCache": {
+    "message": "清除快取的 Nexus 資料"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "商店更新說明"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "商店分支"
+  },
+  "popup_sourceArticleText": {
+    "message": "文章內文，未經查證"
+  },
+  "popup_sourceModText": {
+    "message": "模組文字"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "Collection 中繼資料"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$，來自$SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$（$DOMAIN$）",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "尚未連接 API 金鑰，Nexus 不會回應。請在「連線」中加入一組。"
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus 拒絕了你的 API 金鑰。請在「連線」中更換。"
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus 拒絕了這項要求。可能需要 Premium 帳戶或已登入的 nexusmods.com。"
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus 沒有該遊戲或模組的紀錄，可能已被隱藏或移除。"
+  },
+  "popup_failureRateLimited": {
+    "message": "你已用完 Nexus API 配額。配額重設後會繼續檢查，通常在一小時內。"
+  },
+  "popup_failureServerError": {
+    "message": "Nexus 目前沒有回應。請幾分鐘後再試。"
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus 認為這項要求格式有誤而拒絕。請檢查遊戲與版本後再試一次。"
+  },
+  "popup_failureNotConfigured": {
+    "message": "目前沒有可檢查的設定。請在上方選擇遊戲與起始版本。"
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "尚未為這個遊戲推導出任何遊戲版本，因此沒有可比對模組的基準。所有遊戲都支援；只是這一個沒有小幫手找得到的公開版本資料。請輸入你遊玩的版本，仍可進行檢查。"
+  },
+  "popup_failureOffline": {
+    "message": "無法連線到 Nexus。請檢查網路後再試一次。"
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "擴充功能未獲准連線到 nexusmods.com。你的網路沒有問題：是網站存取權限遭拒或被撤銷。請在瀏覽器的擴充功能設定中重新授予（Firefox：about:addons，選擇這個擴充功能，再開啟 Permissions）。"
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus 回應太久。請再試一次。"
+  },
+  "popup_failureDisabled": {
+    "message": "小幫手已關閉。請用右上角的開關重新開啟。"
+  },
+  "popup_failureNoBackground": {
+    "message": "擴充功能的背景程序沒有回應。請重新開啟這個彈出視窗，或重新載入擴充功能。"
+  },
+  "popup_failureCanceled": {
+    "message": "該項要求在完成前就被取消了。"
+  },
+  "popup_failureBackgroundError": {
+    "message": "擴充功能的背景程序無法完成該項要求。"
+  },
+  "popup_failureContextInvalid": {
+    "message": "擴充功能已更新。請重新載入所有開啟的 Nexus 分頁。"
+  },
+  "popup_unexpectedFailure": {
+    "message": "非預期的錯誤：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "發生非預期的錯誤，而且沒有提供任何細節。"
+  },
+  "popup_requestFailed": {
+    "message": "要求失敗。"
+  },
+  "popup_settingsReadFailed": {
+    "message": "彈出視窗無法讀取你的設定：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "無法更新已儲存的設定：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "儲存空間已滿，因此該設定沒有儲存。請使用下方的「清除快取的 Nexus 資料」，然後再試一次。"
+  },
+  "popup_settingSaveFailed": {
+    "message": "無法儲存該設定：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "沒有 API 金鑰時，你仍可把目標設為開啟的 Nexus 分頁中的遊戲，但無法搜尋完整的 Nexus 目錄，也無法取得相容性標記。"
+  },
+  "popup_pasteReplacementKey": {
+    "message": "貼上要更換的金鑰，然後按「儲存」。"
+  },
+  "popup_pasteKeyFirst": {
+    "message": "請先貼上金鑰。你可以用「需要金鑰嗎？」產生一組。"
+  },
+  "popup_keySaved": {
+    "message": "金鑰已儲存。"
+  },
+  "popup_keyUpdated": {
+    "message": "金鑰已更新。"
+  },
+  "popup_disconnecting": {
+    "message": "正在中斷連線…"
+  },
+  "popup_keyClearFailed": {
+    "message": "無法清除金鑰：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "金鑰已移除。你的遊戲與版本目標都保留了下來。"
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "金鑰已移除，你的遊戲與版本目標都保留了下來。不過$ISSUES$：請使用下方的「清除快取的 Nexus 資料」。",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "背景程序沒有回應，因此快取的 Nexus 回應仍留在磁碟上"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "無法讀取 Steam 版本快取，因此它仍留在磁碟上"
+  },
+  "popup_leftBehindSeparator": {
+    "message": "，而且"
+  },
+  "popup_noReadableVersion": {
+    "message": "為這個遊戲推導出的版本都無法解讀為版本號碼，因此沒有填入任何值。請輸入你遊玩的遊戲版本。"
+  },
+  "popup_startVersionFilled": {
+    "message": "起始版本已自動填入 $VERSION$，這是為這個遊戲找到的最新版本。如果你玩的是舊版，請自行更改。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "結束版本 $END$ 早於起始版本 $START$，這樣不會有任何模組符合。該範圍沒有儲存，你原本的目標維持不變。",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "請先選擇遊戲：只有版本，就沒有可比對的對象。"
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "請先選擇遊戲，才能為它推導版本。"
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "請先選擇遊戲再繼續。"
+  },
+  "popup_openTabIsGame": {
+    "message": "你開啟的 Nexus 分頁是 $GAME$。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "已儲存。你開啟的 Nexus 分頁是 $GAME$，因此這個目標不適用於它。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "已儲存。"
+  },
+  "popup_gameListNeedsKey": {
+    "message": "遊戲清單需要 API 金鑰。請用上方的按鈕，把目標設為開啟分頁中的遊戲。"
+  },
+  "popup_derivingVersions": {
+    "message": "正在從公開來源推導版本…"
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "版本搜尋無法完成，因此這裡沒有任何結論。"
+  },
+  "popup_noVersionsFound": {
+    "message": "沒有任何公開來源說明這個遊戲的版本。這份清單是空的，是因為資料不存在，而不是因為不支援這個遊戲。"
+  },
+  "popup_searching": {
+    "message": "正在搜尋公開來源…"
+  },
+  "popup_searchingAgain": {
+    "message": "正在重新搜尋公開來源…"
+  },
+  "popup_versionSearchFailure": {
+    "message": "版本搜尋：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "已推導出 $COUNT$ 個版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "已推導出 $COUNT$ 個版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "已從 $SOURCES$ 個來源推導出 $COUNT$ 個版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "已從 $SOURCES$ 個來源推導出 $COUNT$ 個版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "已從 $SOURCES$ 個來源推導出 $COUNT$ 個版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "已從 $SOURCES$ 個來源推導出 $COUNT$ 個版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "沒有任何公開來源說明這個遊戲的版本，因此沒有填入任何值。如果你知道，請輸入你遊玩的版本；留空也沒問題。"
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "這次重新整理用了 $COUNT$ 次要求。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "這次重新整理用了 $COUNT$ 次要求。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "無法確定哪個商店頁面屬於這個遊戲，因此略過商店來源，以免採用其他遊戲的版本。"
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "下載會以 nxm:// 連結交給你的模組管理器，在這裡和所有開啟的 Nexus 分頁都一樣。"
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "下載會由瀏覽器儲存，在這裡和所有開啟的 Nexus 分頁都一樣。"
+  },
+  "popup_verboseLoggingOn": {
+    "message": "詳細記錄將於背景工作程序下次啟動後開啟。"
+  },
+  "popup_verboseLoggingOff": {
+    "message": "詳細記錄將於背景工作程序下次啟動後關閉。"
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "不設定版本目標直接開啟"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "尚未設定起始版本，因此標記只會說明沒有可比對的對象，而不會判定模組。篩選與下載仍可使用。再按一次就會直接開啟清單。"
+  },
+  "popup_clearing": {
+    "message": "正在清除…"
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "擴充功能的背景程序沒有回應，而且無法讀取 Steam 版本快取，因此兩者都沒有清除。已清除儲存的遊戲清單。"
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "擴充功能的背景程序沒有回應，因此無法清除模組回應快取。已清除儲存的遊戲清單與 Steam 版本快取。"
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "已清除 $COUNT$ 筆快取，釋出 $KB$ KB。無法讀取 Steam 版本快取，它可能仍留在磁碟上。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "已清除 $COUNT$ 筆快取，釋出 $KB$ KB。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "沒有回報任何快取項目，因此沒有釋出空間。"
+  },
+  "popup_noGameListCached": {
+    "message": "尚未快取任何遊戲清單。"
+  },
+  "popup_gameListCached": {
+    "message": "$WHEN$快取了遊戲清單。",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "剛剛"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ 分鐘前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ 分鐘前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ 小時前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ 小時前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ 天前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ 天前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "已載入 $COUNT$ 個遊戲。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "遊戲清單：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "背景程序傳回了非預期的遊戲清單。"
+  },
+  "popup_loadedTitlesOne": {
+    "message": "已載入 1 個遊戲。"
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "已清除 1 筆快取，釋出 $KB$ KB。",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "已清除 1 筆快取，釋出 $KB$ KB。無法讀取 Steam 版本快取，它可能仍留在磁碟上。",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

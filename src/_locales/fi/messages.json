@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Jokainen Nexusin modi saa yhteensopivuusarvion pelaamallesi peliversiolle, joten voit suodattaa esiin sen, mikä toimii."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "Pyyntö kesti yli $seconds$ s ja se keskeytettiin.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Nexusin API-raja tuli täyteen. Se nollautuu klo $resetTime$.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Nexusin API-raja tuli täyteen. Tarkistukset jatkuvat, kun raja nollautuu."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Nexusin API-raja tuli täyteen."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus hylkäsi API-avaimesi. Syötä se uudelleen laajennuksen ponnahdusikkunassa."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus kieltäytyi tästä pyynnöstä. Premium-tili tai voimassa oleva kirjautuminen nexusmods.com-sivustolle voi olla tarpeen."
+  },
+  "background_errorNotFound": {
+    "message": "Nexusilla ei ole tällaista modia tälle pelille (poistettu, piilotettu tai väärä peli)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus ei vastaa juuri nyt (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus hylkäsi pyynnön (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "Pyyntö kesti liian kauan ja se keskeytettiin."
+  },
+  "background_errorOffline": {
+    "message": "Ei yhteyttä Nexusiin."
+  },
+  "background_errorDisabled": {
+    "message": "Laajennus on kytketty pois päältä."
+  },
+  "background_errorUnexpected": {
+    "message": "Jokin meni pieleen."
+  },
+  "background_errorNoApiKey": {
+    "message": "API-avainta ei löytynyt. Lisää Nexusin API-avaimesi laajennuksen ponnahdusikkunassa."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "Latauslinkistä puuttuu URI."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "NXM-linkkiä ei löytynyt."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Tälle modille ei löytynyt kelvollisia tiedostoja."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "Tämän modisivun vaatimusosiota ei voitu lukea. Nexusin sivuasettelu ei ole sellainen, jonka NMA tunnistaa."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Navigointi muuttui"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant tarvitsee $missing$, ennen kuin se voi tarkistaa modeja. Viimeistele asetukset laajennuksen ponnahdusikkunassa.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "API-avaimen"
+  },
+  "background_setupNeedsGame": {
+    "message": "pelin"
+  },
+  "background_setupNeedsVersion": {
+    "message": "peliversion"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ ja $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Tämä sivu on $pageGame$, mutta NMA on asetettu peliin $configuredGame$. Vaihda peli laajennuksen ponnahdusikkunassa tarkistaaksesi nämä modit.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA ei osaa lukea arvoa ”$version$” peliversiona, joten se ei voi arvioida yhtään modia sitä vasten. Aseta numeerinen versio, kuten 1.6.1170, laajennuksen ponnahdusikkunassa.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "Mikään julkinen lähde ei kerro peliversiota pelille $gameDomain$, joten NMA ei voi päätellä peliversiota modin versiosta täällä. Kyse on aukosta tiedoissa, ei laajennuksessa, ja se on sama kaikille. Kirjoita pelaamasi versio laajennuksen ponnahdusikkunaan tarkistaaksesi silti.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Yhteenkään versiolähteeseen ei saatu yhteyttä, joten tälle pelille ei voitu vielä päätellä mitään."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Pelin verkkotunnus tarvitaan, ennen kuin sille voidaan päätellä versioita."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Mikään kauppasivu ei vastaa peliä riittävän varmasti, joten mitään ei tallennettu."
+  },
+  "background_sourceFileVersion": {
+    "message": "Tiedoston versio"
+  },
+  "background_sourceFileName": {
+    "message": "Tiedoston nimi"
+  },
+  "background_sourceChangelog": {
+    "message": "Muutosloki"
+  },
+  "background_sourceDescription": {
+    "message": "Kuvaus"
+  },
+  "background_sourceUploadDate": {
+    "message": "Lähetyspäivä"
+  },
+  "background_sourceNone": {
+    "message": "Ei mikään"
+  },
+  "background_verdictPartialNote": {
+    "message": "Yhtä lähdettä ei voitu lukea ($cause$), joten tämä tarkistus on osittainen.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Peliversiota ei kerrota missään, mutta uusin tiedosto lähetettiin $uploadDate$, peliversion $gameVersion$ jälkeen. Päätelty, ei vahvistettu.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ kertoo ”$evidence$”, joka on valitsemallasi välillä.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ mainitsee ”$evidence$”, joka on valitsemallasi välillä. Se on päätelmä, ei ilmoitettu peliversio.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Peliversiota ei kerrota missään, eikä uusimman tiedoston lähetyspäivä ($uploadDate$) aseta sitä valitsemallesi välille.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ kertoo ”$evidence$”, joka on uusin tämän modin mainitsema peliversio, ja se on valitsemasi välin ulkopuolella.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ mainitsee ”$evidence$”, joka on uusin tämän modin mainitsema peliversio, ja se on valitsemasi välin ulkopuolella. Se on päätelmä, ei ilmoitettu peliversio.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Tämä modi ei kerro peliversiota tiedostoissaan, muutoslokissaan eikä kuvauksessaan."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Tämä modi ei kerro peliversiota kuvauksessaan eikä muutoslokissaan. Sen tiedostoja ei avattu tätä tarkistusta varten."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "Kauppahaku ei vastannut, joten kauppalähteet ohitettiin."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Mikään kauppasivu ei vastannut tätä peliä riittävän varmasti, joten kauppalähteet ohitettiin."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "Tämän pelin kauppatietoja ei voitu lukea, joten kauppalähteet ohitettiin tällä kertaa."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "Lähin kauppasivu ei ole peli, joten kauppalähteet ohitettiin sen sijaan, että olisi luettu toisen tuotteen versioita."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "Lähin kauppasivu kuuluu toiselle sovellukselle, joten kauppalähteet ohitettiin."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "Kauppasivu nimeää eri pelin kuin luettelo, joten kauppalähteet ohitettiin."
+  },
+  "background_ssoConnecting": {
+    "message": "Yhdistetään Nexus Mods SSO:hon..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Odotetaan hyväksyntääsi Nexus Mods -välilehdellä..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "SSO-kättelyn aloittaminen epäonnistui."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "SSO-yhteyden avaaminen epäonnistui."
+  },
+  "background_ssoRejected": {
+    "message": "SSO hylkäsi kättelyn."
+  },
+  "background_ssoConnectionReady": {
+    "message": "Yhteys on valmis. Odotetaan hyväksyntääsi..."
+  },
+  "background_ssoComplete": {
+    "message": "API-avain tallennettiin SSO:n kautta."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Odottamaton vastaus SSO:lta."
+  },
+  "background_ssoLostConnection": {
+    "message": "Yhteys SSO:hon katkesi useiden uudelleenyritysten jälkeen."
+  },
+  "background_ssoReconnecting": {
+    "message": "Yhdistetään uudelleen (yritys $attempt$/$total$)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO peruutettiin."
+  },
+  "content_statusCompatible": {
+    "message": "Yhteensopiva"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Luultavasti yhteensopiva"
+  },
+  "content_statusIncompatible": {
+    "message": "Ei yhteensopiva"
+  },
+  "content_statusUnknown": {
+    "message": "Ei versiotietoa"
+  },
+  "content_statusFailed": {
+    "message": "Ei voitu tarkistaa"
+  },
+  "content_statusNotConfigured": {
+    "message": "Ei määritetty"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Tuntematon"
+  },
+  "content_evidenceFileVersion": {
+    "message": "tiedoston versio"
+  },
+  "content_evidenceFileName": {
+    "message": "tiedoston nimi"
+  },
+  "content_evidenceChangelog": {
+    "message": "muutosloki"
+  },
+  "content_evidenceDescription": {
+    "message": "modin kuvaus"
+  },
+  "content_evidenceUploadDate": {
+    "message": "lähetyspäivä"
+  },
+  "content_evidenceNone": {
+    "message": "ei versiotodisteita"
+  },
+  "content_confidenceExact": {
+    "message": "tarkka osuma"
+  },
+  "content_confidenceInferred": {
+    "message": "päätelty"
+  },
+  "content_confidenceNone": {
+    "message": "ei todettu"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Havaittu versio: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Todiste: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Varmuus: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Osui: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - versiota ei valittu",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "versiota ei ilmoitettu"
+  },
+  "content_versionNotReportedShort": {
+    "message": "ei ilmoitettu"
+  },
+  "content_checking": {
+    "message": "Tarkistetaan..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Tarkistetaan yhteensopivuutta..."
+  },
+  "content_scrollToCheck": {
+    "message": "Vieritä tarkistaaksesi"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Tämä modi tarkistetaan, kun se vierii näkyviin."
+  },
+  "content_noResponse": {
+    "message": "Ei vastausta"
+  },
+  "content_compatibilityColumn": {
+    "message": "Yhteensopivuus"
+  },
+  "content_setVersionInPopup": {
+    "message": "Aseta peliversio laajennuksen ponnahdusikkunassa saadaksesi arvion."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Valitse peliversio ponnahdusikkunassa saadaksesi arvion tästä modista."
+  },
+  "content_filesButton": {
+    "message": "Tiedostot"
+  },
+  "content_filesButtonForMod": {
+    "message": "Modin $MODNAME$ tiedostot",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Tämän modin tiedostot"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Tämän vaaditun modin tiedostot"
+  },
+  "content_filesDropdownLabel": {
+    "message": "Ladattavat tiedostot"
+  },
+  "content_filesLoading": {
+    "message": "Ladataan tiedostoja..."
+  },
+  "content_filesFetchFailed": {
+    "message": "Tiedostojen haku epäonnistui"
+  },
+  "content_filesLoadFailed": {
+    "message": "Tiedostoluetteloa ei voitu ladata: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "Tiedostoluetteloa ei voitu ladata"
+  },
+  "content_fileListUnreadable": {
+    "message": "Tiedostoluetteloa ei voitu lukea."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "Ei tiedostoja käyttöön ottamissasi luokissa. Piilotettu: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Tälle modille ei löytynyt tiedostoja."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Tiedostosuodattimesi piilottivat: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Tiedosto"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Koko tuntematon"
+  },
+  "content_fileDateUnknown": {
+    "message": "Päivämäärä tuntematon"
+  },
+  "content_downloadSelected": {
+    "message": "Lataa valitut"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Lataa valitut ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Lataa valitut ($MODS$ modia / $FILES$ tiedostoa)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Ladataan ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Ladataan..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "Jonossa"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Epäonnistui: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "tuntematon syy"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ tiedosto lisättiin jonoon.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ tiedostoa lisättiin jonoon.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ jonossa, $FAILED$ epäonnistui.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Valikoi yhteensopivuuden mukaan"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistantin suodattimet"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistantin lataukset"
+  },
+  "content_refresh": {
+    "message": "Päivitä"
+  },
+  "content_pageNavigation": {
+    "message": "Sivunavigointi"
+  },
+  "content_prevPage": {
+    "message": "Edell."
+  },
+  "content_nextPage": {
+    "message": "Seur."
+  },
+  "content_pageNumber": {
+    "message": "Sivunumero"
+  },
+  "content_goToPage": {
+    "message": "Siirry sivulle"
+  },
+  "content_collapseFilters": {
+    "message": "Piilota suodattimet"
+  },
+  "content_expandFilters": {
+    "message": "Näytä suodattimet"
+  },
+  "content_showUpdateFiles": {
+    "message": "Näytä päivitystiedostot"
+  },
+  "content_showOptionalFiles": {
+    "message": "Näytä valinnaiset tiedostot"
+  },
+  "content_showMiscFiles": {
+    "message": "Näytä sekalaiset tiedostot"
+  },
+  "content_showOldFiles": {
+    "message": "Näytä vanhat versiot ja arkistoidut tiedostot"
+  },
+  "content_exclusionLabel": {
+    "message": "Jätä pois modit, joiden nimessä on"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Jätä pois modeja (esim. patch, käännös)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "Erota hakusanat pilkuilla"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Viimeksi päivitetty -aikaväli"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Viimeksi päivitetty:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Päivitetty aikaisintaan"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Päivitetty viimeistään"
+  },
+  "content_startDateTooltip": {
+    "message": "Alkupäivä (mukaan lukien)"
+  },
+  "content_endDateTooltip": {
+    "message": "Loppupäivä (mukaan lukien)"
+  },
+  "content_clearDateRange": {
+    "message": "Tyhjennä aikaväli"
+  },
+  "content_clearButton": {
+    "message": "Tyhjennä"
+  },
+  "content_noModsSelected": {
+    "message": "Ei valittuja modeja"
+  },
+  "content_modsSelectedOne": {
+    "message": "$COUNT$ modi valittu",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "$COUNT$ modia valittu",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Tyhjennä valinta"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Poista valinta kaikista valituista modeista"
+  },
+  "content_downloadAll": {
+    "message": "Lataa kaikki"
+  },
+  "content_downloadMode": {
+    "message": "Lataustapa"
+  },
+  "content_downloadModeManual": {
+    "message": "Manuaalinen"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Pysäytä"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Pysäytä käynnissä oleva latausajo. Jo alkaneita tiedostoja ei peruuteta."
+  },
+  "content_apiRemaining": {
+    "message": "API: $REMAINING$ jäljellä",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Valitse"
+  },
+  "content_selectModNamed": {
+    "message": "Valitse $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Valitse tämä modi"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Viimeksi tarkistettu: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Valmistellaan latausta..."
+  },
+  "content_downloadStarted": {
+    "message": "Lataus aloitettu"
+  },
+  "content_downloadStartedDetail": {
+    "message": "Etsi tiedosto selaimesi latauksista."
+  },
+  "content_downloadFailed": {
+    "message": "Lataus epäonnistui"
+  },
+  "content_noFileToDownload": {
+    "message": "Ladattavaa tiedostoa ei löytynyt"
+  },
+  "content_noDownloadableFile": {
+    "message": "Yhtään ladattavaa tiedostoa ei ole"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "Tällä modilla ei ehkä ole päätiedostoa tai se vaatii manuaalisen valinnan."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Ohitettiin tiedostovalinnassa"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Tälle modille ei valittu tiedostoa."
+  },
+  "content_downloadRunStopped": {
+    "message": "Latausajo pysäytettiin"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "Ajo päättyi ennen kuin tälle modille valittiin tiedosto."
+  },
+  "content_vortexUnavailable": {
+    "message": "Vortex-lataus ei käytettävissä"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "NXM-linkkiä ei voitu muodostaa. Varmista, että olet kirjautunut nexusmods.com-sivustolle."
+  },
+  "content_handedToVortex": {
+    "message": "Luovutettu Vortexille"
+  },
+  "content_handedToVortexDetail": {
+    "message": "Selain välitti nxm://-linkin Vortexille. Selain ei voi vahvistaa, että Vortex sai sen."
+  },
+  "content_vortexBlocked": {
+    "message": "Luovutus Vortexille estettiin"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "Selain kieltäytyi avaamasta nxm://-linkkiä."
+  },
+  "content_vortexHandoff": {
+    "message": "Lähetetään nämä modit Vortexille nxm://-linkkeinä."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Mitään ei tapahdu, jos Vortexia ei ole asennettu ja rekisteröity nxm-linkeille, ja selaimet voivat estää toistuvat protokollakäynnistykset yhdestä napsautuksesta. Vaihda tavaksi Manuaalinen, jos mitään ei tule perille."
+  },
+  "content_batchEmpty": {
+    "message": "Ei ladattavaa: yksikään modi ei vastannut nykyistä valintaa ja suodattimia."
+  },
+  "content_batchBusy": {
+    "message": "Latausajo on jo käynnissä."
+  },
+  "content_batchVerbQueued": {
+    "message": "lisättiin jonoon"
+  },
+  "content_batchVerbVortex": {
+    "message": "luovutettiin Vortexille"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ epäonnistui.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Ladataan"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Ladataan kaikkia"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "latautuu jo"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "ei ladattavaa tiedostoa"
+  },
+  "content_reasonRunStopped": {
+    "message": "ajo pysäytettiin"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "ohitettiin vaatimuskyselyssä"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "ohitettiin tiedostovalinnassa"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "tiedostoluetteloa ei voitu ladata"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "ei NXM-linkkiä"
+  },
+  "content_reasonNxmRefused": {
+    "message": "selain kieltäytyi nxm://-linkistä"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "nykyiset suodattimet piilottivat sen"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "toinen latausajo on käynnissä"
+  },
+  "content_modalOk": {
+    "message": "OK"
+  },
+  "content_selectFilesTitle": {
+    "message": "Valitse ladattavat tiedostot"
+  },
+  "content_skipMod": {
+    "message": "Ohita modi"
+  },
+  "content_skipThisMod": {
+    "message": "Ohita tämä modi"
+  },
+  "content_skipTheseMods": {
+    "message": "Ohita nämä modit"
+  },
+  "content_downloadAnyway": {
+    "message": "Lataa silti"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Vaatimuksia ei voitu varmistaa"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ voi vaatia muita modeja, mutta luetteloa ei voitu ladata: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " Tämä epäonnistuu yleensä koko ajon osalta, joten vastaustasi käytetään sen loppuun."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ vaatii seuraavat. Valitse, mitkä asennetaan:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Tämä modi"
+  },
+  "content_quotedModName": {
+    "message": "”$MODNAME$”",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "Modin $MODNAME$ vaatimukset",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Vaatimuksia havaittu"
+  },
+  "content_installWithRequirements": {
+    "message": "Asenna vaatimuksineen"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Asenna ilman vaatimuksia"
+  },
+  "content_unknownMod": {
+    "message": "Tuntematon modi"
+  },
+  "content_noLinkProvided": {
+    "message": "Linkkiä ei annettu"
+  },
+  "content_requirementsUnreadable": {
+    "message": "Vaatimusluetteloa ei voitu lukea."
+  },
+  "content_requirementsPartial": {
+    "message": "Aloitettiin $STARTED$/$TOTAL$ vaatimusta, $FAILED$ epäonnistui.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Nexusin API-avaimesi hylättiin. Syötä se uudelleen laajennuksen ponnahdusikkunassa."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus kieltäytyi tästä pyynnöstä. Premium-tili tai voimassa oleva kirjautuminen nexusmods.com-sivustolle voi olla tarpeen."
+  },
+  "content_errorNotFound": {
+    "message": "Tämä modi ei ole saatavilla (poistettu, piilotettu tai väärä peli)."
+  },
+  "content_errorRateLimited": {
+    "message": "Nexusin API-raja tuli täyteen. Tarkistukset jatkuvat, kun raja nollautuu."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus ei vastaa juuri nyt."
+  },
+  "content_errorOffline": {
+    "message": "Ei yhteyttä Nexusiin."
+  },
+  "content_errorNoApiKey": {
+    "message": "Nexusin API-avainta ei ole asetettu. Lisää sellainen laajennuksen ponnahdusikkunassa."
+  },
+  "content_errorUnexpected": {
+    "message": "Jokin meni pieleen."
+  },
+  "content_errorPortTimeout": {
+    "message": "Tarkistus kesti liian kauan ja se keskeytettiin."
+  },
+  "content_errorNoBackground": {
+    "message": "Yhteys laajennuksen taustaan katkesi. Yritetään uudelleen."
+  },
+  "content_errorContextInvalid": {
+    "message": "Laajennus päivitettiin. Lataa tämä sivu uudelleen."
+  },
+  "content_errorDisabled": {
+    "message": "Laajennus on kytketty pois päältä."
+  },
+  "content_errorCanceled": {
+    "message": "Tarkistus peruutettiin."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Tuntematon viestintävirhe."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Liian monta avointa pyyntöä."
+  },
+  "content_errorBackground": {
+    "message": "Taustavirhe."
+  },
+  "content_shortKeyRejected": {
+    "message": "avain hylätty"
+  },
+  "content_shortAccessRefused": {
+    "message": "pääsy evätty"
+  },
+  "content_shortNotAvailable": {
+    "message": "ei saatavilla"
+  },
+  "content_shortRateLimited": {
+    "message": "raja täynnä"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus alhaalla"
+  },
+  "content_shortOffline": {
+    "message": "ei yhteyttä"
+  },
+  "content_shortTimedOut": {
+    "message": "aikakatkaisu"
+  },
+  "content_shortNoBackground": {
+    "message": "ei taustaa"
+  },
+  "content_shortNeedsReload": {
+    "message": "vaatii lataamisen uudelleen"
+  },
+  "content_shortSwitchedOff": {
+    "message": "pois päältä"
+  },
+  "content_shortCanceled": {
+    "message": "peruutettu"
+  },
+  "content_shortCheckFailed": {
+    "message": "tarkistus epäonnistui"
+  },
+  "content_shortRequestRefused": {
+    "message": "pyyntö hylätty"
+  },
+  "content_shortNotSetUp": {
+    "message": "ei määritetty"
+  },
+  "content_shortOtherGame": {
+    "message": "toinen peli"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "versiota ei päätelty"
+  },
+  "content_shortSuperseded": {
+    "message": "korvattu"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "sivua ei tunnisteta"
+  },
+  "content_dismiss": {
+    "message": "Sulje"
+  },
+  "content_reloadPage": {
+    "message": "Lataa sivu uudelleen"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant päivitettiin. Jatka lataamalla tämä sivu uudelleen."
+  },
+  "content_selectionRestoredOne": {
+    "message": "$COUNT$ aiemmin valitsemasi modi on yhä valittuna.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "$COUNT$ aiemmin valitsemaasi modia on yhä valittuna.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "Valinnat säilyvät tällä välilehdellä, kunnes tyhjennät ne tai suljet sen."
+  },
+  "content_clearSelectionAction": {
+    "message": "Tyhjennä valinta"
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ toisesta pelistä valittu modi pudotettiin pois.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "$COUNT$ toisesta pelistä valittua modia pudotettiin pois.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Yhteensopivuustarkistukset ovat pois päältä, kunnes lisäät Nexusin API-avaimen."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Kaikki muu tällä sivulla toimii yhä."
+  },
+  "content_openSettings": {
+    "message": "Avaa asetukset"
+  },
+  "content_noticeOtherGame": {
+    "message": "Yhteensopivuus on määritetty pelille $TARGETGAME$, ja tämä sivu on $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Valitse pelaamasi peliversio saadaksesi yhteensopivuusmerkinnät."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Arvioita ei näytetä lainkaan sen sijaan, että ne laskettaisiin toista peliä vasten."
+  },
+  "content_useThisGame": {
+    "message": "Käytä tätä peliä"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Avaa Nexus Mods Assistantin ponnahdusikkuna selaimen työkalupalkista muuttaaksesi asetuksia."
+  },
+  "content_targetModalTitle": {
+    "message": "Aseta tämä peli kohteeksi"
+  },
+  "content_targetPromptQuestion": {
+    "message": "Mitä $GAME$-versiota pelaat? Modeja arvioidaan tätä versiota vasten.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "esim. 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Päätellään tämän pelin versioita julkisista lähteistä..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Mikään julkinen lähde ei kerro versiota tälle pelille, joten tarjottavaa ei ole. Kirjoita pelaamasi versio, jos tiedät sen."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "$COUNT$ versio pääteltiin tälle pelille. Avaa luettelo yllä olevasta kentästä tai kirjoita oma.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "$COUNT$ versiota pääteltiin tälle pelille. Avaa luettelo yllä olevasta kentästä tai kirjoita oma.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "Versiohaku ei valmistunut ($REASON$), joten luettelo on tyhjä vastauksen puutteessa, ei tiedon puutteessa. Kirjoita pelaamasi versio.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Tallenna"
+  },
+  "content_cancel": {
+    "message": "Peruuta"
+  },
+  "content_targetNotSaved": {
+    "message": "Versiota ei syötetty, joten mitään ei tallennettu eikä tälle sivulle ole yhä asetettu kohdetta."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Valitse jokin päätellyistä versioista tai kirjoita pelaamasi versio."
+  },
+  "content_tryAgain": {
+    "message": "Yritä uudelleen"
+  },
+  "content_noModsOnPage": {
+    "message": "Tällä sivulla ei ole modeja."
+  },
+  "content_layoutStillLoading": {
+    "message": "Modiluettelo ei ole latautunut loppuun. Jos tilanne jatkuu, Nexus on ehkä muuttanut asetteluaan."
+  },
+  "content_layoutNotFound": {
+    "message": "Modiluetteloa ei löytynyt tältä sivulta. Nexus on ehkä muuttanut asetteluaan."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Valitsimet, jotka lakkasivat osumasta: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Tämä modisivu ei näytä asettelulta, jonka avustaja tunnistaa, joten merkintää ei lisätty."
+  },
+  "content_translationSignalMissing": {
+    "message": "Käännökset on asetettu piilotettaviksi, mutta yksikään modi tällä sivulla ei kerro luokkaansa, joten mitään ei piilotettu."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus on ehkä muuttanut merkintätapaansa. Sinulta ei ole piilotettu mitään."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "Päivämääräsuodatinta ei käytetä: yksikään modi tällä sivulla ei kerro päivityspäivää."
+  },
+  "content_dateSelectorBroken": {
+    "message": "Suodatin ”Viimeksi päivitetty” ei voinut lukea yhtään päivämäärää tältä sivulta, joten sitä ei käytetty."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus on ehkä muuttanut merkintätapaansa."
+  },
+  "content_undatedHiddenOne": {
+    "message": "$COUNT$ modi piilotettu: ei päivityspäivää, johon verrata.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "$COUNT$ modia piilotettu: ei päivityspäivää, johon verrata.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ käännösmodi piilotettu ponnahdusikkunan asetuksen vuoksi.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "$COUNT$ käännösmodia piilotettu ponnahdusikkunan asetuksen vuoksi.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Asetukset muuttuivat. Merkinnät päivittyvät, kun käynnissä oleva latausajo päättyy."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Yhteensopivuusapuri"
+  },
+  "popup_extensionToggle": {
+    "message": "Ota avustaja käyttöön tai poista se käytöstä"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Peli ja versio"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "Avoinna oleva välilehti on Nexusin pelisivu."
+  },
+  "popup_useThisGame": {
+    "message": "Käytä tätä peliä"
+  },
+  "popup_gameLabel": {
+    "message": "Peli"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Hae nimellä"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Osuvat pelit"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Versioväli"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Varhaisin peliversio"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Alku (esim. 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Uusin peliversio, valinnainen"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Valinnainen loppu"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Päätellyt peliversiot"
+  },
+  "popup_refreshVersions": {
+    "message": "Päivitä versiot"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Hae julkisista lähteistä uudelleen tämän pelin versiot"
+  },
+  "popup_exclusionLabel": {
+    "message": "Jätä pois modit, joissa on"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "esim. patch, käännös"
+  },
+  "popup_exclusionTitle": {
+    "message": "Erota useat hakusanat pilkuilla"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Lisää Nexusin oman käännössuodattimen luetteloon, jonka tämä painike avaa"
+  },
+  "popup_hideTranslations": {
+    "message": "Avaa luettelo ilman käännöksiä"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Avaa yhteensopivat modit"
+  },
+  "popup_sectionConnection": {
+    "message": "Yhteys"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexusin API-avain"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Tallennettu Nexusin API-avain"
+  },
+  "popup_revealKey": {
+    "message": "Näytä tallennettu API-avain"
+  },
+  "popup_hideKey": {
+    "message": "Piilota tallennettu API-avain"
+  },
+  "popup_show": {
+    "message": "Näytä"
+  },
+  "popup_hide": {
+    "message": "Piilota"
+  },
+  "popup_replaceKey": {
+    "message": "Vaihda avain"
+  },
+  "popup_disconnect": {
+    "message": "Katkaise yhteys"
+  },
+  "popup_disconnectExplain": {
+    "message": "Yhteyden katkaisu poistaa avaimen ja kaikki välimuistiin tallennetut Nexusin vastaukset tästä selaimesta. Nexus-tiliisi ei kosketa."
+  },
+  "popup_keepKey": {
+    "message": "Säilytä avain"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Nexusin henkilökohtainen API-avain"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Liitä API-avaimesi"
+  },
+  "popup_save": {
+    "message": "Tallenna"
+  },
+  "popup_needKey": {
+    "message": "Tarvitsetko avaimen?"
+  },
+  "popup_cancel": {
+    "message": "Peruuta"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Valinnainen. Selailu, suodattimet ja versiokohde toimivat ilman avainta. Yhteensopivuusmerkinnät ja lataukset vaativat avaimen, koska Nexus vastaa vain tilille."
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Modsin kertakirjautuminen"
+  },
+  "popup_ssoDescription": {
+    "message": "Valtuuta kerran, niin avain täytetään puolestasi. Voit tehdä tämän uudelleen milloin tahansa korvataksesi tallennetun avaimen."
+  },
+  "popup_authorizeSso": {
+    "message": "Valtuuta SSO"
+  },
+  "popup_cancelSso": {
+    "message": "Peruuta SSO"
+  },
+  "popup_ssoReady": {
+    "message": "Valmis aloittamaan Nexus Modsin SSO-kättelyn."
+  },
+  "popup_startingSso": {
+    "message": "Aloitetaan SSO..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO peruutettiin."
+  },
+  "popup_sectionDownloads": {
+    "message": "Lataukset"
+  },
+  "popup_downloadModeLabel": {
+    "message": "Lataustapa"
+  },
+  "popup_downloadModeManual": {
+    "message": "Manuaalinen: selain tallentaa tiedoston"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: modihallintasi ottaa linkin"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Sama asetus kuin Nexus-luettelosivun toimintopalkissa: kun muutat sitä täällä, se muuttuu siellä, ja toisin päin. Vortex-tila avaa"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "-linkin, jonka käyttöjärjestelmäsi luovuttaa sille modihallinnalle, joka on rekisteröinyt kyseisen protokollan."
+  },
+  "popup_fileListsLegend": {
+    "message": "Tiedostoluettelot"
+  },
+  "popup_fileListsNote": {
+    "message": "Mitkä tiedostoluokat näkyvät, kun modin tiedostoluettelo avataan. Samat neljä kytkintä ovat sivulla näkyvässä paneelissa."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Näytä modin tiedostojen vanhemmat versiot"
+  },
+  "popup_showOldFiles": {
+    "message": "Vanhat tiedostot"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Näytä modin päivitystiedostot"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Päivitystiedostot"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Näytä modin valinnaiset tiedostot"
+  },
+  "popup_showOptionalFiles": {
+    "message": "Valinnaiset tiedostot"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Näytä modin sekalaiset tiedostot"
+  },
+  "popup_showMiscFiles": {
+    "message": "Sekalaiset tiedostot"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Lisäasetukset"
+  },
+  "popup_advancedNote": {
+    "message": "Paikallinen tallennus ja diagnostiikka. Välimuistin tyhjennys lukee pelilistan Nexusista heti uudelleen, kun avain on yhdistetty; mikään muu täällä ei ota yhteyttä verkkoon."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Kirjoittaa taustatyöntekijän yksityiskohtaisen toiminnan service worker -konsoliin"
+  },
+  "popup_debugLogging": {
+    "message": "Yksityiskohtainen konsololokitus"
+  },
+  "popup_clearCache": {
+    "message": "Tyhjennä välimuistiin tallennetut Nexus-tiedot"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "kaupan päivitystiedote"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "kaupan haara"
+  },
+  "popup_sourceArticleText": {
+    "message": "artikkelin teksti, vahvistamaton"
+  },
+  "popup_sourceModText": {
+    "message": "modin teksti"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "kokoelman metatiedot"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, lähteestä $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "API-avainta ei ole yhdistetty, joten Nexus ei vastaa. Lisää sellainen kohdassa Yhteys."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus hylkäsi API-avaimesi. Vaihda se kohdassa Yhteys."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus kieltäytyi pyynnöstä. Premium-tili tai voimassa oleva kirjautuminen nexusmods.com-sivustolle voi olla tarpeen."
+  },
+  "popup_failureNotFound": {
+    "message": "Nexusilla ei ole tietoa siitä pelistä tai modista. Se on ehkä piilotettu tai poistettu."
+  },
+  "popup_failureRateLimited": {
+    "message": "Olet käyttänyt Nexusin API-kiintiösi. Tarkistukset jatkuvat, kun se nollautuu, yleensä tunnin sisällä."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus ei vastaa juuri nyt. Yritä uudelleen muutaman minuutin kuluttua."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus hylkäsi pyynnön virheellisenä. Tarkista peli ja versio ja yritä uudelleen."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Mitään ei ole vielä määritetty tarkistettavaksi. Valitse peli ja alkuversio yltä."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Tälle pelille ei ole vielä päätelty peliversiota, joten modia ei ole mihin verrata. Kaikkia pelejä tuetaan; tälle pelille ei vain löytynyt julkista versiotietoa. Kirjoita pelaamasi versio tarkistaaksesi silti."
+  },
+  "popup_failureOffline": {
+    "message": "Ei yhteyttä Nexusiin. Tarkista verkkoyhteytesi ja yritä uudelleen."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "Laajennus ei saa ottaa yhteyttä nexusmods.com-sivustoon. Verkossasi ei ole vikaa: sivuston käyttöoikeus evättiin tai peruutettiin. Myönnä se uudelleen selaimen laajennusasetuksissa (Firefox: about:addons, sitten tämä laajennus, sitten Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus vastasi liian hitaasti. Yritä uudelleen."
+  },
+  "popup_failureDisabled": {
+    "message": "Avustaja on kytketty pois päältä. Kytke se takaisin oikean yläkulman kytkimestä."
+  },
+  "popup_failureNoBackground": {
+    "message": "Laajennuksen tausta ei vastannut. Avaa tämä ponnahdusikkuna uudelleen tai lataa laajennus uudelleen."
+  },
+  "popup_failureCanceled": {
+    "message": "Kyseinen pyyntö peruutettiin ennen kuin se valmistui."
+  },
+  "popup_failureBackgroundError": {
+    "message": "Laajennuksen tausta ei voinut suorittaa kyseistä pyyntöä."
+  },
+  "popup_failureContextInvalid": {
+    "message": "Laajennus päivitettiin. Lataa kaikki avoimet Nexus-välilehdet uudelleen."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Odottamaton virhe: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Odottamaton virhe, ilman lisätietoja."
+  },
+  "popup_requestFailed": {
+    "message": "Pyyntö epäonnistui."
+  },
+  "popup_settingsReadFailed": {
+    "message": "Ponnahdusikkuna ei voinut lukea asetuksiasi: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Tallennettuja asetuksia ei voitu päivittää: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "Tallennustila on täynnä, joten asetusta ei tallennettu. Käytä alla olevaa ”Tyhjennä välimuistiin tallennetut Nexus-tiedot” ja yritä uudelleen."
+  },
+  "popup_settingSaveFailed": {
+    "message": "Asetusta ei voitu tallentaa: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "Ilman API-avainta voit asettaa kohteeksi avoimen Nexus-välilehtesi pelin, mutta koko Nexusin luettelosta ei voi hakea eikä yhteensopivuusmerkintöjä voi noutaa."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Liitä korvaava avain ja paina Tallenna."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Liitä ensin avain. Voit luoda sellaisen kohdasta ”Tarvitsetko avaimen?”."
+  },
+  "popup_keySaved": {
+    "message": "Avain tallennettiin."
+  },
+  "popup_keyUpdated": {
+    "message": "Avain päivitettiin."
+  },
+  "popup_disconnecting": {
+    "message": "Katkaistaan yhteyttä..."
+  },
+  "popup_keyClearFailed": {
+    "message": "Avainta ei voitu poistaa: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Avain poistettiin. Peli- ja versiokohteesi säilytettiin."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Avain poistettiin, ja peli- ja versiokohteesi säilytettiin. Kuitenkin $ISSUES$: käytä alla olevaa ”Tyhjennä välimuistiin tallennetut Nexus-tiedot”.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "tausta ei vastannut, joten välimuistiin tallennetut Nexusin vastaukset ovat yhä levyllä"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "Steamin versiovälimuistia ei voitu lukea, joten se on yhä levyllä"
+  },
+  "popup_leftBehindSeparator": {
+    "message": " ja "
+  },
+  "popup_noReadableVersion": {
+    "message": "Mitään tälle pelille päätellyistä versioista ei voitu lukea versionumerona, joten mitään ei täytetty. Kirjoita pelaamasi peliversio."
+  },
+  "popup_startVersionFilled": {
+    "message": "Alkuversioksi täytettiin $VERSION$, uusin tälle pelille löytynyt versio. Vaihda se, jos pelaat vanhempaa.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "Loppuversio $END$ on vanhempi kuin alkuversio $START$, joten mikään modi ei voisi koskaan osua. Kyseistä väliä ei tallennettu, ja aiempi kohteesi on ennallaan.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Valitse ensin peli: pelkällä versiolla ei ole mitään, mihin sitä verrattaisiin."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Valitse ensin peli, sitten sille voidaan päätellä versioita."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Valitse peli ennen jatkamista."
+  },
+  "popup_openTabIsGame": {
+    "message": "Avoin Nexus-välilehtesi on $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Tallennettu. Avoin Nexus-välilehtesi on $GAME$, joten tämä kohde ei koske sitä.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Tallennettu."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "Pelilista vaatii API-avaimen. Käytä yllä olevaa painiketta asettaaksesi kohteeksi avoimen välilehtesi pelin."
+  },
+  "popup_derivingVersions": {
+    "message": "Päätellään versioita julkisista lähteistä..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "Versiohaku ei valmistunut, joten mikään tässä ei ole havainto."
+  },
+  "popup_noVersionsFound": {
+    "message": "Mikään julkinen lähde ei kerro versiota tälle pelille. Luettelo on tyhjä, koska tietoa ei ole, ei siksi ettei peliä tueta."
+  },
+  "popup_searching": {
+    "message": "Haetaan julkisista lähteistä..."
+  },
+  "popup_searchingAgain": {
+    "message": "Haetaan julkisista lähteistä uudelleen..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Versiohaku: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "Pääteltiin $COUNT$ versio.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "Pääteltiin $COUNT$ versiota.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "Pääteltiin $COUNT$ versio $SOURCES$ lähteestä.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "Pääteltiin $COUNT$ versio $SOURCES$ lähteestä.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "Pääteltiin $COUNT$ versiota $SOURCES$ lähteestä.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "Pääteltiin $COUNT$ versiota $SOURCES$ lähteestä.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Mikään julkinen lähde ei kerro versiota tälle pelille, joten mitään ei täytetty. Kirjoita pelaamasi versio, jos tiedät sen; myös tyhjäksi jättäminen käy."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ pyyntö tällä päivityksellä.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "$COUNT$ pyyntöä tällä päivityksellä.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "Tämän pelin kauppasivua ei voitu tunnistaa varmasti, joten kauppalähteet ohitettiin sen sijaan, että olisi riskeerattu toisen pelin numerot."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "Lataukset luovutetaan modihallinnallesi nxm://-linkkeinä, sekä täällä että kaikilla avoimilla Nexus-välilehdillä."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "Selain tallentaa lataukset, sekä täällä että kaikilla avoimilla Nexus-välilehdillä."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Yksityiskohtainen lokitus käytössä taustatyöntekijän seuraavasta käynnistyksestä alkaen."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Yksityiskohtainen lokitus pois käytöstä taustatyöntekijän seuraavasta käynnistyksestä alkaen."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Avaa ilman versiokohdetta"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Alkuversiota ei ole asetettu, joten merkinnät kertovat, ettei vertailukohtaa ole, sen sijaan että ne arvioisivat modin. Suodatus ja lataukset toimivat yhä. Paina uudelleen avataksesi luettelon silti."
+  },
+  "popup_clearing": {
+    "message": "Tyhjennetään..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "Laajennuksen tausta ei vastannut eikä Steamin versiovälimuistia voitu lukea, joten kumpaakaan ei voitu tyhjentää. Tallennettu pelilista tyhjennettiin."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "Laajennuksen tausta ei vastannut, joten modivastausten välimuistia ei voitu tyhjentää. Tallennettu pelilista ja Steamin versiovälimuisti tyhjennettiin."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "Tyhjennettiin $COUNT$ välimuistimerkintää, $KB$ KB vapautui. Steamin versiovälimuistia ei voitu lukea, joten se voi olla yhä levyllä.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "Tyhjennettiin $COUNT$ välimuistimerkintää, $KB$ KB vapautui.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Välimuistimerkintöjä ei raportoitu, joten mitään ei vapautunut."
+  },
+  "popup_noGameListCached": {
+    "message": "Pelilistaa ei ole vielä välimuistissa."
+  },
+  "popup_gameListCached": {
+    "message": "Pelilista tallennettiin välimuistiin $WHEN$.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "juuri äsken"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ minuutti sitten",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ minuuttia sitten",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ tunti sitten",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ tuntia sitten",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ päivä sitten",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ päivää sitten",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "Ladattiin $COUNT$ nimikettä.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Pelilista: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "Tausta palautti odottamattoman pelilistan."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "Ladattiin 1 nimike."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "Tyhjennettiin 1 välimuistimerkintä, $KB$ KB vapautui.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "Tyhjennettiin 1 välimuistimerkintä, $KB$ KB vapautui. Steamin versiovälimuistia ei voitu lukea, joten se voi olla yhä levyllä.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

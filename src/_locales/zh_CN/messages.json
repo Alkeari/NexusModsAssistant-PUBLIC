@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "为每个 Nexus 模组卡片给出针对你实际游玩版本的兼容性判定，帮你筛出真正能运行的模组。"
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "请求超过 $seconds$ 秒，已放弃。",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "已达到 Nexus API 上限，将在 $resetTime$ 重置。",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "已达到 Nexus API 上限。上限重置后会继续检查。"
+  },
+  "background_errorRateLimitedShort": {
+    "message": "已达到 Nexus API 上限。"
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus 拒绝了你的 API 密钥。请在扩展弹出窗口中重新输入。"
+  },
+  "background_errorForbidden": {
+    "message": "Nexus 拒绝了这次请求。可能需要 Premium 账户，或需要登录 nexusmods.com。"
+  },
+  "background_errorNotFound": {
+    "message": "Nexus 上没有这个游戏的该模组（已删除、已隐藏，或游戏不对）。"
+  },
+  "background_errorServerError": {
+    "message": "Nexus 目前没有响应（HTTP $status$）。",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus 拒绝了该请求（HTTP $status$）。$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "请求耗时过长，已放弃。"
+  },
+  "background_errorOffline": {
+    "message": "无法连接 Nexus。"
+  },
+  "background_errorDisabled": {
+    "message": "扩展已关闭。"
+  },
+  "background_errorUnexpected": {
+    "message": "出了点问题。"
+  },
+  "background_errorNoApiKey": {
+    "message": "未找到 API 密钥。请在扩展弹出窗口中添加你的 Nexus API 密钥。"
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "下载链接缺少 URI。"
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "未找到 NXM 链接。"
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "没有为该模组找到可下载的文件。"
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "无法读取该模组页面的依赖模组区域。这个 Nexus 页面结构不是 NMA 认识的。"
+  },
+  "background_errorNavigationChanged": {
+    "message": "页面已跳转"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant 需要先设置$missing$才能检查模组。请打开扩展弹出窗口完成设置。",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "API 密钥"
+  },
+  "background_setupNeedsGame": {
+    "message": "游戏"
+  },
+  "background_setupNeedsVersion": {
+    "message": "游戏版本"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$和$last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "本页面是 $pageGame$，而 NMA 设置的是 $configuredGame$。要检查这些模组，请在扩展弹出窗口中切换游戏。",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA 无法把“$version$”读作游戏版本，因此无法据此判定任何模组。请在扩展弹出窗口中设置形如 1.6.1170 的数字版本。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "没有任何公开来源给出 $gameDomain$ 的游戏版本，因此 NMA 无法从模组版本推断游戏版本。这是数据上的空白，不是扩展的缺陷，对所有人都一样。若仍要检查，请在扩展弹出窗口中输入你游玩的版本。",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "没有任何版本来源可以访问，因此这个游戏目前还推导不出任何结果。"
+  },
+  "background_errorNoGameDomain": {
+    "message": "需要先有游戏域名，才能为它推导版本。"
+  },
+  "background_errorNoStoreListing": {
+    "message": "没有商店页面与该游戏足够确定地对应，因此未保存任何内容。"
+  },
+  "background_sourceFileVersion": {
+    "message": "文件版本"
+  },
+  "background_sourceFileName": {
+    "message": "文件名"
+  },
+  "background_sourceChangelog": {
+    "message": "更新日志"
+  },
+  "background_sourceDescription": {
+    "message": "模组说明"
+  },
+  "background_sourceUploadDate": {
+    "message": "上传日期"
+  },
+  "background_sourceNone": {
+    "message": "无来源"
+  },
+  "background_verdictPartialNote": {
+    "message": "有一个来源无法读取（$cause$），因此这次检查并不完整。",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "任何地方都没有写明游戏版本，但最新文件的上传日期是 $uploadDate$，晚于游戏版本 $gameVersion$。这是推断，并未得到确认。",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$：写明“$evidence$”，在你选择的范围内。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$：提到“$evidence$”，在你选择的范围内。这是推断，不是写明的游戏版本。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "任何地方都没有写明游戏版本，最新文件的上传日期（$uploadDate$）也不落在你选择的范围内。",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$：写明“$evidence$”，这是该模组提到的最新游戏版本，但不在你选择的范围内。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$：提到“$evidence$”，这是该模组提到的最新游戏版本，但不在你选择的范围内。这是推断，不是写明的游戏版本。",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "该模组在文件、更新日志和说明中都没有写明游戏版本。"
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "该模组在说明和更新日志中都没有写明游戏版本。这次检查没有打开它的文件列表。"
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "商店搜索没有响应，因此跳过了商店来源。"
+  },
+  "background_storeNoteNoMatch": {
+    "message": "没有商店页面与该游戏足够确定地对应，因此跳过了商店来源。"
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "无法读取该游戏的商店记录，因此这次跳过了商店来源。"
+  },
+  "background_storeNoteNotAGame": {
+    "message": "最接近的商店页面不是游戏条目，因此跳过了商店来源，而不是去读另一个产品的版本号。"
+  },
+  "background_storeNoteWrongApp": {
+    "message": "最接近的商店页面属于另一个应用，因此跳过了商店来源。"
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "商店页面写的游戏名与目录中的不一致，因此跳过了商店来源。"
+  },
+  "background_ssoConnecting": {
+    "message": "正在连接 Nexus Mods SSO..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "正在等待你在 Nexus Mods 标签页中确认..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "无法发起 SSO 握手。"
+  },
+  "background_ssoConnectionFailed": {
+    "message": "无法建立 SSO 连接。"
+  },
+  "background_ssoRejected": {
+    "message": "SSO 拒绝了这次握手。"
+  },
+  "background_ssoConnectionReady": {
+    "message": "连接就绪，正在等待你的确认..."
+  },
+  "background_ssoComplete": {
+    "message": "已通过 SSO 保存 API 密钥。"
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "SSO 返回了无法识别的响应。"
+  },
+  "background_ssoLostConnection": {
+    "message": "多次重试后仍与 SSO 断开连接。"
+  },
+  "background_ssoReconnecting": {
+    "message": "正在重新连接（第 $attempt$/$total$ 次）...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "已取消 SSO。"
+  },
+  "content_statusCompatible": {
+    "message": "兼容"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "可能兼容"
+  },
+  "content_statusIncompatible": {
+    "message": "不兼容"
+  },
+  "content_statusUnknown": {
+    "message": "无版本信息"
+  },
+  "content_statusFailed": {
+    "message": "无法检查"
+  },
+  "content_statusNotConfigured": {
+    "message": "未设置"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "未知"
+  },
+  "content_evidenceFileVersion": {
+    "message": "文件版本"
+  },
+  "content_evidenceFileName": {
+    "message": "文件名"
+  },
+  "content_evidenceChangelog": {
+    "message": "更新日志"
+  },
+  "content_evidenceDescription": {
+    "message": "模组说明"
+  },
+  "content_evidenceUploadDate": {
+    "message": "上传日期"
+  },
+  "content_evidenceNone": {
+    "message": "无版本依据"
+  },
+  "content_confidenceExact": {
+    "message": "完全匹配"
+  },
+  "content_confidenceInferred": {
+    "message": "推断"
+  },
+  "content_confidenceNone": {
+    "message": "无法判断"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "检测到的版本：$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "依据：$SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "可信度：$LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "匹配到：$TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - 未选择版本",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "未标注版本"
+  },
+  "content_versionNotReportedShort": {
+    "message": "未标注"
+  },
+  "content_checking": {
+    "message": "检查中..."
+  },
+  "content_checkingCompatibility": {
+    "message": "正在检查兼容性..."
+  },
+  "content_scrollToCheck": {
+    "message": "滚动后检查"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "这个模组会在滚动到可见时检查。"
+  },
+  "content_noResponse": {
+    "message": "无响应"
+  },
+  "content_compatibilityColumn": {
+    "message": "兼容性"
+  },
+  "content_setVersionInPopup": {
+    "message": "请在扩展弹出窗口中设置游戏版本，才能得到判定。"
+  },
+  "content_pickVersionInPopup": {
+    "message": "请在弹出窗口中选择游戏版本，才能得到这个模组的判定。"
+  },
+  "content_filesButton": {
+    "message": "文件"
+  },
+  "content_filesButtonForMod": {
+    "message": "$MODNAME$ 的文件",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "这个模组的文件"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "这个依赖模组的文件"
+  },
+  "content_filesDropdownLabel": {
+    "message": "要下载的文件"
+  },
+  "content_filesLoading": {
+    "message": "正在载入文件..."
+  },
+  "content_filesFetchFailed": {
+    "message": "无法获取文件"
+  },
+  "content_filesLoadFailed": {
+    "message": "无法载入文件列表：$REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "无法载入文件列表"
+  },
+  "content_fileListUnreadable": {
+    "message": "无法读取文件列表。"
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$（$COUNT$）",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "你启用的分类中没有文件。已隐藏：$CATEGORIES$。",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "没有为该模组找到任何文件。"
+  },
+  "content_filesHiddenByFilters": {
+    "message": "被你的文件筛选隐藏：$CATEGORIES$。",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$（$CATEGORY$）",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "文件"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "大小未知"
+  },
+  "content_fileDateUnknown": {
+    "message": "日期未知"
+  },
+  "content_downloadSelected": {
+    "message": "下载所选"
+  },
+  "content_downloadSelectedCount": {
+    "message": "下载所选（$COUNT$）",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "下载所选（$MODS$ 个模组 / $FILES$ 个文件）",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "下载中（$DONE$/$TOTAL$）...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "下载中..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "已加入队列"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "失败：$REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "原因不明"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ 个文件已加入队列。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ 个文件已加入队列。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ 个已加入队列，$FAILED$ 个失败。",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "按兼容性挑选"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistant 筛选"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistant 下载"
+  },
+  "content_refresh": {
+    "message": "刷新"
+  },
+  "content_pageNavigation": {
+    "message": "翻页"
+  },
+  "content_prevPage": {
+    "message": "上一页"
+  },
+  "content_nextPage": {
+    "message": "下一页"
+  },
+  "content_pageNumber": {
+    "message": "页码"
+  },
+  "content_goToPage": {
+    "message": "跳转到指定页"
+  },
+  "content_collapseFilters": {
+    "message": "收起筛选"
+  },
+  "content_expandFilters": {
+    "message": "展开筛选"
+  },
+  "content_showUpdateFiles": {
+    "message": "显示更新文件"
+  },
+  "content_showOptionalFiles": {
+    "message": "显示可选文件"
+  },
+  "content_showMiscFiles": {
+    "message": "显示杂项文件"
+  },
+  "content_showOldFiles": {
+    "message": "显示旧版本和已归档的文件"
+  },
+  "content_exclusionLabel": {
+    "message": "排除名称中包含以下内容的模组"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "排除模组（例如 patch、translation）..."
+  },
+  "content_exclusionTooltip": {
+    "message": "多个关键词用逗号分隔"
+  },
+  "content_lastUpdatedRange": {
+    "message": "最近更新时间范围"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "最近更新："
+  },
+  "content_updatedOnOrAfter": {
+    "message": "在此日期或之后更新"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "在此日期或之前更新"
+  },
+  "content_startDateTooltip": {
+    "message": "开始日期（含当天）"
+  },
+  "content_endDateTooltip": {
+    "message": "结束日期（含当天）"
+  },
+  "content_clearDateRange": {
+    "message": "清除日期范围"
+  },
+  "content_clearButton": {
+    "message": "清除"
+  },
+  "content_noModsSelected": {
+    "message": "未选择模组"
+  },
+  "content_modsSelectedOne": {
+    "message": "已选择 $COUNT$ 个模组",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "已选择 $COUNT$ 个模组",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "清除选择"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "取消勾选所有已选模组"
+  },
+  "content_downloadAll": {
+    "message": "全部下载"
+  },
+  "content_downloadMode": {
+    "message": "下载方式"
+  },
+  "content_downloadModeManual": {
+    "message": "手动"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "停止"
+  },
+  "content_stopButtonTooltip": {
+    "message": "停止当前的下载任务。已经开始的文件不会被取消。"
+  },
+  "content_apiRemaining": {
+    "message": "API：剩余 $REMAINING$",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "选择"
+  },
+  "content_selectModNamed": {
+    "message": "选择 $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "选择这个模组"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$：$COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "最近一次检查：$STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "正在准备下载..."
+  },
+  "content_downloadStarted": {
+    "message": "下载已开始"
+  },
+  "content_downloadStartedDetail": {
+    "message": "请在浏览器的下载内容中查看该文件。"
+  },
+  "content_downloadFailed": {
+    "message": "下载失败"
+  },
+  "content_noFileToDownload": {
+    "message": "找不到可下载的文件"
+  },
+  "content_noDownloadableFile": {
+    "message": "没有可下载的文件"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "该模组可能没有主要文件，或者需要手动选择。"
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "在选择文件时跳过"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "没有为该模组选择任何文件。"
+  },
+  "content_downloadRunStopped": {
+    "message": "下载任务已停止"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "任务在为该模组选择文件之前就结束了。"
+  },
+  "content_vortexUnavailable": {
+    "message": "无法用 Vortex 下载"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "无法生成 NXM 链接。请确认你已登录 nexusmods.com。"
+  },
+  "content_handedToVortex": {
+    "message": "已交给 Vortex"
+  },
+  "content_handedToVortexDetail": {
+    "message": "浏览器已把一个 nxm:// 链接交给 Vortex。浏览器无法确认 Vortex 是否收到。"
+  },
+  "content_vortexBlocked": {
+    "message": "交给 Vortex 的操作被拦截"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "浏览器拒绝打开该 nxm:// 链接。"
+  },
+  "content_vortexHandoff": {
+    "message": "正在通过 nxm:// 链接把这些模组发送给 Vortex。"
+  },
+  "content_vortexHandoffDetail": {
+    "message": "如果没有安装 Vortex，或它没有注册为 nxm 链接的处理程序，就什么都不会发生；浏览器也可能拦截一次点击引发的多次协议调用。如果什么都没到，请把方式切换为手动。"
+  },
+  "content_batchEmpty": {
+    "message": "没有可下载的内容：当前的选择和筛选没有匹配到任何模组。"
+  },
+  "content_batchBusy": {
+    "message": "已经有一个下载任务在进行中。"
+  },
+  "content_batchVerbQueued": {
+    "message": "个已加入队列"
+  },
+  "content_batchVerbVortex": {
+    "message": "个已交给 Vortex"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$，$FAILED$ 个失败。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$：$REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "下载中"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "全部下载中"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$（$DONE$/$TOTAL$）...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "已经在下载"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "没有可下载的文件"
+  },
+  "content_reasonRunStopped": {
+    "message": "任务被停止"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "在依赖模组提示中跳过"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "在选择文件时跳过"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "无法载入文件列表"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "没有 NXM 链接"
+  },
+  "content_reasonNxmRefused": {
+    "message": "浏览器拒绝了 nxm:// 链接"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "被当前筛选隐藏"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "另一个下载任务正在进行"
+  },
+  "content_modalOk": {
+    "message": "确定"
+  },
+  "content_selectFilesTitle": {
+    "message": "选择要下载的文件"
+  },
+  "content_skipMod": {
+    "message": "跳过该模组"
+  },
+  "content_skipThisMod": {
+    "message": "跳过这个模组"
+  },
+  "content_skipTheseMods": {
+    "message": "跳过这些模组"
+  },
+  "content_downloadAnyway": {
+    "message": "仍然下载"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "无法确认依赖模组"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$可能有依赖模组，但无法载入它的列表：$REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": "这类失败通常会贯穿整个任务，所以你的选择会应用到余下的模组。"
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$有以下依赖模组。请选择要安装的项目：",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "这个模组"
+  },
+  "content_quotedModName": {
+    "message": "“$MODNAME$”",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "$MODNAME$ 的依赖模组",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "检测到依赖模组"
+  },
+  "content_installWithRequirements": {
+    "message": "连同依赖模组一起安装"
+  },
+  "content_installWithoutRequirements": {
+    "message": "不安装依赖模组"
+  },
+  "content_unknownMod": {
+    "message": "未知模组"
+  },
+  "content_noLinkProvided": {
+    "message": "未提供链接"
+  },
+  "content_requirementsUnreadable": {
+    "message": "无法读取依赖模组列表。"
+  },
+  "content_requirementsPartial": {
+    "message": "$TOTAL$ 个依赖模组中已开始 $STARTED$ 个，$FAILED$ 个失败。",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "你的 Nexus API 密钥被拒绝。请在扩展弹出窗口中重新输入。"
+  },
+  "content_errorForbidden": {
+    "message": "Nexus 拒绝了这次请求。可能需要 Premium 账户，或需要登录 nexusmods.com。"
+  },
+  "content_errorNotFound": {
+    "message": "该模组不可用（已删除、已隐藏，或游戏不对）。"
+  },
+  "content_errorRateLimited": {
+    "message": "已达到 Nexus API 上限。上限重置后会继续检查。"
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus 目前没有响应。"
+  },
+  "content_errorOffline": {
+    "message": "无法连接 Nexus。"
+  },
+  "content_errorNoApiKey": {
+    "message": "尚未设置 Nexus API 密钥。请在扩展弹出窗口中添加。"
+  },
+  "content_errorUnexpected": {
+    "message": "出了点问题。"
+  },
+  "content_errorPortTimeout": {
+    "message": "检查耗时过长，已放弃。"
+  },
+  "content_errorNoBackground": {
+    "message": "与扩展后台的连接已断开，正在重试。"
+  },
+  "content_errorContextInvalid": {
+    "message": "扩展已更新。请重新载入此页面。"
+  },
+  "content_errorDisabled": {
+    "message": "扩展已关闭。"
+  },
+  "content_errorCanceled": {
+    "message": "检查已取消。"
+  },
+  "content_errorUnknownMessaging": {
+    "message": "未知的通信错误。"
+  },
+  "content_errorTooManyRequests": {
+    "message": "未完成的请求过多。"
+  },
+  "content_errorBackground": {
+    "message": "后台错误。"
+  },
+  "content_shortKeyRejected": {
+    "message": "密钥被拒"
+  },
+  "content_shortAccessRefused": {
+    "message": "访问被拒"
+  },
+  "content_shortNotAvailable": {
+    "message": "不可用"
+  },
+  "content_shortRateLimited": {
+    "message": "已达上限"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus 故障"
+  },
+  "content_shortOffline": {
+    "message": "离线"
+  },
+  "content_shortTimedOut": {
+    "message": "超时"
+  },
+  "content_shortNoBackground": {
+    "message": "后台未连接"
+  },
+  "content_shortNeedsReload": {
+    "message": "需重新载入"
+  },
+  "content_shortSwitchedOff": {
+    "message": "已关闭"
+  },
+  "content_shortCanceled": {
+    "message": "已取消"
+  },
+  "content_shortCheckFailed": {
+    "message": "检查失败"
+  },
+  "content_shortRequestRefused": {
+    "message": "请求被拒"
+  },
+  "content_shortNotSetUp": {
+    "message": "未设置"
+  },
+  "content_shortOtherGame": {
+    "message": "其他游戏"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "未推导出版本"
+  },
+  "content_shortSuperseded": {
+    "message": "已被取代"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "页面不识别"
+  },
+  "content_dismiss": {
+    "message": "关闭"
+  },
+  "content_reloadPage": {
+    "message": "重新载入页面"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant 已更新。请重新载入此页面以继续。"
+  },
+  "content_selectionRestoredOne": {
+    "message": "你之前选择的 $COUNT$ 个模组仍处于选中状态。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "你之前选择的 $COUNT$ 个模组仍处于选中状态。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "选择会在这个标签页中保留，直到你清除它们或关闭标签页。"
+  },
+  "content_clearSelectionAction": {
+    "message": "清除选择"
+  },
+  "content_selectionDroppedOne": {
+    "message": "已放弃 $COUNT$ 个属于其他游戏的已选模组。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "已放弃 $COUNT$ 个属于其他游戏的已选模组。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "在你添加 Nexus API 密钥之前，兼容性检查处于关闭状态。"
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "此页面上的其他功能仍然可用。"
+  },
+  "content_openSettings": {
+    "message": "打开设置"
+  },
+  "content_noticeOtherGame": {
+    "message": "兼容性设置的是 $TARGETGAME$，而此页面是 $PAGEGAME$。",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "请选择你正在游玩的游戏版本，才能显示兼容性徽章。"
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "与其按另一个游戏来判定，不如不显示任何判定。"
+  },
+  "content_useThisGame": {
+    "message": "使用这个游戏"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "请从浏览器工具栏打开 Nexus Mods Assistant 弹出窗口来更改设置。"
+  },
+  "content_targetModalTitle": {
+    "message": "以这个游戏为准"
+  },
+  "content_targetPromptQuestion": {
+    "message": "你玩的是 $GAME$ 的哪个版本？模组会按这个版本来判定。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "例如 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "正在从公开来源推导这个游戏的版本..."
+  },
+  "content_targetVersionsNone": {
+    "message": "没有任何公开来源给出这个游戏的版本，因此没有可供选择的项目。如果你知道，请输入你游玩的版本。"
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "为这个游戏推导出 $COUNT$ 个版本。可在上方的框中打开列表，或自行输入。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "为这个游戏推导出 $COUNT$ 个版本。可在上方的框中打开列表，或自行输入。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "版本搜索未能完成（$REASON$），所以这个列表为空是因为没拿到结果，而不是因为没有数据。请输入你游玩的版本。",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "保存"
+  },
+  "content_cancel": {
+    "message": "取消"
+  },
+  "content_targetNotSaved": {
+    "message": "没有输入版本，因此什么都没有保存，此页面仍未设定判定基准。"
+  },
+  "content_targetNotSavedDetail": {
+    "message": "请从推导出的版本中选择一个，或输入你游玩的版本。"
+  },
+  "content_tryAgain": {
+    "message": "重试"
+  },
+  "content_noModsOnPage": {
+    "message": "此页面没有模组。"
+  },
+  "content_layoutStillLoading": {
+    "message": "模组列表还没有载入完成。如果一直这样，可能是 Nexus 改动了页面结构。"
+  },
+  "content_layoutNotFound": {
+    "message": "在此页面上找不到模组列表。可能是 Nexus 改动了页面结构。"
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "不再匹配的选择器：$NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "这个模组页面的结构不是本助手认识的，因此没有添加徽章。"
+  },
+  "content_translationSignalMissing": {
+    "message": "设置为隐藏翻译类模组，但此页面上没有任何模组卡片标明所属分类，因此什么都没有隐藏。"
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "可能是 Nexus 改动了页面标记。没有任何内容对你隐藏。"
+  },
+  "content_dateFilterNotApplied": {
+    "message": "日期筛选未生效：此页面上没有任何模组卡片带有更新日期。"
+  },
+  "content_dateSelectorBroken": {
+    "message": "“最近更新”筛选在此页面上读不到任何日期，因此没有生效。"
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "可能是 Nexus 改动了页面标记。"
+  },
+  "content_undatedHiddenOne": {
+    "message": "已隐藏 $COUNT$ 个模组：没有可比对的更新日期。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "已隐藏 $COUNT$ 个模组：没有可比对的更新日期。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "根据弹出窗口的设置，已隐藏 $COUNT$ 个翻译类模组。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "根据弹出窗口的设置，已隐藏 $COUNT$ 个翻译类模组。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "设置已更改。徽章会在当前下载任务结束后刷新。"
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · 兼容性助手"
+  },
+  "popup_extensionToggle": {
+    "message": "启用或停用助手"
+  },
+  "popup_sectionGameVersion": {
+    "message": "游戏与版本"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "你打开的标签页是一个 Nexus 游戏页面。"
+  },
+  "popup_useThisGame": {
+    "message": "使用这个游戏"
+  },
+  "popup_gameLabel": {
+    "message": "游戏"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "按名称搜索"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "匹配的游戏"
+  },
+  "popup_versionRangeLabel": {
+    "message": "版本范围"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "最早的游戏版本"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "起始（例如 1.3.8）"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "最新的游戏版本，可不填"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "结束，可不填"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "推导出的游戏版本"
+  },
+  "popup_refreshVersions": {
+    "message": "重新获取版本"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "再次从公开来源搜索这个游戏的版本"
+  },
+  "popup_exclusionLabel": {
+    "message": "排除包含以下内容的模组"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "例如 patch、translation"
+  },
+  "popup_exclusionTitle": {
+    "message": "多个关键词用逗号分隔"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "为这个按钮打开的列表加上 Nexus 自带的翻译筛选"
+  },
+  "popup_hideTranslations": {
+    "message": "打开列表时排除翻译类模组"
+  },
+  "popup_openCompatibleMods": {
+    "message": "打开兼容的模组"
+  },
+  "popup_sectionConnection": {
+    "message": "连接"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus API 密钥"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "已保存的 Nexus API 密钥"
+  },
+  "popup_revealKey": {
+    "message": "显示已保存的 API 密钥"
+  },
+  "popup_hideKey": {
+    "message": "隐藏已保存的 API 密钥"
+  },
+  "popup_show": {
+    "message": "显示"
+  },
+  "popup_hide": {
+    "message": "隐藏"
+  },
+  "popup_replaceKey": {
+    "message": "更换密钥"
+  },
+  "popup_disconnect": {
+    "message": "断开连接"
+  },
+  "popup_disconnectExplain": {
+    "message": "断开连接会从这个浏览器中删除密钥以及所有缓存的 Nexus 响应。你的 Nexus 账户不受影响。"
+  },
+  "popup_keepKey": {
+    "message": "保留密钥"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Nexus 个人 API 密钥"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "粘贴你的 API 密钥"
+  },
+  "popup_save": {
+    "message": "保存"
+  },
+  "popup_needKey": {
+    "message": "需要密钥？"
+  },
+  "popup_cancel": {
+    "message": "取消"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "可不填。浏览、筛选和版本设定没有密钥也能用。兼容性徽章和下载需要密钥，因为 Nexus 只对账户作出响应。"
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods 单点登录"
+  },
+  "popup_ssoDescription": {
+    "message": "授权一次，密钥就会自动填好。你随时可以再运行一次来替换已保存的密钥。"
+  },
+  "popup_authorizeSso": {
+    "message": "授权 SSO"
+  },
+  "popup_cancelSso": {
+    "message": "取消 SSO"
+  },
+  "popup_ssoReady": {
+    "message": "可以开始 Nexus Mods SSO 握手了。"
+  },
+  "popup_startingSso": {
+    "message": "正在启动 SSO..."
+  },
+  "popup_ssoCanceled": {
+    "message": "已取消 SSO。"
+  },
+  "popup_sectionDownloads": {
+    "message": "下载"
+  },
+  "popup_downloadModeLabel": {
+    "message": "下载方式"
+  },
+  "popup_downloadModeManual": {
+    "message": "手动：由浏览器保存文件"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex：由你的模组管理器接收链接"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "这与 Nexus 列表页面操作栏中的设置是同一个：在这里改动，那边也会改，反之亦然。Vortex 方式会打开一个"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "链接，由你的操作系统交给注册了该协议的模组管理器。"
+  },
+  "popup_fileListsLegend": {
+    "message": "文件列表"
+  },
+  "popup_fileListsNote": {
+    "message": "打开模组的文件列表时显示哪些文件分类。同样的四个开关也在页面上的面板中。"
+  },
+  "popup_showOldFilesTitle": {
+    "message": "显示模组的旧版本文件"
+  },
+  "popup_showOldFiles": {
+    "message": "旧版文件"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "显示模组的更新文件"
+  },
+  "popup_showUpdateFiles": {
+    "message": "更新文件"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "显示模组的可选文件"
+  },
+  "popup_showOptionalFiles": {
+    "message": "可选文件"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "显示模组的杂项文件"
+  },
+  "popup_showMiscFiles": {
+    "message": "杂项文件"
+  },
+  "popup_sectionAdvanced": {
+    "message": "高级"
+  },
+  "popup_advancedNote": {
+    "message": "本地存储与诊断。已连接密钥时，清除缓存会立刻从 Nexus 重新读取游戏列表；这里的其他内容都不会联网。"
+  },
+  "popup_debugLoggingTitle": {
+    "message": "把后台工作线程的详细活动写入 service worker 控制台"
+  },
+  "popup_debugLogging": {
+    "message": "详细的控制台日志"
+  },
+  "popup_clearCache": {
+    "message": "清除缓存的 Nexus 数据"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "商店更新说明"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "商店分支"
+  },
+  "popup_sourceArticleText": {
+    "message": "文章正文，未核实"
+  },
+  "popup_sourceModText": {
+    "message": "模组正文"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "合集元数据"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$，来自$SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$（$DOMAIN$）",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "没有连接 API 密钥，Nexus 不会响应。请在“连接”中添加。"
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus 拒绝了你的 API 密钥。请在“连接”中更换。"
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus 拒绝了该请求。可能需要 Premium 账户，或需要登录 nexusmods.com。"
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus 上没有这个游戏或模组的记录。它可能已被隐藏或删除。"
+  },
+  "popup_failureRateLimited": {
+    "message": "你已用完 Nexus API 配额。配额重置后会继续检查，通常在一小时之内。"
+  },
+  "popup_failureServerError": {
+    "message": "Nexus 目前没有响应。请过几分钟再试。"
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus 认为请求格式有误而拒绝了它。请检查游戏和版本后重试。"
+  },
+  "popup_failureNotConfigured": {
+    "message": "还没有配置要检查的对象。请在上方选择游戏和起始版本。"
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "还没有为这个游戏推导出任何游戏版本，因此没有可与模组比对的基准。所有游戏都受支持，只是这一个没有本助手能找到的公开版本数据。若仍要检查，请输入你游玩的版本。"
+  },
+  "popup_failureOffline": {
+    "message": "无法连接 Nexus。请检查网络后重试。"
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "扩展没有被允许访问 nexusmods.com。你的网络没有问题：是站点访问权限被拒绝或撤销了。请在浏览器的扩展设置中重新授予（Firefox：打开 about:addons，找到这个扩展，再进入 Permissions）。"
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus 响应太慢。请重试。"
+  },
+  "popup_failureDisabled": {
+    "message": "助手已关闭。请用右上角的开关重新打开。"
+  },
+  "popup_failureNoBackground": {
+    "message": "扩展后台没有响应。请重新打开这个弹出窗口，或重新载入扩展。"
+  },
+  "popup_failureCanceled": {
+    "message": "该请求在完成之前被取消了。"
+  },
+  "popup_failureBackgroundError": {
+    "message": "扩展后台未能完成该请求。"
+  },
+  "popup_failureContextInvalid": {
+    "message": "扩展已更新。请重新载入已打开的 Nexus 标签页。"
+  },
+  "popup_unexpectedFailure": {
+    "message": "意外故障：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "发生了意外故障，但没有报告任何细节。"
+  },
+  "popup_requestFailed": {
+    "message": "请求失败。"
+  },
+  "popup_settingsReadFailed": {
+    "message": "弹出窗口无法读取你的设置：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "无法更新已保存的设置：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "存储空间已满，因此该设置没有保存。请使用下方的“清除缓存的 Nexus 数据”后重试。"
+  },
+  "popup_settingSaveFailed": {
+    "message": "无法保存该设置：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "没有 API 密钥时，你仍可把已打开的 Nexus 标签页中的游戏设为基准，但无法搜索完整的 Nexus 目录，也无法获取兼容性徽章。"
+  },
+  "popup_pasteReplacementKey": {
+    "message": "粘贴新的密钥，然后按“保存”。"
+  },
+  "popup_pasteKeyFirst": {
+    "message": "请先粘贴一个密钥。你可以用“需要密钥？”来生成一个。"
+  },
+  "popup_keySaved": {
+    "message": "密钥已保存。"
+  },
+  "popup_keyUpdated": {
+    "message": "密钥已更新。"
+  },
+  "popup_disconnecting": {
+    "message": "正在断开连接..."
+  },
+  "popup_keyClearFailed": {
+    "message": "无法清除密钥：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "密钥已删除。你的游戏和版本基准已保留。"
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "密钥已删除，你的游戏和版本基准已保留。不过$ISSUES$：请使用下方的“清除缓存的 Nexus 数据”。",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "后台没有响应，缓存的 Nexus 响应仍留在磁盘上"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "无法读取 Steam 版本缓存，它仍留在磁盘上"
+  },
+  "popup_leftBehindSeparator": {
+    "message": "，并且"
+  },
+  "popup_noReadableVersion": {
+    "message": "为这个游戏推导出的版本中，没有一个能读作版本号，因此没有填入任何内容。请输入你游玩的游戏版本。"
+  },
+  "popup_startVersionFilled": {
+    "message": "起始版本已填为 $VERSION$，这是为这个游戏找到的最新版本。如果你玩的是更旧的版本，请自行修改。",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "结束版本 $END$ 早于起始版本 $START$，这样任何模组都不可能匹配。该范围没有保存，你原有的基准也没有改变。",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "请先选择游戏：只有版本没有可比对的对象。"
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "请先选择游戏，然后才能为它推导版本。"
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "请先选择游戏再继续。"
+  },
+  "popup_openTabIsGame": {
+    "message": "你打开的 Nexus 标签页是 $GAME$。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "已保存。你打开的 Nexus 标签页是 $GAME$，因此这个基准不适用于它。",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "已保存。"
+  },
+  "popup_gameListNeedsKey": {
+    "message": "游戏列表需要 API 密钥。请用上方的按钮把已打开标签页中的游戏设为基准。"
+  },
+  "popup_derivingVersions": {
+    "message": "正在从公开来源推导版本..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "版本搜索未能完成，所以这里为空并不代表任何结论。"
+  },
+  "popup_noVersionsFound": {
+    "message": "没有任何公开来源给出这个游戏的版本。这个列表为空是因为数据不存在，而不是因为这个游戏不受支持。"
+  },
+  "popup_searching": {
+    "message": "正在搜索公开来源..."
+  },
+  "popup_searchingAgain": {
+    "message": "正在重新搜索公开来源..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "版本搜索：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "推导出 $COUNT$ 个版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "推导出 $COUNT$ 个版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "从 $SOURCES$ 个来源推导出 $COUNT$ 个版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "从 $SOURCES$ 个来源推导出 $COUNT$ 个版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "从 $SOURCES$ 个来源推导出 $COUNT$ 个版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "从 $SOURCES$ 个来源推导出 $COUNT$ 个版本。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "没有任何公开来源给出这个游戏的版本，因此没有填入任何内容。如果你知道，请输入你游玩的版本；留空也没关系。"
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "本次刷新用了 $COUNT$ 个请求。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "本次刷新用了 $COUNT$ 个请求。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "无法有把握地确定这个游戏的商店页面，因此跳过了商店来源，以免用上另一个游戏的版本号。"
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "下载会以 nxm:// 链接交给你的模组管理器，这里和任何已打开的 Nexus 标签页都一样。"
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "下载会由浏览器保存，这里和任何已打开的 Nexus 标签页都一样。"
+  },
+  "popup_verboseLoggingOn": {
+    "message": "详细日志将从后台工作线程下次启动时开启。"
+  },
+  "popup_verboseLoggingOff": {
+    "message": "详细日志将从后台工作线程下次启动时关闭。"
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "不设定版本基准直接打开"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "没有设定起始版本，因此徽章不会判定模组，只会说明没有可比对的对象。筛选和下载仍然可用。再按一次即可直接打开列表。"
+  },
+  "popup_clearing": {
+    "message": "正在清除..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "扩展后台没有响应，Steam 版本缓存也无法读取，因此两者都没有清除。已保存的游戏列表已清除。"
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "扩展后台没有响应，因此模组响应缓存没有清除。已保存的游戏列表和 Steam 版本缓存已清除。"
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "已清除 $COUNT$ 条缓存，释放 $KB$ KB。Steam 版本缓存无法读取，可能仍留在磁盘上。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "已清除 $COUNT$ 条缓存，释放 $KB$ KB。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "没有报告任何缓存条目，因此没有释放空间。"
+  },
+  "popup_noGameListCached": {
+    "message": "尚未缓存游戏列表。"
+  },
+  "popup_gameListCached": {
+    "message": "游戏列表缓存于$WHEN$。",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "刚刚"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ 分钟前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ 分钟前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ 小时前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ 小时前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ 天前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ 天前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "已载入 $COUNT$ 个游戏名。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "游戏列表：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "后台返回了无法识别的游戏列表。"
+  },
+  "popup_loadedTitlesOne": {
+    "message": "已载入 1 个游戏名。"
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "已清除 1 条缓存，释放 $KB$ KB。",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "已清除 1 条缓存，释放 $KB$ KB。Steam 版本缓存无法读取，可能仍留在磁盘上。",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

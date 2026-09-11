@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Her Nexus mod kartı, oynadığınız oyun sürümü için uyumluluk sonucu alır; böylece çalışacakları filtreleyebilirsiniz."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "İstek $seconds$ sn'den uzun sürdü ve bırakıldı.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Nexus API sınırına ulaşıldı. Sınır $resetTime$ saatinde sıfırlanıyor.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Nexus API sınırına ulaşıldı. Sınır sıfırlandığında kontroller sürdürülür."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Nexus API sınırına ulaşıldı."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus API anahtarınızı reddetti. Anahtarı eklenti penceresinden yeniden girin."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus bu isteği geri çevirdi. Premium hesap veya nexusmods.com'da açık bir oturum gerekebilir."
+  },
+  "background_errorNotFound": {
+    "message": "Nexus'ta bu oyun için böyle bir mod yok (silinmiş, gizlenmiş ya da yanlış oyun)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus şu anda yanıt vermiyor (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus isteği reddetti (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "İstek çok uzun sürdü ve bırakıldı."
+  },
+  "background_errorOffline": {
+    "message": "Nexus ile bağlantı yok."
+  },
+  "background_errorDisabled": {
+    "message": "Eklenti kapalı."
+  },
+  "background_errorUnexpected": {
+    "message": "Bir şeyler ters gitti."
+  },
+  "background_errorNoApiKey": {
+    "message": "API anahtarı bulunamadı. Nexus API anahtarınızı eklenti penceresinden ekleyin."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "İndirme bağlantısında adres yok."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "NXM bağlantısı bulunamadı."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Bu mod için uygun dosya bulunamadı."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "Bu mod sayfasının gereksinimler bölümü okunamadı. Nexus sayfa düzeni, NMA'nın tanıdığı bir düzen değil."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Sayfa değişti"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant modları kontrol edebilmek için $missing$ gerektiriyor. Kurulumu bitirmek için eklenti penceresini açın.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "bir API anahtarı"
+  },
+  "background_setupNeedsGame": {
+    "message": "bir oyun"
+  },
+  "background_setupNeedsVersion": {
+    "message": "bir oyun sürümü"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ ve $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Bu sayfa $pageGame$ oyununa ait, NMA ise $configuredGame$ için ayarlı. Bu modları kontrol etmek için eklenti penceresinden oyunu değiştirin.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA \"$version$\" ifadesini oyun sürümü olarak okuyamıyor, bu yüzden hiçbir modu buna göre değerlendiremiyor. Eklenti penceresinde 1.6.1170 gibi sayısal bir sürüm belirleyin.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "$gameDomain$ için hiçbir kamuya açık kaynak oyun sürümü belirtmiyor, bu yüzden NMA burada mod sürümünden oyun sürümünü çıkaramıyor. Bu, eklentideki değil verideki bir boşluk ve herkes için aynı. Yine de kontrol etmek isterseniz oynadığınız sürümü eklenti penceresine yazın.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Hiçbir sürüm kaynağına ulaşılamadı, bu yüzden bu oyun için henüz bir şey çıkarılamadı."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Sürümlerin çıkarılabilmesi için önce bir oyun gerekir."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Hiçbir mağaza sayfası bu oyunla emin olunacak kadar eşleşmedi, bu yüzden hiçbiri kaydedilmedi."
+  },
+  "background_sourceFileVersion": {
+    "message": "Bir dosya sürümü"
+  },
+  "background_sourceFileName": {
+    "message": "Bir dosya adı"
+  },
+  "background_sourceChangelog": {
+    "message": "Değişiklik günlüğü"
+  },
+  "background_sourceDescription": {
+    "message": "Açıklama"
+  },
+  "background_sourceUploadDate": {
+    "message": "Yükleme tarihi"
+  },
+  "background_sourceNone": {
+    "message": "Hiçbir şey"
+  },
+  "background_verdictPartialNote": {
+    "message": "Bir kaynak okunamadı ($cause$), bu yüzden bu kontrol kısmi.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Hiçbir yerde oyun sürümü belirtilmiyor, ancak en yeni dosya $uploadDate$ tarihinde, $gameVersion$ oyun sürümünden sonra yüklenmiş. Çıkarım, doğrulanmış bilgi değil.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ \"$evidence$\" belirtiyor ve bu, seçtiğiniz aralığın içinde.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ \"$evidence$\" ifadesinden söz ediyor ve bu, seçtiğiniz aralığın içinde. Bu bir çıkarım, belirtilmiş bir oyun sürümü değil.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Hiçbir yerde oyun sürümü belirtilmiyor ve en yeni dosyanın yükleme tarihi ($uploadDate$) onu seçtiğiniz aralığa yerleştirmiyor.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ bu modun andığı en yeni oyun sürümü olan \"$evidence$\" değerini belirtiyor ve bu, seçtiğiniz aralığın dışında.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ bu modun andığı en yeni oyun sürümü olan \"$evidence$\" değerinden söz ediyor ve bu, seçtiğiniz aralığın dışında. Bu bir çıkarım, belirtilmiş bir oyun sürümü değil.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Bu mod dosyalarında, değişiklik günlüğünde veya açıklamasında hiçbir oyun sürümü belirtmiyor."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Bu mod açıklamasında veya değişiklik günlüğünde hiçbir oyun sürümü belirtmiyor. Bu kontrol için dosyaları açılmadı."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "Mağaza araması yanıt vermedi, bu yüzden mağaza kaynakları atlandı."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Hiçbir mağaza sayfası bu oyunla emin olunacak kadar eşleşmedi, bu yüzden mağaza kaynakları atlandı."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "Bu oyunun mağaza kaydı okunamadı, bu yüzden mağaza kaynakları bu seferlik atlandı."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "En yakın mağaza sayfası bir oyun kaydı değil, bu yüzden başka bir ürünün sürümlerini okumak yerine mağaza kaynakları atlandı."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "En yakın mağaza sayfası başka bir uygulamaya ait, bu yüzden mağaza kaynakları atlandı."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "Mağaza sayfası kataloğun belirttiğinden farklı bir oyun adı taşıyor, bu yüzden mağaza kaynakları atlandı."
+  },
+  "background_ssoConnecting": {
+    "message": "Nexus Mods SSO'ya bağlanılıyor..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Nexus Mods sekmesinde onayınız bekleniyor..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "SSO el sıkışması başlatılamadı."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "SSO bağlantısı açılamadı."
+  },
+  "background_ssoRejected": {
+    "message": "SSO el sıkışmasını reddetti."
+  },
+  "background_ssoConnectionReady": {
+    "message": "Bağlantı hazır. Onayınız bekleniyor..."
+  },
+  "background_ssoComplete": {
+    "message": "API anahtarı SSO ile kaydedildi."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "SSO'dan beklenmeyen yanıt."
+  },
+  "background_ssoLostConnection": {
+    "message": "Birkaç denemeden sonra SSO bağlantısı koptu."
+  },
+  "background_ssoReconnecting": {
+    "message": "Yeniden bağlanılıyor ($attempt$/$total$. deneme)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO iptal edildi."
+  },
+  "content_statusCompatible": {
+    "message": "Uyumlu"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Muhtemelen uyumlu"
+  },
+  "content_statusIncompatible": {
+    "message": "Uyumsuz"
+  },
+  "content_statusUnknown": {
+    "message": "Sürüm bilgisi yok"
+  },
+  "content_statusFailed": {
+    "message": "Kontrol edilemedi"
+  },
+  "content_statusNotConfigured": {
+    "message": "Ayarlanmadı"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Bilinmiyor"
+  },
+  "content_evidenceFileVersion": {
+    "message": "dosya sürümü"
+  },
+  "content_evidenceFileName": {
+    "message": "dosya adı"
+  },
+  "content_evidenceChangelog": {
+    "message": "değişiklik günlüğü"
+  },
+  "content_evidenceDescription": {
+    "message": "mod açıklaması"
+  },
+  "content_evidenceUploadDate": {
+    "message": "yükleme tarihi"
+  },
+  "content_evidenceNone": {
+    "message": "sürüm kanıtı yok"
+  },
+  "content_confidenceExact": {
+    "message": "tam eşleşme"
+  },
+  "content_confidenceInferred": {
+    "message": "çıkarım"
+  },
+  "content_confidenceNone": {
+    "message": "belirlenmedi"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Bulunan sürüm: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Kanıt: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Güven: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Eşleşen: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - sürüm seçilmedi",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "sürüm bildirilmedi"
+  },
+  "content_versionNotReportedShort": {
+    "message": "bildirilmedi"
+  },
+  "content_checking": {
+    "message": "Kontrol ediliyor..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Uyumluluk kontrol ediliyor..."
+  },
+  "content_scrollToCheck": {
+    "message": "Kontrol için kaydırın"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Bu mod, görünür alana geldiğinde kontrol edilir."
+  },
+  "content_noResponse": {
+    "message": "Yanıt yok"
+  },
+  "content_compatibilityColumn": {
+    "message": "Uyumluluk"
+  },
+  "content_setVersionInPopup": {
+    "message": "Sonuç almak için eklenti penceresinden oyun sürümünü ayarlayın."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Bu mod için sonuç almak üzere eklenti penceresinden oyun sürümünü seçin."
+  },
+  "content_filesButton": {
+    "message": "Dosyalar"
+  },
+  "content_filesButtonForMod": {
+    "message": "$MODNAME$ modunun dosyaları",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Bu modun dosyaları"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Gereken bu modun dosyaları"
+  },
+  "content_filesDropdownLabel": {
+    "message": "İndirilecek dosyalar"
+  },
+  "content_filesLoading": {
+    "message": "Dosyalar yükleniyor..."
+  },
+  "content_filesFetchFailed": {
+    "message": "Dosyalar alınamadı"
+  },
+  "content_filesLoadFailed": {
+    "message": "Dosya listesi yüklenemedi: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "Dosya listesi yüklenemedi"
+  },
+  "content_fileListUnreadable": {
+    "message": "Dosya listesi okunamadı."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "Açık bıraktığınız kategorilerde dosya yok. Gizli: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Bu mod için dosya bulunamadı."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Dosya süzgeçleriniz nedeniyle gizlendi: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Dosya"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Boyut bilinmiyor"
+  },
+  "content_fileDateUnknown": {
+    "message": "Tarih bilinmiyor"
+  },
+  "content_downloadSelected": {
+    "message": "Seçilenleri İndir"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Seçilenleri İndir ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Seçilenleri İndir ($MODS$ mod / $FILES$ dosya)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "İndiriliyor ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "İndiriliyor..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "Sıraya alındı"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Başarısız: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "bilinmeyen neden"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ dosya sıraya alındı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ dosya sıraya alındı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ sıraya alındı, $FAILED$ başarısız.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Uyumluluğa göre derleyin"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistant süzgeçleri"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistant indirmeleri"
+  },
+  "content_refresh": {
+    "message": "Yenile"
+  },
+  "content_pageNavigation": {
+    "message": "Sayfa gezinmesi"
+  },
+  "content_prevPage": {
+    "message": "Önceki"
+  },
+  "content_nextPage": {
+    "message": "Sonraki"
+  },
+  "content_pageNumber": {
+    "message": "Sayfa numarası"
+  },
+  "content_goToPage": {
+    "message": "Sayfaya git"
+  },
+  "content_collapseFilters": {
+    "message": "Süzgeçleri daralt"
+  },
+  "content_expandFilters": {
+    "message": "Süzgeçleri genişlet"
+  },
+  "content_showUpdateFiles": {
+    "message": "Güncelleme dosyalarını göster"
+  },
+  "content_showOptionalFiles": {
+    "message": "İsteğe bağlı dosyaları göster"
+  },
+  "content_showMiscFiles": {
+    "message": "Çeşitli dosyaları göster"
+  },
+  "content_showOldFiles": {
+    "message": "Eski sürümleri ve arşivlenmiş dosyaları göster"
+  },
+  "content_exclusionLabel": {
+    "message": "Adında şunlar geçen modları gizle"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Modları gizle (ör. yama, çeviri)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "Anahtar kelimeleri virgülle ayırın"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Son güncelleme aralığı"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Son Güncelleme:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Şu tarihte veya sonrasında güncellenmiş"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Şu tarihte veya öncesinde güncellenmiş"
+  },
+  "content_startDateTooltip": {
+    "message": "Başlangıç tarihi (dahil)"
+  },
+  "content_endDateTooltip": {
+    "message": "Bitiş tarihi (dahil)"
+  },
+  "content_clearDateRange": {
+    "message": "Tarih aralığını temizle"
+  },
+  "content_clearButton": {
+    "message": "Temizle"
+  },
+  "content_noModsSelected": {
+    "message": "Seçili mod yok"
+  },
+  "content_modsSelectedOne": {
+    "message": "$COUNT$ mod seçildi",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "$COUNT$ mod seçildi",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Seçimi Temizle"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Seçili her modun işaretini kaldır"
+  },
+  "content_downloadAll": {
+    "message": "Tümünü İndir"
+  },
+  "content_downloadMode": {
+    "message": "İndirme kipi"
+  },
+  "content_downloadModeManual": {
+    "message": "El ile"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Durdur"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Süren indirme dizisini durdurur. Başlamış dosyalar iptal edilmez."
+  },
+  "content_apiRemaining": {
+    "message": "API: $REMAINING$ kaldı",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Seç"
+  },
+  "content_selectModNamed": {
+    "message": "$MODNAME$ modunu seç",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Bu modu seç"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Son kontrol: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "İndirme hazırlanıyor..."
+  },
+  "content_downloadStarted": {
+    "message": "İndirme başladı"
+  },
+  "content_downloadStartedDetail": {
+    "message": "Dosya için tarayıcı indirmelerinize bakın."
+  },
+  "content_downloadFailed": {
+    "message": "İndirme başarısız"
+  },
+  "content_noFileToDownload": {
+    "message": "İndirilecek dosya bulunamadı"
+  },
+  "content_noDownloadableFile": {
+    "message": "İndirilebilir dosya bulunamadı"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "Bu modun birincil dosyası olmayabilir ya da dosyanın el ile seçilmesi gerekiyor."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Dosya seçiminde atlandı"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Bu mod için dosya seçilmedi."
+  },
+  "content_downloadRunStopped": {
+    "message": "İndirme dizisi durduruldu"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "Bu mod için dosya seçilmeden dizi sona erdi."
+  },
+  "content_vortexUnavailable": {
+    "message": "Vortex indirmesi kullanılamıyor"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "NXM bağlantısı çözümlenemedi. nexusmods.com'da oturum açtığınızdan emin olun."
+  },
+  "content_handedToVortex": {
+    "message": "Vortex'e iletildi"
+  },
+  "content_handedToVortexDetail": {
+    "message": "Tarayıcı Vortex'e bir nxm:// bağlantısı iletti. Tarayıcı, Vortex'in bunu aldığını doğrulayamaz."
+  },
+  "content_vortexBlocked": {
+    "message": "Vortex'e iletim engellendi"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "Tarayıcı nxm:// bağlantısını açmayı reddetti."
+  },
+  "content_vortexHandoff": {
+    "message": "Bu modlar Vortex'e nxm:// bağlantılarıyla gönderiliyor."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Vortex kurulu ve nxm bağlantıları için kayıtlı değilse hiçbir şey olmaz; tarayıcılar tek tıklamadan gelen art arda protokol açılışlarını da engelleyebilir. Hiçbir şey ulaşmıyorsa kipi \"El ile\" olarak değiştirin."
+  },
+  "content_batchEmpty": {
+    "message": "İndirilecek bir şey yok: geçerli seçim ve süzgeçlerle eşleşen mod bulunamadı."
+  },
+  "content_batchBusy": {
+    "message": "Zaten süren bir indirme dizisi var."
+  },
+  "content_batchVerbQueued": {
+    "message": "sıraya alındı"
+  },
+  "content_batchVerbVortex": {
+    "message": "Vortex'e iletildi"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ başarısız.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "İndiriliyor"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Tümü indiriliyor"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "zaten indiriliyor"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "indirilebilir dosya yok"
+  },
+  "content_reasonRunStopped": {
+    "message": "dizi durduruldu"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "gereksinimler sorusunda atlandı"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "dosya seçiminde atlandı"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "dosya listesi yüklenemedi"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "NXM bağlantısı yok"
+  },
+  "content_reasonNxmRefused": {
+    "message": "tarayıcı nxm:// bağlantısını reddetti"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "geçerli süzgeçler tarafından gizlendi"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "başka bir indirme dizisi sürüyor"
+  },
+  "content_modalOk": {
+    "message": "Tamam"
+  },
+  "content_selectFilesTitle": {
+    "message": "İndirilecek Dosyaları Seçin"
+  },
+  "content_skipMod": {
+    "message": "Modu Atla"
+  },
+  "content_skipThisMod": {
+    "message": "Bu modu atla"
+  },
+  "content_skipTheseMods": {
+    "message": "Bu modları atla"
+  },
+  "content_downloadAnyway": {
+    "message": "Yine de indir"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Gereksinimler doğrulanamadı"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ gereken modlara sahip olabilir, ancak liste yüklenemedi: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " Bu genellikle dizinin tamamında başarısız olur, bu yüzden yanıtınız dizinin geri kalanına da uygulanır."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ şu gereksinimlere sahip. Hangilerinin kurulacağını seçin:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Bu mod"
+  },
+  "content_quotedModName": {
+    "message": "\"$MODNAME$\"",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "$MODNAME$ modunun gereksinimleri",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Gereksinimler Bulundu"
+  },
+  "content_installWithRequirements": {
+    "message": "Gereksinimlerle Kur"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Gereksinimler Olmadan Kur"
+  },
+  "content_unknownMod": {
+    "message": "Bilinmeyen Mod"
+  },
+  "content_noLinkProvided": {
+    "message": "Bağlantı verilmemiş"
+  },
+  "content_requirementsUnreadable": {
+    "message": "Gereksinim listesi okunamadı."
+  },
+  "content_requirementsPartial": {
+    "message": "$TOTAL$ gereksinimden $STARTED$ tanesi başladı, $FAILED$ tanesi başarısız.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Nexus API anahtarınız reddedildi. Anahtarı eklenti penceresinden yeniden girin."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus bu isteği geri çevirdi. Premium hesap veya nexusmods.com'da açık bir oturum gerekebilir."
+  },
+  "content_errorNotFound": {
+    "message": "Bu mod kullanılamıyor (silinmiş, gizlenmiş ya da yanlış oyun)."
+  },
+  "content_errorRateLimited": {
+    "message": "Nexus API sınırına ulaşıldı. Sınır sıfırlandıktan sonra kontroller sürdürülür."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus şu anda yanıt vermiyor."
+  },
+  "content_errorOffline": {
+    "message": "Nexus ile bağlantı yok."
+  },
+  "content_errorNoApiKey": {
+    "message": "Ayarlanmış bir Nexus API anahtarı yok. Eklenti penceresinden bir tane ekleyin."
+  },
+  "content_errorUnexpected": {
+    "message": "Bir şeyler ters gitti."
+  },
+  "content_errorPortTimeout": {
+    "message": "Kontrol çok uzun sürdü ve bırakıldı."
+  },
+  "content_errorNoBackground": {
+    "message": "Eklentinin arka planıyla bağlantı koptu. Yeniden deneniyor."
+  },
+  "content_errorContextInvalid": {
+    "message": "Eklenti güncellendi. Bu sayfayı yeniden yükleyin."
+  },
+  "content_errorDisabled": {
+    "message": "Eklenti kapalı."
+  },
+  "content_errorCanceled": {
+    "message": "Kontrol iptal edildi."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Bilinmeyen mesajlaşma hatası."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Bekleyen istek sayısı çok fazla."
+  },
+  "content_errorBackground": {
+    "message": "Arka plan hatası."
+  },
+  "content_shortKeyRejected": {
+    "message": "anahtar reddedildi"
+  },
+  "content_shortAccessRefused": {
+    "message": "erişim reddedildi"
+  },
+  "content_shortNotAvailable": {
+    "message": "kullanılamıyor"
+  },
+  "content_shortRateLimited": {
+    "message": "sınıra ulaşıldı"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus çevrimdışı"
+  },
+  "content_shortOffline": {
+    "message": "bağlantı yok"
+  },
+  "content_shortTimedOut": {
+    "message": "zaman aşımı"
+  },
+  "content_shortNoBackground": {
+    "message": "arka plan yok"
+  },
+  "content_shortNeedsReload": {
+    "message": "yeniden yükleyin"
+  },
+  "content_shortSwitchedOff": {
+    "message": "kapalı"
+  },
+  "content_shortCanceled": {
+    "message": "iptal edildi"
+  },
+  "content_shortCheckFailed": {
+    "message": "kontrol başarısız"
+  },
+  "content_shortRequestRefused": {
+    "message": "istek reddedildi"
+  },
+  "content_shortNotSetUp": {
+    "message": "ayarlanmadı"
+  },
+  "content_shortOtherGame": {
+    "message": "başka oyun"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "sürüm çıkarılamadı"
+  },
+  "content_shortSuperseded": {
+    "message": "yerine yenisi geçti"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "sayfa tanınmadı"
+  },
+  "content_dismiss": {
+    "message": "Kapat"
+  },
+  "content_reloadPage": {
+    "message": "Sayfayı yeniden yükle"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant güncellendi. Devam etmek için bu sayfayı yeniden yükleyin."
+  },
+  "content_selectionRestoredOne": {
+    "message": "Daha önce seçtiğiniz $COUNT$ mod hâlâ seçili.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "Daha önce seçtiğiniz $COUNT$ mod hâlâ seçili.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "Seçimler, siz temizleyene veya sekmeyi kapatana kadar bu sekmede saklanır."
+  },
+  "content_clearSelectionAction": {
+    "message": "Seçimi temizle"
+  },
+  "content_selectionDroppedOne": {
+    "message": "Başka bir oyundan seçili $COUNT$ mod bırakıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "Başka bir oyundan seçili $COUNT$ mod bırakıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Bir Nexus API anahtarı eklemediğiniz sürece uyumluluk kontrolleri kapalıdır."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Bu sayfadaki diğer her şey çalışmaya devam eder."
+  },
+  "content_openSettings": {
+    "message": "Ayarları aç"
+  },
+  "content_noticeOtherGame": {
+    "message": "Uyumluluk $TARGETGAME$ için ayarlı, bu sayfa ise $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Uyumluluk rozetleri için oynadığınız oyun sürümünü seçin."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Başka bir oyuna göre hesaplanmış sonuç göstermek yerine hiç sonuç gösterilmiyor."
+  },
+  "content_useThisGame": {
+    "message": "Bu oyunu kullan"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Ayarları değiştirmek için tarayıcı araç çubuğundan Nexus Mods Assistant penceresini açın."
+  },
+  "content_targetModalTitle": {
+    "message": "Bu oyunu hedefle"
+  },
+  "content_targetPromptQuestion": {
+    "message": "$GAME$ oyununun hangi sürümünü oynuyorsunuz? Modlar bu sürüme göre değerlendirilir.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "ör. 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Bu oyunun sürümleri kamuya açık kaynaklardan çıkarılıyor..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Hiçbir kamuya açık kaynak bu oyun için sürüm belirtmiyor, bu yüzden sunulacak bir şey yok. Biliyorsanız oynadığınız sürümü yazın."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "Bu oyun için $COUNT$ sürüm çıkarıldı. Yukarıdaki kutudan listeyi açın veya kendiniz yazın.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "Bu oyun için $COUNT$ sürüm çıkarıldı. Yukarıdaki kutudan listeyi açın veya kendiniz yazın.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "Sürüm araması tamamlanamadı ($REASON$), bu yüzden liste veri olmadığı için değil, yanıt alınamadığı için boş. Oynadığınız sürümü yazın.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Kaydet"
+  },
+  "content_cancel": {
+    "message": "İptal"
+  },
+  "content_targetNotSaved": {
+    "message": "Sürüm girilmedi, bu yüzden hiçbir şey kaydedilmedi ve bu sayfa hâlâ hedefsiz."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Çıkarılan sürümlerden birini seçin veya oynadığınız sürümü yazın."
+  },
+  "content_tryAgain": {
+    "message": "Yeniden dene"
+  },
+  "content_noModsOnPage": {
+    "message": "Bu sayfada mod yok."
+  },
+  "content_layoutStillLoading": {
+    "message": "Mod listesi henüz yüklenmedi. Böyle kalırsa Nexus düzenini değiştirmiş olabilir."
+  },
+  "content_layoutNotFound": {
+    "message": "Bu sayfada mod listesi bulunamadı. Nexus düzenini değiştirmiş olabilir."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Artık eşleşmeyen seçiciler: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Bu mod sayfası, yardımcının tanıdığı bir düzene benzemiyor, bu yüzden rozet eklenmedi."
+  },
+  "content_translationSignalMissing": {
+    "message": "Çeviriler gizlenecek şekilde ayarlı, ancak bu sayfadaki hiçbir mod kartı hangi kategoride olduğunu belirtmiyor, bu yüzden hiçbir şey gizlenmedi."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus işaretlemesini değiştirmiş olabilir. Sizden hiçbir şey gizlenmedi."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "Tarih süzgeci uygulanmıyor: bu sayfadaki hiçbir mod kartı güncelleme tarihi göstermiyor."
+  },
+  "content_dateSelectorBroken": {
+    "message": "\"Son Güncelleme\" süzgeci bu sayfada hiçbir tarih okuyamadı, bu yüzden uygulanmadı."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus işaretlemesini değiştirmiş olabilir."
+  },
+  "content_undatedHiddenOne": {
+    "message": "$COUNT$ mod gizlendi: karşılaştırılacak güncelleme tarihi yok.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "$COUNT$ mod gizlendi: karşılaştırılacak güncelleme tarihi yok.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ çeviri modu, eklenti penceresindeki ayar nedeniyle gizlendi.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "$COUNT$ çeviri modu, eklenti penceresindeki ayar nedeniyle gizlendi.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Ayarlar değişti. Rozetler, süren indirme dizisi bitince yenilenecek."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Uyumluluk Yardımcısı"
+  },
+  "popup_extensionToggle": {
+    "message": "Yardımcıyı aç veya kapat"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Oyun ve sürüm"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "Açık olan sekmeniz bir Nexus oyun sayfası."
+  },
+  "popup_useThisGame": {
+    "message": "Bu oyunu kullan"
+  },
+  "popup_gameLabel": {
+    "message": "Oyun"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Ada göre ara"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Eşleşen oyunlar"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Sürüm aralığı"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "En eski oyun sürümü"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Başlangıç (ör. 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "En yeni oyun sürümü, isteğe bağlı"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "İsteğe bağlı bitiş"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Çıkarılan oyun sürümleri"
+  },
+  "popup_refreshVersions": {
+    "message": "Sürümleri yenile"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Bu oyunun sürümleri için kamuya açık kaynakları yeniden ara"
+  },
+  "popup_exclusionLabel": {
+    "message": "Şunları içeren modları gizle"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "ör. yama, çeviri"
+  },
+  "popup_exclusionTitle": {
+    "message": "Birden çok anahtar kelimeyi virgülle ayırın"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Bu düğmenin açtığı listeye Nexus'un kendi çeviri süzgecini ekler"
+  },
+  "popup_hideTranslations": {
+    "message": "Listeyi çeviriler hariç aç"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Uyumlu modları aç"
+  },
+  "popup_sectionConnection": {
+    "message": "Bağlantı"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus API anahtarı"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Kayıtlı Nexus API anahtarı"
+  },
+  "popup_revealKey": {
+    "message": "Kayıtlı API anahtarını göster"
+  },
+  "popup_hideKey": {
+    "message": "Kayıtlı API anahtarını gizle"
+  },
+  "popup_show": {
+    "message": "Göster"
+  },
+  "popup_hide": {
+    "message": "Gizle"
+  },
+  "popup_replaceKey": {
+    "message": "Anahtarı değiştir"
+  },
+  "popup_disconnect": {
+    "message": "Bağlantıyı kes"
+  },
+  "popup_disconnectExplain": {
+    "message": "Bağlantıyı kesmek, anahtarı ve önbellekteki tüm Nexus yanıtlarını bu tarayıcıdan siler. Nexus hesabınıza dokunulmaz."
+  },
+  "popup_keepKey": {
+    "message": "Anahtarı koru"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Nexus kişisel API anahtarı"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "API anahtarınızı yapıştırın"
+  },
+  "popup_save": {
+    "message": "Kaydet"
+  },
+  "popup_needKey": {
+    "message": "Anahtar mı lazım?"
+  },
+  "popup_cancel": {
+    "message": "İptal"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "İsteğe bağlı. Gezinme, süzgeçler ve sürüm hedefi anahtarsız da çalışır. Uyumluluk rozetleri ve indirmeler için anahtar gerekir, çünkü Nexus yalnızca bir hesaba yanıt verir."
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods çoklu oturum açma"
+  },
+  "popup_ssoDescription": {
+    "message": "Bir kez yetki verin, anahtar sizin için doldurulsun. Kayıtlı anahtarı değiştirmek için bunu istediğiniz zaman yeniden çalıştırabilirsiniz."
+  },
+  "popup_authorizeSso": {
+    "message": "SSO'ya yetki ver"
+  },
+  "popup_cancelSso": {
+    "message": "SSO'yu iptal et"
+  },
+  "popup_ssoReady": {
+    "message": "Nexus Mods SSO el sıkışmasını başlatmaya hazır."
+  },
+  "popup_startingSso": {
+    "message": "SSO başlatılıyor..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO iptal edildi."
+  },
+  "popup_sectionDownloads": {
+    "message": "İndirmeler"
+  },
+  "popup_downloadModeLabel": {
+    "message": "İndirme kipi"
+  },
+  "popup_downloadModeManual": {
+    "message": "El ile: dosyayı tarayıcı kaydeder"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: bağlantıyı mod yöneticiniz alır"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Nexus liste sayfasındaki işlem çubuğunda bulunan ayarın aynısı: burada değiştirmek orada da değiştirir, tersi de geçerli. Vortex kipi bir"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "bağlantısı açar; işletim sisteminiz bunu, o protokolü kaydetmiş olan mod yöneticisine teslim eder."
+  },
+  "popup_fileListsLegend": {
+    "message": "Dosya listeleri"
+  },
+  "popup_fileListsNote": {
+    "message": "Bir modun dosya listesi açıldığında hangi dosya kategorilerinin görüneceği. Aynı dört anahtar sayfa içindeki panelde de bulunur."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Bir modun dosyalarının eski sürümlerini göster"
+  },
+  "popup_showOldFiles": {
+    "message": "Eski dosyalar"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Bir modun güncelleme dosyalarını göster"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Güncelleme dosyaları"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Bir modun isteğe bağlı dosyalarını göster"
+  },
+  "popup_showOptionalFiles": {
+    "message": "İsteğe bağlı dosyalar"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Bir modun çeşitli dosyalarını göster"
+  },
+  "popup_showMiscFiles": {
+    "message": "Çeşitli dosyalar"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Gelişmiş"
+  },
+  "popup_advancedNote": {
+    "message": "Yerel depolama ve tanılama. Önbelleği temizlemek, bir anahtar bağlıysa oyun listesini Nexus'tan hemen yeniden okur; buradaki başka hiçbir şey ağa çıkmaz."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Arka plan işçisinin ayrıntılı etkinliğini service worker konsoluna yazar"
+  },
+  "popup_debugLogging": {
+    "message": "Ayrıntılı konsol günlüğü"
+  },
+  "popup_clearCache": {
+    "message": "Önbellekteki Nexus verilerini temizle"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "mağaza yama notu"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "mağaza dalı"
+  },
+  "popup_sourceArticleText": {
+    "message": "makale metni, doğrulanmamış"
+  },
+  "popup_sourceModText": {
+    "message": "mod metni"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "koleksiyon üst verisi"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, kaynak: $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "Bağlı bir API anahtarı yok, bu yüzden Nexus yanıt vermeyecek. Bağlantı bölümünden bir tane ekleyin."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus API anahtarınızı reddetti. Bağlantı bölümünden değiştirin."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus isteği geri çevirdi. Premium hesap veya nexusmods.com'da açık bir oturum gerekebilir."
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus'ta o oyunun veya modun kaydı yok. Gizlenmiş ya da kaldırılmış olabilir."
+  },
+  "popup_failureRateLimited": {
+    "message": "Nexus API kotanızı tükettiniz. Kota sıfırlandığında, genellikle bir saat içinde, kontroller sürdürülür."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus şu anda yanıt vermiyor. Birkaç dakika sonra yeniden deneyin."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus isteği hatalı biçimlendirilmiş olarak reddetti. Oyunu ve sürümü kontrol edip yeniden deneyin."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Kontrol edilecek bir yapılandırma yok. Yukarıdan bir oyun ve başlangıç sürümü seçin."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Bu oyun için henüz hiçbir oyun sürümü çıkarılmadı, bu yüzden modun karşılaştırılacağı bir şey yok. Her oyun destekleniyor; bu oyunun yardımcının bulabileceği kamuya açık sürüm verisi yok. Yine de kontrol etmek için oynadığınız sürümü yazın."
+  },
+  "popup_failureOffline": {
+    "message": "Nexus ile bağlantı yok. Ağınızı kontrol edip yeniden deneyin."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "Eklentinin nexusmods.com adresine erişmesine izin verilmiyor. Ağınızda sorun yok: site erişim izni reddedilmiş veya geri alınmış. Tarayıcınızın eklenti ayarlarından yeniden verin (Firefox: about:addons, sonra bu eklenti, sonra Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus yanıt vermekte çok gecikti. Yeniden deneyin."
+  },
+  "popup_failureDisabled": {
+    "message": "Yardımcı kapalı. Sağ üstteki anahtarla yeniden açın."
+  },
+  "popup_failureNoBackground": {
+    "message": "Eklenti arka planı yanıt vermedi. Bu pencereyi yeniden açın veya eklentiyi yeniden yükleyin."
+  },
+  "popup_failureCanceled": {
+    "message": "O istek tamamlanmadan iptal edildi."
+  },
+  "popup_failureBackgroundError": {
+    "message": "Eklenti arka planı o isteği tamamlayamadı."
+  },
+  "popup_failureContextInvalid": {
+    "message": "Eklenti güncellendi. Açık Nexus sekmelerini yeniden yükleyin."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Beklenmeyen hata: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Beklenmeyen hata, ayrıntı bildirilmedi."
+  },
+  "popup_requestFailed": {
+    "message": "İstek başarısız oldu."
+  },
+  "popup_settingsReadFailed": {
+    "message": "Pencere ayarlarınızı okuyamadı: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Kayıtlı ayarlar güncellenemedi: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "Depolama dolu, bu yüzden o ayar kaydedilmedi. Aşağıdaki \"Önbellekteki Nexus verilerini temizle\" düğmesini kullanıp yeniden deneyin."
+  },
+  "popup_settingSaveFailed": {
+    "message": "O ayar kaydedilemedi: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "API anahtarı olmadan açık Nexus sekmenizdeki oyunu hedefleyebilirsiniz, ancak Nexus kataloğunun tamamında arama yapılamaz ve uyumluluk rozetleri alınamaz."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Yeni anahtarı yapıştırın, sonra Kaydet düğmesine basın."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Önce bir anahtar yapıştırın. \"Anahtar mı lazım?\" ile bir tane oluşturabilirsiniz."
+  },
+  "popup_keySaved": {
+    "message": "Anahtar kaydedildi."
+  },
+  "popup_keyUpdated": {
+    "message": "Anahtar güncellendi."
+  },
+  "popup_disconnecting": {
+    "message": "Bağlantı kesiliyor..."
+  },
+  "popup_keyClearFailed": {
+    "message": "Anahtar silinemedi: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Anahtar kaldırıldı. Oyun ve sürüm hedefiniz korundu."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Anahtar kaldırıldı, oyun ve sürüm hedefiniz korundu. Ancak $ISSUES$: aşağıdaki \"Önbellekteki Nexus verilerini temizle\" düğmesini kullanın.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "arka plan yanıt vermedi, bu yüzden önbellekteki Nexus yanıtları hâlâ diskte"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "Steam sürüm önbelleği okunamadı, bu yüzden hâlâ diskte"
+  },
+  "popup_leftBehindSeparator": {
+    "message": " ve "
+  },
+  "popup_noReadableVersion": {
+    "message": "Bu oyun için çıkarılan sürümlerin hiçbiri sürüm numarası olarak okunamadı, bu yüzden hiçbiri doldurulmadı. Oynadığınız oyun sürümünü yazın."
+  },
+  "popup_startVersionFilled": {
+    "message": "Başlangıç sürümü, bu oyun için bulunan en yeni yapı olan $VERSION$ olarak dolduruldu. Daha eskisini oynuyorsanız değiştirin.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "Bitiş sürümü $END$, başlangıç sürümü $START$ değerinden daha eski, bu yüzden hiçbir mod eşleşemez. O aralık kaydedilmedi ve mevcut hedefiniz değişmedi.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Önce bir oyun seçin: tek başına bir sürümün karşılaştıracağı bir şey yok."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Önce bir oyun seçin, ardından onun için sürümler çıkarılabilir."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Devam etmeden önce bir oyun seçin."
+  },
+  "popup_openTabIsGame": {
+    "message": "Açık Nexus sekmeniz $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Kaydedildi. Açık Nexus sekmeniz $GAME$ olduğundan bu hedef ona uygulanmaz.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Kaydedildi."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "Oyun listesi için API anahtarı gerekir. Açık sekmenizdeki oyunu hedeflemek için yukarıdaki düğmeyi kullanın."
+  },
+  "popup_derivingVersions": {
+    "message": "Sürümler kamuya açık kaynaklardan çıkarılıyor..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "Sürüm araması tamamlanamadı, bu yüzden buradaki hiçbir şey bir bulgu değil."
+  },
+  "popup_noVersionsFound": {
+    "message": "Hiçbir kamuya açık kaynak bu oyun için sürüm belirtmiyor. Bu liste, oyun desteklenmediği için değil, veri var olmadığı için boş."
+  },
+  "popup_searching": {
+    "message": "Kamuya açık kaynaklar aranıyor..."
+  },
+  "popup_searchingAgain": {
+    "message": "Kamuya açık kaynaklar yeniden aranıyor..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Sürüm araması: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "$COUNT$ sürüm çıkarıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "$COUNT$ sürüm çıkarıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "$SOURCES$ kaynaktan $COUNT$ sürüm çıkarıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "$SOURCES$ kaynaktan $COUNT$ sürüm çıkarıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "$SOURCES$ kaynaktan $COUNT$ sürüm çıkarıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "$SOURCES$ kaynaktan $COUNT$ sürüm çıkarıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Hiçbir kamuya açık kaynak bu oyun için sürüm belirtmiyor, bu yüzden hiçbir şey doldurulmadı. Biliyorsanız oynadığınız sürümü yazın; boş bırakmak da olur."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "Bu yenilemede $COUNT$ istek.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "Bu yenilemede $COUNT$ istek.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "Bu oyunun mağaza sayfası kesin olarak belirlenemedi, bu yüzden başka bir oyunun numaralarını almak yerine mağaza kaynakları atlandı."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "İndirmeler mod yöneticinize nxm:// bağlantıları olarak iletilir; hem burada hem de açık her Nexus sekmesinde."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "İndirmeleri tarayıcı kaydeder; hem burada hem de açık her Nexus sekmesinde."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Ayrıntılı günlük, arka plan işçisinin bir sonraki başlatılmasından itibaren açık."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Ayrıntılı günlük, arka plan işçisinin bir sonraki başlatılmasından itibaren kapalı."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Sürüm hedefi olmadan aç"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Başlangıç sürümü ayarlanmadı, bu yüzden rozetler modu değerlendirmek yerine karşılaştıracak bir şey olmadığını bildirir. Süzme ve indirmeler yine çalışır. Listeyi yine de açmak için yeniden basın."
+  },
+  "popup_clearing": {
+    "message": "Temizleniyor..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "Eklenti arka planı yanıt vermedi ve Steam sürüm önbelleği okunamadı, bu yüzden ikisi de temizlenemedi. Kayıtlı oyun listesi temizlendi."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "Eklenti arka planı yanıt vermedi, bu yüzden mod yanıt önbelleği temizlenemedi. Kayıtlı oyun listesi ve Steam sürüm önbelleği temizlendi."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "$COUNT$ önbellek girdisi temizlendi, $KB$ KB boşaltıldı. Steam sürüm önbelleği okunamadı, bu yüzden hâlâ diskte olabilir.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "$COUNT$ önbellek girdisi temizlendi, $KB$ KB boşaltıldı.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Hiç önbellek girdisi bildirilmedi, bu yüzden yer boşaltılmadı."
+  },
+  "popup_noGameListCached": {
+    "message": "Henüz önbelleğe alınmış oyun listesi yok."
+  },
+  "popup_gameListCached": {
+    "message": "Oyun listesi $WHEN$ önbelleğe alındı.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "az önce"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ dakika önce",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ dakika önce",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ saat önce",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ saat önce",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ gün önce",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ gün önce",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "$COUNT$ başlık yüklendi.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Oyun listesi: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "Arka plan beklenmeyen bir oyun listesi döndürdü."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "1 başlık yüklendi."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "1 önbellek girdisi temizlendi, $KB$ KB boşaltıldı.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "1 önbellek girdisi temizlendi, $KB$ KB boşaltıldı. Steam sürüm önbelleği okunamadı, bu yüzden hâlâ diskte olabilir.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

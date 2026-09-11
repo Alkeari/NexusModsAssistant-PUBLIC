@@ -1,0 +1,388 @@
+{
+  "background_errorTimeoutSeconds": {
+    "message": "The request took longer than $seconds$s and was abandoned.",
+    "description": "Shown when a request to Nexus or Steam is cut off by the extension's own timer. Reaches the popup and the on-page report. The number is whole seconds and 's' is the unit abbreviation.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Nexus API limit reached. It resets at $resetTime$.",
+    "description": "Shown when Nexus answers 429, or when the daily quota is spent and the wait is too long, and Nexus told the extension when the quota resets. Reaches the popup and the on-page report.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1",
+        "example": "14:30:00"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Nexus API limit reached. Checks resume once the limit resets.",
+    "description": "Shown when Nexus answers 429 and did not say when the quota resets. Reaches the popup and the on-page report."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Nexus API limit reached.",
+    "description": "Shown when the extension stops before sending a request because the daily quota is spent and no reset time is known. Reaches the popup and the on-page report."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus rejected your API key. Re-enter it in the extension popup.",
+    "description": "Shown when Nexus answers 401. The user's saved API key is wrong or revoked. Reaches the popup and the on-page report."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus refused this request. A premium account or an active nexusmods.com login may be required.",
+    "description": "Shown when Nexus answers 403. Reaches the popup and the on-page report."
+  },
+  "background_errorNotFound": {
+    "message": "Nexus has no such mod for this game (deleted, hidden, or wrong game).",
+    "description": "Shown when Nexus answers 404 for a mod the user is looking at. Reaches the popup and the on-page report."
+  },
+  "background_errorServerError": {
+    "message": "Nexus is not responding right now (HTTP $status$).",
+    "description": "Shown when Nexus answers with a 5xx status. Reaches the popup and the on-page report. The number is the raw HTTP status code and stays as digits.",
+    "placeholders": {
+      "status": {
+        "content": "$1",
+        "example": "503"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus rejected the request (HTTP $status$).$detail$",
+    "description": "Shown when Nexus answers with a 4xx status the extension has no specific wording for. Reaches the popup and the on-page report. The detail is up to 120 characters of Nexus's own untranslated response body, already prefixed with a space, and is empty when Nexus sent no body.",
+    "placeholders": {
+      "status": {
+        "content": "$1",
+        "example": "422"
+      },
+      "detail": {
+        "content": "$2",
+        "example": " Invalid file id."
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "The request took too long and was abandoned.",
+    "description": "Shown when a request was aborted for taking too long and no duration is known. Reaches the popup and the on-page report."
+  },
+  "background_errorOffline": {
+    "message": "No connection to Nexus.",
+    "description": "Shown when the browser could not reach Nexus at all, usually because the machine is offline. Reaches the popup and the on-page report."
+  },
+  "background_errorDisabled": {
+    "message": "The extension is switched off.",
+    "description": "Shown when the user has turned the extension off in the popup and something still asks it to check a mod. Reaches the popup and the on-page report."
+  },
+  "background_errorUnexpected": {
+    "message": "Something went wrong.",
+    "description": "Shown when a failure carried no readable text of its own. The last-resort error wording. Reaches the popup and the on-page report."
+  },
+  "background_errorNoApiKey": {
+    "message": "API key not found. Add your Nexus API key in the extension popup.",
+    "description": "Shown when the user has not saved a Nexus API key yet and asks for something that needs one, such as a download or a file list. Reaches the popup and the on-page report."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "Download link missing URI.",
+    "description": "Shown when Nexus answered a download request but the answer carried no usable address, so the download cannot start. Reaches the on-page download report."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "NXM link not found.",
+    "description": "Shown when the user downloads through a mod manager and the Nexus download page did not contain the nxm:// handoff link. Reaches the on-page download report."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "No eligible files found for this mod.",
+    "description": "Shown when a mod has no file the extension is willing to download, for example when only archived files remain and the user has not opted into old files. Reaches the on-page download report."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "Could not read this mod page's requirements section. The Nexus page layout is not one NMA recognizes.",
+    "description": "Shown when the extension loaded a mod page to read its requirements and the page markup was not one it knows. NMA is the extension's short name and is not translated."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Navigation changed",
+    "description": "Shown in place of a verdict when the user navigated away before the check for a mod finished, so the answer no longer belongs to the page on screen. A short phrase, not a sentence."
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant needs $missing$ before it can check mods. Open the extension popup to finish setup.",
+    "description": "Shown on every mod tile when setup is incomplete. The inserted text is the list of missing items, built from background_setupNeedsApiKey, background_setupNeedsGame and background_setupNeedsVersion joined by background_setupNeedsJoin. Nexus Mods Assistant is the product name and is not translated.",
+    "placeholders": {
+      "missing": {
+        "content": "$1",
+        "example": "an API key and a game version"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "an API key",
+    "description": "One item in the list of missing setup steps inserted into background_errorNotConfigured. Lower case, no period: it appears mid-sentence."
+  },
+  "background_setupNeedsGame": {
+    "message": "a game",
+    "description": "One item in the list of missing setup steps inserted into background_errorNotConfigured, meaning the user has not chosen which game to check mods for. Lower case, no period: it appears mid-sentence."
+  },
+  "background_setupNeedsVersion": {
+    "message": "a game version",
+    "description": "One item in the list of missing setup steps inserted into background_errorNotConfigured, meaning the user has not said which game build they play. Lower case, no period: it appears mid-sentence."
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ and $last$",
+    "description": "Joins the last two items in the list of missing setup steps for background_errorNotConfigured. The first insert is everything before the last item, already separated by commas; the second is the last item.",
+    "placeholders": {
+      "items": {
+        "content": "$1",
+        "example": "an API key, a game"
+      },
+      "last": {
+        "content": "$2",
+        "example": "a game version"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "This page is $pageGame$, but NMA is set up for $configuredGame$. Switch game in the extension popup to check these mods.",
+    "description": "Shown on every mod tile when the user is browsing one game's mods while the extension is configured for another. Both inserts are Nexus game domain names such as gamedomain and are never translated. NMA is the extension's short name.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1",
+        "example": "gamedomain"
+      },
+      "configuredGame": {
+        "content": "$2",
+        "example": "othergamedomain"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA cannot read \"$version$\" as a game version, so it cannot judge any mod against it. Set a numeric version such as 1.6.1170 in the extension popup.",
+    "description": "Shown on every mod tile when the game version the user typed in the popup is not something the extension can parse. The insert is whatever the user typed. NMA is the extension's short name and 1.6.1170 is a sample build number; keep both as they are.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "latest"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "No public source names a game version for $gameDomain$, so NMA cannot tell a game version from a mod version here. That is a gap in the data rather than in the extension, and it is the same for everyone. Type the version you play in the extension popup to check anyway.",
+    "description": "Shown on every mod tile for a game whose build numbers no public source states, so the extension has nothing to compare mods against. The insert is a Nexus game domain name such as gamedomain and is never translated. NMA is the extension's short name.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1",
+        "example": "vintagestory"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "No version source could be reached, so nothing could be derived for this game yet.",
+    "description": "Shown in the popup when the user refreshes the game version list and not one of the sources the extension asks answered, usually because the machine is offline."
+  },
+  "background_errorNoGameDomain": {
+    "message": "A game domain is needed before versions can be derived for it.",
+    "description": "Shown in the popup when a request for a game's version list arrives without a valid game, for example before the user has picked one."
+  },
+  "background_errorNoStoreListing": {
+    "message": "No store listing matches that game closely enough to be certain, so none was stored.",
+    "description": "Shown in the popup when the user asks the extension to find the game's Steam store page and no candidate matched well enough to trust. Nothing is saved rather than risk binding the wrong game."
+  },
+  "background_sourceFileVersion": {
+    "message": "A file version",
+    "description": "Names where a game version was found, and is inserted at the START of background_verdictStatedInRange and its three siblings: 'A file version states \"1.6.1170\", ...'. Capitalized because it opens the sentence. This one means the version field of one of the mod's uploaded files."
+  },
+  "background_sourceFileName": {
+    "message": "A file name",
+    "description": "Names where a game version was found, and is inserted at the START of background_verdictStatedInRange and its three siblings. Capitalized because it opens the sentence. This one means the name of one of the mod's uploaded files."
+  },
+  "background_sourceChangelog": {
+    "message": "The changelog",
+    "description": "Names where a game version was found, and is inserted at the START of background_verdictStatedInRange and its three siblings. Capitalized because it opens the sentence. This one means the mod's changelog on Nexus."
+  },
+  "background_sourceDescription": {
+    "message": "The description",
+    "description": "Names where a game version was found, and is inserted at the START of background_verdictStatedInRange and its three siblings. Capitalized because it opens the sentence. This one means the mod's description text on Nexus."
+  },
+  "background_sourceUploadDate": {
+    "message": "The upload date",
+    "description": "Names where a game version was found, and is inserted at the START of background_verdictStatedInRange and its three siblings. Capitalized because it opens the sentence. This one means the date the mod's newest file was uploaded."
+  },
+  "background_sourceNone": {
+    "message": "Nothing",
+    "description": "Names where a game version was found when nothing was found at all, and is inserted at the START of background_verdictStatedInRange and its three siblings. Capitalized because it opens the sentence. Unreachable from the verdict sentences: this source is set only on the no-evidence result, never on evidence that was found, so it never appears as the subject of background_verdictStatedInRange or its siblings."
+  },
+  "background_verdictPartialNote": {
+    "message": "One source could not be read ($cause$), so this check is partial.",
+    "description": "Appended to a compatibility verdict when the extension reached a conclusion while one of its evidence sources failed to load. The insert is another error message from this same catalog, such as background_errorTimeout.",
+    "placeholders": {
+      "cause": {
+        "content": "$1",
+        "example": "The request took too long and was abandoned."
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "No game version is stated anywhere, but the newest file was uploaded on $uploadDate$, after game version $gameVersion$. Inferred, not confirmed.",
+    "description": "The tooltip explaining a 'likely compatible' verdict reached only from how recently the mod was updated. The first insert is a date in YYYY-MM-DD form, the second a game build number.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1",
+        "example": "2025-04-11"
+      },
+      "gameVersion": {
+        "content": "$2",
+        "example": "1.6.1170"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ states \"$evidence$\", which is inside your selected range.",
+    "description": "The tooltip explaining a 'compatible' verdict. The first insert names where the version was found (one of the background_source* entries, already capitalized, so this sentence opens with it); the second is the exact text found on the mod page.",
+    "placeholders": {
+      "source": {
+        "content": "$1",
+        "example": "The changelog"
+      },
+      "evidence": {
+        "content": "$2",
+        "example": "1.6.1170"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ mentions \"$evidence$\", which is inside your selected range. That is an inference, not a stated game version.",
+    "description": "The tooltip explaining a 'likely compatible' verdict, where the number was only mentioned in passing rather than stated as the supported game version. The first insert names where it was found (one of the background_source* entries, already capitalized, so this sentence opens with it); the second is the exact text found.",
+    "placeholders": {
+      "source": {
+        "content": "$1",
+        "example": "The description"
+      },
+      "evidence": {
+        "content": "$2",
+        "example": "1.6.640"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "No game version is stated anywhere, and the newest file's upload date ($uploadDate$) does not place it inside your selected range.",
+    "description": "The tooltip explaining an 'incompatible' verdict reached only from how recently the mod was updated. The insert is a date in YYYY-MM-DD form.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1",
+        "example": "2021-08-30"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ states \"$evidence$\", the newest game version this mod mentions, and it is outside your selected range.",
+    "description": "The tooltip explaining an 'incompatible' verdict. The first insert names where the version was found (one of the background_source* entries, already capitalized, so this sentence opens with it); the second is the exact text found on the mod page.",
+    "placeholders": {
+      "source": {
+        "content": "$1",
+        "example": "A file version"
+      },
+      "evidence": {
+        "content": "$2",
+        "example": "1.5.97"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ mentions \"$evidence$\", the newest game version this mod mentions, and it is outside your selected range. That is an inference, not a stated game version.",
+    "description": "The tooltip explaining an 'incompatible' verdict where the number was only mentioned in passing rather than stated as the supported game version. The first insert names where it was found (one of the background_source* entries, already capitalized, so this sentence opens with it); the second is the exact text found.",
+    "placeholders": {
+      "source": {
+        "content": "$1",
+        "example": "A file name"
+      },
+      "evidence": {
+        "content": "$2",
+        "example": "1.5.97"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "This mod names no game version in its files, changelog or description.",
+    "description": "The tooltip explaining an 'unknown' verdict after the extension opened the mod's file list as well as its text and still found no game version."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "This mod names no game version in its description or changelog. Its files were not opened for this check.",
+    "description": "The tooltip explaining an 'unknown' verdict from a quick check that read only the mod's text. Opening the file list costs an extra request and happens only for the mod page the user is on."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "The store search did not answer, so store sources were skipped.",
+    "description": "Appended in the popup to the report on a game version refresh, explaining that the Steam store search did not respond, so the publisher's own build numbers were not read this time."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "No store listing matched this game closely enough to be sure, so store sources were skipped.",
+    "description": "Appended in the popup to the report on a game version refresh, explaining that no Steam listing matched the game well enough to trust, so the publisher's own build numbers were not read."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "The store record for this game could not be read, so store sources were skipped this time.",
+    "description": "Appended in the popup to the report on a game version refresh, explaining that the Steam page for the matched game could not be loaded on this attempt."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "The closest store listing is not a game entry, so store sources were skipped rather than read another product's builds.",
+    "description": "Appended in the popup to the report on a game version refresh, explaining that the closest Steam match was something other than a game, such as a soundtrack or a demo, so it was refused."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "The closest store listing belongs to another app, so store sources were skipped.",
+    "description": "Appended in the popup to the report on a game version refresh, explaining that the Steam listing that came back is for a different application than the one that was asked for."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "The store listing names a different game than the catalog does, so store sources were skipped.",
+    "description": "Appended in the popup to the report on a game version refresh, explaining that the Steam page's own title does not match the game name in the Nexus catalog, so the binding was refused."
+  },
+  "background_ssoConnecting": {
+    "message": "Connecting to Nexus Mods SSO...",
+    "description": "The status line under the Authorize button in the popup, while the extension opens its connection to the Nexus Mods sign-in service. SSO is the sign-in feature's own name on Nexus and is not translated."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Waiting for your approval in the Nexus Mods tab...",
+    "description": "The status line under the Authorize button in the popup, after a Nexus Mods tab has opened and the user has to approve the extension there."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "Failed to initiate the SSO handshake.",
+    "description": "The status line under the Authorize button in the popup, shown as an error when the connection opened but the opening request could not be sent. SSO is the sign-in feature's own name on Nexus."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "Failed to open SSO connection.",
+    "description": "The status line under the Authorize button in the popup, shown as an error when the connection to the Nexus sign-in service could not be opened at all. SSO is the sign-in feature's own name on Nexus."
+  },
+  "background_ssoRejected": {
+    "message": "SSO rejected the handshake.",
+    "description": "The status line under the Authorize button in the popup, shown as an error when Nexus refused the sign-in attempt without saying why. SSO is the sign-in feature's own name on Nexus."
+  },
+  "background_ssoConnectionReady": {
+    "message": "Connection ready. Awaiting your approval...",
+    "description": "The status line under the Authorize button in the popup, once the sign-in connection is established and the only remaining step is the user approving it on the Nexus Mods tab."
+  },
+  "background_ssoComplete": {
+    "message": "API key saved via SSO.",
+    "description": "The status line under the Authorize button in the popup, on success: Nexus sent an API key and the extension stored it. SSO is the sign-in feature's own name on Nexus."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Unexpected response from SSO.",
+    "description": "The status line under the Authorize button in the popup, shown as an error when the sign-in service sent something the extension could not read. SSO is the sign-in feature's own name on Nexus."
+  },
+  "background_ssoLostConnection": {
+    "message": "Lost connection to SSO after multiple retries.",
+    "description": "The status line under the Authorize button in the popup, shown as an error after every reconnection attempt to the Nexus sign-in service has failed. SSO is the sign-in feature's own name on Nexus."
+  },
+  "background_ssoReconnecting": {
+    "message": "Reconnecting (attempt $attempt$/$total$)...",
+    "description": "The status line under the Authorize button in the popup, while the extension retries a dropped connection to the Nexus sign-in service. Both inserts are counts.",
+    "placeholders": {
+      "attempt": {
+        "content": "$1",
+        "example": "2"
+      },
+      "total": {
+        "content": "$2",
+        "example": "5"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO canceled.",
+    "description": "The status line under the Authorize button in the popup, after the user stops the sign-in flow themselves. SSO is the sign-in feature's own name on Nexus."
+  }
+}

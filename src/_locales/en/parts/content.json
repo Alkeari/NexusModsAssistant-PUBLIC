@@ -1,0 +1,1430 @@
+{
+  "content_statusCompatible": {
+    "message": "Compatible",
+    "description": "Compatibility verdict shown on a mod tile badge, in the requirements table and in the filter bar. Means the mod states a version that matches the game build the user plays."
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Likely compatible",
+    "description": "Compatibility verdict shown on a mod tile badge, in the requirements table and in the filter bar. Means the match was inferred from weaker evidence than an exact version, so it is probable but not certain."
+  },
+  "content_statusIncompatible": {
+    "message": "Incompatible",
+    "description": "Compatibility verdict shown on a mod tile badge, in the requirements table and in the filter bar. Means the mod states a version that does not match the game build the user plays."
+  },
+  "content_statusUnknown": {
+    "message": "No version info",
+    "description": "Compatibility verdict shown on a mod tile badge, in the requirements table and in the filter bar. It means the check ran successfully and the mod simply does not state any version. Keep it distinct from content_statusFailed, which means the check could not run at all: found nothing versus could not look. Do not merge the two into one word."
+  },
+  "content_statusFailed": {
+    "message": "Couldn't check",
+    "description": "Compatibility verdict shown on a mod tile badge, in the requirements table and in the filter bar. It means the check could not be performed (network, API or permission problem), so nothing is known either way. Keep it distinct from content_statusUnknown, which means the check ran and the mod stated no version: could not look versus found nothing. Do not merge the two into one word."
+  },
+  "content_statusNotConfigured": {
+    "message": "Not set up",
+    "description": "Compatibility verdict shown on a mod tile badge when the user has not yet chosen a game version in the extension popup, so no verdict can be computed. This is a state of the extension, not a judgment about the mod."
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Unknown",
+    "description": "Badge text used when the check returned a verdict name the extension does not recognize, so no proper label exists for it."
+  },
+  "content_evidenceFileVersion": {
+    "message": "file version",
+    "description": "Named in the badge tooltip after 'Evidence:'. The version was read from the mod file's own version field."
+  },
+  "content_evidenceFileName": {
+    "message": "file name",
+    "description": "Named in the badge tooltip after 'Evidence:'. The version was read out of the mod file's name."
+  },
+  "content_evidenceChangelog": {
+    "message": "changelog",
+    "description": "Named in the badge tooltip after 'Evidence:'. The version was read from the mod's changelog."
+  },
+  "content_evidenceDescription": {
+    "message": "mod description",
+    "description": "Named in the badge tooltip after 'Evidence:'. The version was read from the mod's description text."
+  },
+  "content_evidenceUploadDate": {
+    "message": "upload date",
+    "description": "Named in the badge tooltip after 'Evidence:'. The version was inferred from when the file was uploaded."
+  },
+  "content_evidenceNone": {
+    "message": "no version evidence",
+    "description": "Named in the badge tooltip after 'Evidence:'. Nothing about the mod indicated a version."
+  },
+  "content_confidenceExact": {
+    "message": "exact match",
+    "description": "Named in the badge tooltip after 'Confidence:'. The detected version matched the played build exactly."
+  },
+  "content_confidenceInferred": {
+    "message": "inferred",
+    "description": "Named in the badge tooltip after 'Confidence:'. The verdict was deduced rather than read directly."
+  },
+  "content_confidenceNone": {
+    "message": "not established",
+    "description": "Named in the badge tooltip after 'Confidence:'. No confidence level could be assigned."
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Detected version: $VERSION$",
+    "description": "Line in the compatibility badge tooltip naming the mod version the extension found.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.3.4"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Evidence: $SOURCE$",
+    "description": "Line in the compatibility badge tooltip naming where the version was read from. The value is one of the content_evidence* strings.",
+    "placeholders": {
+      "source": {
+        "content": "$1",
+        "example": "file version"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Confidence: $LEVEL$",
+    "description": "Line in the compatibility badge tooltip naming how sure the verdict is. The value is one of the content_confidence* strings.",
+    "placeholders": {
+      "level": {
+        "content": "$1",
+        "example": "exact match"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Matched: $TEXT$",
+    "description": "Line in the compatibility badge tooltip quoting the snippet of mod text the version was read from.",
+    "placeholders": {
+      "text": {
+        "content": "$1",
+        "example": "Requires game version 1.3.4"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "description": "Compatibility badge text: the verdict followed by the mod version that was detected.",
+    "placeholders": {
+      "status": {
+        "content": "$1",
+        "example": "Compatible"
+      },
+      "version": {
+        "content": "$2",
+        "example": "1.3.4"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "description": "Compatibility badge text used when a check failed: the verdict followed by a short reason.",
+    "placeholders": {
+      "status": {
+        "content": "$1",
+        "example": "Couldn't check"
+      },
+      "reason": {
+        "content": "$2",
+        "example": "rate limited"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - no version selected",
+    "description": "Compatibility badge text shown before the user has chosen which game build they play.",
+    "placeholders": {
+      "status": {
+        "content": "$1",
+        "example": "Not set up"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "description": "Compatibility badge text after a download was started: the badge keeps its previous text and gains a note about the download.",
+    "placeholders": {
+      "status": {
+        "content": "$1",
+        "example": "Compatible - 1.3.4"
+      },
+      "note": {
+        "content": "$2",
+        "example": "Download started"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "version not reported",
+    "description": "Stands in for the mod version on a tile badge when the check found no version to show."
+  },
+  "content_versionNotReportedShort": {
+    "message": "not reported",
+    "description": "Stands in for the mod version in the narrow Compatibility column of a mod page's requirements table when the check found no version to show."
+  },
+  "content_checking": {
+    "message": "Checking...",
+    "description": "Placeholder in the Compatibility column of a mod page's requirements table while that requirement is being checked."
+  },
+  "content_checkingCompatibility": {
+    "message": "Checking compatibility...",
+    "description": "Placeholder on a mod tile badge while its compatibility check is running."
+  },
+  "content_scrollToCheck": {
+    "message": "Scroll to check",
+    "description": "Badge text on a mod tile that is off screen: its check is deliberately deferred until it becomes visible."
+  },
+  "content_scrollToCheckDetail": {
+    "message": "This mod is checked when it scrolls into view.",
+    "description": "Tooltip on the 'Scroll to check' badge, explaining why no verdict is shown yet."
+  },
+  "content_noResponse": {
+    "message": "No response",
+    "description": "Tooltip reason on a mod tile badge when the compatibility check returned nothing at all."
+  },
+  "content_compatibilityColumn": {
+    "message": "Compatibility",
+    "description": "Heading of the extra column the extension adds to the requirements table on a Nexus mod page."
+  },
+  "content_setVersionInPopup": {
+    "message": "Set the game version in the extension popup to get a verdict.",
+    "description": "Tooltip on the 'Not set up' badge on a mod page and in the requirements table, telling the user how to enable verdicts."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Pick the game version in the popup to get a verdict for this mod.",
+    "description": "Tooltip on the 'Not set up' badge on a mod tile in the grid, telling the user how to enable verdicts."
+  },
+  "content_filesButton": {
+    "message": "Files",
+    "description": "Button on a mod's compatibility badge that opens the list of that mod's downloadable files."
+  },
+  "content_filesButtonForMod": {
+    "message": "Files for $MODNAME$",
+    "description": "Screen reader name for the Files button, naming which mod it belongs to.",
+    "placeholders": {
+      "modname": {
+        "content": "$1",
+        "example": "A Required Mod"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Files for this mod",
+    "description": "Screen reader name for the Files button on a mod tile whose name is not known yet."
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Files for this required mod",
+    "description": "Screen reader name for the Files button in the requirements table when the required mod's name is not known yet."
+  },
+  "content_filesDropdownLabel": {
+    "message": "Files to download",
+    "description": "Screen reader name for the panel that opens under a mod badge listing its files."
+  },
+  "content_filesLoading": {
+    "message": "Loading files...",
+    "description": "Placeholder inside the file list panel while the mod's files are being fetched."
+  },
+  "content_filesFetchFailed": {
+    "message": "Failed to fetch files",
+    "description": "Reason shown inside the file list panel when the request for a mod's files came back with no usable answer and no reason of its own."
+  },
+  "content_filesLoadFailed": {
+    "message": "Could not load the file list: $REASON$",
+    "description": "Message replacing the file list panel's contents when the files could not be fetched.",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "No connection to Nexus."
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "Could not load the file list",
+    "description": "Badge text on a mod tile when a download could not start because the mod's file list could not be fetched."
+  },
+  "content_fileListUnreadable": {
+    "message": "The file list could not be read.",
+    "description": "Reason given when the answer to a request for a mod's files was not in a shape the extension could read."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files",
+    "description": "Name of a Nexus file category. Used as a heading in the file list panel and the file picker dialog. Keep this in English in every locale: it is the heading nexusmods.com prints on its own Files tab, and this panel mirrors that grouping, so a reader comparing the two must see the same words."
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files",
+    "description": "Name of a Nexus file category. Used as a heading in the file list panel and the file picker dialog, and as the label of the filter-bar checkbox that shows or hides those files. Keep this in English in every locale: it is the heading nexusmods.com prints on its own Files tab, and this panel mirrors that grouping, so a reader comparing the two must see the same words."
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files",
+    "description": "Name of a Nexus file category. Used as a heading in the file list panel and the file picker dialog, and as the label of the filter-bar checkbox that shows or hides those files. Keep this in English in every locale: it is the heading nexusmods.com prints on its own Files tab, and this panel mirrors that grouping, so a reader comparing the two must see the same words."
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files",
+    "description": "Name of a Nexus file category. Used as a heading in the file list panel and the file picker dialog, and as the label of the filter-bar checkbox that shows or hides those files. Keep this in English in every locale: it is the heading nexusmods.com prints on its own Files tab, and this panel mirrors that grouping, so a reader comparing the two must see the same words."
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files",
+    "description": "Name of a Nexus file category covering old versions and archived files. Used as a heading in the file list panel and the file picker dialog, and as the label of the filter-bar checkbox that shows or hides those files. Keep this in English in every locale: it is the heading nexusmods.com prints on its own Files tab, and this panel mirrors that grouping, so a reader comparing the two must see the same words."
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "description": "One entry in the note under a mod's file list saying how many files a hidden category holds.",
+    "placeholders": {
+      "category": {
+        "content": "$1",
+        "example": "Old Files"
+      },
+      "count": {
+        "content": "$2",
+        "example": "4"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "No files in the categories you have switched on. Hidden: $CATEGORIES$.",
+    "description": "Shown inside a mod's file list panel when every file it has belongs to a category the user has switched off in the filter bar.",
+    "placeholders": {
+      "categories": {
+        "content": "$1",
+        "example": "Optional Files, Old Files"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "No files found for this mod.",
+    "description": "Shown inside a mod's file list panel when the mod has no downloadable files at all."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Hidden by your file filters: $CATEGORIES$.",
+    "description": "Note under a mod's file list naming the categories that were left out, with a count for each.",
+    "placeholders": {
+      "categories": {
+        "content": "$1",
+        "example": "Optional Files (2), Old Files (4)"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "description": "Screen reader name for the tick box beside one file in a mod's file list, naming the file and the category it is in.",
+    "placeholders": {
+      "filename": {
+        "content": "$1",
+        "example": "Main Archive 1.3.4"
+      },
+      "category": {
+        "content": "$2",
+        "example": "Main Files"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "File",
+    "description": "Stands in for a file's name in the screen reader label when the file list gave no name."
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "description": "The one-line detail under a file's name in a mod's file list: version, size and upload date. The 'v' prefixes the version number.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.3.4"
+      },
+      "size": {
+        "content": "$2",
+        "example": "12.5 MB"
+      },
+      "date": {
+        "content": "$3",
+        "example": "3/14/2025"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "description": "The version line under a file's name in the file picker dialog. The 'v' prefixes the version number.",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.3.4"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "description": "A file's size in megabytes, shown in the detail line under its name in a mod's file list.",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "12.5"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "description": "A file's size in kilobytes, shown in the detail line under its name in a mod's file list.",
+    "placeholders": {
+      "size": {
+        "content": "$1",
+        "example": "820"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Size unknown",
+    "description": "Stands in for a file's size in its detail line when Nexus reported no size."
+  },
+  "content_fileDateUnknown": {
+    "message": "Date unknown",
+    "description": "Stands in for a file's upload date in its detail line when Nexus reported no date."
+  },
+  "content_downloadSelected": {
+    "message": "Download Selected",
+    "description": "Button at the foot of a mod's file list, and the confirm button of the file picker dialog, that downloads the ticked files."
+  },
+  "content_downloadSelectedCount": {
+    "message": "Download Selected ($COUNT$)",
+    "description": "Bottom action bar button that downloads the ticked mods, with how many mods are ticked.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Download Selected ($MODS$ mods / $FILES$ files)",
+    "description": "Bottom action bar button that downloads the ticked mods, used when specific files were ticked so the file count is higher than the mod count.",
+    "placeholders": {
+      "mods": {
+        "content": "$1",
+        "example": "12"
+      },
+      "files": {
+        "content": "$2",
+        "example": "19"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Downloading ($DONE$/$TOTAL$)...",
+    "description": "Text of the Download Selected button inside a mod's file list while its files are being queued, counting progress.",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "3"
+      },
+      "total": {
+        "content": "$2",
+        "example": "7"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Downloading...",
+    "description": "Text of the bottom action bar's busy button while files picked from a single mod's file list are being queued."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "Queued",
+    "description": "Result shown beside one file in a mod's file list after it was handed to the browser's downloads."
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Failed: $REASON$",
+    "description": "Result shown beside one file in a mod's file list after its download could not be started.",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "rate limited"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "unknown reason",
+    "description": "Stands in for the cause of a failed download when nothing said why. Appears inside sentences such as 'Failed: unknown reason'."
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ file queued.",
+    "description": "Status line under a mod's file list when exactly one file was handed to the browser's downloads. The count is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ files queued.",
+    "description": "Status line under a mod's file list when more than one file (or none) was handed to the browser's downloads.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ queued, $FAILED$ failed.",
+    "description": "Status line under a mod's file list when some downloads started and others did not.",
+    "placeholders": {
+      "queued": {
+        "content": "$1",
+        "example": "3"
+      },
+      "failed": {
+        "content": "$2",
+        "example": "2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant",
+    "description": "Title in the filter bar the extension inserts above the mod grid. This is the product name and normally stays as it is."
+  },
+  "content_panelSubtitle": {
+    "message": "Curate by compatibility",
+    "description": "Tagline under the product name in the filter bar, saying what the bar is for."
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistant filters",
+    "description": "Screen reader name for the whole filter bar the extension inserts above the mod grid."
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistant downloads",
+    "description": "Screen reader name for the action bar the extension fixes to the bottom of the page."
+  },
+  "content_refresh": {
+    "message": "Refresh",
+    "description": "Button in the filter bar that reloads the page."
+  },
+  "content_pageNavigation": {
+    "message": "Page navigation",
+    "description": "Screen reader name for the group of Prev, page number and Next controls in the filter bar."
+  },
+  "content_prevPage": {
+    "message": "Prev",
+    "description": "Button in the filter bar that goes to the previous page of mod results. Kept short to fit the bar."
+  },
+  "content_nextPage": {
+    "message": "Next",
+    "description": "Button in the filter bar that goes to the next page of mod results."
+  },
+  "content_pageNumber": {
+    "message": "Page number",
+    "description": "Screen reader name for the filter bar's page number box, which jumps to a page when a number is typed in it."
+  },
+  "content_goToPage": {
+    "message": "Go to page",
+    "description": "Tooltip on the filter bar's page number box."
+  },
+  "content_collapseFilters": {
+    "message": "Collapse filters",
+    "description": "Screen reader name of the filter bar's toggle button while the filters are showing; pressing it hides them."
+  },
+  "content_expandFilters": {
+    "message": "Expand filters",
+    "description": "Screen reader name of the filter bar's toggle button while the filters are hidden; pressing it shows them."
+  },
+  "content_showUpdateFiles": {
+    "message": "Show update files",
+    "description": "Tooltip on the filter bar checkbox that includes or excludes files in the Update category."
+  },
+  "content_showOptionalFiles": {
+    "message": "Show optional files",
+    "description": "Tooltip on the filter bar checkbox that includes or excludes files in the Optional category."
+  },
+  "content_showMiscFiles": {
+    "message": "Show miscellaneous files",
+    "description": "Tooltip on the filter bar checkbox that includes or excludes files in the Miscellaneous category."
+  },
+  "content_showOldFiles": {
+    "message": "Show old versions and archived files",
+    "description": "Tooltip on the filter bar checkbox that includes or excludes files in the Old and Archived categories."
+  },
+  "content_exclusionLabel": {
+    "message": "Exclude mods whose name contains",
+    "description": "Screen reader name for the filter bar text box that hides mods whose title contains any of the words typed in it."
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Exclude mods (e.g. patch, translation)...",
+    "description": "Gray hint text inside the empty filter bar box that hides mods by keyword. The words in brackets are examples the user might type."
+  },
+  "content_exclusionTooltip": {
+    "message": "Separate keywords with commas",
+    "description": "Tooltip on the filter bar box that hides mods by keyword, saying how to enter more than one word."
+  },
+  "content_lastUpdatedRange": {
+    "message": "Last updated range",
+    "description": "Screen reader name for the group of two date boxes in the filter bar that limit results by when a mod was last updated."
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Last Updated:",
+    "description": "Visible caption before the two date boxes in the filter bar."
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Updated on or after",
+    "description": "Screen reader name for the first date box in the filter bar, the start of the range."
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Updated on or before",
+    "description": "Screen reader name for the second date box in the filter bar, the end of the range."
+  },
+  "content_startDateTooltip": {
+    "message": "Start date (inclusive)",
+    "description": "Tooltip on the first date box in the filter bar, saying the date itself counts as a match."
+  },
+  "content_endDateTooltip": {
+    "message": "End date (inclusive)",
+    "description": "Tooltip on the second date box in the filter bar, saying the date itself counts as a match."
+  },
+  "content_clearDateRange": {
+    "message": "Clear date range",
+    "description": "Tooltip and screen reader name of the small button beside the filter bar's date boxes that empties both of them."
+  },
+  "content_clearButton": {
+    "message": "Clear",
+    "description": "Visible text of the small button beside the filter bar's date boxes that empties both of them. Kept short to fit the bar."
+  },
+  "content_noModsSelected": {
+    "message": "No mods selected",
+    "description": "Label in the bottom action bar when the user has ticked no mod tiles."
+  },
+  "content_modsSelectedOne": {
+    "message": "$COUNT$ mod selected",
+    "description": "Label in the bottom action bar when exactly one mod tile is ticked. The count is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "$COUNT$ mods selected",
+    "description": "Label in the bottom action bar showing how many mod tiles are ticked, used for counts other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Clear Selection",
+    "description": "Button in the bottom action bar that unticks every selected mod."
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Untick every selected mod",
+    "description": "Tooltip on the Clear Selection button in the bottom action bar."
+  },
+  "content_downloadAll": {
+    "message": "Download All",
+    "description": "Button in the bottom action bar that downloads every mod currently visible in the grid, whether ticked or not."
+  },
+  "content_downloadMode": {
+    "message": "Download mode",
+    "description": "Screen reader name and tooltip for the bottom action bar's dropdown that chooses between a plain browser download and handing the mod to the Vortex mod manager."
+  },
+  "content_downloadModeManual": {
+    "message": "Manual",
+    "description": "Option in the download mode dropdown: download the file through the browser."
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex",
+    "description": "Option in the download mode dropdown: hand the mod to the Vortex mod manager. Vortex is a product name and stays as it is."
+  },
+  "content_stopButton": {
+    "message": "Stop",
+    "description": "Text the Download All button takes on while a download run is going, so the run can be halted from where it was started."
+  },
+  "content_stopButtonTooltip": {
+    "message": "Stop the current download run. Files already started are not canceled.",
+    "description": "Tooltip on the Stop button in the bottom action bar."
+  },
+  "content_apiRemaining": {
+    "message": "API calls left: $REMAINING$",
+    "description": "Counter in the filter bar showing how many Nexus API requests the user's key has left.",
+    "placeholders": {
+      "remaining": {
+        "content": "$1",
+        "example": "2340"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Select",
+    "description": "Visible label of the tick box the extension adds to each mod tile for batch downloading."
+  },
+  "content_selectModNamed": {
+    "message": "Select $MODNAME$",
+    "description": "Screen reader name for a mod tile's tick box, naming which mod it selects.",
+    "placeholders": {
+      "modname": {
+        "content": "$1",
+        "example": "A Required Mod"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Select this mod",
+    "description": "Screen reader name for a mod tile's tick box before the tile's mod name is known."
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "description": "One line of the tally under the filter bar: a compatibility verdict and how many mods on the page got it.",
+    "placeholders": {
+      "status": {
+        "content": "$1",
+        "example": "Compatible"
+      },
+      "count": {
+        "content": "$2",
+        "example": "18"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Last checked: $STATUS$",
+    "description": "Small line under the tally naming the verdict of the most recently finished check.",
+    "placeholders": {
+      "status": {
+        "content": "$1",
+        "example": "Compatible"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Preparing download...",
+    "description": "Badge text on a mod tile while its download is being set up."
+  },
+  "content_downloadStarted": {
+    "message": "Download started",
+    "description": "Note added to a mod tile's badge once the file was handed to the browser's downloads."
+  },
+  "content_downloadStartedDetail": {
+    "message": "Check your browser downloads for the file.",
+    "description": "Tooltip on a mod tile's badge after its download was started, saying where the file went."
+  },
+  "content_downloadFailed": {
+    "message": "Download failed",
+    "description": "Badge text on a mod tile when its download could not be started."
+  },
+  "content_noFileToDownload": {
+    "message": "Could not find a file to download",
+    "description": "Badge text on a mod tile when looking up which file to download failed."
+  },
+  "content_noDownloadableFile": {
+    "message": "No downloadable file found",
+    "description": "Badge text on a mod tile when the mod offers no file the extension can download on its own."
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "This mod may not have a primary file or requires manual selection.",
+    "description": "Tooltip explaining why no file could be downloaded automatically for a mod."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Skipped at the file prompt",
+    "description": "Badge text on a mod tile when the user closed the file picker dialog without choosing a file."
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "No file was chosen for this mod.",
+    "description": "Tooltip on the 'Skipped at the file prompt' badge."
+  },
+  "content_downloadRunStopped": {
+    "message": "Download run stopped",
+    "description": "Badge text on a mod tile that was never reached because the user stopped the batch download."
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "The run ended before a file was chosen for this mod.",
+    "description": "Tooltip on the 'Download run stopped' badge."
+  },
+  "content_vortexUnavailable": {
+    "message": "Vortex download unavailable",
+    "description": "Badge text on a mod tile when no nxm:// link could be built to hand the mod to the Vortex mod manager."
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "Unable to resolve an NXM link. Ensure you are logged in to nexusmods.com.",
+    "description": "Tooltip on the 'Vortex download unavailable' badge. NXM is the link type Vortex registers with the browser."
+  },
+  "content_handedToVortex": {
+    "message": "Handed to Vortex",
+    "description": "Badge text on a mod tile after the browser passed the mod's link to the Vortex mod manager."
+  },
+  "content_handedToVortexDetail": {
+    "message": "The browser passed an nxm:// link to Vortex. The browser cannot confirm Vortex received it.",
+    "description": "Tooltip on the 'Handed to Vortex' badge, warning that success cannot be verified from the page."
+  },
+  "content_vortexBlocked": {
+    "message": "Vortex handoff blocked",
+    "description": "Badge text on a mod tile when the browser refused to open the link that would reach the Vortex mod manager."
+  },
+  "content_vortexBlockedDetail": {
+    "message": "The browser refused to open the nxm:// link.",
+    "description": "Tooltip on the 'Vortex handoff blocked' badge."
+  },
+  "content_vortexHandoff": {
+    "message": "Sending these mods to Vortex over nxm:// links.",
+    "description": "Notice shown once per session when a batch download runs in Vortex mode."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Nothing happens if Vortex is not installed and registered for nxm links, and browsers may block repeated protocol launches from one click. Switch the mode to Manual if nothing arrives.",
+    "description": "Detail under the Vortex notice, saying why nothing may reach Vortex and what to do about it. 'Manual' is the other option in the download mode dropdown."
+  },
+  "content_batchEmpty": {
+    "message": "Nothing to download: no mod matched the current selection and filters.",
+    "description": "Notice shown when a download run was started but had no mods to act on."
+  },
+  "content_batchBusy": {
+    "message": "A download run is already in progress.",
+    "description": "Notice shown when the user starts a download run while another one is still going."
+  },
+  "content_batchVerbQueued": {
+    "message": "queued",
+    "description": "Verb used in the download run summary for files handed to the browser's downloads. Appears inside sentences such as '12 queued.'"
+  },
+  "content_batchVerbVortex": {
+    "message": "handed to Vortex",
+    "description": "Verb used in the download run summary for mods passed to the Vortex mod manager. Appears inside sentences such as '12 handed to Vortex.'"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "description": "Notice summarizing a download run in which nothing failed. The verb is content_batchVerbQueued or content_batchVerbVortex.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      },
+      "verb": {
+        "content": "$2",
+        "example": "queued"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ failed.",
+    "description": "Notice summarizing a download run in which some mods failed. The verb is content_batchVerbQueued or content_batchVerbVortex.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "10"
+      },
+      "verb": {
+        "content": "$2",
+        "example": "queued"
+      },
+      "failed": {
+        "content": "$3",
+        "example": "2"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "description": "One entry in the detail line under a download run summary: the mod (and file) that failed, and why.",
+    "placeholders": {
+      "item": {
+        "content": "$1",
+        "example": "12345/67890"
+      },
+      "reason": {
+        "content": "$2",
+        "example": "no downloadable file"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Downloading",
+    "description": "Name of the download run started by the Download Selected button. It is shown with a progress count, as in 'Downloading (3/12)...'"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Downloading all",
+    "description": "Name of the download run started by the Download All button. It is shown with a progress count, as in 'Downloading all (3/12)...'"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "description": "Text of the bottom action bar's busy button during a download run: the run's name plus how far it has got.",
+    "placeholders": {
+      "label": {
+        "content": "$1",
+        "example": "Downloading all"
+      },
+      "done": {
+        "content": "$2",
+        "example": "3"
+      },
+      "total": {
+        "content": "$3",
+        "example": "12"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "already downloading",
+    "description": "Reason listed in a download run summary: the same file was already being downloaded."
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "no downloadable file",
+    "description": "Reason listed in a download run summary: the mod offers no file the extension can download."
+  },
+  "content_reasonRunStopped": {
+    "message": "the run was stopped",
+    "description": "Reason listed in a download run summary: the user stopped the run before this mod was reached."
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "skipped at the requirements prompt",
+    "description": "Reason listed in a download run summary: the user chose Skip Mod in the dialog listing the mod's required mods."
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "skipped at the file prompt",
+    "description": "Reason listed in a download run summary: the user closed the file picker dialog without choosing a file."
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "the file list could not be loaded",
+    "description": "Reason listed in a download run summary: the mod's files could not be fetched."
+  },
+  "content_reasonNoNxmLink": {
+    "message": "no NXM link",
+    "description": "Reason listed in a download run summary: no nxm:// link could be built to hand the mod to the Vortex mod manager."
+  },
+  "content_reasonNxmRefused": {
+    "message": "browser refused the nxm:// link",
+    "description": "Reason listed in a download run summary: the browser would not open the link that reaches the Vortex mod manager."
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "hidden by the current filters",
+    "description": "Reason listed in a download run summary: by the time the run reached this mod, the filters had hidden its tile."
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "another download run is in progress",
+    "description": "Reason shown beside each file in a mod's file list when the download could not start because a batch run was already going."
+  },
+  "content_modalOk": {
+    "message": "OK",
+    "description": "Default text of a dialog's confirm button when the dialog names none of its own."
+  },
+  "content_selectFilesTitle": {
+    "message": "Select Files to Download",
+    "description": "Title of the dialog that asks which of a mod's files to download when more than one qualifies."
+  },
+  "content_skipMod": {
+    "message": "Skip Mod",
+    "description": "Button that leaves this mod out of the download run and moves on to the next one."
+  },
+  "content_skipThisMod": {
+    "message": "Skip this mod",
+    "description": "Button in the 'Could not verify requirements' dialog that leaves this one mod out of the download."
+  },
+  "content_skipTheseMods": {
+    "message": "Skip these mods",
+    "description": "Button in the 'Could not verify requirements' dialog during a batch run, where the answer applies to every remaining mod in the run rather than just this one."
+  },
+  "content_downloadAnyway": {
+    "message": "Download anyway",
+    "description": "Button in the 'Could not verify requirements' dialog that downloads the mod despite not knowing what it requires."
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Could not verify requirements",
+    "description": "Title of the dialog shown when the list of mods a mod requires could not be fetched. It means the check could not run, not that the mod has no requirements."
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ may have required mods, but the list could not be loaded: $REASON$",
+    "description": "Body of the 'Could not verify requirements' dialog. The subject is either the mod's name in quotes or the words 'This mod'.",
+    "placeholders": {
+      "subject": {
+        "content": "$1",
+        "example": "\"A Required Mod\""
+      },
+      "reason": {
+        "content": "$2",
+        "example": "No connection to Nexus."
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " This usually fails for a whole run, so your answer is applied to the rest of it.",
+    "description": "Sentence appended to the 'Could not verify requirements' body during a batch download. It starts with a space because it follows the previous sentence directly."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ has the following requirements. Select which ones to install:",
+    "description": "Opening line of the dialog listing the mods a mod requires. The subject is either the mod's name in quotes or the words 'This mod'.",
+    "placeholders": {
+      "subject": {
+        "content": "$1",
+        "example": "\"A Required Mod\""
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "This mod",
+    "description": "Stands in for a mod's name at the start of a sentence when the name is not known. Used as the subject of content_requirementsIntro and content_requirementsUnverifiedBody."
+  },
+  "content_quotedModName": {
+    "message": "\"$MODNAME$\"",
+    "description": "A mod's name in quotation marks, used as the subject of content_requirementsIntro and content_requirementsUnverifiedBody. Use whatever quotation marks the target language uses.",
+    "placeholders": {
+      "modname": {
+        "content": "$1",
+        "example": "A Required Mod"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "Requirements for $MODNAME$",
+    "description": "Title of the dialog listing the mods a named mod requires.",
+    "placeholders": {
+      "modname": {
+        "content": "$1",
+        "example": "A Required Mod"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Requirements Detected",
+    "description": "Title of the dialog listing the mods a mod requires, used when the mod's own name is not known."
+  },
+  "content_installWithRequirements": {
+    "message": "Install with Requirements",
+    "description": "Confirm button of the requirements dialog: download the mod and every ticked required mod."
+  },
+  "content_installWithoutRequirements": {
+    "message": "Install without Requirements",
+    "description": "Button in the requirements dialog: download only this mod and none of the mods it requires."
+  },
+  "content_unknownMod": {
+    "message": "Unknown Mod",
+    "description": "Stands in for a required mod's name in the requirements dialog when the mod page did not give one."
+  },
+  "content_noLinkProvided": {
+    "message": "No link provided",
+    "description": "Stands in for a required mod's link in the requirements dialog when the mod page gave no address."
+  },
+  "content_requirementsUnreadable": {
+    "message": "The requirements list could not be read.",
+    "description": "Reason given when the answer to a request for a mod's required mods was not in a shape the extension could read."
+  },
+  "content_requirementsPartial": {
+    "message": "$STARTED$ of $TOTAL$ requirements started, $FAILED$ failed.",
+    "description": "Notice after the requirements dialog, saying how many of the required mods began downloading.",
+    "placeholders": {
+      "started": {
+        "content": "$1",
+        "example": "3"
+      },
+      "total": {
+        "content": "$2",
+        "example": "5"
+      },
+      "failed": {
+        "content": "$3",
+        "example": "2"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Your Nexus API key was rejected. Re-enter it in the extension popup.",
+    "description": "Error shown on the page when Nexus refused the user's API key."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus refused this request. A premium account or an active nexusmods.com login may be required.",
+    "description": "Error shown on the page when Nexus refused a request the key was not entitled to make."
+  },
+  "content_errorNotFound": {
+    "message": "This mod is not available (deleted, hidden, or wrong game).",
+    "description": "Error shown on the page when Nexus has no such mod."
+  },
+  "content_errorRateLimited": {
+    "message": "Nexus API limit reached. Checks will resume after the limit resets.",
+    "description": "Error shown on the page when the user's Nexus API quota is exhausted."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus is not responding right now.",
+    "description": "Error shown on the page when the Nexus servers returned a server-side failure."
+  },
+  "content_errorOffline": {
+    "message": "No connection to Nexus.",
+    "description": "Error shown on the page when the request never reached Nexus at all."
+  },
+  "content_errorNoApiKey": {
+    "message": "No Nexus API key is set. Add one in the extension popup.",
+    "description": "Error shown on the page when a check needed an API key and none was saved."
+  },
+  "content_errorUnexpected": {
+    "message": "Something went wrong.",
+    "description": "Error shown on the page when a failure carried no message of its own."
+  },
+  "content_errorPortTimeout": {
+    "message": "The check took too long and was abandoned.",
+    "description": "Error shown on the page when a compatibility check ran past its deadline."
+  },
+  "content_errorNoBackground": {
+    "message": "Lost contact with the extension background. Retrying.",
+    "description": "Error shown on the page when the page lost its connection to the extension's background service worker."
+  },
+  "content_errorContextInvalid": {
+    "message": "The extension was updated. Reload this page.",
+    "description": "Error shown on the page when the extension was updated or reloaded while this page was open, which leaves the page's copy of it dead."
+  },
+  "content_errorDisabled": {
+    "message": "The extension is switched off.",
+    "description": "Error shown on the page when a check was attempted while the extension is turned off."
+  },
+  "content_errorCanceled": {
+    "message": "Check canceled.",
+    "description": "Error shown on the page when a compatibility check was called off before it finished."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Unknown messaging error.",
+    "description": "Error shown on the page when talking to the extension's background service worker failed and nothing said why."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Too many outstanding requests.",
+    "description": "Error shown on the page when the extension already has more checks in flight than it will hold."
+  },
+  "content_errorBackground": {
+    "message": "Background error.",
+    "description": "Error shown on the page when the extension's background service worker failed and gave no message of its own."
+  },
+  "content_shortKeyRejected": {
+    "message": "key rejected",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the Nexus API key was refused. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortAccessRefused": {
+    "message": "access refused",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': Nexus refused the request. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortNotAvailable": {
+    "message": "not available",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': Nexus has no such mod. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortRateLimited": {
+    "message": "rate limited",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the Nexus API quota is exhausted. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus down",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the Nexus servers failed. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortOffline": {
+    "message": "offline",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the request never reached Nexus. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortTimedOut": {
+    "message": "timed out",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the check ran past its deadline. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortNoBackground": {
+    "message": "no background",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the page lost contact with the extension's background service worker. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortNeedsReload": {
+    "message": "needs reload",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the extension was updated and the page must be reloaded. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortSwitchedOff": {
+    "message": "switched off",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the extension is turned off. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortCanceled": {
+    "message": "canceled",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the check was called off. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortCheckFailed": {
+    "message": "check failed",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check' when nothing more specific is known. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortRequestRefused": {
+    "message": "request refused",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': Nexus rejected the request as malformed. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortNotSetUp": {
+    "message": "not set up",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': no game version has been chosen yet. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortOtherGame": {
+    "message": "other game",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the mod belongs to a different game than the one set up. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortNoVersionDerived": {
+    "message": "no version derived",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': no public source names a version for this game yet. This is a gap in the data, not a refusal. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortSuperseded": {
+    "message": "superseded",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': a newer check replaced this one. Keep it to two or three words so it fits the badge."
+  },
+  "content_shortPageNotRecognized": {
+    "message": "page not recognized",
+    "description": "Very short reason shown on a compatibility badge beside 'Couldn't check': the Nexus page was not in a layout the extension knows. Keep it to two or three words so it fits the badge."
+  },
+  "content_dismiss": {
+    "message": "Dismiss",
+    "description": "Screen reader name of the small close button on a notice the extension shows over the page."
+  },
+  "content_reloadPage": {
+    "message": "Reload page",
+    "description": "Button on a notice that reloads the current Nexus page."
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant was updated. Reload this page to continue.",
+    "description": "Notice shown over the page when the extension was updated or reloaded while this page was open, so its copy of the extension has stopped working."
+  },
+  "content_selectionRestoredOne": {
+    "message": "$COUNT$ mod you selected earlier is still selected.",
+    "description": "Notice after a page load telling the user their one earlier tick was kept. The count is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "$COUNT$ mods you selected earlier are still selected.",
+    "description": "Notice after a page load telling the user their earlier ticks were kept, for counts other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "7"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "Selections are kept for this tab until you clear them or close it.",
+    "description": "Detail under the restored-selection notice, saying how long the ticks last."
+  },
+  "content_clearSelectionAction": {
+    "message": "Clear selection",
+    "description": "Button on the restored-selection notice that unticks every mod at once."
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ selected mod from another game was dropped.",
+    "description": "Notice after moving to another game's pages, saying one tick could not be kept because a mod id only means something within its own game. The count is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "$COUNT$ selected mods from another game were dropped.",
+    "description": "Notice after moving to another game's pages, saying ticks could not be kept because a mod id only means something within its own game. Used for counts other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Compatibility checks are off until you add a Nexus API key.",
+    "description": "Notice shown on the page when no Nexus API key has been saved, so no verdicts can be computed."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Everything else on this page still works.",
+    "description": "Detail under the missing-API-key notice, saying the rest of the extension is unaffected."
+  },
+  "content_openSettings": {
+    "message": "Open settings",
+    "description": "Button on a notice that opens the extension's popup."
+  },
+  "content_noticeOtherGame": {
+    "message": "Compatibility is set up for $TARGETGAME$, and this page is $PAGEGAME$.",
+    "description": "Notice shown when the game the user configured is not the game whose pages they are browsing. The values are Nexus game identifiers such as 'gamedomain'.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1",
+        "example": "gamedomain"
+      },
+      "pagegame": {
+        "content": "$2",
+        "example": "othergamedomain"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Pick the game version you are playing to get compatibility badges.",
+    "description": "Notice shown when no game version has been chosen yet, so no verdicts can be computed."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "No verdicts are shown rather than verdicts computed against another game.",
+    "description": "Detail under the not-targeted notice, explaining that silence is deliberate."
+  },
+  "content_useThisGame": {
+    "message": "Use this game",
+    "description": "Button on the not-targeted notice that opens the dialog for setting up the game shown on this page."
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Open the Nexus Mods Assistant popup from your browser toolbar to change settings.",
+    "description": "Notice shown when the page asked to open the extension's popup and the browser would not allow it."
+  },
+  "content_targetModalTitle": {
+    "message": "Target this game",
+    "description": "Title of the dialog where the user says which build of the current game they play."
+  },
+  "content_targetPromptQuestion": {
+    "message": "Which build of $GAME$ are you playing? Mods are judged against this version.",
+    "description": "Question at the top of the 'Target this game' dialog. The value is a Nexus game identifier such as 'gamedomain'.",
+    "placeholders": {
+      "game": {
+        "content": "$1",
+        "example": "gamedomain"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "e.g. 1.3.4",
+    "description": "Gray hint text inside the empty version box of the 'Target this game' dialog, showing the shape of a version number."
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Deriving this game's versions from public sources...",
+    "description": "Status line in the 'Target this game' dialog while the extension looks for known versions of the game. One of three states this line can take, and it must not read like either of the others."
+  },
+  "content_targetVersionsNone": {
+    "message": "No public source names a version for this game, so there is nothing to offer. Type the build you play if you know it.",
+    "description": "Status line in the 'Target this game' dialog when the search finished and found no versions. This means the search worked and there was nothing to find, unlike content_targetVersionsFailed, where the search itself did not complete."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "$COUNT$ version was derived for this game. Open the list in the box above, or type your own.",
+    "description": "Status line in the 'Target this game' dialog when exactly one version was found. The count is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "$COUNT$ versions were derived for this game. Open the list in the box above, or type your own.",
+    "description": "Status line in the 'Target this game' dialog when more than one version was found.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "The version search could not complete ($REASON$), so this list is empty for want of an answer, not for want of data. Type the build you play.",
+    "description": "Status line in the 'Target this game' dialog when the search itself failed. This means the extension could not look, unlike content_targetVersionsNone, where it looked and found nothing.",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "rate limited"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Save",
+    "description": "Confirm button of the 'Target this game' dialog."
+  },
+  "content_cancel": {
+    "message": "Cancel",
+    "description": "Button that closes the 'Target this game' dialog without saving."
+  },
+  "content_targetNotSaved": {
+    "message": "No version was entered, so nothing was saved and this page is still untargeted.",
+    "description": "Notice shown when the user pressed Save in the 'Target this game' dialog with the version box empty."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Pick one of the derived versions, or type the build you play.",
+    "description": "Detail under the nothing-was-saved notice, saying what to do instead."
+  },
+  "content_tryAgain": {
+    "message": "Try again",
+    "description": "Button on the nothing-was-saved notice that reopens the 'Target this game' dialog."
+  },
+  "content_noModsOnPage": {
+    "message": "No mods on this page.",
+    "description": "Notice shown when the Nexus search returned no results. This is an empty result, not a failure."
+  },
+  "content_layoutStillLoading": {
+    "message": "The mod list has not finished loading. If it stays this way, Nexus may have changed their layout.",
+    "description": "Notice shown when the mod grid is present but still empty, which could be a slow page or a change to the Nexus markup."
+  },
+  "content_layoutNotFound": {
+    "message": "Could not find the mod list on this page. Nexus may have changed their layout.",
+    "description": "Notice shown when no mod grid could be found on the page at all."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Selectors that stopped matching: $NAMES$",
+    "description": "Detail under a layout notice, naming the parts of the page the extension could no longer find. The names are internal identifiers and are not translated.",
+    "placeholders": {
+      "names": {
+        "content": "$1",
+        "example": "grid, card, title"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid",
+    "description": "Stands in for the list of missing page parts when the mod grid itself is the only thing that could not be found. It appears inside content_layoutBrokenSelectors alongside untranslated identifiers."
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "This mod page does not look like a layout the assistant recognizes, so no badge was added.",
+    "description": "Notice shown on an individual mod page whose markup the extension does not know, so it added no compatibility badge."
+  },
+  "content_translationSignalMissing": {
+    "message": "Translations are set to be hidden, but no mod tile on this page says what category it is in, so nothing was hidden.",
+    "description": "Notice shown when the setting to hide translation mods could not be applied because the page exposes no category for any tile."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus may have changed their markup. Nothing has been hidden from you.",
+    "description": "Detail under the translations-not-hidden notice, reassuring the user that no results were removed."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "The date filter is not being applied: no mod tile on this page exposes an update date.",
+    "description": "Note under the filter bar saying the Last Updated range had no dates to test against."
+  },
+  "content_dateSelectorBroken": {
+    "message": "The \"Last Updated\" filter could not read any dates on this page, so it was not applied.",
+    "description": "Notice saying the Last Updated range was ignored because no tile on the page carries a date. The quoted name matches the filter bar's own Last Updated caption."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus may have changed their markup.",
+    "description": "Detail under the date-filter notice, naming the likely cause."
+  },
+  "content_undatedHiddenOne": {
+    "message": "$COUNT$ mod hidden: no update date to test against.",
+    "description": "Note under the filter bar counting the one mod hidden by the date range because it carries no date. The count is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "$COUNT$ mods hidden: no update date to test against.",
+    "description": "Note under the filter bar counting the mods hidden by the date range because they carry no date. Used for counts other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ translation mod hidden by the popup setting.",
+    "description": "Note under the filter bar counting the one translation mod hidden by the extension's setting. The count is always 1 here.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "$COUNT$ translation mods hidden by the popup setting.",
+    "description": "Note under the filter bar counting the translation mods hidden by the extension's setting. Used for counts other than one.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Settings changed. The badges refresh once the current download run finishes.",
+    "description": "Notice shown when the user changed settings during a download run, so the badges are not repainted until the run is over."
+  }
+}

@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Elke mod op Nexus krijgt een compatibiliteitsoordeel voor de gameversie die je speelt, zodat je filtert op wat werkt."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "De aanvraag duurde langer dan $seconds$s en is afgebroken.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Nexus API-limiet bereikt. Hij wordt om $resetTime$ gereset.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Nexus API-limiet bereikt. Controles hervatten zodra de limiet is gereset."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Nexus API-limiet bereikt."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus heeft je API key geweigerd. Voer hem opnieuw in via de pop-up van de extensie."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus heeft deze aanvraag geweigerd. Mogelijk is een Premium-account of een actieve login op nexusmods.com nodig."
+  },
+  "background_errorNotFound": {
+    "message": "Nexus heeft deze mod niet voor deze game (verwijderd, verborgen of verkeerde game)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus reageert op dit moment niet (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus heeft de aanvraag geweigerd (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "De aanvraag duurde te lang en is afgebroken."
+  },
+  "background_errorOffline": {
+    "message": "Geen verbinding met Nexus."
+  },
+  "background_errorDisabled": {
+    "message": "De extensie staat uit."
+  },
+  "background_errorUnexpected": {
+    "message": "Er is iets misgegaan."
+  },
+  "background_errorNoApiKey": {
+    "message": "API key niet gevonden. Voeg je Nexus API key toe via de pop-up van de extensie."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "In de downloadlink ontbreekt de URI."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "NXM-link niet gevonden."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Geen geschikte bestanden gevonden voor deze mod."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "De vereistensectie van deze modpagina kon niet worden gelezen. De opmaak van de Nexus-pagina is er geen die NMA herkent."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Navigatie gewijzigd"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant heeft $missing$ nodig voordat mods gecontroleerd kunnen worden. Open de pop-up van de extensie om de installatie af te ronden.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "een API key"
+  },
+  "background_setupNeedsGame": {
+    "message": "een game"
+  },
+  "background_setupNeedsVersion": {
+    "message": "een gameversie"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ en $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Deze pagina is van $pageGame$, maar NMA is ingesteld op $configuredGame$. Wissel van game in de pop-up van de extensie om deze mods te controleren.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA kan \"$version$\" niet lezen als gameversie en kan daardoor geen enkele mod eraan toetsen. Stel een numerieke versie in zoals 1.6.1170 in de pop-up van de extensie.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "Geen enkele publieke bron noemt een gameversie voor $gameDomain$, dus NMA kan hier geen gameversie afleiden uit een modversie. Dat is een gat in de gegevens, niet in de extensie, en het geldt voor iedereen. Typ de versie die je speelt in de pop-up van de extensie om toch te controleren.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Geen enkele versiebron was bereikbaar, dus voor deze game is nog niets afgeleid."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Er is een gamedomein nodig voordat er versies voor afgeleid kunnen worden."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Geen enkele winkelpagina komt zeker genoeg overeen met die game, dus er is er geen opgeslagen."
+  },
+  "background_sourceFileVersion": {
+    "message": "Een bestandsversie"
+  },
+  "background_sourceFileName": {
+    "message": "Een bestandsnaam"
+  },
+  "background_sourceChangelog": {
+    "message": "De changelog"
+  },
+  "background_sourceDescription": {
+    "message": "De beschrijving"
+  },
+  "background_sourceUploadDate": {
+    "message": "De uploaddatum"
+  },
+  "background_sourceNone": {
+    "message": "Niets"
+  },
+  "background_verdictPartialNote": {
+    "message": "Een bron kon niet worden gelezen ($cause$), dus deze controle is onvolledig.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Nergens wordt een gameversie genoemd, maar het nieuwste bestand is geüpload op $uploadDate$, na gameversie $gameVersion$. Afgeleid, niet bevestigd.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ vermeldt \"$evidence$\", en dat valt binnen je gekozen bereik.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ noemt \"$evidence$\", en dat valt binnen je gekozen bereik. Dat is een afleiding, geen vermelde gameversie.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Nergens wordt een gameversie genoemd, en de uploaddatum van het nieuwste bestand ($uploadDate$) plaatst het niet binnen je gekozen bereik.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ vermeldt \"$evidence$\", de nieuwste gameversie die deze mod noemt, en die valt buiten je gekozen bereik.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ noemt \"$evidence$\", de nieuwste gameversie die deze mod noemt, en die valt buiten je gekozen bereik. Dat is een afleiding, geen vermelde gameversie.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Deze mod noemt geen gameversie in zijn bestanden, changelog of beschrijving."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Deze mod noemt geen gameversie in zijn beschrijving of changelog. Zijn bestanden zijn voor deze controle niet geopend."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "De winkelzoekopdracht gaf geen antwoord, dus winkelbronnen zijn overgeslagen."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Geen enkele winkelpagina komt zeker genoeg overeen met deze game, dus winkelbronnen zijn overgeslagen."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "De winkelgegevens van deze game konden niet worden gelezen, dus winkelbronnen zijn deze keer overgeslagen."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "De dichtstbijzijnde winkelpagina is geen game, dus winkelbronnen zijn overgeslagen in plaats van de versies van een ander product te lezen."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "De dichtstbijzijnde winkelpagina hoort bij een andere app, dus winkelbronnen zijn overgeslagen."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "De winkelpagina noemt een andere game dan de catalogus, dus winkelbronnen zijn overgeslagen."
+  },
+  "background_ssoConnecting": {
+    "message": "Verbinding maken met Nexus Mods SSO..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Wachten op je goedkeuring in het Nexus Mods-tabblad..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "De SSO-handshake kon niet worden gestart."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "De SSO-verbinding kon niet worden geopend."
+  },
+  "background_ssoRejected": {
+    "message": "SSO heeft de handshake geweigerd."
+  },
+  "background_ssoConnectionReady": {
+    "message": "Verbinding klaar. Wachten op je goedkeuring..."
+  },
+  "background_ssoComplete": {
+    "message": "API key opgeslagen via SSO."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Onverwacht antwoord van SSO."
+  },
+  "background_ssoLostConnection": {
+    "message": "Verbinding met SSO verloren na meerdere pogingen."
+  },
+  "background_ssoReconnecting": {
+    "message": "Opnieuw verbinden (poging $attempt$/$total$)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO geannuleerd."
+  },
+  "content_statusCompatible": {
+    "message": "Compatibel"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Waarschijnlijk compatibel"
+  },
+  "content_statusIncompatible": {
+    "message": "Niet compatibel"
+  },
+  "content_statusUnknown": {
+    "message": "Geen versie-info"
+  },
+  "content_statusFailed": {
+    "message": "Kon niet controleren"
+  },
+  "content_statusNotConfigured": {
+    "message": "Niet ingesteld"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Onbekend"
+  },
+  "content_evidenceFileVersion": {
+    "message": "bestandsversie"
+  },
+  "content_evidenceFileName": {
+    "message": "bestandsnaam"
+  },
+  "content_evidenceChangelog": {
+    "message": "changelog"
+  },
+  "content_evidenceDescription": {
+    "message": "modbeschrijving"
+  },
+  "content_evidenceUploadDate": {
+    "message": "uploaddatum"
+  },
+  "content_evidenceNone": {
+    "message": "geen versiebewijs"
+  },
+  "content_confidenceExact": {
+    "message": "exacte match"
+  },
+  "content_confidenceInferred": {
+    "message": "afgeleid"
+  },
+  "content_confidenceNone": {
+    "message": "niet vastgesteld"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Gevonden versie: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Bewijs: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Zekerheid: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Overeenkomst: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - geen versie gekozen",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "versie niet vermeld"
+  },
+  "content_versionNotReportedShort": {
+    "message": "niet vermeld"
+  },
+  "content_checking": {
+    "message": "Controleren..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Compatibiliteit controleren..."
+  },
+  "content_scrollToCheck": {
+    "message": "Scroll om te controleren"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Deze mod wordt gecontroleerd zodra hij in beeld komt."
+  },
+  "content_noResponse": {
+    "message": "Geen antwoord"
+  },
+  "content_compatibilityColumn": {
+    "message": "Compatibiliteit"
+  },
+  "content_setVersionInPopup": {
+    "message": "Stel de gameversie in via de pop-up van de extensie om een oordeel te krijgen."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Kies de gameversie in de pop-up om een oordeel voor deze mod te krijgen."
+  },
+  "content_filesButton": {
+    "message": "Bestanden"
+  },
+  "content_filesButtonForMod": {
+    "message": "Bestanden van $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Bestanden van deze mod"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Bestanden van deze vereiste mod"
+  },
+  "content_filesDropdownLabel": {
+    "message": "Bestanden om te downloaden"
+  },
+  "content_filesLoading": {
+    "message": "Bestanden laden..."
+  },
+  "content_filesFetchFailed": {
+    "message": "Bestanden ophalen mislukt"
+  },
+  "content_filesLoadFailed": {
+    "message": "De bestandslijst kon niet worden geladen: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "De bestandslijst kon niet worden geladen"
+  },
+  "content_fileListUnreadable": {
+    "message": "De bestandslijst kon niet worden gelezen."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "Geen bestanden in de categorieën die je hebt aangezet. Verborgen: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Geen bestanden gevonden voor deze mod."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Verborgen door je bestandsfilters: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Bestand"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Grootte onbekend"
+  },
+  "content_fileDateUnknown": {
+    "message": "Datum onbekend"
+  },
+  "content_downloadSelected": {
+    "message": "Selectie downloaden"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Selectie downloaden ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Selectie downloaden ($MODS$ mods / $FILES$ bestanden)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Downloaden ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Downloaden..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "In wachtrij"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Mislukt: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "onbekende reden"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ bestand in de wachtrij.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ bestanden in de wachtrij.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ in de wachtrij, $FAILED$ mislukt.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Selecteren op compatibiliteit"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Filters van Nexus Mods Assistant"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Downloads van Nexus Mods Assistant"
+  },
+  "content_refresh": {
+    "message": "Vernieuwen"
+  },
+  "content_pageNavigation": {
+    "message": "Paginanavigatie"
+  },
+  "content_prevPage": {
+    "message": "Vorige"
+  },
+  "content_nextPage": {
+    "message": "Volgende"
+  },
+  "content_pageNumber": {
+    "message": "Paginanummer"
+  },
+  "content_goToPage": {
+    "message": "Ga naar pagina"
+  },
+  "content_collapseFilters": {
+    "message": "Filters inklappen"
+  },
+  "content_expandFilters": {
+    "message": "Filters uitklappen"
+  },
+  "content_showUpdateFiles": {
+    "message": "Updatebestanden tonen"
+  },
+  "content_showOptionalFiles": {
+    "message": "Optionele bestanden tonen"
+  },
+  "content_showMiscFiles": {
+    "message": "Overige bestanden tonen"
+  },
+  "content_showOldFiles": {
+    "message": "Oude versies en gearchiveerde bestanden tonen"
+  },
+  "content_exclusionLabel": {
+    "message": "Mods uitsluiten waarvan de naam bevat"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Mods uitsluiten (bijv. patch, vertaling)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "Scheid trefwoorden met komma's"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Bereik laatst bijgewerkt"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Laatst bijgewerkt:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Bijgewerkt op of na"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Bijgewerkt op of voor"
+  },
+  "content_startDateTooltip": {
+    "message": "Begindatum (inclusief)"
+  },
+  "content_endDateTooltip": {
+    "message": "Einddatum (inclusief)"
+  },
+  "content_clearDateRange": {
+    "message": "Datumbereik wissen"
+  },
+  "content_clearButton": {
+    "message": "Wissen"
+  },
+  "content_noModsSelected": {
+    "message": "Geen mods geselecteerd"
+  },
+  "content_modsSelectedOne": {
+    "message": "$COUNT$ mod geselecteerd",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "$COUNT$ mods geselecteerd",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Selectie wissen"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Elke geselecteerde mod uitvinken"
+  },
+  "content_downloadAll": {
+    "message": "Alles downloaden"
+  },
+  "content_downloadMode": {
+    "message": "Downloadmodus"
+  },
+  "content_downloadModeManual": {
+    "message": "Handmatig"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Stoppen"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Stop de lopende downloadronde. Bestanden die al begonnen zijn, worden niet geannuleerd."
+  },
+  "content_apiRemaining": {
+    "message": "API: $REMAINING$ over",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Selecteren"
+  },
+  "content_selectModNamed": {
+    "message": "$MODNAME$ selecteren",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Deze mod selecteren"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Laatst gecontroleerd: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Download voorbereiden..."
+  },
+  "content_downloadStarted": {
+    "message": "Download gestart"
+  },
+  "content_downloadStartedDetail": {
+    "message": "Kijk bij de downloads van je browser voor het bestand."
+  },
+  "content_downloadFailed": {
+    "message": "Download mislukt"
+  },
+  "content_noFileToDownload": {
+    "message": "Geen bestand om te downloaden gevonden"
+  },
+  "content_noDownloadableFile": {
+    "message": "Geen downloadbaar bestand gevonden"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "Deze mod heeft misschien geen hoofdbestand of vereist een handmatige keuze."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Overgeslagen bij de bestandskeuze"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Er is geen bestand gekozen voor deze mod."
+  },
+  "content_downloadRunStopped": {
+    "message": "Downloadronde gestopt"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "De ronde eindigde voordat er een bestand voor deze mod was gekozen."
+  },
+  "content_vortexUnavailable": {
+    "message": "Vortex-download niet beschikbaar"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "Kon geen NXM-link vinden. Zorg dat je bent ingelogd op nexusmods.com."
+  },
+  "content_handedToVortex": {
+    "message": "Doorgegeven aan Vortex"
+  },
+  "content_handedToVortexDetail": {
+    "message": "De browser heeft een nxm://-link aan Vortex doorgegeven. De browser kan niet bevestigen dat Vortex hem heeft ontvangen."
+  },
+  "content_vortexBlocked": {
+    "message": "Overdracht aan Vortex geblokkeerd"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "De browser weigerde de nxm://-link te openen."
+  },
+  "content_vortexHandoff": {
+    "message": "Deze mods worden via nxm://-links naar Vortex gestuurd."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Er gebeurt niets als Vortex niet is geïnstalleerd en geregistreerd voor nxm-links, en browsers kunnen herhaalde protocolstarts vanaf één klik blokkeren. Zet de modus op Handmatig als er niets aankomt."
+  },
+  "content_batchEmpty": {
+    "message": "Niets te downloaden: geen enkele mod voldoet aan de huidige selectie en filters."
+  },
+  "content_batchBusy": {
+    "message": "Er loopt al een downloadronde."
+  },
+  "content_batchVerbQueued": {
+    "message": "in de wachtrij gezet"
+  },
+  "content_batchVerbVortex": {
+    "message": "doorgegeven aan Vortex"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ mislukt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Downloaden"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Alles downloaden"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "wordt al gedownload"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "geen downloadbaar bestand"
+  },
+  "content_reasonRunStopped": {
+    "message": "de ronde is gestopt"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "overgeslagen bij de vereistenvraag"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "overgeslagen bij de bestandskeuze"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "de bestandslijst kon niet worden geladen"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "geen NXM-link"
+  },
+  "content_reasonNxmRefused": {
+    "message": "de browser weigerde de nxm://-link"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "verborgen door de huidige filters"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "er loopt al een andere downloadronde"
+  },
+  "content_modalOk": {
+    "message": "OK"
+  },
+  "content_selectFilesTitle": {
+    "message": "Kies de bestanden om te downloaden"
+  },
+  "content_skipMod": {
+    "message": "Mod overslaan"
+  },
+  "content_skipThisMod": {
+    "message": "Deze mod overslaan"
+  },
+  "content_skipTheseMods": {
+    "message": "Deze mods overslaan"
+  },
+  "content_downloadAnyway": {
+    "message": "Toch downloaden"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Vereisten konden niet worden gecontroleerd"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ heeft mogelijk vereiste mods, maar de lijst kon niet worden geladen: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " Dit mislukt meestal voor een hele ronde, dus je antwoord geldt voor de rest ervan."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ heeft de volgende vereisten. Kies welke je wilt installeren:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Deze mod"
+  },
+  "content_quotedModName": {
+    "message": "\"$MODNAME$\"",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "Vereisten voor $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Vereisten gevonden"
+  },
+  "content_installWithRequirements": {
+    "message": "Installeren met vereisten"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Installeren zonder vereisten"
+  },
+  "content_unknownMod": {
+    "message": "Onbekende mod"
+  },
+  "content_noLinkProvided": {
+    "message": "Geen link opgegeven"
+  },
+  "content_requirementsUnreadable": {
+    "message": "De vereistenlijst kon niet worden gelezen."
+  },
+  "content_requirementsPartial": {
+    "message": "$STARTED$ van $TOTAL$ vereisten gestart, $FAILED$ mislukt.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Je Nexus API key is geweigerd. Voer hem opnieuw in via de pop-up van de extensie."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus heeft deze aanvraag geweigerd. Mogelijk is een Premium-account of een actieve login op nexusmods.com nodig."
+  },
+  "content_errorNotFound": {
+    "message": "Deze mod is niet beschikbaar (verwijderd, verborgen of verkeerde game)."
+  },
+  "content_errorRateLimited": {
+    "message": "Nexus API-limiet bereikt. Controles hervatten nadat de limiet is gereset."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus reageert op dit moment niet."
+  },
+  "content_errorOffline": {
+    "message": "Geen verbinding met Nexus."
+  },
+  "content_errorNoApiKey": {
+    "message": "Er is geen Nexus API key ingesteld. Voeg er een toe via de pop-up van de extensie."
+  },
+  "content_errorUnexpected": {
+    "message": "Er is iets misgegaan."
+  },
+  "content_errorPortTimeout": {
+    "message": "De controle duurde te lang en is afgebroken."
+  },
+  "content_errorNoBackground": {
+    "message": "Contact met de achtergrond van de extensie verloren. Nieuwe poging."
+  },
+  "content_errorContextInvalid": {
+    "message": "De extensie is bijgewerkt. Herlaad deze pagina."
+  },
+  "content_errorDisabled": {
+    "message": "De extensie staat uit."
+  },
+  "content_errorCanceled": {
+    "message": "Controle geannuleerd."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Onbekende communicatiefout."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Te veel openstaande aanvragen."
+  },
+  "content_errorBackground": {
+    "message": "Achtergrondfout."
+  },
+  "content_shortKeyRejected": {
+    "message": "key geweigerd"
+  },
+  "content_shortAccessRefused": {
+    "message": "toegang geweigerd"
+  },
+  "content_shortNotAvailable": {
+    "message": "niet beschikbaar"
+  },
+  "content_shortRateLimited": {
+    "message": "limiet bereikt"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus uit de lucht"
+  },
+  "content_shortOffline": {
+    "message": "offline"
+  },
+  "content_shortTimedOut": {
+    "message": "time-out"
+  },
+  "content_shortNoBackground": {
+    "message": "geen achtergrond"
+  },
+  "content_shortNeedsReload": {
+    "message": "herladen nodig"
+  },
+  "content_shortSwitchedOff": {
+    "message": "uitgeschakeld"
+  },
+  "content_shortCanceled": {
+    "message": "geannuleerd"
+  },
+  "content_shortCheckFailed": {
+    "message": "controle mislukt"
+  },
+  "content_shortRequestRefused": {
+    "message": "aanvraag geweigerd"
+  },
+  "content_shortNotSetUp": {
+    "message": "niet ingesteld"
+  },
+  "content_shortOtherGame": {
+    "message": "andere game"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "geen versie afgeleid"
+  },
+  "content_shortSuperseded": {
+    "message": "achterhaald"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "pagina niet herkend"
+  },
+  "content_dismiss": {
+    "message": "Sluiten"
+  },
+  "content_reloadPage": {
+    "message": "Pagina herladen"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant is bijgewerkt. Herlaad deze pagina om verder te gaan."
+  },
+  "content_selectionRestoredOne": {
+    "message": "$COUNT$ mod die je eerder had geselecteerd, is nog steeds geselecteerd.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "$COUNT$ mods die je eerder had geselecteerd, zijn nog steeds geselecteerd.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "Selecties blijven in dit tabblad bewaard totdat je ze wist of het sluit."
+  },
+  "content_clearSelectionAction": {
+    "message": "Selectie wissen"
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ geselecteerde mod van een andere game is vervallen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "$COUNT$ geselecteerde mods van een andere game zijn vervallen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Compatibiliteitscontroles staan uit totdat je een Nexus API key toevoegt."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "De rest van deze pagina werkt gewoon."
+  },
+  "content_openSettings": {
+    "message": "Instellingen openen"
+  },
+  "content_noticeOtherGame": {
+    "message": "Compatibiliteit is ingesteld voor $TARGETGAME$, en deze pagina is van $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Kies de gameversie die je speelt om compatibiliteitsbadges te krijgen."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Er worden geen oordelen getoond in plaats van oordelen die tegen een andere game zijn berekend."
+  },
+  "content_useThisGame": {
+    "message": "Deze game gebruiken"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Open de pop-up van Nexus Mods Assistant via de werkbalk van je browser om instellingen te wijzigen."
+  },
+  "content_targetModalTitle": {
+    "message": "Deze game instellen"
+  },
+  "content_targetPromptQuestion": {
+    "message": "Welke build van $GAME$ speel je? Mods worden aan deze versie getoetst.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "bijv. 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Versies van deze game afleiden uit publieke bronnen..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Geen enkele publieke bron noemt een versie voor deze game, dus er is niets aan te bieden. Typ de build die je speelt, als je die kent."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "$COUNT$ versie is afgeleid voor deze game. Open de lijst in het veld hierboven of typ je eigen versie.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "$COUNT$ versies zijn afgeleid voor deze game. Open de lijst in het veld hierboven of typ je eigen versie.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "De versiezoekopdracht kon niet worden voltooid ($REASON$), dus deze lijst is leeg bij gebrek aan een antwoord, niet bij gebrek aan gegevens. Typ de build die je speelt.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Opslaan"
+  },
+  "content_cancel": {
+    "message": "Annuleren"
+  },
+  "content_targetNotSaved": {
+    "message": "Er is geen versie ingevuld, dus er is niets opgeslagen en deze pagina heeft nog steeds geen doelversie."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Kies een van de afgeleide versies of typ de build die je speelt."
+  },
+  "content_tryAgain": {
+    "message": "Opnieuw proberen"
+  },
+  "content_noModsOnPage": {
+    "message": "Geen mods op deze pagina."
+  },
+  "content_layoutStillLoading": {
+    "message": "De modlijst is nog niet klaar met laden. Als dit zo blijft, heeft Nexus mogelijk de opmaak gewijzigd."
+  },
+  "content_layoutNotFound": {
+    "message": "De modlijst kon niet op deze pagina worden gevonden. Nexus heeft mogelijk de opmaak gewijzigd."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Selectors die niet meer matchen: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Deze modpagina lijkt geen opmaak te hebben die de assistent herkent, dus er is geen badge toegevoegd."
+  },
+  "content_translationSignalMissing": {
+    "message": "Vertalingen staan ingesteld om verborgen te worden, maar geen enkele mod op deze pagina geeft aan in welke categorie hij zit, dus er is niets verborgen."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus heeft mogelijk de opmaak gewijzigd. Er is niets voor je verborgen."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "Het datumfilter wordt niet toegepast: geen enkele mod op deze pagina toont een bijwerkdatum."
+  },
+  "content_dateSelectorBroken": {
+    "message": "Het filter \"Laatst bijgewerkt\" kon op deze pagina geen enkele datum lezen, dus het is niet toegepast."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus heeft mogelijk de opmaak gewijzigd."
+  },
+  "content_undatedHiddenOne": {
+    "message": "$COUNT$ mod verborgen: geen bijwerkdatum om aan te toetsen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "$COUNT$ mods verborgen: geen bijwerkdatum om aan te toetsen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ vertaalmod verborgen door de pop-upinstelling.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "$COUNT$ vertaalmods verborgen door de pop-upinstelling.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Instellingen gewijzigd. De badges worden vernieuwd zodra de lopende downloadronde klaar is."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Compatibiliteitsmaatje"
+  },
+  "popup_extensionToggle": {
+    "message": "De assistent in- of uitschakelen"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Game en versie"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "Het tabblad dat je open hebt, is een Nexus-gamepagina."
+  },
+  "popup_useThisGame": {
+    "message": "Deze game gebruiken"
+  },
+  "popup_gameLabel": {
+    "message": "Game"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Zoek op naam"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Overeenkomende games"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Versiebereik"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Oudste gameversie"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Begin (bijv. 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Nieuwste gameversie, optioneel"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Optioneel einde"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Afgeleide gameversies"
+  },
+  "popup_refreshVersions": {
+    "message": "Versies vernieuwen"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Zoek opnieuw in de publieke bronnen naar de versies van deze game"
+  },
+  "popup_exclusionLabel": {
+    "message": "Mods uitsluiten die bevatten"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "bijv. patch, vertaling"
+  },
+  "popup_exclusionTitle": {
+    "message": "Scheid meerdere trefwoorden met komma's"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Voegt het eigen vertaalfilter van Nexus toe aan de lijst die deze knop opent"
+  },
+  "popup_hideTranslations": {
+    "message": "De lijst openen zonder vertalingen"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Compatibele mods openen"
+  },
+  "popup_sectionConnection": {
+    "message": "Verbinding"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus API key"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Opgeslagen Nexus API key"
+  },
+  "popup_revealKey": {
+    "message": "De opgeslagen API key tonen"
+  },
+  "popup_hideKey": {
+    "message": "De opgeslagen API key verbergen"
+  },
+  "popup_show": {
+    "message": "Tonen"
+  },
+  "popup_hide": {
+    "message": "Verbergen"
+  },
+  "popup_replaceKey": {
+    "message": "Key vervangen"
+  },
+  "popup_disconnect": {
+    "message": "Loskoppelen"
+  },
+  "popup_disconnectExplain": {
+    "message": "Loskoppelen verwijdert de key en elk gecachet Nexus-antwoord uit deze browser. Je Nexus-account blijft onaangeroerd."
+  },
+  "popup_keepKey": {
+    "message": "Key behouden"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Persoonlijke Nexus API key"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Plak je API key"
+  },
+  "popup_save": {
+    "message": "Opslaan"
+  },
+  "popup_needKey": {
+    "message": "Key nodig?"
+  },
+  "popup_cancel": {
+    "message": "Annuleren"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Optioneel. Bladeren, filters en de doelversie werken zonder key. Compatibiliteitsbadges en downloads hebben er wel een nodig, omdat Nexus alleen antwoordt voor een account."
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods single sign-on"
+  },
+  "popup_ssoDescription": {
+    "message": "Geef één keer toestemming en de key wordt voor je ingevuld. Je kunt dit altijd opnieuw doen om de opgeslagen key te vervangen."
+  },
+  "popup_authorizeSso": {
+    "message": "SSO toestaan"
+  },
+  "popup_cancelSso": {
+    "message": "SSO annuleren"
+  },
+  "popup_ssoReady": {
+    "message": "Klaar om de Nexus Mods SSO-handshake te starten."
+  },
+  "popup_startingSso": {
+    "message": "SSO starten..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO geannuleerd."
+  },
+  "popup_sectionDownloads": {
+    "message": "Downloads"
+  },
+  "popup_downloadModeLabel": {
+    "message": "Downloadmodus"
+  },
+  "popup_downloadModeManual": {
+    "message": "Handmatig: de browser bewaart het bestand"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: je mod manager krijgt de link"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Dezelfde instelling als die in de actiebalk op een Nexus-overzichtspagina: hier wijzigen wijzigt hem daar, en andersom. In de Vortex-modus wordt een"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "link geopend, die je besturingssysteem doorgeeft aan de mod manager die dat protocol heeft geregistreerd."
+  },
+  "popup_fileListsLegend": {
+    "message": "Bestandslijsten"
+  },
+  "popup_fileListsNote": {
+    "message": "Welke bestandscategorieën verschijnen wanneer de bestandslijst van een mod wordt geopend. Dezelfde vier schakelaars staan in het paneel op de pagina."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Oudere versies van de bestanden van een mod tonen"
+  },
+  "popup_showOldFiles": {
+    "message": "Oude bestanden"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "De updatebestanden van een mod tonen"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Updatebestanden"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "De optionele bestanden van een mod tonen"
+  },
+  "popup_showOptionalFiles": {
+    "message": "Optionele bestanden"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "De overige bestanden van een mod tonen"
+  },
+  "popup_showMiscFiles": {
+    "message": "Overige bestanden"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Geavanceerd"
+  },
+  "popup_advancedNote": {
+    "message": "Lokale opslag en diagnostiek. De cache legen leest de gamelijst meteen opnieuw van Nexus wanneer er een key is gekoppeld; verder gebruikt niets hier het netwerk."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Schrijft gedetailleerde activiteit van de background worker naar de service worker console"
+  },
+  "popup_debugLogging": {
+    "message": "Uitgebreide console-logging"
+  },
+  "popup_clearCache": {
+    "message": "Gecachete Nexus-gegevens wissen"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "patchnotitie van de winkel"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "winkelbranch"
+  },
+  "popup_sourceArticleText": {
+    "message": "artikeltekst, niet geverifieerd"
+  },
+  "popup_sourceModText": {
+    "message": "modtekst"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "collection-metadata"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, uit $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "Er is geen API key gekoppeld, dus Nexus geeft geen antwoord. Voeg er een toe onder Verbinding."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus heeft je API key geweigerd. Vervang hem onder Verbinding."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus heeft de aanvraag geweigerd. Mogelijk is een Premium-account of een actieve login op nexusmods.com nodig."
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus kent die game of mod niet. Mogelijk is hij verborgen of verwijderd."
+  },
+  "popup_failureRateLimited": {
+    "message": "Je hebt je Nexus API-tegoed opgebruikt. Controles hervatten zodra het wordt gereset, meestal binnen het uur."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus reageert op dit moment niet. Probeer het over een paar minuten opnieuw."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus heeft de aanvraag als onjuist geweigerd. Controleer de game en de versie en probeer het opnieuw."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Er is nog niets ingesteld om te controleren. Kies hierboven een game en een beginversie."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Voor deze game is nog geen gameversie afgeleid, dus er is niets om een mod mee te vergelijken. Elke game wordt ondersteund; voor deze zijn er geen publieke versiegegevens die de assistent kon vinden. Typ de versie die je speelt om toch te controleren."
+  },
+  "popup_failureOffline": {
+    "message": "Geen verbinding met Nexus. Controleer je netwerk en probeer het opnieuw."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "De extensie mag nexusmods.com niet benaderen. Met je netwerk is niets mis: de toestemming voor sitetoegang is geweigerd of ingetrokken. Geef die opnieuw in de extensie-instellingen van je browser (Firefox: about:addons, dan deze extensie, dan Toestemmingen)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus deed er te lang over om te antwoorden. Probeer het opnieuw."
+  },
+  "popup_failureDisabled": {
+    "message": "De assistent staat uit. Zet hem weer aan met de schakelaar rechtsboven."
+  },
+  "popup_failureNoBackground": {
+    "message": "De achtergrond van de extensie reageerde niet. Open deze pop-up opnieuw of herlaad de extensie."
+  },
+  "popup_failureCanceled": {
+    "message": "Die aanvraag is geannuleerd voordat hij klaar was."
+  },
+  "popup_failureBackgroundError": {
+    "message": "De achtergrond van de extensie kon die aanvraag niet voltooien."
+  },
+  "popup_failureContextInvalid": {
+    "message": "De extensie is bijgewerkt. Herlaad alle open Nexus-tabbladen."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Onverwachte fout: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Onverwachte fout, zonder gemelde details."
+  },
+  "popup_requestFailed": {
+    "message": "De aanvraag is mislukt."
+  },
+  "popup_settingsReadFailed": {
+    "message": "De pop-up kon je instellingen niet lezen: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Kon de opgeslagen instellingen niet bijwerken: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "De opslag is vol, dus die instelling is niet opgeslagen. Gebruik \"Gecachete Nexus-gegevens wissen\" hieronder en probeer het opnieuw."
+  },
+  "popup_settingSaveFailed": {
+    "message": "Kon die instelling niet opslaan: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "Zonder API key kun je de game van je open Nexus-tabblad instellen, maar is de volledige Nexus-catalogus niet doorzoekbaar en kunnen compatibiliteitsbadges niet worden opgehaald."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Plak de vervangende key en druk op Opslaan."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Plak eerst een key. Je kunt er een aanmaken met \"Key nodig?\"."
+  },
+  "popup_keySaved": {
+    "message": "Key opgeslagen."
+  },
+  "popup_keyUpdated": {
+    "message": "Key bijgewerkt."
+  },
+  "popup_disconnecting": {
+    "message": "Loskoppelen..."
+  },
+  "popup_keyClearFailed": {
+    "message": "Kon de key niet wissen: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Key verwijderd. Je game en doelversie zijn bewaard."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Key verwijderd, en je game en doelversie zijn bewaard. Maar $ISSUES$: gebruik \"Gecachete Nexus-gegevens wissen\" hieronder.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "de achtergrond gaf geen antwoord, dus gecachete Nexus-antwoorden staan nog op schijf"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "de Steam-versiecache kon niet worden gelezen, dus die staat nog op schijf"
+  },
+  "popup_leftBehindSeparator": {
+    "message": ", en "
+  },
+  "popup_noReadableVersion": {
+    "message": "Geen van de voor deze game afgeleide versies kon als versienummer worden gelezen, dus er is niets ingevuld. Typ de gameversie die je speelt."
+  },
+  "popup_startVersionFilled": {
+    "message": "Beginversie ingevuld als $VERSION$, de nieuwste build die voor deze game is gevonden. Wijzig hem als je een oudere speelt.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "De eindversie $END$ is ouder dan de beginversie $START$, dus geen enkele mod zou ooit kunnen passen. Dat bereik is niet opgeslagen en je bestaande doelversie is ongewijzigd.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Kies eerst een game: een versie op zichzelf heeft niets om mee te vergelijken."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Kies eerst een game, dan kunnen er versies voor worden afgeleid."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Kies een game voordat je verdergaat."
+  },
+  "popup_openTabIsGame": {
+    "message": "Je open Nexus-tabblad is $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Opgeslagen. Je open Nexus-tabblad is $GAME$, dus deze doelversie geldt daar niet voor.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Opgeslagen."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "De gamelijst heeft een API key nodig. Gebruik de knop hierboven om de game van je open tabblad in te stellen."
+  },
+  "popup_derivingVersions": {
+    "message": "Versies afleiden uit publieke bronnen..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "De versiezoekopdracht kon niet worden voltooid, dus niets hier is een bevinding."
+  },
+  "popup_noVersionsFound": {
+    "message": "Geen enkele publieke bron noemt een versie voor deze game. Deze lijst is leeg omdat de gegevens niet bestaan, niet omdat de game niet wordt ondersteund."
+  },
+  "popup_searching": {
+    "message": "Publieke bronnen doorzoeken..."
+  },
+  "popup_searchingAgain": {
+    "message": "Publieke bronnen opnieuw doorzoeken..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Versiezoekopdracht: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "$COUNT$ versie afgeleid.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "$COUNT$ versies afgeleid.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "$COUNT$ versie afgeleid uit $SOURCES$ bron.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "$COUNT$ versie afgeleid uit $SOURCES$ bronnen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "$COUNT$ versies afgeleid uit $SOURCES$ bron.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "$COUNT$ versies afgeleid uit $SOURCES$ bronnen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Geen enkele publieke bron noemt een versie voor deze game, dus er is niets ingevuld. Typ de versie die je speelt als je die kent; leeg laten mag ook."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ aanvraag bij deze vernieuwing.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "$COUNT$ aanvragen bij deze vernieuwing.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "De winkelpagina van deze game kon niet met zekerheid worden vastgesteld, dus winkelbronnen zijn overgeslagen in plaats van de cijfers van een andere game te riskeren."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "Downloads worden als nxm://-links aan je mod manager doorgegeven, hier en op elk open Nexus-tabblad."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "Downloads worden door de browser opgeslagen, hier en op elk open Nexus-tabblad."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Uitgebreide logging staat aan vanaf de volgende start van de background worker."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Uitgebreide logging staat uit vanaf de volgende start van de background worker."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Openen zonder doelversie"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Er is geen beginversie ingesteld, dus badges melden dat er niets is om mee te vergelijken in plaats van een mod te beoordelen. Filteren en downloaden werken gewoon. Druk nogmaals om de lijst toch te openen."
+  },
+  "popup_clearing": {
+    "message": "Wissen..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "De achtergrond van de extensie gaf geen antwoord en de Steam-versiecache kon niet worden gelezen, dus geen van beide kon worden gewist. De opgeslagen gamelijst is gewist."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "De achtergrond van de extensie gaf geen antwoord, dus de cache met modantwoorden kon niet worden gewist. De opgeslagen gamelijst en de Steam-versiecache zijn gewist."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "$COUNT$ gecachete items gewist, $KB$ KB vrijgemaakt. De Steam-versiecache kon niet worden gelezen, dus die staat mogelijk nog op schijf.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "$COUNT$ gecachete items gewist, $KB$ KB vrijgemaakt.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Er zijn geen gecachete items gemeld, dus er is niets vrijgemaakt."
+  },
+  "popup_noGameListCached": {
+    "message": "Nog geen gamelijst in de cache."
+  },
+  "popup_gameListCached": {
+    "message": "Gamelijst gecachet $WHEN$.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "zojuist"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ minuut geleden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ minuten geleden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ uur geleden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ uur geleden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ dag geleden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ dagen geleden",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "$COUNT$ titels geladen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Gamelijst: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "De achtergrond gaf een onverwachte gamelijst terug."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "1 titel geladen."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "1 gecachet item gewist, $KB$ KB vrijgemaakt.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "1 gecachet item gewist, $KB$ KB vrijgemaakt. De Steam-versiecache kon niet worden gelezen, dus die staat mogelijk nog op schijf.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

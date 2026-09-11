@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Кожна картка мода на Nexus отримує вердикт сумісності з версією гри, у яку ви граєте, тож ви відберете те, що працюватиме."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "Запит тривав довше ніж $seconds$ с і був скасований.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Досягнуто ліміт API Nexus. Він скинеться о $resetTime$.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Досягнуто ліміт API Nexus. Перевірки відновляться після скидання ліміту."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Досягнуто ліміт API Nexus."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus відхилив ваш ключ API. Введіть його ще раз у вікні розширення."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus відмовив у цьому запиті. Можливо, потрібен обліковий запис Premium або активний вхід на nexusmods.com."
+  },
+  "background_errorNotFound": {
+    "message": "У Nexus немає такого мода для цієї гри (видалений, прихований або не та гра)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus зараз не відповідає (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus відхилив запит (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "Запит тривав задовго і був скасований."
+  },
+  "background_errorOffline": {
+    "message": "Немає зв'язку з Nexus."
+  },
+  "background_errorDisabled": {
+    "message": "Розширення вимкнено."
+  },
+  "background_errorUnexpected": {
+    "message": "Щось пішло не так."
+  },
+  "background_errorNoApiKey": {
+    "message": "Ключ API не знайдено. Додайте свій ключ API Nexus у вікні розширення."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "У посиланні на завантаження немає адреси."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "Посилання NXM не знайдено."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Для цього мода не знайдено придатних файлів."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "Не вдалося прочитати розділ вимог на сторінці цього мода. Розмітка сторінки Nexus не з тих, які NMA розпізнає."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Сторінку змінено"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant потребує $missing$, перш ніж перевіряти моди. Відкрийте вікно розширення, щоб завершити налаштування.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "ключа API"
+  },
+  "background_setupNeedsGame": {
+    "message": "гри"
+  },
+  "background_setupNeedsVersion": {
+    "message": "версії гри"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ та $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Ця сторінка - $pageGame$, а NMA налаштований на $configuredGame$. Змініть гру у вікні розширення, щоб перевіряти ці моди.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA не може прочитати «$version$» як версію гри, тому не оцінить за нею жодного мода. Задайте числову версію, наприклад 1.6.1170, у вікні розширення.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "Жодне публічне джерело не називає версію гри для $gameDomain$, тож NMA не визначить тут версію гри за версією мода. Це прогалина в даних, а не в розширенні, і вона однакова для всіх. Введіть у вікні розширення версію, у яку ви граєте, щоб перевірити попри це.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Не вдалося дістатися до жодного джерела версій, тож для цієї гри поки нічого не визначено."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Перш ніж визначати версії, потрібен домен гри."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Жодна сторінка в магазині не відповідає цій грі достатньо впевнено, тож нічого не збережено."
+  },
+  "background_sourceFileVersion": {
+    "message": "Версія файлу"
+  },
+  "background_sourceFileName": {
+    "message": "Назва файлу"
+  },
+  "background_sourceChangelog": {
+    "message": "Список змін"
+  },
+  "background_sourceDescription": {
+    "message": "Опис"
+  },
+  "background_sourceUploadDate": {
+    "message": "Дата завантаження"
+  },
+  "background_sourceNone": {
+    "message": "Немає джерела"
+  },
+  "background_verdictPartialNote": {
+    "message": "Одне джерело не вдалося прочитати ($cause$), тож ця перевірка часткова.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Версію гри ніде не вказано, але найновіший файл завантажено $uploadDate$, після версії гри $gameVersion$. Це висновок, а не підтвердження.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ вказує «$evidence$», і це в межах вибраного вами діапазону.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ згадує «$evidence$», і це в межах вибраного вами діапазону. Це висновок, а не вказана версія гри.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Версію гри ніде не вказано, а дата завантаження найновішого файлу ($uploadDate$) не вміщує його у вибраний вами діапазон.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ вказує «$evidence$», найновішу версію гри, яку згадує цей мод, і вона поза вибраним вами діапазоном.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ згадує «$evidence$», найновішу версію гри, яку згадує цей мод, і вона поза вибраним вами діапазоном. Це висновок, а не вказана версія гри.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Цей мод не називає версії гри ні у файлах, ні в списку змін, ні в описі."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Цей мод не називає версії гри в описі чи списку змін. Його файли для цієї перевірки не відкривалися."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "Пошук у магазині не відповів, тож джерела з магазину пропущено."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Жодна сторінка в магазині не відповідала цій грі достатньо впевнено, тож джерела з магазину пропущено."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "Запис цієї гри в магазині не вдалося прочитати, тож цього разу джерела з магазину пропущено."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "Найближча сторінка в магазині - це не гра, тож джерела з магазину пропущено, аби не читати номери іншого продукту."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "Найближча сторінка в магазині належить іншій програмі, тож джерела з магазину пропущено."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "Сторінка в магазині називає іншу гру, ніж каталог, тож джерела з магазину пропущено."
+  },
+  "background_ssoConnecting": {
+    "message": "Підключення до Nexus Mods SSO..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Очікування вашого підтвердження у вкладці Nexus Mods..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "Не вдалося розпочати рукостискання SSO."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "Не вдалося відкрити з'єднання SSO."
+  },
+  "background_ssoRejected": {
+    "message": "SSO відхилило рукостискання."
+  },
+  "background_ssoConnectionReady": {
+    "message": "З'єднання готове. Очікування вашого підтвердження..."
+  },
+  "background_ssoComplete": {
+    "message": "Ключ API збережено через SSO."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Неочікувана відповідь від SSO."
+  },
+  "background_ssoLostConnection": {
+    "message": "Втрачено з'єднання з SSO після кількох спроб."
+  },
+  "background_ssoReconnecting": {
+    "message": "Повторне підключення (спроба $attempt$/$total$)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO скасовано."
+  },
+  "content_statusCompatible": {
+    "message": "Сумісний"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Ймовірно сумісний"
+  },
+  "content_statusIncompatible": {
+    "message": "Несумісний"
+  },
+  "content_statusUnknown": {
+    "message": "Немає даних про версію"
+  },
+  "content_statusFailed": {
+    "message": "Перевірка не вдалася"
+  },
+  "content_statusNotConfigured": {
+    "message": "Не налаштовано"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Невідомо"
+  },
+  "content_evidenceFileVersion": {
+    "message": "версія файлу"
+  },
+  "content_evidenceFileName": {
+    "message": "назва файлу"
+  },
+  "content_evidenceChangelog": {
+    "message": "список змін"
+  },
+  "content_evidenceDescription": {
+    "message": "опис мода"
+  },
+  "content_evidenceUploadDate": {
+    "message": "дата завантаження"
+  },
+  "content_evidenceNone": {
+    "message": "немає свідчень про версію"
+  },
+  "content_confidenceExact": {
+    "message": "точний збіг"
+  },
+  "content_confidenceInferred": {
+    "message": "з висновку"
+  },
+  "content_confidenceNone": {
+    "message": "не встановлено"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Виявлена версія: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Свідчення: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Впевненість: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Збіг: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - версію не вибрано",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "версію не вказано"
+  },
+  "content_versionNotReportedShort": {
+    "message": "не вказано"
+  },
+  "content_checking": {
+    "message": "Перевірка..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Перевірка сумісності..."
+  },
+  "content_scrollToCheck": {
+    "message": "Прогорніть для перевірки"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Цей мод перевіряється, коли з'являється на екрані."
+  },
+  "content_noResponse": {
+    "message": "Немає відповіді"
+  },
+  "content_compatibilityColumn": {
+    "message": "Сумісність"
+  },
+  "content_setVersionInPopup": {
+    "message": "Задайте версію гри у вікні розширення, щоб отримати вердикт."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Виберіть версію гри у вікні розширення, щоб отримати вердикт для цього мода."
+  },
+  "content_filesButton": {
+    "message": "Файли"
+  },
+  "content_filesButtonForMod": {
+    "message": "Файли мода $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Файли цього мода"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Файли цього потрібного мода"
+  },
+  "content_filesDropdownLabel": {
+    "message": "Файли для завантаження"
+  },
+  "content_filesLoading": {
+    "message": "Завантаження файлів..."
+  },
+  "content_filesFetchFailed": {
+    "message": "Не вдалося отримати файли"
+  },
+  "content_filesLoadFailed": {
+    "message": "Не вдалося завантажити список файлів: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "Не вдалося завантажити список файлів"
+  },
+  "content_fileListUnreadable": {
+    "message": "Не вдалося прочитати список файлів."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "Немає файлів у категоріях, які ви увімкнули. Приховано: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Для цього мода файлів не знайдено."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Приховано вашими фільтрами файлів: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Файл"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ МБ",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ КБ",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Розмір невідомий"
+  },
+  "content_fileDateUnknown": {
+    "message": "Дата невідома"
+  },
+  "content_downloadSelected": {
+    "message": "Завантажити вибране"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Завантажити вибране ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Завантажити вибране (моди: $MODS$ / файли: $FILES$)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Завантаження ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Завантаження..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "У черзі"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Не вдалося: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "причина невідома"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ файл у черзі.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "Файлів у черзі: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "У черзі: $QUEUED$, не вдалося: $FAILED$.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Добирайте за сумісністю"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Фільтри Nexus Mods Assistant"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Завантаження Nexus Mods Assistant"
+  },
+  "content_refresh": {
+    "message": "Оновити"
+  },
+  "content_pageNavigation": {
+    "message": "Навігація сторінками"
+  },
+  "content_prevPage": {
+    "message": "Назад"
+  },
+  "content_nextPage": {
+    "message": "Далі"
+  },
+  "content_pageNumber": {
+    "message": "Номер сторінки"
+  },
+  "content_goToPage": {
+    "message": "Перейти на сторінку"
+  },
+  "content_collapseFilters": {
+    "message": "Згорнути фільтри"
+  },
+  "content_expandFilters": {
+    "message": "Розгорнути фільтри"
+  },
+  "content_showUpdateFiles": {
+    "message": "Показати файли оновлень"
+  },
+  "content_showOptionalFiles": {
+    "message": "Показати необов'язкові файли"
+  },
+  "content_showMiscFiles": {
+    "message": "Показати інші файли"
+  },
+  "content_showOldFiles": {
+    "message": "Показати старі версії та архівні файли"
+  },
+  "content_exclusionLabel": {
+    "message": "Виключити моди, назва яких містить"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Виключити моди (напр. patch, переклад)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "Розділяйте ключові слова комами"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Діапазон останнього оновлення"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Останнє оновлення:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Оновлено в цей день або пізніше"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Оновлено в цей день або раніше"
+  },
+  "content_startDateTooltip": {
+    "message": "Початкова дата (включно)"
+  },
+  "content_endDateTooltip": {
+    "message": "Кінцева дата (включно)"
+  },
+  "content_clearDateRange": {
+    "message": "Очистити діапазон дат"
+  },
+  "content_clearButton": {
+    "message": "Очистити"
+  },
+  "content_noModsSelected": {
+    "message": "Моди не вибрано"
+  },
+  "content_modsSelectedOne": {
+    "message": "Вибрано $COUNT$ мод",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "Вибрано модів: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Зняти вибір"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Зняти позначку з кожного вибраного мода"
+  },
+  "content_downloadAll": {
+    "message": "Завантажити все"
+  },
+  "content_downloadMode": {
+    "message": "Режим завантаження"
+  },
+  "content_downloadModeManual": {
+    "message": "Вручну"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Зупинити"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Зупинити поточне завантаження. Уже розпочаті файли не скасовуються."
+  },
+  "content_apiRemaining": {
+    "message": "API: залишилося $REMAINING$",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Вибрати"
+  },
+  "content_selectModNamed": {
+    "message": "Вибрати $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Вибрати цей мод"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Востаннє перевірено: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Підготовка завантаження..."
+  },
+  "content_downloadStarted": {
+    "message": "Завантаження розпочато"
+  },
+  "content_downloadStartedDetail": {
+    "message": "Шукайте файл серед завантажень браузера."
+  },
+  "content_downloadFailed": {
+    "message": "Завантаження не вдалося"
+  },
+  "content_noFileToDownload": {
+    "message": "Не вдалося знайти файл для завантаження"
+  },
+  "content_noDownloadableFile": {
+    "message": "Немає файлу, який можна завантажити"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "Цей мод може не мати основного файлу або потребує вибору вручну."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Пропущено на виборі файлу"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Для цього мода файл не вибрано."
+  },
+  "content_downloadRunStopped": {
+    "message": "Завантаження зупинено"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "Серія завершилася раніше, ніж для цього мода вибрали файл."
+  },
+  "content_vortexUnavailable": {
+    "message": "Завантаження через Vortex недоступне"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "Не вдалося скласти посилання NXM. Переконайтеся, що ви увійшли на nexusmods.com."
+  },
+  "content_handedToVortex": {
+    "message": "Передано у Vortex"
+  },
+  "content_handedToVortexDetail": {
+    "message": "Браузер передав посилання nxm:// у Vortex. Браузер не може підтвердити, що Vortex його отримав."
+  },
+  "content_vortexBlocked": {
+    "message": "Передавання у Vortex заблоковано"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "Браузер відмовився відкрити посилання nxm://."
+  },
+  "content_vortexHandoff": {
+    "message": "Ці моди надсилаються у Vortex посиланнями nxm://."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Нічого не станеться, якщо Vortex не встановлений і не зареєстрований для посилань nxm, а браузери можуть блокувати повторні запуски протоколу з одного кліку. Якщо нічого не надходить, перемкніть режим на Вручну."
+  },
+  "content_batchEmpty": {
+    "message": "Немає чого завантажувати: жоден мод не відповідає поточному вибору та фільтрам."
+  },
+  "content_batchBusy": {
+    "message": "Завантаження вже триває."
+  },
+  "content_batchVerbQueued": {
+    "message": "у черзі"
+  },
+  "content_batchVerbVortex": {
+    "message": "передано у Vortex"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ не вдалося.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Завантаження"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Завантаження всього"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "уже завантажується"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "немає файлу для завантаження"
+  },
+  "content_reasonRunStopped": {
+    "message": "завантаження було зупинено"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "пропущено на запиті про вимоги"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "пропущено на виборі файлу"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "не вдалося завантажити список файлів"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "немає посилання NXM"
+  },
+  "content_reasonNxmRefused": {
+    "message": "браузер відхилив посилання nxm://"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "приховано поточними фільтрами"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "триває інше завантаження"
+  },
+  "content_modalOk": {
+    "message": "OK"
+  },
+  "content_selectFilesTitle": {
+    "message": "Виберіть файли для завантаження"
+  },
+  "content_skipMod": {
+    "message": "Пропустити мод"
+  },
+  "content_skipThisMod": {
+    "message": "Пропустити цей мод"
+  },
+  "content_skipTheseMods": {
+    "message": "Пропустити ці моди"
+  },
+  "content_downloadAnyway": {
+    "message": "Завантажити попри це"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Не вдалося перевірити вимоги"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ може мати потрібні моди, але їхній список не вдалося завантажити: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " Зазвичай це не вдається для всієї серії, тож вашу відповідь буде застосовано до решти."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ має такі вимоги. Виберіть, що встановити:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Цей мод"
+  },
+  "content_quotedModName": {
+    "message": "«$MODNAME$»",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "Вимоги мода $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Виявлено вимоги"
+  },
+  "content_installWithRequirements": {
+    "message": "Встановити з вимогами"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Встановити без вимог"
+  },
+  "content_unknownMod": {
+    "message": "Невідомий мод"
+  },
+  "content_noLinkProvided": {
+    "message": "Посилання не вказано"
+  },
+  "content_requirementsUnreadable": {
+    "message": "Не вдалося прочитати список вимог."
+  },
+  "content_requirementsPartial": {
+    "message": "Розпочато $STARTED$ з $TOTAL$ вимог, не вдалося: $FAILED$.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Ваш ключ API Nexus відхилено. Введіть його ще раз у вікні розширення."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus відмовив у цьому запиті. Можливо, потрібен обліковий запис Premium або активний вхід на nexusmods.com."
+  },
+  "content_errorNotFound": {
+    "message": "Цей мод недоступний (видалений, прихований або не та гра)."
+  },
+  "content_errorRateLimited": {
+    "message": "Досягнуто ліміт API Nexus. Перевірки відновляться після скидання ліміту."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus зараз не відповідає."
+  },
+  "content_errorOffline": {
+    "message": "Немає зв'язку з Nexus."
+  },
+  "content_errorNoApiKey": {
+    "message": "Ключ API Nexus не задано. Додайте його у вікні розширення."
+  },
+  "content_errorUnexpected": {
+    "message": "Щось пішло не так."
+  },
+  "content_errorPortTimeout": {
+    "message": "Перевірка тривала задовго і була скасована."
+  },
+  "content_errorNoBackground": {
+    "message": "Втрачено зв'язок з фоновою частиною розширення. Повторюємо спробу."
+  },
+  "content_errorContextInvalid": {
+    "message": "Розширення оновлено. Перезавантажте цю сторінку."
+  },
+  "content_errorDisabled": {
+    "message": "Розширення вимкнено."
+  },
+  "content_errorCanceled": {
+    "message": "Перевірку скасовано."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Невідома помилка обміну повідомленнями."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Забагато незавершених запитів."
+  },
+  "content_errorBackground": {
+    "message": "Помилка у фоновій частині."
+  },
+  "content_shortKeyRejected": {
+    "message": "ключ відхилено"
+  },
+  "content_shortAccessRefused": {
+    "message": "у доступі відмовлено"
+  },
+  "content_shortNotAvailable": {
+    "message": "недоступний"
+  },
+  "content_shortRateLimited": {
+    "message": "ліміт запитів"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus не працює"
+  },
+  "content_shortOffline": {
+    "message": "немає мережі"
+  },
+  "content_shortTimedOut": {
+    "message": "час вичерпано"
+  },
+  "content_shortNoBackground": {
+    "message": "немає фону"
+  },
+  "content_shortNeedsReload": {
+    "message": "потрібне перезавантаження"
+  },
+  "content_shortSwitchedOff": {
+    "message": "вимкнено"
+  },
+  "content_shortCanceled": {
+    "message": "скасовано"
+  },
+  "content_shortCheckFailed": {
+    "message": "перевірка не вдалася"
+  },
+  "content_shortRequestRefused": {
+    "message": "запит відхилено"
+  },
+  "content_shortNotSetUp": {
+    "message": "не налаштовано"
+  },
+  "content_shortOtherGame": {
+    "message": "інша гра"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "версію не визначено"
+  },
+  "content_shortSuperseded": {
+    "message": "замінено"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "сторінку не розпізнано"
+  },
+  "content_dismiss": {
+    "message": "Закрити"
+  },
+  "content_reloadPage": {
+    "message": "Перезавантажити сторінку"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant оновлено. Перезавантажте цю сторінку, щоб продовжити."
+  },
+  "content_selectionRestoredOne": {
+    "message": "$COUNT$ мод, вибраний раніше, лишається вибраним.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "Моди, вибрані раніше ($COUNT$), лишаються вибраними.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "Вибір зберігається для цієї вкладки, доки ви його не скинете або не закриєте її."
+  },
+  "content_clearSelectionAction": {
+    "message": "Зняти вибір"
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ вибраний мод з іншої гри відкинуто.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "Вибрані моди з іншої гри ($COUNT$) відкинуто.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Перевірки сумісності вимкнені, доки ви не додасте ключ API Nexus."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Усе інше на цій сторінці працює далі."
+  },
+  "content_openSettings": {
+    "message": "Відкрити налаштування"
+  },
+  "content_noticeOtherGame": {
+    "message": "Сумісність налаштовано для $TARGETGAME$, а ця сторінка - $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Виберіть версію гри, у яку ви граєте, щоб отримувати значки сумісності."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Краще не показувати вердиктів узагалі, ніж вердикти, пораховані за іншою грою."
+  },
+  "content_useThisGame": {
+    "message": "Взяти цю гру"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Відкрийте вікно Nexus Mods Assistant з панелі інструментів браузера, щоб змінити налаштування."
+  },
+  "content_targetModalTitle": {
+    "message": "Націлитися на цю гру"
+  },
+  "content_targetPromptQuestion": {
+    "message": "У яку версію $GAME$ ви граєте? Моди оцінюються за цією версією.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "напр. 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Визначення версій цієї гри з публічних джерел..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Жодне публічне джерело не називає версії цієї гри, тож пропонувати нічого. Введіть версію, у яку ви граєте, якщо знаєте її."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "Для цієї гри визначено $COUNT$ версію. Відкрийте список у полі вище або введіть власну.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "Для цієї гри визначено версій: $COUNT$. Відкрийте список у полі вище або введіть власну.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "Пошук версій не вдалося завершити ($REASON$), тож цей список порожній через брак відповіді, а не через брак даних. Введіть версію, у яку ви граєте.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Зберегти"
+  },
+  "content_cancel": {
+    "message": "Скасувати"
+  },
+  "content_targetNotSaved": {
+    "message": "Версію не введено, тож нічого не збережено і ця сторінка досі без цілі."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Виберіть одну з визначених версій або введіть версію, у яку ви граєте."
+  },
+  "content_tryAgain": {
+    "message": "Спробувати ще раз"
+  },
+  "content_noModsOnPage": {
+    "message": "На цій сторінці немає модів."
+  },
+  "content_layoutStillLoading": {
+    "message": "Список модів ще не завантажився. Якщо так і залишиться, Nexus міг змінити розмітку."
+  },
+  "content_layoutNotFound": {
+    "message": "Не вдалося знайти список модів на цій сторінці. Nexus міг змінити розмітку."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Селектори, які перестали збігатися: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "сітка"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Ця сторінка мода не схожа на розмітку, яку асистент розпізнає, тож значка не додано."
+  },
+  "content_translationSignalMissing": {
+    "message": "Переклади мають приховуватися, але жодна картка мода на цій сторінці не називає своєї категорії, тож нічого не приховано."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus міг змінити код своїх сторінок. Від вас нічого не приховано."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "Фільтр дат не застосовується: жодна картка мода на цій сторінці не показує дати оновлення."
+  },
+  "content_dateSelectorBroken": {
+    "message": "Фільтр «Останнє оновлення» не зміг прочитати на цій сторінці жодної дати, тож його не застосовано."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus міг змінити код своїх сторінок."
+  },
+  "content_undatedHiddenOne": {
+    "message": "Приховано $COUNT$ мод: немає дати оновлення для порівняння.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "Приховані моди без дати оновлення для порівняння: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ мод з перекладом приховано налаштуванням у вікні розширення.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "Моди з перекладами, приховані налаштуванням у вікні розширення: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Налаштування змінено. Значки оновляться, щойно завершиться поточне завантаження."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Помічник із сумісності"
+  },
+  "popup_extensionToggle": {
+    "message": "Увімкнути або вимкнути асистента"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Гра та версія"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "Вкладка, яку ви відкрили, - це сторінка гри на Nexus."
+  },
+  "popup_useThisGame": {
+    "message": "Взяти цю гру"
+  },
+  "popup_gameLabel": {
+    "message": "Гра"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Пошук за назвою"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Відповідні ігри"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Діапазон версій"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Найстаріша версія гри"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Початок (напр. 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Найновіша версія гри, необов'язково"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Необов'язковий кінець"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Визначені версії гри"
+  },
+  "popup_refreshVersions": {
+    "message": "Оновити версії"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Ще раз пошукати версії цієї гри в публічних джерелах"
+  },
+  "popup_exclusionLabel": {
+    "message": "Виключити моди, що містять"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "напр. patch, переклад"
+  },
+  "popup_exclusionTitle": {
+    "message": "Розділяйте кілька ключових слів комами"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Додає власний фільтр перекладів Nexus до списку, який відкриває ця кнопка"
+  },
+  "popup_hideTranslations": {
+    "message": "Відкрити список без перекладів"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Відкрити сумісні моди"
+  },
+  "popup_sectionConnection": {
+    "message": "З'єднання"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Ключ API Nexus"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Збережений ключ API Nexus"
+  },
+  "popup_revealKey": {
+    "message": "Показати збережений ключ API"
+  },
+  "popup_hideKey": {
+    "message": "Сховати збережений ключ API"
+  },
+  "popup_show": {
+    "message": "Показати"
+  },
+  "popup_hide": {
+    "message": "Сховати"
+  },
+  "popup_replaceKey": {
+    "message": "Замінити ключ"
+  },
+  "popup_disconnect": {
+    "message": "Від'єднати"
+  },
+  "popup_disconnectExplain": {
+    "message": "Від'єднання видаляє з цього браузера ключ і всі збережені відповіді Nexus. Вашого облікового запису Nexus це не торкається."
+  },
+  "popup_keepKey": {
+    "message": "Залишити ключ"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Особистий ключ API Nexus"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Вставте свій ключ API"
+  },
+  "popup_save": {
+    "message": "Зберегти"
+  },
+  "popup_needKey": {
+    "message": "Потрібен ключ?"
+  },
+  "popup_cancel": {
+    "message": "Скасувати"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Необов'язковий. Перегляд, фільтри та ціль за версією працюють і без нього. Значки сумісності й завантаження потребують ключа, бо Nexus відповідає лише обліковому запису."
+  },
+  "popup_ssoHeading": {
+    "message": "Єдиний вхід Nexus Mods"
+  },
+  "popup_ssoDescription": {
+    "message": "Авторизуйтеся один раз, і ключ заповниться за вас. Ви можете запустити це знову будь-коли, щоб замінити збережений ключ."
+  },
+  "popup_authorizeSso": {
+    "message": "Авторизувати SSO"
+  },
+  "popup_cancelSso": {
+    "message": "Скасувати SSO"
+  },
+  "popup_ssoReady": {
+    "message": "Готово розпочати рукостискання SSO з Nexus Mods."
+  },
+  "popup_startingSso": {
+    "message": "Запуск SSO..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO скасовано."
+  },
+  "popup_sectionDownloads": {
+    "message": "Завантаження"
+  },
+  "popup_downloadModeLabel": {
+    "message": "Режим завантаження"
+  },
+  "popup_downloadModeManual": {
+    "message": "Вручну: файл зберігає браузер"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: посилання бере ваш менеджер модів"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Те саме налаштування, що й на панелі дій на сторінці зі списком на Nexus: зміна тут змінює його там, і навпаки. Режим Vortex відкриває посилання"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "і передає його тому менеджеру модів, який зареєстрував цей протокол у вашій операційній системі."
+  },
+  "popup_fileListsLegend": {
+    "message": "Списки файлів"
+  },
+  "popup_fileListsNote": {
+    "message": "Які категорії файлів з'являються, коли відкрито список файлів мода. Ті самі чотири перемикачі є в панелі на сторінці."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Показувати старіші версії файлів мода"
+  },
+  "popup_showOldFiles": {
+    "message": "Старі файли"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Показувати файли оновлень мода"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Файли оновлень"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Показувати необов'язкові файли мода"
+  },
+  "popup_showOptionalFiles": {
+    "message": "Необов'язкові файли"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Показувати інші файли мода"
+  },
+  "popup_showMiscFiles": {
+    "message": "Інші файли"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Додатково"
+  },
+  "popup_advancedNote": {
+    "message": "Локальне сховище та діагностика. Очищення кешу одразу перечитує список ігор з Nexus, коли ключ під'єднано; більше ніщо тут до мережі не звертається."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Записує докладну активність фонового процесу в консоль service worker"
+  },
+  "popup_debugLogging": {
+    "message": "Докладні записи в консоль"
+  },
+  "popup_clearCache": {
+    "message": "Очистити збережені дані Nexus"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "нотатка про патч у магазині"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "гілка в магазині"
+  },
+  "popup_sourceArticleText": {
+    "message": "текст статті, неперевірено"
+  },
+  "popup_sourceModText": {
+    "message": "текст мода"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "метадані колекції"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, джерело: $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "Ключ API не під'єднано, тож Nexus не відповість. Додайте його в розділі З'єднання."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus відхилив ваш ключ API. Замініть його в розділі З'єднання."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus відмовив у запиті. Можливо, потрібен обліковий запис Premium або активний вхід на nexusmods.com."
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus не має запису про цю гру чи мод. Їх могли приховати або видалити."
+  },
+  "popup_failureRateLimited": {
+    "message": "Ви вичерпали свій ліміт API Nexus. Перевірки відновляться після його скидання, зазвичай протягом години."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus зараз не відповідає. Спробуйте за кілька хвилин."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus відхилив запит як некоректний. Перевірте гру та версію і спробуйте ще раз."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Поки нічого не налаштовано для перевірки. Виберіть вище гру та початкову версію."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Для цієї гри поки не визначено жодної версії, тож немає з чим порівняти мод. Підтримується кожна гра; просто для цієї асистент не знайшов публічних даних про версії. Введіть версію, у яку ви граєте, щоб перевірити попри це."
+  },
+  "popup_failureOffline": {
+    "message": "Немає зв'язку з Nexus. Перевірте мережу і спробуйте ще раз."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "Розширенню не дозволено звертатися до nexusmods.com. З вашою мережею все гаразд: дозвіл на доступ до сайту відхилено або скасовано. Надайте його знову в налаштуваннях розширень браузера (Firefox: about:addons, потім це розширення, потім Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus відповідав задовго. Спробуйте ще раз."
+  },
+  "popup_failureDisabled": {
+    "message": "Асистент вимкнено. Увімкніть його перемикачем угорі праворуч."
+  },
+  "popup_failureNoBackground": {
+    "message": "Фонова частина розширення не відповіла. Відкрийте це вікно ще раз або перезавантажте розширення."
+  },
+  "popup_failureCanceled": {
+    "message": "Той запит було скасовано, перш ніж він завершився."
+  },
+  "popup_failureBackgroundError": {
+    "message": "Фонова частина розширення не змогла виконати той запит."
+  },
+  "popup_failureContextInvalid": {
+    "message": "Розширення оновлено. Перезавантажте всі відкриті вкладки Nexus."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Неочікувана помилка: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Неочікувана помилка, без жодних подробиць."
+  },
+  "popup_requestFailed": {
+    "message": "Запит не вдався."
+  },
+  "popup_settingsReadFailed": {
+    "message": "Вікно не змогло прочитати ваші налаштування: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Не вдалося оновити збережені налаштування: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "Сховище заповнене, тож це налаштування не збережено. Скористайтеся кнопкою «Очистити збережені дані Nexus» нижче і спробуйте ще раз."
+  },
+  "popup_settingSaveFailed": {
+    "message": "Не вдалося зберегти це налаштування: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "Без ключа API ви можете націлитися на гру з відкритої вкладки Nexus, але повний каталог Nexus не шукається, а значки сумісності отримати не вдасться."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Вставте новий ключ і натисніть Зберегти."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Спершу вставте ключ. Згенерувати його можна через «Потрібен ключ?»."
+  },
+  "popup_keySaved": {
+    "message": "Ключ збережено."
+  },
+  "popup_keyUpdated": {
+    "message": "Ключ оновлено."
+  },
+  "popup_disconnecting": {
+    "message": "Від'єднання..."
+  },
+  "popup_keyClearFailed": {
+    "message": "Не вдалося видалити ключ: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Ключ видалено. Вашу гру та цільову версію збережено."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Ключ видалено, а вашу гру та цільову версію збережено. Проте $ISSUES$: скористайтеся кнопкою «Очистити збережені дані Nexus» нижче.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "фонова частина не відповіла, тож збережені відповіді Nexus досі на диску"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "кеш версій зі Steam не вдалося прочитати, тож він досі на диску"
+  },
+  "popup_leftBehindSeparator": {
+    "message": ", і "
+  },
+  "popup_noReadableVersion": {
+    "message": "Жодну з версій, визначених для цієї гри, не вдалося прочитати як номер версії, тож нічого не заповнено. Введіть версію гри, у яку ви граєте."
+  },
+  "popup_startVersionFilled": {
+    "message": "Початкову версію заповнено як $VERSION$, найновішу знайдену для цієї гри. Змініть її, якщо граєте у старішу.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "Кінцева версія $END$ старіша за початкову $START$, тож жоден мод ніколи не підійшов би. Цей діапазон не збережено, а ваша попередня ціль лишилася без змін.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Спершу виберіть гру: самій версії немає з чим порівнюватися."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Спершу виберіть гру, тоді для неї можна буде визначити версії."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Виберіть гру, перш ніж продовжувати."
+  },
+  "popup_openTabIsGame": {
+    "message": "Ваша відкрита вкладка Nexus - це $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Збережено. Ваша відкрита вкладка Nexus - це $GAME$, тож ця ціль до неї не застосовується.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Збережено."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "Список ігор потребує ключа API. Кнопкою вище націльтеся на гру з відкритої вкладки."
+  },
+  "popup_derivingVersions": {
+    "message": "Визначення версій з публічних джерел..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "Пошук версій не вдалося завершити, тож ніщо тут не є висновком."
+  },
+  "popup_noVersionsFound": {
+    "message": "Жодне публічне джерело не називає версії цієї гри. Цей список порожній тому, що таких даних не існує, а не тому, що гра не підтримується."
+  },
+  "popup_searching": {
+    "message": "Пошук у публічних джерелах..."
+  },
+  "popup_searchingAgain": {
+    "message": "Повторний пошук у публічних джерелах..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Пошук версій: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "Визначено $COUNT$ версію.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "Визначено версій: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "Визначено $COUNT$ версію з $SOURCES$ джерела.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "Визначено $COUNT$ версію з джерел: $SOURCES$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "Визначено версій: $COUNT$, з $SOURCES$ джерела.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "Визначено версій: $COUNT$, з джерел: $SOURCES$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Жодне публічне джерело не називає версії цієї гри, тож нічого не заповнено. Введіть версію, у яку ви граєте, якщо знаєте її; лишити поле порожнім теж нормально."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ запит за це оновлення.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "Запитів за це оновлення: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "Сторінку цієї гри в магазині не вдалося визначити впевнено, тож джерела з магазину пропущено, аби не ризикувати номерами іншої гри."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "Завантаження передаються вашому менеджеру модів як посилання nxm://, тут і в кожній відкритій вкладці Nexus."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "Завантаження зберігає браузер, тут і в кожній відкритій вкладці Nexus."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Докладні записи увімкнено з наступного запуску фонового процесу."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Докладні записи вимкнено з наступного запуску фонового процесу."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Відкрити без цільової версії"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Початкову версію не задано, тож значки повідомлятимуть, що порівнювати немає з чим, замість оцінювати мод. Фільтрування та завантаження працюють далі. Натисніть ще раз, щоб усе одно відкрити список."
+  },
+  "popup_clearing": {
+    "message": "Очищення..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "Фонова частина розширення не відповіла, а кеш версій зі Steam не вдалося прочитати, тож не очищено ні те, ні те. Збережений список ігор очищено."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "Фонова частина розширення не відповіла, тож кеш відповідей про моди очистити не вдалося. Збережений список ігор і кеш версій зі Steam очищено."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "Очищено збережених записів: $COUNT$, звільнено $KB$ КБ. Кеш версій зі Steam не вдалося прочитати, тож він може досі бути на диску.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "Очищено збережених записів: $COUNT$, звільнено $KB$ КБ.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Про збережені записи не повідомлено, тож нічого не звільнено."
+  },
+  "popup_noGameListCached": {
+    "message": "Список ігор ще не збережено."
+  },
+  "popup_gameListCached": {
+    "message": "Список ігор збережено $WHEN$.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "щойно"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$ хвилину тому",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$ хв тому",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$ годину тому",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$ год тому",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$ день тому",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$ дн. тому",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "Завантажено назв: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Список ігор: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "Фонова частина повернула неочікуваний список ігор."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "Завантажено 1 назву."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "Очищено 1 збережений запис, звільнено $KB$ КБ.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "Очищено 1 збережений запис, звільнено $KB$ КБ. Кеш версій зі Steam не вдалося прочитати, тож він може досі бути на диску.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Chaque mod sur Nexus reçoit un verdict de compatibilité pour votre version du jeu, pour filtrer ce qui va vraiment tourner."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "La requête a dépassé $seconds$ s et a été abandonnée.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Limite de l'API Nexus atteinte. Elle est réinitialisée à $resetTime$.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Limite de l'API Nexus atteinte. Les vérifications reprennent dès sa réinitialisation."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Limite de l'API Nexus atteinte."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus a rejeté votre clé API. Saisissez-la de nouveau dans la fenêtre de l'extension."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus a refusé cette requête. Un compte Premium ou une session ouverte sur nexusmods.com est peut-être nécessaire."
+  },
+  "background_errorNotFound": {
+    "message": "Nexus n'a pas ce mod pour ce jeu (supprimé, masqué ou mauvais jeu)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus ne répond pas pour le moment (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus a rejeté la requête (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "La requête a pris trop de temps et a été abandonnée."
+  },
+  "background_errorOffline": {
+    "message": "Aucune connexion à Nexus."
+  },
+  "background_errorDisabled": {
+    "message": "L'extension est désactivée."
+  },
+  "background_errorUnexpected": {
+    "message": "Quelque chose s'est mal passé."
+  },
+  "background_errorNoApiKey": {
+    "message": "Aucune clé API trouvée. Ajoutez votre clé API Nexus dans la fenêtre de l'extension."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "Il manque l'adresse dans le lien de téléchargement."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "Lien NXM introuvable."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Aucun fichier éligible trouvé pour ce mod."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "La section des prérequis de cette page de mod n'a pas pu être lue. NMA ne reconnaît pas cette mise en page Nexus."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Page changée"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant a besoin de $missing$ avant de pouvoir vérifier des mods. Ouvrez la fenêtre de l'extension pour terminer la configuration.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "une clé API"
+  },
+  "background_setupNeedsGame": {
+    "message": "un jeu"
+  },
+  "background_setupNeedsVersion": {
+    "message": "une version du jeu"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ et $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Cette page concerne $pageGame$, alors que NMA est configuré pour $configuredGame$. Changez de jeu dans la fenêtre de l'extension pour vérifier ces mods.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA ne peut pas lire « $version$ » comme une version du jeu, il ne peut donc juger aucun mod par rapport à elle. Indiquez une version numérique telle que 1.6.1170 dans la fenêtre de l'extension.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "Aucune source publique ne donne de version du jeu pour $gameDomain$ : NMA ne peut donc pas déduire ici une version du jeu à partir d'une version de mod. C'est une lacune dans les données, pas dans l'extension, et elle est la même pour tout le monde. Saisissez la version à laquelle vous jouez dans la fenêtre de l'extension pour vérifier quand même.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Aucune source de versions n'a pu être atteinte, rien n'a donc encore pu être déduit pour ce jeu."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Il faut un domaine de jeu avant de pouvoir en déduire des versions."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Aucune fiche de boutique ne correspond assez précisément à ce jeu pour en être sûr : aucune n'a été enregistrée."
+  },
+  "background_sourceFileVersion": {
+    "message": "Une version de fichier"
+  },
+  "background_sourceFileName": {
+    "message": "Un nom de fichier"
+  },
+  "background_sourceChangelog": {
+    "message": "Le changelog"
+  },
+  "background_sourceDescription": {
+    "message": "La description"
+  },
+  "background_sourceUploadDate": {
+    "message": "La date de mise en ligne"
+  },
+  "background_sourceNone": {
+    "message": "Rien"
+  },
+  "background_verdictPartialNote": {
+    "message": "Une source n'a pas pu être lue ($cause$), cette vérification est donc partielle.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Aucune version du jeu n'est indiquée nulle part, mais le fichier le plus récent a été mis en ligne le $uploadDate$, après la version $gameVersion$ du jeu. Déduit, non confirmé.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ indique « $evidence$ », ce qui se situe dans la plage que vous avez choisie.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ mentionne « $evidence$ », ce qui se situe dans la plage que vous avez choisie. C'est une déduction, pas une version du jeu déclarée.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Aucune version du jeu n'est indiquée nulle part, et la date de mise en ligne du fichier le plus récent ($uploadDate$) ne le place pas dans la plage que vous avez choisie.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ indique « $evidence$ », la version du jeu la plus récente que ce mod mentionne, et elle est hors de la plage que vous avez choisie.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ mentionne « $evidence$ », la version du jeu la plus récente que ce mod mentionne, et elle est hors de la plage que vous avez choisie. C'est une déduction, pas une version du jeu déclarée.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Ce mod n'indique aucune version du jeu dans ses fichiers, son changelog ni sa description."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Ce mod n'indique aucune version du jeu dans sa description ni son changelog. Ses fichiers n'ont pas été ouverts pour cette vérification."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "La recherche dans la boutique n'a pas répondu, les sources boutique ont donc été ignorées."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Aucune fiche de boutique ne correspond assez précisément à ce jeu pour en être sûr, les sources boutique ont donc été ignorées."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "La fiche de boutique de ce jeu n'a pas pu être lue, les sources boutique ont donc été ignorées cette fois."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "La fiche de boutique la plus proche n'est pas un jeu : les sources boutique ont été ignorées plutôt que de lire les builds d'un autre produit."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "La fiche de boutique la plus proche appartient à une autre application, les sources boutique ont donc été ignorées."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "La fiche de boutique nomme un jeu différent de celui du catalogue, les sources boutique ont donc été ignorées."
+  },
+  "background_ssoConnecting": {
+    "message": "Connexion au SSO Nexus Mods..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "En attente de votre accord dans l'onglet Nexus Mods..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "Impossible de lancer la négociation SSO."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "Impossible d'ouvrir la connexion SSO."
+  },
+  "background_ssoRejected": {
+    "message": "Le SSO a refusé la négociation."
+  },
+  "background_ssoConnectionReady": {
+    "message": "Connexion établie. En attente de votre accord..."
+  },
+  "background_ssoComplete": {
+    "message": "Clé API enregistrée via le SSO."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Réponse inattendue du SSO."
+  },
+  "background_ssoLostConnection": {
+    "message": "Connexion au SSO perdue après plusieurs tentatives."
+  },
+  "background_ssoReconnecting": {
+    "message": "Reconnexion (tentative $attempt$/$total$)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO annulé."
+  },
+  "content_statusCompatible": {
+    "message": "Compatible"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Probablement compatible"
+  },
+  "content_statusIncompatible": {
+    "message": "Incompatible"
+  },
+  "content_statusUnknown": {
+    "message": "Aucune info de version"
+  },
+  "content_statusFailed": {
+    "message": "Vérification impossible"
+  },
+  "content_statusNotConfigured": {
+    "message": "Non configuré"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Inconnu"
+  },
+  "content_evidenceFileVersion": {
+    "message": "version du fichier"
+  },
+  "content_evidenceFileName": {
+    "message": "nom du fichier"
+  },
+  "content_evidenceChangelog": {
+    "message": "changelog"
+  },
+  "content_evidenceDescription": {
+    "message": "description du mod"
+  },
+  "content_evidenceUploadDate": {
+    "message": "date de mise en ligne"
+  },
+  "content_evidenceNone": {
+    "message": "aucun indice de version"
+  },
+  "content_confidenceExact": {
+    "message": "correspondance exacte"
+  },
+  "content_confidenceInferred": {
+    "message": "déduite"
+  },
+  "content_confidenceNone": {
+    "message": "non établie"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Version détectée : $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Indice : $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Confiance : $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Correspondance : $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - aucune version choisie",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "version non indiquée"
+  },
+  "content_versionNotReportedShort": {
+    "message": "non indiquée"
+  },
+  "content_checking": {
+    "message": "Vérification..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Vérification de la compatibilité..."
+  },
+  "content_scrollToCheck": {
+    "message": "Faites défiler"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Ce mod est vérifié dès qu'il apparaît à l'écran."
+  },
+  "content_noResponse": {
+    "message": "Aucune réponse"
+  },
+  "content_compatibilityColumn": {
+    "message": "Compatibilité"
+  },
+  "content_setVersionInPopup": {
+    "message": "Indiquez la version du jeu dans la fenêtre de l'extension pour obtenir un verdict."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Choisissez la version du jeu dans la fenêtre de l'extension pour obtenir un verdict sur ce mod."
+  },
+  "content_filesButton": {
+    "message": "Fichiers"
+  },
+  "content_filesButtonForMod": {
+    "message": "Fichiers de $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Fichiers de ce mod"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Fichiers de ce mod requis"
+  },
+  "content_filesDropdownLabel": {
+    "message": "Fichiers à télécharger"
+  },
+  "content_filesLoading": {
+    "message": "Chargement des fichiers..."
+  },
+  "content_filesFetchFailed": {
+    "message": "Impossible de récupérer les fichiers"
+  },
+  "content_filesLoadFailed": {
+    "message": "Impossible de charger la liste des fichiers : $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "Impossible de charger la liste des fichiers"
+  },
+  "content_fileListUnreadable": {
+    "message": "La liste des fichiers n'a pas pu être lue."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "Aucun fichier dans les catégories que vous avez activées. Masquées : $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Aucun fichier trouvé pour ce mod."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Masquées par vos filtres de fichiers : $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Fichier"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ Mo",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ Ko",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Taille inconnue"
+  },
+  "content_fileDateUnknown": {
+    "message": "Date inconnue"
+  },
+  "content_downloadSelected": {
+    "message": "Télécharger la sélection"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Télécharger la sélection ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Télécharger la sélection ($MODS$ mods / $FILES$ fichiers)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Téléchargement ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Téléchargement..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "En file d'attente"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Échec : $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "raison inconnue"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ fichier mis en file d'attente.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "$COUNT$ fichiers mis en file d'attente.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$ en file d'attente, $FAILED$ en échec.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Trier par compatibilité"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Filtres Nexus Mods Assistant"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Téléchargements Nexus Mods Assistant"
+  },
+  "content_refresh": {
+    "message": "Recharger"
+  },
+  "content_pageNavigation": {
+    "message": "Navigation entre les pages"
+  },
+  "content_prevPage": {
+    "message": "Préc."
+  },
+  "content_nextPage": {
+    "message": "Suiv."
+  },
+  "content_pageNumber": {
+    "message": "Numéro de page"
+  },
+  "content_goToPage": {
+    "message": "Aller à la page"
+  },
+  "content_collapseFilters": {
+    "message": "Replier les filtres"
+  },
+  "content_expandFilters": {
+    "message": "Déplier les filtres"
+  },
+  "content_showUpdateFiles": {
+    "message": "Afficher les fichiers de mise à jour"
+  },
+  "content_showOptionalFiles": {
+    "message": "Afficher les fichiers optionnels"
+  },
+  "content_showMiscFiles": {
+    "message": "Afficher les fichiers divers"
+  },
+  "content_showOldFiles": {
+    "message": "Afficher les anciennes versions et les fichiers archivés"
+  },
+  "content_exclusionLabel": {
+    "message": "Exclure les mods dont le nom contient"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Exclure des mods (p. ex. patch, traduction)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "Séparez les mots-clés par des virgules"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Période de dernière mise à jour"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Dernière mise à jour :"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Mis à jour le ou après le"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Mis à jour le ou avant le"
+  },
+  "content_startDateTooltip": {
+    "message": "Date de début (incluse)"
+  },
+  "content_endDateTooltip": {
+    "message": "Date de fin (incluse)"
+  },
+  "content_clearDateRange": {
+    "message": "Vider la période"
+  },
+  "content_clearButton": {
+    "message": "Vider"
+  },
+  "content_noModsSelected": {
+    "message": "Aucun mod sélectionné"
+  },
+  "content_modsSelectedOne": {
+    "message": "$COUNT$ mod sélectionné",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "$COUNT$ mods sélectionnés",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Vider la sélection"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Décocher tous les mods sélectionnés"
+  },
+  "content_downloadAll": {
+    "message": "Tout télécharger"
+  },
+  "content_downloadMode": {
+    "message": "Mode de téléchargement"
+  },
+  "content_downloadModeManual": {
+    "message": "Manuel"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Arrêter"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Arrêter la série de téléchargements en cours. Les fichiers déjà lancés ne sont pas annulés."
+  },
+  "content_apiRemaining": {
+    "message": "API : $REMAINING$ restantes",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Sélectionner"
+  },
+  "content_selectModNamed": {
+    "message": "Sélectionner $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Sélectionner ce mod"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$ : $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Dernière vérification : $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Préparation du téléchargement..."
+  },
+  "content_downloadStarted": {
+    "message": "Téléchargement lancé"
+  },
+  "content_downloadStartedDetail": {
+    "message": "Cherchez le fichier dans les téléchargements de votre navigateur."
+  },
+  "content_downloadFailed": {
+    "message": "Échec du téléchargement"
+  },
+  "content_noFileToDownload": {
+    "message": "Aucun fichier à télécharger trouvé"
+  },
+  "content_noDownloadableFile": {
+    "message": "Aucun fichier téléchargeable trouvé"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "Ce mod n'a peut-être pas de fichier principal, ou il demande un choix manuel."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Ignoré au choix du fichier"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Aucun fichier n'a été choisi pour ce mod."
+  },
+  "content_downloadRunStopped": {
+    "message": "Série de téléchargements arrêtée"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "La série s'est terminée avant qu'un fichier soit choisi pour ce mod."
+  },
+  "content_vortexUnavailable": {
+    "message": "Téléchargement Vortex indisponible"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "Impossible d'obtenir un lien NXM. Vérifiez que vous êtes connecté à nexusmods.com."
+  },
+  "content_handedToVortex": {
+    "message": "Transmis à Vortex"
+  },
+  "content_handedToVortexDetail": {
+    "message": "Le navigateur a transmis un lien nxm:// à Vortex. Il ne peut pas confirmer que Vortex l'a reçu."
+  },
+  "content_vortexBlocked": {
+    "message": "Transfert vers Vortex bloqué"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "Le navigateur a refusé d'ouvrir le lien nxm://."
+  },
+  "content_vortexHandoff": {
+    "message": "Ces mods sont envoyés à Vortex par des liens nxm://."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Rien ne se passe si Vortex n'est pas installé et associé aux liens nxm, et les navigateurs bloquent parfois plusieurs ouvertures de protocole issues d'un seul clic. Passez le mode sur Manuel si rien n'arrive."
+  },
+  "content_batchEmpty": {
+    "message": "Rien à télécharger : aucun mod ne correspond à la sélection et aux filtres actuels."
+  },
+  "content_batchBusy": {
+    "message": "Une série de téléchargements est déjà en cours."
+  },
+  "content_batchVerbQueued": {
+    "message": "mis en file d'attente"
+  },
+  "content_batchVerbVortex": {
+    "message": "transmis à Vortex"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ en échec.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$ : $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Téléchargement"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Téléchargement de tout"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "déjà en cours de téléchargement"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "aucun fichier téléchargeable"
+  },
+  "content_reasonRunStopped": {
+    "message": "la série a été arrêtée"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "ignoré à la demande sur les prérequis"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "ignoré au choix du fichier"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "la liste des fichiers n'a pas pu être chargée"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "aucun lien NXM"
+  },
+  "content_reasonNxmRefused": {
+    "message": "le navigateur a refusé le lien nxm://"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "masqué par les filtres actuels"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "une autre série de téléchargements est en cours"
+  },
+  "content_modalOk": {
+    "message": "OK"
+  },
+  "content_selectFilesTitle": {
+    "message": "Choisir les fichiers à télécharger"
+  },
+  "content_skipMod": {
+    "message": "Ignorer le mod"
+  },
+  "content_skipThisMod": {
+    "message": "Ignorer ce mod"
+  },
+  "content_skipTheseMods": {
+    "message": "Ignorer ces mods"
+  },
+  "content_downloadAnyway": {
+    "message": "Télécharger quand même"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Prérequis non vérifiables"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ a peut-être des mods requis, mais la liste n'a pas pu être chargée : $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " Cela échoue en général pour toute une série, votre réponse s'applique donc au reste de celle-ci."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ a les prérequis suivants. Choisissez ceux à installer :",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Ce mod"
+  },
+  "content_quotedModName": {
+    "message": "« $MODNAME$ »",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "Prérequis de $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Prérequis détectés"
+  },
+  "content_installWithRequirements": {
+    "message": "Installer avec les prérequis"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Installer sans les prérequis"
+  },
+  "content_unknownMod": {
+    "message": "Mod inconnu"
+  },
+  "content_noLinkProvided": {
+    "message": "Aucun lien fourni"
+  },
+  "content_requirementsUnreadable": {
+    "message": "La liste des prérequis n'a pas pu être lue."
+  },
+  "content_requirementsPartial": {
+    "message": "$STARTED$ prérequis sur $TOTAL$ lancés, $FAILED$ en échec.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Votre clé API Nexus a été rejetée. Saisissez-la de nouveau dans la fenêtre de l'extension."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus a refusé cette requête. Un compte Premium ou une session ouverte sur nexusmods.com est peut-être nécessaire."
+  },
+  "content_errorNotFound": {
+    "message": "Ce mod n'est pas disponible (supprimé, masqué ou mauvais jeu)."
+  },
+  "content_errorRateLimited": {
+    "message": "Limite de l'API Nexus atteinte. Les vérifications reprendront après sa réinitialisation."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus ne répond pas pour le moment."
+  },
+  "content_errorOffline": {
+    "message": "Aucune connexion à Nexus."
+  },
+  "content_errorNoApiKey": {
+    "message": "Aucune clé API Nexus n'est enregistrée. Ajoutez-en une dans la fenêtre de l'extension."
+  },
+  "content_errorUnexpected": {
+    "message": "Quelque chose s'est mal passé."
+  },
+  "content_errorPortTimeout": {
+    "message": "La vérification a pris trop de temps et a été abandonnée."
+  },
+  "content_errorNoBackground": {
+    "message": "Contact perdu avec l'arrière-plan de l'extension. Nouvelle tentative en cours."
+  },
+  "content_errorContextInvalid": {
+    "message": "L'extension a été mise à jour. Rechargez cette page."
+  },
+  "content_errorDisabled": {
+    "message": "L'extension est désactivée."
+  },
+  "content_errorCanceled": {
+    "message": "Vérification annulée."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Erreur de communication inconnue."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Trop de requêtes en attente."
+  },
+  "content_errorBackground": {
+    "message": "Erreur d'arrière-plan."
+  },
+  "content_shortKeyRejected": {
+    "message": "clé rejetée"
+  },
+  "content_shortAccessRefused": {
+    "message": "accès refusé"
+  },
+  "content_shortNotAvailable": {
+    "message": "indisponible"
+  },
+  "content_shortRateLimited": {
+    "message": "limite atteinte"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus en panne"
+  },
+  "content_shortOffline": {
+    "message": "hors ligne"
+  },
+  "content_shortTimedOut": {
+    "message": "délai dépassé"
+  },
+  "content_shortNoBackground": {
+    "message": "pas d'arrière-plan"
+  },
+  "content_shortNeedsReload": {
+    "message": "rechargement requis"
+  },
+  "content_shortSwitchedOff": {
+    "message": "désactivée"
+  },
+  "content_shortCanceled": {
+    "message": "annulée"
+  },
+  "content_shortCheckFailed": {
+    "message": "vérification impossible"
+  },
+  "content_shortRequestRefused": {
+    "message": "requête refusée"
+  },
+  "content_shortNotSetUp": {
+    "message": "non configuré"
+  },
+  "content_shortOtherGame": {
+    "message": "autre jeu"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "aucune version déduite"
+  },
+  "content_shortSuperseded": {
+    "message": "remplacée"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "page non reconnue"
+  },
+  "content_dismiss": {
+    "message": "Fermer"
+  },
+  "content_reloadPage": {
+    "message": "Recharger la page"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant a été mis à jour. Rechargez cette page pour continuer."
+  },
+  "content_selectionRestoredOne": {
+    "message": "$COUNT$ mod sélectionné plus tôt est toujours sélectionné.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "$COUNT$ mods sélectionnés plus tôt sont toujours sélectionnés.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "La sélection est conservée pour cet onglet jusqu'à ce que vous la vidiez ou le fermiez."
+  },
+  "content_clearSelectionAction": {
+    "message": "Vider la sélection"
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ mod sélectionné dans un autre jeu a été abandonné.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "$COUNT$ mods sélectionnés dans un autre jeu ont été abandonnés.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Les vérifications de compatibilité sont désactivées tant que vous n'ajoutez pas de clé API Nexus."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Tout le reste de cette page fonctionne toujours."
+  },
+  "content_openSettings": {
+    "message": "Ouvrir les réglages"
+  },
+  "content_noticeOtherGame": {
+    "message": "La compatibilité est configurée pour $TARGETGAME$, et cette page concerne $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Choisissez la version du jeu à laquelle vous jouez pour obtenir des badges de compatibilité."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Aucun verdict n'est affiché, plutôt que des verdicts calculés pour un autre jeu."
+  },
+  "content_useThisGame": {
+    "message": "Utiliser ce jeu"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Ouvrez la fenêtre de Nexus Mods Assistant depuis la barre d'outils de votre navigateur pour changer les réglages."
+  },
+  "content_targetModalTitle": {
+    "message": "Cibler ce jeu"
+  },
+  "content_targetPromptQuestion": {
+    "message": "À quel build de $GAME$ jouez-vous ? Les mods sont jugés par rapport à cette version.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "p. ex. 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Déduction des versions de ce jeu à partir de sources publiques..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Aucune source publique ne donne de version pour ce jeu, il n'y a donc rien à proposer. Saisissez le build auquel vous jouez si vous le connaissez."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "$COUNT$ version a été déduite pour ce jeu. Ouvrez la liste dans le champ ci-dessus, ou saisissez la vôtre.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "$COUNT$ versions ont été déduites pour ce jeu. Ouvrez la liste dans le champ ci-dessus, ou saisissez la vôtre.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "La recherche de versions n'a pas pu aboutir ($REASON$) : cette liste est vide faute de réponse, pas faute de données. Saisissez le build auquel vous jouez.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Enregistrer"
+  },
+  "content_cancel": {
+    "message": "Annuler"
+  },
+  "content_targetNotSaved": {
+    "message": "Aucune version n'a été saisie : rien n'a été enregistré et cette page reste sans cible."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Choisissez une des versions déduites, ou saisissez le build auquel vous jouez."
+  },
+  "content_tryAgain": {
+    "message": "Réessayer"
+  },
+  "content_noModsOnPage": {
+    "message": "Aucun mod sur cette page."
+  },
+  "content_layoutStillLoading": {
+    "message": "La liste des mods n'a pas fini de charger. Si cela persiste, Nexus a peut-être changé sa mise en page."
+  },
+  "content_layoutNotFound": {
+    "message": "Impossible de trouver la liste des mods sur cette page. Nexus a peut-être changé sa mise en page."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Sélecteurs qui ne correspondent plus : $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Cette page de mod ne ressemble pas à une mise en page que l'assistant reconnaît, aucun badge n'a donc été ajouté."
+  },
+  "content_translationSignalMissing": {
+    "message": "Les traductions doivent être masquées, mais aucune vignette de mod sur cette page n'indique sa catégorie : rien n'a été masqué."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus a peut-être changé son balisage. Rien ne vous a été caché."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "Le filtre de date n'est pas appliqué : aucune vignette de mod sur cette page n'expose de date de mise à jour."
+  },
+  "content_dateSelectorBroken": {
+    "message": "Le filtre « Dernière mise à jour » n'a lu aucune date sur cette page, il n'a donc pas été appliqué."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus a peut-être changé son balisage."
+  },
+  "content_undatedHiddenOne": {
+    "message": "$COUNT$ mod masqué : aucune date de mise à jour à comparer.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "$COUNT$ mods masqués : aucune date de mise à jour à comparer.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ mod de traduction masqué par le réglage de la fenêtre de l'extension.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "$COUNT$ mods de traduction masqués par le réglage de la fenêtre de l'extension.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Réglages modifiés. Les badges se rafraîchissent dès que la série de téléchargements en cours se termine."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Compagnon de compatibilité"
+  },
+  "popup_extensionToggle": {
+    "message": "Activer ou désactiver l'assistant"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Jeu et version"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "L'onglet que vous avez ouvert est une page de jeu Nexus."
+  },
+  "popup_useThisGame": {
+    "message": "Utiliser ce jeu"
+  },
+  "popup_gameLabel": {
+    "message": "Jeu"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Rechercher par nom"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Jeux correspondants"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Plage de versions"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Version du jeu la plus ancienne"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Début (p. ex. 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Version du jeu la plus récente, facultative"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Fin, facultative"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Versions du jeu déduites"
+  },
+  "popup_refreshVersions": {
+    "message": "Actualiser les versions"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Chercher de nouveau les versions de ce jeu dans les sources publiques"
+  },
+  "popup_exclusionLabel": {
+    "message": "Exclure les mods contenant"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "p. ex. patch, traduction"
+  },
+  "popup_exclusionTitle": {
+    "message": "Séparez plusieurs mots-clés par des virgules"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Ajoute le filtre de traductions de Nexus à la liste qu'ouvre ce bouton"
+  },
+  "popup_hideTranslations": {
+    "message": "Ouvrir la liste sans les traductions"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Ouvrir les mods compatibles"
+  },
+  "popup_sectionConnection": {
+    "message": "Connexion"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Clé API Nexus"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Clé API Nexus enregistrée"
+  },
+  "popup_revealKey": {
+    "message": "Afficher la clé API enregistrée"
+  },
+  "popup_hideKey": {
+    "message": "Masquer la clé API enregistrée"
+  },
+  "popup_show": {
+    "message": "Afficher"
+  },
+  "popup_hide": {
+    "message": "Masquer"
+  },
+  "popup_replaceKey": {
+    "message": "Remplacer la clé"
+  },
+  "popup_disconnect": {
+    "message": "Déconnecter"
+  },
+  "popup_disconnectExplain": {
+    "message": "Déconnecter supprime la clé et toutes les réponses Nexus mises en cache dans ce navigateur. Votre compte Nexus n'est pas touché."
+  },
+  "popup_keepKey": {
+    "message": "Garder la clé"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Clé API personnelle Nexus"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Collez votre clé API"
+  },
+  "popup_save": {
+    "message": "Enregistrer"
+  },
+  "popup_needKey": {
+    "message": "Besoin d'une clé ?"
+  },
+  "popup_cancel": {
+    "message": "Annuler"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Facultatif. La navigation, les filtres et la version ciblée fonctionnent sans clé. Les badges de compatibilité et les téléchargements en demandent une, car Nexus ne répond que pour un compte."
+  },
+  "popup_ssoHeading": {
+    "message": "Authentification unique Nexus Mods"
+  },
+  "popup_ssoDescription": {
+    "message": "Autorisez une fois et la clé est remplie pour vous. Vous pouvez recommencer à tout moment pour remplacer la clé enregistrée."
+  },
+  "popup_authorizeSso": {
+    "message": "Autoriser le SSO"
+  },
+  "popup_cancelSso": {
+    "message": "Annuler le SSO"
+  },
+  "popup_ssoReady": {
+    "message": "Prêt à lancer la négociation SSO avec Nexus Mods."
+  },
+  "popup_startingSso": {
+    "message": "Démarrage du SSO..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO annulé."
+  },
+  "popup_sectionDownloads": {
+    "message": "Téléchargements"
+  },
+  "popup_downloadModeLabel": {
+    "message": "Mode de téléchargement"
+  },
+  "popup_downloadModeManual": {
+    "message": "Manuel : le navigateur enregistre le fichier"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex : votre gestionnaire de mods prend le lien"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Le même réglage que celui de la barre d'actions sur une page de liste Nexus : le changer ici le change là-bas, et inversement. Le mode Vortex ouvre un lien"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "que votre système d'exploitation confie au gestionnaire de mods qui a enregistré ce protocole."
+  },
+  "popup_fileListsLegend": {
+    "message": "Listes de fichiers"
+  },
+  "popup_fileListsNote": {
+    "message": "Quelles catégories de fichiers apparaissent à l'ouverture de la liste des fichiers d'un mod. Les quatre mêmes interrupteurs figurent dans le panneau affiché sur la page."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Afficher les anciennes versions des fichiers d'un mod"
+  },
+  "popup_showOldFiles": {
+    "message": "Old files"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Afficher les fichiers de mise à jour d'un mod"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Update files"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Afficher les fichiers optionnels d'un mod"
+  },
+  "popup_showOptionalFiles": {
+    "message": "Optional files"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Afficher les fichiers divers d'un mod"
+  },
+  "popup_showMiscFiles": {
+    "message": "Miscellaneous files"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Avancé"
+  },
+  "popup_advancedNote": {
+    "message": "Stockage local et diagnostics. Vider le cache relit aussitôt la liste des jeux depuis Nexus si une clé est connectée ; rien d'autre ici n'utilise le réseau."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Écrit l'activité détaillée du worker d'arrière-plan dans la console du service worker"
+  },
+  "popup_debugLogging": {
+    "message": "Journalisation détaillée dans la console"
+  },
+  "popup_clearCache": {
+    "message": "Vider les données Nexus mises en cache"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "note de patch de la boutique"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "branche de la boutique"
+  },
+  "popup_sourceArticleText": {
+    "message": "texte d'article, non vérifié"
+  },
+  "popup_sourceModText": {
+    "message": "texte de mod"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "métadonnées de collection"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, d'après $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "Aucune clé API n'est connectée, Nexus ne répondra donc pas. Ajoutez-en une sous Connexion."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus a rejeté votre clé API. Remplacez-la sous Connexion."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus a refusé la requête. Un compte Premium ou une session ouverte sur nexusmods.com est peut-être nécessaire."
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus n'a aucune trace de ce jeu ou de ce mod. Il a peut-être été masqué ou supprimé."
+  },
+  "popup_failureRateLimited": {
+    "message": "Vous avez épuisé votre quota de l'API Nexus. Les vérifications reprennent après sa réinitialisation, en général dans l'heure."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus ne répond pas pour le moment. Réessayez dans quelques minutes."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus a rejeté la requête comme mal formée. Vérifiez le jeu et la version, puis réessayez."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Rien n'est encore configuré à vérifier. Choisissez un jeu et une version de début ci-dessus."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Aucune version n'a encore été déduite pour ce jeu, il n'y a donc rien à quoi comparer un mod. Tous les jeux sont pris en charge ; celui-ci n'a simplement aucune donnée de version publique que l'assistant ait pu trouver. Saisissez la version à laquelle vous jouez pour vérifier quand même."
+  },
+  "popup_failureOffline": {
+    "message": "Aucune connexion à Nexus. Vérifiez votre réseau, puis réessayez."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "L'extension n'est pas autorisée à joindre nexusmods.com. Votre réseau va bien : l'autorisation d'accès au site a été refusée ou retirée. Accordez-la de nouveau dans les réglages des extensions de votre navigateur (Firefox : about:addons, puis cette extension, puis Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus a mis trop de temps à répondre. Réessayez."
+  },
+  "popup_failureDisabled": {
+    "message": "L'assistant est désactivé. Réactivez-le avec l'interrupteur en haut à droite."
+  },
+  "popup_failureNoBackground": {
+    "message": "L'arrière-plan de l'extension n'a pas répondu. Rouvrez cette fenêtre, ou rechargez l'extension."
+  },
+  "popup_failureCanceled": {
+    "message": "Cette requête a été annulée avant d'aboutir."
+  },
+  "popup_failureBackgroundError": {
+    "message": "L'arrière-plan de l'extension n'a pas pu terminer cette requête."
+  },
+  "popup_failureContextInvalid": {
+    "message": "L'extension a été mise à jour. Rechargez les onglets Nexus ouverts."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Échec inattendu : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Échec inattendu, sans aucun détail signalé."
+  },
+  "popup_requestFailed": {
+    "message": "La requête a échoué."
+  },
+  "popup_settingsReadFailed": {
+    "message": "La fenêtre n'a pas pu lire vos réglages : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Impossible de mettre à jour les réglages enregistrés : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "Le stockage est plein, ce réglage n'a donc pas été enregistré. Utilisez « Vider les données Nexus mises en cache » ci-dessous, puis réessayez."
+  },
+  "popup_settingSaveFailed": {
+    "message": "Impossible d'enregistrer ce réglage : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "Sans clé API, vous pouvez cibler le jeu de l'onglet Nexus que vous avez ouvert, mais le catalogue Nexus complet n'est pas consultable et les badges de compatibilité ne peuvent pas être récupérés."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Collez la clé de remplacement, puis appuyez sur Enregistrer."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Collez d'abord une clé. Vous pouvez en générer une avec « Besoin d'une clé ? »."
+  },
+  "popup_keySaved": {
+    "message": "Clé enregistrée."
+  },
+  "popup_keyUpdated": {
+    "message": "Clé mise à jour."
+  },
+  "popup_disconnecting": {
+    "message": "Déconnexion..."
+  },
+  "popup_keyClearFailed": {
+    "message": "Impossible d'effacer la clé : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Clé supprimée. Votre jeu et votre version ciblés ont été conservés."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Clé supprimée, et votre jeu et votre version ciblés ont été conservés. Cependant $ISSUES$ : utilisez « Vider les données Nexus mises en cache » ci-dessous.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "l'arrière-plan n'a pas répondu, les réponses Nexus mises en cache sont donc toujours sur le disque"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "le cache des versions Steam n'a pas pu être lu, il est donc toujours sur le disque"
+  },
+  "popup_leftBehindSeparator": {
+    "message": ", et "
+  },
+  "popup_noReadableVersion": {
+    "message": "Aucune des versions déduites pour ce jeu n'a pu être lue comme un numéro de version, aucune n'a donc été remplie. Saisissez la version du jeu à laquelle vous jouez."
+  },
+  "popup_startVersionFilled": {
+    "message": "Version de début remplie avec $VERSION$, le build le plus récent trouvé pour ce jeu. Changez-la si vous jouez à un build plus ancien.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "La version de fin $END$ est antérieure à la version de début $START$ : aucun mod ne pourrait jamais correspondre. Cette plage n'a pas été enregistrée et votre cible précédente est inchangée.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Choisissez d'abord un jeu : une version seule n'a rien à quoi se comparer."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Choisissez d'abord un jeu, ensuite des versions pourront en être déduites."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Choisissez un jeu avant de continuer."
+  },
+  "popup_openTabIsGame": {
+    "message": "L'onglet Nexus que vous avez ouvert est $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Enregistré. L'onglet Nexus que vous avez ouvert est $GAME$, cette cible ne s'y applique donc pas.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Enregistré."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "La liste des jeux demande une clé API. Utilisez le bouton ci-dessus pour cibler le jeu de l'onglet que vous avez ouvert."
+  },
+  "popup_derivingVersions": {
+    "message": "Déduction des versions à partir de sources publiques..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "La recherche de versions n'a pas pu aboutir, rien ici n'est donc un résultat."
+  },
+  "popup_noVersionsFound": {
+    "message": "Aucune source publique ne donne de version pour ce jeu. Cette liste est vide parce que la donnée n'existe pas, pas parce que le jeu n'est pas pris en charge."
+  },
+  "popup_searching": {
+    "message": "Recherche dans les sources publiques..."
+  },
+  "popup_searchingAgain": {
+    "message": "Nouvelle recherche dans les sources publiques..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Recherche de versions : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "$COUNT$ version déduite.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "$COUNT$ versions déduites.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "$COUNT$ version déduite à partir de $SOURCES$ source.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "$COUNT$ version déduite à partir de $SOURCES$ sources.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "$COUNT$ versions déduites à partir de $SOURCES$ source.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "$COUNT$ versions déduites à partir de $SOURCES$ sources.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Aucune source publique ne donne de version pour ce jeu, rien n'a donc été rempli. Saisissez la version à laquelle vous jouez si vous la connaissez ; laisser vide convient aussi."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ requête pour cette actualisation.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "$COUNT$ requêtes pour cette actualisation.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "La fiche de boutique de ce jeu n'a pas pu être identifiée avec certitude : les sources boutique ont été ignorées plutôt que de risquer les numéros d'un autre jeu."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "Les téléchargements sont confiés à votre gestionnaire de mods sous forme de liens nxm://, ici et dans tout onglet Nexus ouvert."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "Les téléchargements sont enregistrés par le navigateur, ici et dans tout onglet Nexus ouvert."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Journalisation détaillée active dès le prochain démarrage du worker d'arrière-plan."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Journalisation détaillée inactive dès le prochain démarrage du worker d'arrière-plan."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Ouvrir sans version ciblée"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Aucune version de début n'est définie : les badges signaleront qu'il n'y a rien à comparer au lieu de juger un mod. Les filtres et les téléchargements fonctionnent toujours. Appuyez de nouveau pour ouvrir la liste quand même."
+  },
+  "popup_clearing": {
+    "message": "Vidage..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "L'arrière-plan de l'extension n'a pas répondu et le cache des versions Steam n'a pas pu être lu : aucun des deux n'a pu être vidé. La liste des jeux enregistrée a été vidée."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "L'arrière-plan de l'extension n'a pas répondu, le cache des réponses de mods n'a donc pas pu être vidé. La liste des jeux enregistrée et le cache des versions Steam ont été vidés."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "$COUNT$ entrées en cache supprimées, $KB$ Ko libérés. Le cache des versions Steam n'a pas pu être lu, il est peut-être toujours sur le disque.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "$COUNT$ entrées en cache supprimées, $KB$ Ko libérés.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Aucune entrée en cache n'a été signalée, rien n'a donc été libéré."
+  },
+  "popup_noGameListCached": {
+    "message": "Aucune liste de jeux en cache pour l'instant."
+  },
+  "popup_gameListCached": {
+    "message": "Liste des jeux mise en cache $WHEN$.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "à l'instant"
+  },
+  "popup_timeAgoMinute": {
+    "message": "il y a $COUNT$ minute",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "il y a $COUNT$ minutes",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "il y a $COUNT$ heure",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "il y a $COUNT$ heures",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "il y a $COUNT$ jour",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "il y a $COUNT$ jours",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "$COUNT$ titres chargés.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Liste des jeux : $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "L'arrière-plan a renvoyé une liste de jeux inattendue."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "1 titre chargé."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "1 entrée en cache supprimée, $KB$ Ko libérés.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "1 entrée en cache supprimée, $KB$ Ko libérés. Le cache des versions Steam n'a pas pu être lu, il est peut-être toujours sur le disque.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

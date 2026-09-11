@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Nexus의 모든 모드 타일에 실제로 플레이하는 게임 빌드 기준 호환성 판정을 표시해, 실행되는 모드만 골라낼 수 있습니다."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "요청이 $seconds$초를 넘겨 중단했습니다.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Nexus API 사용량 한도에 도달했습니다. $resetTime$에 초기화됩니다.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Nexus API 사용량 한도에 도달했습니다. 한도가 초기화되면 확인을 다시 시작합니다."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Nexus API 사용량 한도에 도달했습니다."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus가 API 키를 거부했습니다. 확장 프로그램 팝업에서 다시 입력하세요."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus가 이 요청을 거부했습니다. Premium 계정이나 nexusmods.com 로그인이 필요할 수 있습니다."
+  },
+  "background_errorNotFound": {
+    "message": "이 게임에 해당하는 모드가 Nexus에 없습니다(삭제됨, 숨김 또는 다른 게임)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus가 지금 응답하지 않습니다(HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus가 요청을 거부했습니다(HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "요청이 너무 오래 걸려 중단했습니다."
+  },
+  "background_errorOffline": {
+    "message": "Nexus에 연결할 수 없습니다."
+  },
+  "background_errorDisabled": {
+    "message": "확장 프로그램이 꺼져 있습니다."
+  },
+  "background_errorUnexpected": {
+    "message": "문제가 발생했습니다."
+  },
+  "background_errorNoApiKey": {
+    "message": "API 키를 찾을 수 없습니다. 확장 프로그램 팝업에서 Nexus API 키를 추가하세요."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "다운로드 링크에 URI가 없습니다."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "NXM 링크를 찾을 수 없습니다."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "이 모드에서 내려받을 수 있는 파일을 찾지 못했습니다."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "이 모드 페이지의 필수 모드 항목을 읽지 못했습니다. NMA가 아는 Nexus 페이지 구조가 아닙니다."
+  },
+  "background_errorNavigationChanged": {
+    "message": "페이지가 바뀜"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant가 모드를 확인하려면 $missing$ 설정이 필요합니다. 확장 프로그램 팝업에서 설정을 마치세요.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "API 키"
+  },
+  "background_setupNeedsGame": {
+    "message": "게임"
+  },
+  "background_setupNeedsVersion": {
+    "message": "게임 버전"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ 및 $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "이 페이지는 $pageGame$이지만 NMA는 $configuredGame$에 맞춰 설정되어 있습니다. 이 모드들을 확인하려면 확장 프로그램 팝업에서 게임을 바꾸세요.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA는 “$version$”을 게임 버전으로 읽을 수 없어 어떤 모드도 판정할 수 없습니다. 확장 프로그램 팝업에서 1.6.1170 같은 숫자 버전을 설정하세요.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "$gameDomain$의 게임 버전을 밝힌 공개 자료가 없어, NMA는 모드 버전으로 게임 버전을 판단할 수 없습니다. 확장 프로그램이 아니라 자료 쪽의 공백이며, 누구에게나 마찬가지입니다. 그래도 확인하려면 확장 프로그램 팝업에 플레이 중인 버전을 입력하세요.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "버전 출처에 한 곳도 연결하지 못해, 이 게임에 대해 아직 아무것도 도출하지 못했습니다."
+  },
+  "background_errorNoGameDomain": {
+    "message": "버전을 도출하려면 먼저 게임 도메인이 필요합니다."
+  },
+  "background_errorNoStoreListing": {
+    "message": "그 게임과 확실히 일치하는 스토어 페이지가 없어 아무것도 저장하지 않았습니다."
+  },
+  "background_sourceFileVersion": {
+    "message": "파일 버전"
+  },
+  "background_sourceFileName": {
+    "message": "파일 이름"
+  },
+  "background_sourceChangelog": {
+    "message": "변경 로그"
+  },
+  "background_sourceDescription": {
+    "message": "설명"
+  },
+  "background_sourceUploadDate": {
+    "message": "업로드 날짜"
+  },
+  "background_sourceNone": {
+    "message": "출처 없음"
+  },
+  "background_verdictPartialNote": {
+    "message": "출처 한 곳을 읽지 못해($cause$) 이번 확인은 일부만 이루어졌습니다.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "게임 버전이 어디에도 적혀 있지 않지만, 최신 파일의 업로드 날짜가 $uploadDate$로 게임 버전 $gameVersion$ 이후입니다. 확인된 것이 아니라 추정입니다.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$: “$evidence$” 값이 적혀 있으며, 선택한 범위 안입니다.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$: “$evidence$” 언급이 있으며, 선택한 범위 안입니다. 명시된 게임 버전이 아니라 추정입니다.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "게임 버전이 어디에도 적혀 있지 않고, 최신 파일의 업로드 날짜($uploadDate$)도 선택한 범위 안에 들지 않습니다.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$: “$evidence$” 값이 적혀 있으며, 이 모드가 언급하는 가장 최신 게임 버전이지만 선택한 범위 밖입니다.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$: “$evidence$” 언급이 있으며, 이 모드가 언급하는 가장 최신 게임 버전이지만 선택한 범위 밖입니다. 명시된 게임 버전이 아니라 추정입니다.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "이 모드는 파일, 변경 로그, 설명 어디에도 게임 버전을 밝히지 않았습니다."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "이 모드는 설명에도 변경 로그에도 게임 버전을 밝히지 않았습니다. 이번 확인에서는 파일 목록을 열지 않았습니다."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "스토어 검색이 응답하지 않아 스토어 출처는 건너뛰었습니다."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "이 게임과 확실히 일치하는 스토어 페이지가 없어 스토어 출처는 건너뛰었습니다."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "이 게임의 스토어 정보를 읽지 못해 이번에는 스토어 출처를 건너뛰었습니다."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "가장 가까운 스토어 페이지가 게임 항목이 아니어서, 다른 제품의 빌드를 읽는 대신 스토어 출처를 건너뛰었습니다."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "가장 가까운 스토어 페이지가 다른 앱의 것이어서 스토어 출처는 건너뛰었습니다."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "스토어 페이지의 게임 이름이 카탈로그와 달라 스토어 출처는 건너뛰었습니다."
+  },
+  "background_ssoConnecting": {
+    "message": "Nexus Mods SSO에 연결하는 중..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Nexus Mods 탭에서 승인을 기다리는 중..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "SSO 핸드셰이크를 시작하지 못했습니다."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "SSO 연결을 열지 못했습니다."
+  },
+  "background_ssoRejected": {
+    "message": "SSO가 핸드셰이크를 거부했습니다."
+  },
+  "background_ssoConnectionReady": {
+    "message": "연결되었습니다. 승인을 기다리는 중..."
+  },
+  "background_ssoComplete": {
+    "message": "SSO로 API 키를 저장했습니다."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "SSO에서 예상치 못한 응답이 왔습니다."
+  },
+  "background_ssoLostConnection": {
+    "message": "여러 번 재시도했지만 SSO 연결이 끊어졌습니다."
+  },
+  "background_ssoReconnecting": {
+    "message": "다시 연결하는 중($attempt$/$total$번째)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO를 취소했습니다."
+  },
+  "content_statusCompatible": {
+    "message": "호환됨"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "호환 가능성 높음"
+  },
+  "content_statusIncompatible": {
+    "message": "호환 안 됨"
+  },
+  "content_statusUnknown": {
+    "message": "버전 정보 없음"
+  },
+  "content_statusFailed": {
+    "message": "확인 불가"
+  },
+  "content_statusNotConfigured": {
+    "message": "설정 안 됨"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "알 수 없음"
+  },
+  "content_evidenceFileVersion": {
+    "message": "파일 버전"
+  },
+  "content_evidenceFileName": {
+    "message": "파일 이름"
+  },
+  "content_evidenceChangelog": {
+    "message": "변경 로그"
+  },
+  "content_evidenceDescription": {
+    "message": "모드 설명"
+  },
+  "content_evidenceUploadDate": {
+    "message": "업로드 날짜"
+  },
+  "content_evidenceNone": {
+    "message": "버전 근거 없음"
+  },
+  "content_confidenceExact": {
+    "message": "정확히 일치"
+  },
+  "content_confidenceInferred": {
+    "message": "추정"
+  },
+  "content_confidenceNone": {
+    "message": "판단 불가"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "감지한 버전: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "근거: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "확신도: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "일치한 부분: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - 버전 미선택",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "버전 표기 없음"
+  },
+  "content_versionNotReportedShort": {
+    "message": "표기 없음"
+  },
+  "content_checking": {
+    "message": "확인 중..."
+  },
+  "content_checkingCompatibility": {
+    "message": "호환성 확인 중..."
+  },
+  "content_scrollToCheck": {
+    "message": "스크롤하면 확인"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "이 모드는 화면에 들어오면 확인합니다."
+  },
+  "content_noResponse": {
+    "message": "응답 없음"
+  },
+  "content_compatibilityColumn": {
+    "message": "호환성"
+  },
+  "content_setVersionInPopup": {
+    "message": "판정을 보려면 확장 프로그램 팝업에서 게임 버전을 설정하세요."
+  },
+  "content_pickVersionInPopup": {
+    "message": "이 모드의 판정을 보려면 팝업에서 게임 버전을 고르세요."
+  },
+  "content_filesButton": {
+    "message": "파일"
+  },
+  "content_filesButtonForMod": {
+    "message": "$MODNAME$의 파일",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "이 모드의 파일"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "이 필수 모드의 파일"
+  },
+  "content_filesDropdownLabel": {
+    "message": "내려받을 파일"
+  },
+  "content_filesLoading": {
+    "message": "파일을 불러오는 중..."
+  },
+  "content_filesFetchFailed": {
+    "message": "파일을 가져오지 못했습니다"
+  },
+  "content_filesLoadFailed": {
+    "message": "파일 목록을 불러오지 못했습니다: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "파일 목록을 불러오지 못했습니다"
+  },
+  "content_fileListUnreadable": {
+    "message": "파일 목록을 읽지 못했습니다."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$($COUNT$개)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "켜 둔 분류에 파일이 없습니다. 숨김: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "이 모드에는 파일이 없습니다."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "파일 필터로 숨김: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "파일"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "크기 알 수 없음"
+  },
+  "content_fileDateUnknown": {
+    "message": "날짜 알 수 없음"
+  },
+  "content_downloadSelected": {
+    "message": "선택한 항목 다운로드"
+  },
+  "content_downloadSelectedCount": {
+    "message": "선택한 항목 다운로드($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "선택한 항목 다운로드(모드 $MODS$개 / 파일 $FILES$개)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "다운로드 중($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "다운로드 중..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "대기열 추가됨"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "실패: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "알 수 없는 이유"
+  },
+  "content_filesQueuedOne": {
+    "message": "파일 $COUNT$개를 대기열에 추가했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "파일 $COUNT$개를 대기열에 추가했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "$QUEUED$개를 대기열에 추가하고 $FAILED$개는 실패했습니다.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "호환성으로 골라내기"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Nexus Mods Assistant 필터"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Nexus Mods Assistant 다운로드"
+  },
+  "content_refresh": {
+    "message": "새로 고침"
+  },
+  "content_pageNavigation": {
+    "message": "페이지 이동"
+  },
+  "content_prevPage": {
+    "message": "이전"
+  },
+  "content_nextPage": {
+    "message": "다음"
+  },
+  "content_pageNumber": {
+    "message": "페이지 번호"
+  },
+  "content_goToPage": {
+    "message": "해당 페이지로 이동"
+  },
+  "content_collapseFilters": {
+    "message": "필터 접기"
+  },
+  "content_expandFilters": {
+    "message": "필터 펼치기"
+  },
+  "content_showUpdateFiles": {
+    "message": "업데이트 파일 표시"
+  },
+  "content_showOptionalFiles": {
+    "message": "선택 파일 표시"
+  },
+  "content_showMiscFiles": {
+    "message": "기타 파일 표시"
+  },
+  "content_showOldFiles": {
+    "message": "이전 버전과 보관된 파일 표시"
+  },
+  "content_exclusionLabel": {
+    "message": "이름에 다음이 들어간 모드 제외"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "모드 제외(예: patch, translation)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "키워드는 쉼표로 구분하세요"
+  },
+  "content_lastUpdatedRange": {
+    "message": "최종 업데이트 기간"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "최종 업데이트:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "이 날짜 이후 업데이트"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "이 날짜 이전 업데이트"
+  },
+  "content_startDateTooltip": {
+    "message": "시작 날짜(당일 포함)"
+  },
+  "content_endDateTooltip": {
+    "message": "종료 날짜(당일 포함)"
+  },
+  "content_clearDateRange": {
+    "message": "날짜 범위 지우기"
+  },
+  "content_clearButton": {
+    "message": "지우기"
+  },
+  "content_noModsSelected": {
+    "message": "선택한 모드 없음"
+  },
+  "content_modsSelectedOne": {
+    "message": "모드 $COUNT$개 선택됨",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "모드 $COUNT$개 선택됨",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "선택 해제"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "선택한 모드를 모두 해제합니다"
+  },
+  "content_downloadAll": {
+    "message": "전체 다운로드"
+  },
+  "content_downloadMode": {
+    "message": "다운로드 방식"
+  },
+  "content_downloadModeManual": {
+    "message": "수동"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "중지"
+  },
+  "content_stopButtonTooltip": {
+    "message": "진행 중인 다운로드를 중지합니다. 이미 시작된 파일은 취소되지 않습니다."
+  },
+  "content_apiRemaining": {
+    "message": "API: $REMAINING$회 남음",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "선택"
+  },
+  "content_selectModNamed": {
+    "message": "$MODNAME$ 선택",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "이 모드 선택"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "마지막 확인: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "다운로드 준비 중..."
+  },
+  "content_downloadStarted": {
+    "message": "다운로드를 시작했습니다"
+  },
+  "content_downloadStartedDetail": {
+    "message": "파일은 브라우저 다운로드에서 확인하세요."
+  },
+  "content_downloadFailed": {
+    "message": "다운로드 실패"
+  },
+  "content_noFileToDownload": {
+    "message": "내려받을 파일을 찾지 못했습니다"
+  },
+  "content_noDownloadableFile": {
+    "message": "내려받을 수 있는 파일이 없습니다"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "이 모드에는 기본 파일이 없거나 직접 선택해야 할 수 있습니다."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "파일 선택에서 건너뜀"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "이 모드에는 파일이 선택되지 않았습니다."
+  },
+  "content_downloadRunStopped": {
+    "message": "다운로드 작업 중지됨"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "이 모드의 파일이 선택되기 전에 작업이 끝났습니다."
+  },
+  "content_vortexUnavailable": {
+    "message": "Vortex 다운로드 불가"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "NXM 링크를 만들 수 없습니다. nexusmods.com에 로그인되어 있는지 확인하세요."
+  },
+  "content_handedToVortex": {
+    "message": "Vortex에 전달됨"
+  },
+  "content_handedToVortexDetail": {
+    "message": "브라우저가 nxm:// 링크를 Vortex에 넘겼습니다. Vortex가 받았는지는 브라우저에서 확인할 수 없습니다."
+  },
+  "content_vortexBlocked": {
+    "message": "Vortex 전달 차단됨"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "브라우저가 nxm:// 링크 열기를 거부했습니다."
+  },
+  "content_vortexHandoff": {
+    "message": "이 모드들을 nxm:// 링크로 Vortex에 보냅니다."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Vortex가 설치되어 있지 않고 nxm 링크에 등록되어 있지 않으면 아무 일도 일어나지 않으며, 한 번의 클릭으로 프로토콜을 여러 번 실행하면 브라우저가 막을 수 있습니다. 아무것도 도착하지 않으면 방식을 수동으로 바꾸세요."
+  },
+  "content_batchEmpty": {
+    "message": "내려받을 것이 없습니다: 현재 선택과 필터에 해당하는 모드가 없습니다."
+  },
+  "content_batchBusy": {
+    "message": "이미 다운로드 작업이 진행 중입니다."
+  },
+  "content_batchVerbQueued": {
+    "message": "개를 대기열에 추가"
+  },
+  "content_batchVerbVortex": {
+    "message": "개를 Vortex에 전달"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$$VERB$했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$$VERB$하고 $FAILED$개는 실패했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "다운로드 중"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "전체 다운로드 중"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "이미 다운로드 중"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "내려받을 수 있는 파일 없음"
+  },
+  "content_reasonRunStopped": {
+    "message": "작업이 중지됨"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "필수 모드 확인에서 건너뜀"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "파일 선택에서 건너뜀"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "파일 목록을 불러오지 못함"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "NXM 링크 없음"
+  },
+  "content_reasonNxmRefused": {
+    "message": "브라우저가 nxm:// 링크를 거부함"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "현재 필터로 숨겨짐"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "다른 다운로드 작업이 진행 중"
+  },
+  "content_modalOk": {
+    "message": "확인"
+  },
+  "content_selectFilesTitle": {
+    "message": "내려받을 파일 선택"
+  },
+  "content_skipMod": {
+    "message": "이 모드 건너뛰기"
+  },
+  "content_skipThisMod": {
+    "message": "이 모드 건너뛰기"
+  },
+  "content_skipTheseMods": {
+    "message": "이 모드들 건너뛰기"
+  },
+  "content_downloadAnyway": {
+    "message": "그래도 다운로드"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "필수 모드를 확인하지 못했습니다"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$에 필요한 모드가 있을 수 있지만 그 목록을 불러오지 못했습니다: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " 이런 실패는 보통 작업 전체에 걸쳐 일어나므로, 여기서 고른 답은 남은 모드에도 적용됩니다."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$에는 다음 필수 모드가 있습니다. 설치할 항목을 고르세요:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "이 모드"
+  },
+  "content_quotedModName": {
+    "message": "“$MODNAME$”",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "$MODNAME$의 필수 모드",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "필수 모드 발견"
+  },
+  "content_installWithRequirements": {
+    "message": "필수 모드와 함께 설치"
+  },
+  "content_installWithoutRequirements": {
+    "message": "필수 모드 없이 설치"
+  },
+  "content_unknownMod": {
+    "message": "알 수 없는 모드"
+  },
+  "content_noLinkProvided": {
+    "message": "링크 없음"
+  },
+  "content_requirementsUnreadable": {
+    "message": "필수 모드 목록을 읽지 못했습니다."
+  },
+  "content_requirementsPartial": {
+    "message": "필수 모드 $TOTAL$개 중 $STARTED$개를 시작하고 $FAILED$개는 실패했습니다.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Nexus API 키가 거부되었습니다. 확장 프로그램 팝업에서 다시 입력하세요."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus가 이 요청을 거부했습니다. Premium 계정이나 nexusmods.com 로그인이 필요할 수 있습니다."
+  },
+  "content_errorNotFound": {
+    "message": "이 모드는 이용할 수 없습니다(삭제됨, 숨김 또는 다른 게임)."
+  },
+  "content_errorRateLimited": {
+    "message": "Nexus API 사용량 한도에 도달했습니다. 한도가 초기화되면 확인을 다시 시작합니다."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus가 지금 응답하지 않습니다."
+  },
+  "content_errorOffline": {
+    "message": "Nexus에 연결할 수 없습니다."
+  },
+  "content_errorNoApiKey": {
+    "message": "Nexus API 키가 설정되어 있지 않습니다. 확장 프로그램 팝업에서 추가하세요."
+  },
+  "content_errorUnexpected": {
+    "message": "문제가 발생했습니다."
+  },
+  "content_errorPortTimeout": {
+    "message": "확인이 너무 오래 걸려 중단했습니다."
+  },
+  "content_errorNoBackground": {
+    "message": "확장 프로그램 백그라운드와 연결이 끊어졌습니다. 다시 시도합니다."
+  },
+  "content_errorContextInvalid": {
+    "message": "확장 프로그램이 업데이트되었습니다. 이 페이지를 새로 고치세요."
+  },
+  "content_errorDisabled": {
+    "message": "확장 프로그램이 꺼져 있습니다."
+  },
+  "content_errorCanceled": {
+    "message": "확인을 취소했습니다."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "알 수 없는 통신 오류입니다."
+  },
+  "content_errorTooManyRequests": {
+    "message": "처리 중인 요청이 너무 많습니다."
+  },
+  "content_errorBackground": {
+    "message": "백그라운드 오류입니다."
+  },
+  "content_shortKeyRejected": {
+    "message": "키 거부됨"
+  },
+  "content_shortAccessRefused": {
+    "message": "접근 거부됨"
+  },
+  "content_shortNotAvailable": {
+    "message": "이용 불가"
+  },
+  "content_shortRateLimited": {
+    "message": "사용량 초과"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus 장애"
+  },
+  "content_shortOffline": {
+    "message": "오프라인"
+  },
+  "content_shortTimedOut": {
+    "message": "시간 초과"
+  },
+  "content_shortNoBackground": {
+    "message": "백그라운드 없음"
+  },
+  "content_shortNeedsReload": {
+    "message": "새로 고침 필요"
+  },
+  "content_shortSwitchedOff": {
+    "message": "꺼짐"
+  },
+  "content_shortCanceled": {
+    "message": "취소됨"
+  },
+  "content_shortCheckFailed": {
+    "message": "확인 실패"
+  },
+  "content_shortRequestRefused": {
+    "message": "요청 거부됨"
+  },
+  "content_shortNotSetUp": {
+    "message": "설정 안 됨"
+  },
+  "content_shortOtherGame": {
+    "message": "다른 게임"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "도출된 버전 없음"
+  },
+  "content_shortSuperseded": {
+    "message": "대체됨"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "페이지 인식 불가"
+  },
+  "content_dismiss": {
+    "message": "닫기"
+  },
+  "content_reloadPage": {
+    "message": "페이지 새로 고침"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant가 업데이트되었습니다. 계속하려면 이 페이지를 새로 고치세요."
+  },
+  "content_selectionRestoredOne": {
+    "message": "앞서 선택한 모드 $COUNT$개가 그대로 선택되어 있습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "앞서 선택한 모드 $COUNT$개가 그대로 선택되어 있습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "선택은 이 탭에서 해제하거나 탭을 닫을 때까지 유지됩니다."
+  },
+  "content_clearSelectionAction": {
+    "message": "선택 해제"
+  },
+  "content_selectionDroppedOne": {
+    "message": "다른 게임에서 선택한 모드 $COUNT$개는 해제되었습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "다른 게임에서 선택한 모드 $COUNT$개는 해제되었습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Nexus API 키를 추가할 때까지 호환성 확인은 꺼져 있습니다."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "이 페이지의 나머지 기능은 그대로 작동합니다."
+  },
+  "content_openSettings": {
+    "message": "설정 열기"
+  },
+  "content_noticeOtherGame": {
+    "message": "호환성은 $TARGETGAME$에 맞춰 설정되어 있고, 이 페이지는 $PAGEGAME$입니다.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "호환성 배지를 보려면 플레이 중인 게임 버전을 고르세요."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "다른 게임을 기준으로 판정하느니 판정을 표시하지 않습니다."
+  },
+  "content_useThisGame": {
+    "message": "이 게임 사용"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "설정을 바꾸려면 브라우저 도구 모음에서 Nexus Mods Assistant 팝업을 여세요."
+  },
+  "content_targetModalTitle": {
+    "message": "이 게임을 기준으로 설정"
+  },
+  "content_targetPromptQuestion": {
+    "message": "$GAME$의 어떤 빌드를 플레이하고 있나요? 모드는 이 버전을 기준으로 판정됩니다.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "예: 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "공개 자료에서 이 게임의 버전을 도출하는 중..."
+  },
+  "content_targetVersionsNone": {
+    "message": "이 게임의 버전을 밝힌 공개 자료가 없어 제시할 것이 없습니다. 알고 있다면 플레이 중인 빌드를 입력하세요."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "이 게임의 버전 $COUNT$개를 도출했습니다. 위 상자에서 목록을 열거나 직접 입력하세요.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "이 게임의 버전 $COUNT$개를 도출했습니다. 위 상자에서 목록을 열거나 직접 입력하세요.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "버전 검색을 끝내지 못했습니다($REASON$). 이 목록이 빈 것은 자료가 없어서가 아니라 답을 받지 못해서입니다. 플레이 중인 빌드를 입력하세요.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "저장"
+  },
+  "content_cancel": {
+    "message": "취소"
+  },
+  "content_targetNotSaved": {
+    "message": "버전을 입력하지 않아 아무것도 저장되지 않았고, 이 페이지는 여전히 기준이 없는 상태입니다."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "도출된 버전 중 하나를 고르거나 플레이 중인 빌드를 입력하세요."
+  },
+  "content_tryAgain": {
+    "message": "다시 시도"
+  },
+  "content_noModsOnPage": {
+    "message": "이 페이지에는 모드가 없습니다."
+  },
+  "content_layoutStillLoading": {
+    "message": "모드 목록이 아직 다 불러와지지 않았습니다. 계속 이 상태라면 Nexus가 페이지 구조를 바꿨을 수 있습니다."
+  },
+  "content_layoutNotFound": {
+    "message": "이 페이지에서 모드 목록을 찾지 못했습니다. Nexus가 페이지 구조를 바꿨을 수 있습니다."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "더 이상 맞지 않는 선택자: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "grid"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "이 모드 페이지는 어시스턴트가 아는 구조가 아니어서 배지를 추가하지 않았습니다."
+  },
+  "content_translationSignalMissing": {
+    "message": "번역 모드를 숨기도록 설정되어 있지만, 이 페이지의 어떤 모드 타일도 분류를 알려 주지 않아 아무것도 숨기지 않았습니다."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus가 마크업을 바꿨을 수 있습니다. 가려진 결과는 없습니다."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "날짜 필터가 적용되지 않았습니다: 이 페이지의 어떤 모드 타일에도 업데이트 날짜가 없습니다."
+  },
+  "content_dateSelectorBroken": {
+    "message": "“최종 업데이트” 필터가 이 페이지에서 날짜를 하나도 읽지 못해 적용되지 않았습니다."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus가 마크업을 바꿨을 수 있습니다."
+  },
+  "content_undatedHiddenOne": {
+    "message": "모드 $COUNT$개 숨김: 비교할 업데이트 날짜가 없습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "모드 $COUNT$개 숨김: 비교할 업데이트 날짜가 없습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "팝업 설정에 따라 번역 모드 $COUNT$개를 숨겼습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "팝업 설정에 따라 번역 모드 $COUNT$개를 숨겼습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "설정이 바뀌었습니다. 배지는 진행 중인 다운로드 작업이 끝나면 새로 고쳐집니다."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · 호환성 도우미"
+  },
+  "popup_extensionToggle": {
+    "message": "어시스턴트 켜기 또는 끄기"
+  },
+  "popup_sectionGameVersion": {
+    "message": "게임 및 버전"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "열려 있는 탭이 Nexus 게임 페이지입니다."
+  },
+  "popup_useThisGame": {
+    "message": "이 게임 사용"
+  },
+  "popup_gameLabel": {
+    "message": "게임"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "이름으로 검색"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "일치하는 게임"
+  },
+  "popup_versionRangeLabel": {
+    "message": "버전 범위"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "가장 오래된 게임 버전"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "시작(예: 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "가장 최신 게임 버전, 선택 사항"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "끝, 선택 사항"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "도출된 게임 버전"
+  },
+  "popup_refreshVersions": {
+    "message": "버전 새로 가져오기"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "이 게임의 버전을 공개 자료에서 다시 검색합니다"
+  },
+  "popup_exclusionLabel": {
+    "message": "다음이 들어간 모드 제외"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "예: patch, translation"
+  },
+  "popup_exclusionTitle": {
+    "message": "키워드가 여러 개면 쉼표로 구분하세요"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "이 버튼으로 여는 목록에 Nexus 자체 번역 필터를 적용합니다"
+  },
+  "popup_hideTranslations": {
+    "message": "번역 모드를 제외하고 목록 열기"
+  },
+  "popup_openCompatibleMods": {
+    "message": "호환되는 모드 열기"
+  },
+  "popup_sectionConnection": {
+    "message": "연결"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Nexus API 키"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "저장된 Nexus API 키"
+  },
+  "popup_revealKey": {
+    "message": "저장된 API 키 표시"
+  },
+  "popup_hideKey": {
+    "message": "저장된 API 키 가리기"
+  },
+  "popup_show": {
+    "message": "표시"
+  },
+  "popup_hide": {
+    "message": "가리기"
+  },
+  "popup_replaceKey": {
+    "message": "키 교체"
+  },
+  "popup_disconnect": {
+    "message": "연결 해제"
+  },
+  "popup_disconnectExplain": {
+    "message": "연결을 해제하면 키와 이 브라우저에 저장된 Nexus 응답이 모두 삭제됩니다. Nexus 계정은 그대로입니다."
+  },
+  "popup_keepKey": {
+    "message": "키 유지"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Nexus 개인 API 키"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "API 키를 붙여 넣으세요"
+  },
+  "popup_save": {
+    "message": "저장"
+  },
+  "popup_needKey": {
+    "message": "키가 필요한가요?"
+  },
+  "popup_cancel": {
+    "message": "취소"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "선택 사항입니다. 탐색, 필터, 버전 기준 설정은 키 없이도 됩니다. 호환성 배지와 다운로드에는 키가 필요합니다. Nexus는 계정에만 응답하기 때문입니다."
+  },
+  "popup_ssoHeading": {
+    "message": "Nexus Mods 통합 로그인"
+  },
+  "popup_ssoDescription": {
+    "message": "한 번 승인하면 키가 자동으로 입력됩니다. 언제든 다시 실행해 저장된 키를 바꿀 수 있습니다."
+  },
+  "popup_authorizeSso": {
+    "message": "SSO 승인"
+  },
+  "popup_cancelSso": {
+    "message": "SSO 취소"
+  },
+  "popup_ssoReady": {
+    "message": "Nexus Mods SSO 핸드셰이크를 시작할 수 있습니다."
+  },
+  "popup_startingSso": {
+    "message": "SSO를 시작하는 중..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO를 취소했습니다."
+  },
+  "popup_sectionDownloads": {
+    "message": "다운로드"
+  },
+  "popup_downloadModeLabel": {
+    "message": "다운로드 방식"
+  },
+  "popup_downloadModeManual": {
+    "message": "수동: 브라우저가 파일을 저장"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: 모드 관리자가 링크를 받음"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Nexus 목록 페이지의 액션 바에 있는 설정과 같습니다. 여기서 바꾸면 그쪽도 바뀌고, 그 반대도 마찬가지입니다. Vortex 방식은"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "링크를 열고, 운영체제가 그 프로토콜을 등록한 모드 관리자에게 넘깁니다."
+  },
+  "popup_fileListsLegend": {
+    "message": "파일 목록"
+  },
+  "popup_fileListsNote": {
+    "message": "모드의 파일 목록을 열었을 때 표시할 분류입니다. 같은 스위치 네 개가 페이지 안 패널에도 있습니다."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "모드의 이전 버전 파일을 표시합니다"
+  },
+  "popup_showOldFiles": {
+    "message": "이전 파일"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "모드의 업데이트 파일을 표시합니다"
+  },
+  "popup_showUpdateFiles": {
+    "message": "업데이트 파일"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "모드의 선택 파일을 표시합니다"
+  },
+  "popup_showOptionalFiles": {
+    "message": "선택 파일"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "모드의 기타 파일을 표시합니다"
+  },
+  "popup_showMiscFiles": {
+    "message": "기타 파일"
+  },
+  "popup_sectionAdvanced": {
+    "message": "고급"
+  },
+  "popup_advancedNote": {
+    "message": "로컬 저장과 진단입니다. 키가 연결되어 있을 때 캐시를 지우면 게임 목록을 Nexus에서 곧바로 다시 읽습니다. 그 밖에는 네트워크에 접속하지 않습니다."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "백그라운드 워커의 자세한 동작을 서비스 워커 콘솔에 기록합니다"
+  },
+  "popup_debugLogging": {
+    "message": "자세한 콘솔 로그"
+  },
+  "popup_clearCache": {
+    "message": "캐시된 Nexus 데이터 지우기"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "스토어 패치 노트"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "스토어 브랜치"
+  },
+  "popup_sourceArticleText": {
+    "message": "기사 본문, 미확인"
+  },
+  "popup_sourceModText": {
+    "message": "모드 본문"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "컬렉션 메타데이터"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, 출처: $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "API 키가 연결되어 있지 않아 Nexus가 응답하지 않습니다. “연결”에서 추가하세요."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus가 API 키를 거부했습니다. “연결”에서 교체하세요."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus가 요청을 거부했습니다. Premium 계정이나 nexusmods.com 로그인이 필요할 수 있습니다."
+  },
+  "popup_failureNotFound": {
+    "message": "그 게임이나 모드에 대한 기록이 Nexus에 없습니다. 숨겨졌거나 삭제되었을 수 있습니다."
+  },
+  "popup_failureRateLimited": {
+    "message": "Nexus API 사용량을 모두 썼습니다. 초기화되면 확인을 다시 시작하며, 보통 한 시간 안입니다."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus가 지금 응답하지 않습니다. 몇 분 뒤에 다시 시도하세요."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus가 요청 형식이 잘못되었다며 거부했습니다. 게임과 버전을 확인한 뒤 다시 시도하세요."
+  },
+  "popup_failureNotConfigured": {
+    "message": "아직 확인할 대상이 설정되지 않았습니다. 위에서 게임과 시작 버전을 고르세요."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "이 게임의 게임 버전이 아직 도출되지 않아 모드와 비교할 기준이 없습니다. 모든 게임을 지원하며, 이 게임은 어시스턴트가 찾을 수 있는 공개 버전 자료가 없을 뿐입니다. 그래도 확인하려면 플레이 중인 버전을 입력하세요."
+  },
+  "popup_failureOffline": {
+    "message": "Nexus에 연결할 수 없습니다. 네트워크를 확인한 뒤 다시 시도하세요."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "확장 프로그램이 nexusmods.com에 접근할 수 없습니다. 네트워크 문제가 아니라 사이트 접근 권한이 거부되었거나 취소된 것입니다. 브라우저의 확장 프로그램 설정에서 다시 허용하세요(Firefox: about:addons에서 이 확장 프로그램의 Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus 응답이 너무 오래 걸렸습니다. 다시 시도하세요."
+  },
+  "popup_failureDisabled": {
+    "message": "어시스턴트가 꺼져 있습니다. 오른쪽 위 스위치로 다시 켜세요."
+  },
+  "popup_failureNoBackground": {
+    "message": "확장 프로그램 백그라운드가 응답하지 않았습니다. 이 팝업을 다시 열거나 확장 프로그램을 다시 불러오세요."
+  },
+  "popup_failureCanceled": {
+    "message": "그 요청은 끝나기 전에 취소되었습니다."
+  },
+  "popup_failureBackgroundError": {
+    "message": "확장 프로그램 백그라운드가 그 요청을 끝내지 못했습니다."
+  },
+  "popup_failureContextInvalid": {
+    "message": "확장 프로그램이 업데이트되었습니다. 열려 있는 Nexus 탭을 새로 고치세요."
+  },
+  "popup_unexpectedFailure": {
+    "message": "예상치 못한 오류: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "예상치 못한 오류가 났지만 자세한 내용은 보고되지 않았습니다."
+  },
+  "popup_requestFailed": {
+    "message": "요청이 실패했습니다."
+  },
+  "popup_settingsReadFailed": {
+    "message": "팝업이 설정을 읽지 못했습니다: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "저장된 설정을 갱신하지 못했습니다: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "저장 공간이 가득 차서 그 설정은 저장되지 않았습니다. 아래의 “캐시된 Nexus 데이터 지우기”를 쓴 뒤 다시 시도하세요."
+  },
+  "popup_settingSaveFailed": {
+    "message": "그 설정을 저장하지 못했습니다: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "API 키가 없어도 열려 있는 Nexus 탭의 게임을 기준으로 설정할 수 있지만, Nexus 카탈로그 전체는 검색할 수 없고 호환성 배지도 가져올 수 없습니다."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "새 키를 붙여 넣은 뒤 “저장”을 누르세요."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "먼저 키를 붙여 넣으세요. “키가 필요한가요?”에서 발급할 수 있습니다."
+  },
+  "popup_keySaved": {
+    "message": "키를 저장했습니다."
+  },
+  "popup_keyUpdated": {
+    "message": "키가 갱신되었습니다."
+  },
+  "popup_disconnecting": {
+    "message": "연결을 해제하는 중..."
+  },
+  "popup_keyClearFailed": {
+    "message": "키를 지우지 못했습니다: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "키를 삭제했습니다. 게임과 버전 기준은 그대로 두었습니다."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "키를 삭제했고 게임과 버전 기준은 그대로 두었습니다. 다만 $ISSUES$. 아래의 “캐시된 Nexus 데이터 지우기”를 쓰세요.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "백그라운드가 응답하지 않아 캐시된 Nexus 응답이 디스크에 남아 있습니다"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "Steam 버전 캐시를 읽지 못해 디스크에 남아 있습니다"
+  },
+  "popup_leftBehindSeparator": {
+    "message": ", 그리고 "
+  },
+  "popup_noReadableVersion": {
+    "message": "이 게임에서 도출한 버전 가운데 버전 번호로 읽을 수 있는 것이 없어 아무것도 채우지 않았습니다. 플레이 중인 게임 버전을 입력하세요."
+  },
+  "popup_startVersionFilled": {
+    "message": "시작 버전을 이 게임에서 찾은 가장 최신 빌드인 $VERSION$으로 채웠습니다. 더 오래된 버전을 플레이한다면 바꾸세요.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "끝 버전 $END$이 시작 버전 $START$보다 앞서서 어떤 모드도 해당할 수 없습니다. 그 범위는 저장하지 않았고 기존 기준도 그대로입니다.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "먼저 게임을 고르세요. 버전만으로는 비교할 대상이 없습니다."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "먼저 게임을 고르면 그 게임의 버전을 도출할 수 있습니다."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "계속하기 전에 게임을 고르세요."
+  },
+  "popup_openTabIsGame": {
+    "message": "열려 있는 Nexus 탭은 $GAME$입니다.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "저장했습니다. 열려 있는 Nexus 탭은 $GAME$이라 이 기준은 그 탭에 적용되지 않습니다.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "저장했습니다."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "게임 목록에는 API 키가 필요합니다. 위 버튼으로 열려 있는 탭의 게임을 기준으로 설정하세요."
+  },
+  "popup_derivingVersions": {
+    "message": "공개 자료에서 버전을 도출하는 중..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "버전 검색을 끝내지 못했으므로 여기가 비었다는 것은 결과가 아닙니다."
+  },
+  "popup_noVersionsFound": {
+    "message": "이 게임의 버전을 밝힌 공개 자료가 없습니다. 이 목록이 빈 것은 자료가 없어서이지 게임이 지원되지 않아서가 아닙니다."
+  },
+  "popup_searching": {
+    "message": "공개 자료를 검색하는 중..."
+  },
+  "popup_searchingAgain": {
+    "message": "공개 자료를 다시 검색하는 중..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "버전 검색: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "버전 $COUNT$개를 도출했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "버전 $COUNT$개를 도출했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "출처 $SOURCES$곳에서 버전 $COUNT$개를 도출했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "출처 $SOURCES$곳에서 버전 $COUNT$개를 도출했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "출처 $SOURCES$곳에서 버전 $COUNT$개를 도출했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "출처 $SOURCES$곳에서 버전 $COUNT$개를 도출했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "이 게임의 버전을 밝힌 공개 자료가 없어 아무것도 채우지 않았습니다. 알고 있다면 플레이 중인 버전을 입력하세요. 비워 두어도 괜찮습니다."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "이번 새로 고침에 요청 $COUNT$건이 들었습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "이번 새로 고침에 요청 $COUNT$건이 들었습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "이 게임의 스토어 페이지를 확실히 특정하지 못해, 다른 게임의 숫자를 가져올 위험을 피하려고 스토어 출처는 건너뛰었습니다."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "다운로드는 nxm:// 링크로 모드 관리자에게 넘어갑니다. 여기서도, 열려 있는 Nexus 탭에서도 마찬가지입니다."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "다운로드는 브라우저가 저장합니다. 여기서도, 열려 있는 Nexus 탭에서도 마찬가지입니다."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "자세한 로그는 다음 백그라운드 워커 시작부터 켜집니다."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "자세한 로그는 다음 백그라운드 워커 시작부터 꺼집니다."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "버전 기준 없이 열기"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "시작 버전이 설정되어 있지 않아, 배지는 모드를 판정하지 않고 비교할 대상이 없다고 알립니다. 필터와 다운로드는 그대로 됩니다. 한 번 더 누르면 그대로 목록을 엽니다."
+  },
+  "popup_clearing": {
+    "message": "지우는 중..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "확장 프로그램 백그라운드가 응답하지 않고 Steam 버전 캐시도 읽지 못해 둘 다 지우지 못했습니다. 저장된 게임 목록은 지웠습니다."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "확장 프로그램 백그라운드가 응답하지 않아 모드 응답 캐시를 지우지 못했습니다. 저장된 게임 목록과 Steam 버전 캐시는 지웠습니다."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "캐시 항목 $COUNT$개를 지우고 $KB$ KB를 확보했습니다. Steam 버전 캐시는 읽지 못해 디스크에 남아 있을 수 있습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "캐시 항목 $COUNT$개를 지우고 $KB$ KB를 확보했습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "보고된 캐시 항목이 없어 확보된 공간도 없습니다."
+  },
+  "popup_noGameListCached": {
+    "message": "아직 캐시된 게임 목록이 없습니다."
+  },
+  "popup_gameListCached": {
+    "message": "게임 목록을 $WHEN$에 캐시했습니다.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "방금 전"
+  },
+  "popup_timeAgoMinute": {
+    "message": "$COUNT$분 전",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "$COUNT$분 전",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "$COUNT$시간 전",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "$COUNT$시간 전",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "$COUNT$일 전",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "$COUNT$일 전",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "타이틀 $COUNT$개를 불러왔습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "게임 목록: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "백그라운드가 예상치 못한 게임 목록을 반환했습니다."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "타이틀 1개를 불러왔습니다."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "캐시 항목 1개를 지우고 $KB$ KB를 확보했습니다.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "캐시 항목 1개를 지우고 $KB$ KB를 확보했습니다. Steam 버전 캐시는 읽지 못해 디스크에 남아 있을 수 있습니다.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}

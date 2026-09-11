@@ -1,0 +1,2104 @@
+{
+  "extName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "extDescription": {
+    "message": "Každá dlaždice modu na Nexusu dostane verdikt kompatibility s verzí hry, kterou hrajete, takže si vyfiltrujete to, co poběží."
+  },
+  "background_errorTimeoutSeconds": {
+    "message": "Požadavek trval déle než $seconds$ s a byl opuštěn.",
+    "placeholders": {
+      "seconds": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimitedUntil": {
+    "message": "Byl dosažen limit API Nexusu. Obnoví se v $resetTime$.",
+    "placeholders": {
+      "resetTime": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorRateLimited": {
+    "message": "Byl dosažen limit API Nexusu. Kontroly budou pokračovat po jeho obnovení."
+  },
+  "background_errorRateLimitedShort": {
+    "message": "Byl dosažen limit API Nexusu."
+  },
+  "background_errorInvalidKey": {
+    "message": "Nexus odmítl váš klíč API. Zadejte ho znovu v okně rozšíření."
+  },
+  "background_errorForbidden": {
+    "message": "Nexus tento požadavek odmítl. Může být potřeba účet Premium nebo aktivní přihlášení na nexusmods.com."
+  },
+  "background_errorNotFound": {
+    "message": "Nexus takový mod pro tuto hru nemá (smazaný, skrytý, nebo špatná hra)."
+  },
+  "background_errorServerError": {
+    "message": "Nexus právě neodpovídá (HTTP $status$).",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorBadRequest": {
+    "message": "Nexus požadavek odmítl (HTTP $status$).$detail$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorTimeout": {
+    "message": "Požadavek trval příliš dlouho a byl opuštěn."
+  },
+  "background_errorOffline": {
+    "message": "Žádné spojení s Nexusem."
+  },
+  "background_errorDisabled": {
+    "message": "Rozšíření je vypnuté."
+  },
+  "background_errorUnexpected": {
+    "message": "Něco se pokazilo."
+  },
+  "background_errorNoApiKey": {
+    "message": "Klíč API nebyl nalezen. Přidejte svůj klíč API Nexusu v okně rozšíření."
+  },
+  "background_errorDownloadLinkMissing": {
+    "message": "V odkazu ke stažení chybí adresa."
+  },
+  "background_errorNxmLinkMissing": {
+    "message": "Odkaz NXM nebyl nalezen."
+  },
+  "background_errorNoEligibleFiles": {
+    "message": "Pro tento mod nebyly nalezeny žádné vhodné soubory."
+  },
+  "background_errorLayoutUnrecognized": {
+    "message": "Sekci požadavků na stránce tohoto modu se nepodařilo přečíst. Rozvržení stránky Nexusu není takové, které NMA zná."
+  },
+  "background_errorNavigationChanged": {
+    "message": "Stránka se změnila"
+  },
+  "background_errorNotConfigured": {
+    "message": "Nexus Mods Assistant potřebuje $missing$, než bude moci kontrolovat mody. Dokončete nastavení v okně rozšíření.",
+    "placeholders": {
+      "missing": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_setupNeedsApiKey": {
+    "message": "klíč API"
+  },
+  "background_setupNeedsGame": {
+    "message": "hru"
+  },
+  "background_setupNeedsVersion": {
+    "message": "verzi hry"
+  },
+  "background_setupNeedsJoin": {
+    "message": "$items$ a $last$",
+    "placeholders": {
+      "items": {
+        "content": "$1"
+      },
+      "last": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorGameMismatch": {
+    "message": "Tato stránka je $pageGame$, ale NMA je nastaven pro $configuredGame$. Přepněte hru v okně rozšíření, aby se tyto mody kontrolovaly.",
+    "placeholders": {
+      "pageGame": {
+        "content": "$1"
+      },
+      "configuredGame": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_errorVersionUnreadable": {
+    "message": "NMA nedokáže přečíst „$version$“ jako verzi hry, takže podle ní nemůže posoudit žádný mod. Nastavte v okně rozšíření číselnou verzi, například 1.6.1170.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionDerived": {
+    "message": "Žádný veřejný zdroj neuvádí verzi hry pro $gameDomain$, takže NMA tu nedokáže z verze modu odvodit verzi hry. Je to mezera v datech, ne v rozšíření, a mají ji všichni stejnou. Zadejte v okně rozšíření verzi, kterou hrajete, a zkontrolujte to i tak.",
+    "placeholders": {
+      "gameDomain": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_errorNoVersionSource": {
+    "message": "Nepodařilo se oslovit žádný zdroj verzí, takže pro tuto hru zatím nešlo nic odvodit."
+  },
+  "background_errorNoGameDomain": {
+    "message": "Než půjde odvodit verze, je potřeba doména hry."
+  },
+  "background_errorNoStoreListing": {
+    "message": "Žádná položka v obchodě neodpovídá té hře dost jistě, takže nebyla uložena žádná."
+  },
+  "background_sourceFileVersion": {
+    "message": "Verze souboru"
+  },
+  "background_sourceFileName": {
+    "message": "Název souboru"
+  },
+  "background_sourceChangelog": {
+    "message": "Seznam změn"
+  },
+  "background_sourceDescription": {
+    "message": "Popis"
+  },
+  "background_sourceUploadDate": {
+    "message": "Datum nahrání"
+  },
+  "background_sourceNone": {
+    "message": "Žádný zdroj"
+  },
+  "background_verdictPartialNote": {
+    "message": "Jeden zdroj se nepodařilo přečíst ($cause$), takže je tato kontrola jen částečná.",
+    "placeholders": {
+      "cause": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictUploadDateInRange": {
+    "message": "Verze hry není nikde uvedena, ale nejnovější soubor byl nahrán $uploadDate$, po verzi hry $gameVersion$. Odvozeno, nepotvrzeno.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      },
+      "gameVersion": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictStatedInRange": {
+    "message": "$source$ uvádí „$evidence$“, což spadá do vámi zvoleného rozsahu.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedInRange": {
+    "message": "$source$ zmiňuje „$evidence$“, což spadá do vámi zvoleného rozsahu. Je to odvození, ne uvedená verze hry.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictUploadDateOutOfRange": {
+    "message": "Verze hry není nikde uvedena a datum nahrání nejnovějšího souboru ($uploadDate$) ho do vámi zvoleného rozsahu neřadí.",
+    "placeholders": {
+      "uploadDate": {
+        "content": "$1"
+      }
+    }
+  },
+  "background_verdictStatedOutOfRange": {
+    "message": "$source$ uvádí „$evidence$“, nejnovější verzi hry, kterou tento mod zmiňuje, a ta je mimo vámi zvolený rozsah.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictMentionedOutOfRange": {
+    "message": "$source$ zmiňuje „$evidence$“, nejnovější verzi hry, kterou tento mod zmiňuje, a ta je mimo vámi zvolený rozsah. Je to odvození, ne uvedená verze hry.",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      },
+      "evidence": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_verdictNoVersionDataDeep": {
+    "message": "Tento mod neuvádí verzi hry ve svých souborech, seznamu změn ani v popisu."
+  },
+  "background_verdictNoVersionDataShallow": {
+    "message": "Tento mod neuvádí verzi hry v popisu ani v seznamu změn. Jeho soubory se pro tuto kontrolu neotevíraly."
+  },
+  "background_storeNoteSearchFailed": {
+    "message": "Hledání v obchodě neodpovědělo, takže byly zdroje z obchodu přeskočeny."
+  },
+  "background_storeNoteNoMatch": {
+    "message": "Žádná položka v obchodě neodpovídala této hře dost jistě, takže byly zdroje z obchodu přeskočeny."
+  },
+  "background_storeNoteRecordUnreadable": {
+    "message": "Záznam této hry v obchodě se nepodařilo přečíst, takže byly tentokrát zdroje z obchodu přeskočeny."
+  },
+  "background_storeNoteNotAGame": {
+    "message": "Nejbližší položka v obchodě není hra, takže byly zdroje z obchodu přeskočeny, aby se nečetla čísla jiného produktu."
+  },
+  "background_storeNoteWrongApp": {
+    "message": "Nejbližší položka v obchodě patří jiné aplikaci, takže byly zdroje z obchodu přeskočeny."
+  },
+  "background_storeNoteDifferentGame": {
+    "message": "Položka v obchodě uvádí jinou hru než katalog, takže byly zdroje z obchodu přeskočeny."
+  },
+  "background_ssoConnecting": {
+    "message": "Připojování k Nexus Mods SSO..."
+  },
+  "background_ssoWaitingApproval": {
+    "message": "Čeká se na vaše schválení na kartě Nexus Mods..."
+  },
+  "background_ssoHandshakeFailed": {
+    "message": "Zahájení handshaku SSO se nezdařilo."
+  },
+  "background_ssoConnectionFailed": {
+    "message": "Otevření spojení SSO se nezdařilo."
+  },
+  "background_ssoRejected": {
+    "message": "SSO handshake odmítlo."
+  },
+  "background_ssoConnectionReady": {
+    "message": "Spojení je připravené. Čeká se na vaše schválení..."
+  },
+  "background_ssoComplete": {
+    "message": "Klíč API uložen přes SSO."
+  },
+  "background_ssoUnexpectedResponse": {
+    "message": "Neočekávaná odpověď od SSO."
+  },
+  "background_ssoLostConnection": {
+    "message": "Spojení s SSO bylo po několika pokusech ztraceno."
+  },
+  "background_ssoReconnecting": {
+    "message": "Opětovné připojování (pokus $attempt$/$total$)...",
+    "placeholders": {
+      "attempt": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "background_ssoCanceled": {
+    "message": "SSO zrušeno."
+  },
+  "content_statusCompatible": {
+    "message": "Kompatibilní"
+  },
+  "content_statusLikelyCompatible": {
+    "message": "Nejspíš kompatibilní"
+  },
+  "content_statusIncompatible": {
+    "message": "Nekompatibilní"
+  },
+  "content_statusUnknown": {
+    "message": "Bez údaje o verzi"
+  },
+  "content_statusFailed": {
+    "message": "Kontrola selhala"
+  },
+  "content_statusNotConfigured": {
+    "message": "Nenastaveno"
+  },
+  "content_statusFallbackUnknown": {
+    "message": "Neznámé"
+  },
+  "content_evidenceFileVersion": {
+    "message": "verze souboru"
+  },
+  "content_evidenceFileName": {
+    "message": "název souboru"
+  },
+  "content_evidenceChangelog": {
+    "message": "seznam změn"
+  },
+  "content_evidenceDescription": {
+    "message": "popis modu"
+  },
+  "content_evidenceUploadDate": {
+    "message": "datum nahrání"
+  },
+  "content_evidenceNone": {
+    "message": "žádný doklad o verzi"
+  },
+  "content_confidenceExact": {
+    "message": "přesná shoda"
+  },
+  "content_confidenceInferred": {
+    "message": "odvozeno"
+  },
+  "content_confidenceNone": {
+    "message": "neurčena"
+  },
+  "content_tooltipDetectedVersion": {
+    "message": "Zjištěná verze: $VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipEvidence": {
+    "message": "Doklad: $SOURCE$",
+    "placeholders": {
+      "source": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipConfidence": {
+    "message": "Jistota: $LEVEL$",
+    "placeholders": {
+      "level": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_tooltipMatched": {
+    "message": "Shoda: $TEXT$",
+    "placeholders": {
+      "text": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeStatusVersion": {
+    "message": "$STATUS$ - $VERSION$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "version": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeStatusReason": {
+    "message": "$STATUS$ - $REASON$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_badgeNotConfigured": {
+    "message": "$STATUS$ - nevybrána verze",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_badgeDownloadNote": {
+    "message": "$STATUS$ - $NOTE$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "note": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_versionNotReported": {
+    "message": "verze neuvedena"
+  },
+  "content_versionNotReportedShort": {
+    "message": "neuvedena"
+  },
+  "content_checking": {
+    "message": "Kontroluje se..."
+  },
+  "content_checkingCompatibility": {
+    "message": "Kontroluje se kompatibilita..."
+  },
+  "content_scrollToCheck": {
+    "message": "Posuňte pro kontrolu"
+  },
+  "content_scrollToCheckDetail": {
+    "message": "Tento mod se zkontroluje, až se objeví na obrazovce."
+  },
+  "content_noResponse": {
+    "message": "Žádná odpověď"
+  },
+  "content_compatibilityColumn": {
+    "message": "Kompatibilita"
+  },
+  "content_setVersionInPopup": {
+    "message": "Nastavte verzi hry v okně rozšíření, abyste dostali verdikt."
+  },
+  "content_pickVersionInPopup": {
+    "message": "Vyberte verzi hry v okně rozšíření, abyste dostali verdikt pro tento mod."
+  },
+  "content_filesButton": {
+    "message": "Soubory"
+  },
+  "content_filesButtonForMod": {
+    "message": "Soubory modu $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesButtonForThisMod": {
+    "message": "Soubory tohoto modu"
+  },
+  "content_filesButtonForRequiredMod": {
+    "message": "Soubory tohoto vyžadovaného modu"
+  },
+  "content_filesDropdownLabel": {
+    "message": "Soubory ke stažení"
+  },
+  "content_filesLoading": {
+    "message": "Načítání souborů..."
+  },
+  "content_filesFetchFailed": {
+    "message": "Soubory se nepodařilo načíst"
+  },
+  "content_filesLoadFailed": {
+    "message": "Seznam souborů se nepodařilo načíst: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_couldNotLoadFileList": {
+    "message": "Seznam souborů se nepodařilo načíst"
+  },
+  "content_fileListUnreadable": {
+    "message": "Seznam souborů se nepodařilo přečíst."
+  },
+  "content_fileCategoryMain": {
+    "message": "Main Files"
+  },
+  "content_fileCategoryUpdate": {
+    "message": "Update Files"
+  },
+  "content_fileCategoryOptional": {
+    "message": "Optional Files"
+  },
+  "content_fileCategoryMisc": {
+    "message": "Miscellaneous Files"
+  },
+  "content_fileCategoryOld": {
+    "message": "Old Files"
+  },
+  "content_fileCategoryWithCount": {
+    "message": "$CATEGORY$ ($COUNT$)",
+    "placeholders": {
+      "category": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_filesNoneInActiveCategories": {
+    "message": "V kategoriích, které máte zapnuté, nejsou žádné soubory. Skryto: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesNoneForMod": {
+    "message": "Pro tento mod nebyly nalezeny žádné soubory."
+  },
+  "content_filesHiddenByFilters": {
+    "message": "Skryto vašimi filtry souborů: $CATEGORIES$.",
+    "placeholders": {
+      "categories": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileCheckboxLabel": {
+    "message": "$FILENAME$ ($CATEGORY$)",
+    "placeholders": {
+      "filename": {
+        "content": "$1"
+      },
+      "category": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_fileFallbackName": {
+    "message": "Soubor"
+  },
+  "content_fileMeta": {
+    "message": "v$VERSION$ | $SIZE$ | $DATE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "size": {
+        "content": "$2"
+      },
+      "date": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_fileVersion": {
+    "message": "v$VERSION$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeMb": {
+    "message": "$SIZE$ MB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeKb": {
+    "message": "$SIZE$ KB",
+    "placeholders": {
+      "size": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_fileSizeUnknown": {
+    "message": "Neznámá velikost"
+  },
+  "content_fileDateUnknown": {
+    "message": "Neznámé datum"
+  },
+  "content_downloadSelected": {
+    "message": "Stáhnout vybrané"
+  },
+  "content_downloadSelectedCount": {
+    "message": "Stáhnout vybrané ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_downloadSelectedModsFiles": {
+    "message": "Stáhnout vybrané (mody: $MODS$ / soubory: $FILES$)",
+    "placeholders": {
+      "mods": {
+        "content": "$1"
+      },
+      "files": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingProgress": {
+    "message": "Stahování ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_downloadingEllipsis": {
+    "message": "Stahování..."
+  },
+  "content_fileOutcomeQueued": {
+    "message": "Ve frontě"
+  },
+  "content_fileOutcomeFailed": {
+    "message": "Nezdařilo se: $REASON$",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_reasonUnknown": {
+    "message": "neznámý důvod"
+  },
+  "content_filesQueuedOne": {
+    "message": "$COUNT$ soubor ve frontě.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedMany": {
+    "message": "Soubory ve frontě: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_filesQueuedWithFailures": {
+    "message": "Ve frontě: $QUEUED$, nezdařilo se: $FAILED$.",
+    "placeholders": {
+      "queued": {
+        "content": "$1"
+      },
+      "failed": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_panelTitle": {
+    "message": "Nexus Mods Assistant"
+  },
+  "content_panelSubtitle": {
+    "message": "Vybírejte podle kompatibility"
+  },
+  "content_filtersRegionLabel": {
+    "message": "Filtry Nexus Mods Assistant"
+  },
+  "content_downloadsRegionLabel": {
+    "message": "Stahování Nexus Mods Assistant"
+  },
+  "content_refresh": {
+    "message": "Obnovit"
+  },
+  "content_pageNavigation": {
+    "message": "Navigace stránkami"
+  },
+  "content_prevPage": {
+    "message": "Zpět"
+  },
+  "content_nextPage": {
+    "message": "Dál"
+  },
+  "content_pageNumber": {
+    "message": "Číslo stránky"
+  },
+  "content_goToPage": {
+    "message": "Přejít na stránku"
+  },
+  "content_collapseFilters": {
+    "message": "Sbalit filtry"
+  },
+  "content_expandFilters": {
+    "message": "Rozbalit filtry"
+  },
+  "content_showUpdateFiles": {
+    "message": "Zobrazit aktualizační soubory"
+  },
+  "content_showOptionalFiles": {
+    "message": "Zobrazit volitelné soubory"
+  },
+  "content_showMiscFiles": {
+    "message": "Zobrazit různé soubory"
+  },
+  "content_showOldFiles": {
+    "message": "Zobrazit staré verze a archivované soubory"
+  },
+  "content_exclusionLabel": {
+    "message": "Vyloučit mody, jejichž název obsahuje"
+  },
+  "content_exclusionPlaceholder": {
+    "message": "Vyloučit mody (např. patch, překlad)..."
+  },
+  "content_exclusionTooltip": {
+    "message": "Klíčová slova oddělujte čárkami"
+  },
+  "content_lastUpdatedRange": {
+    "message": "Rozsah poslední aktualizace"
+  },
+  "content_lastUpdatedLabel": {
+    "message": "Poslední aktualizace:"
+  },
+  "content_updatedOnOrAfter": {
+    "message": "Aktualizováno v tento den nebo později"
+  },
+  "content_updatedOnOrBefore": {
+    "message": "Aktualizováno v tento den nebo dříve"
+  },
+  "content_startDateTooltip": {
+    "message": "Počáteční datum (včetně)"
+  },
+  "content_endDateTooltip": {
+    "message": "Koncové datum (včetně)"
+  },
+  "content_clearDateRange": {
+    "message": "Vymazat rozsah dat"
+  },
+  "content_clearButton": {
+    "message": "Vymazat"
+  },
+  "content_noModsSelected": {
+    "message": "Nevybrány žádné mody"
+  },
+  "content_modsSelectedOne": {
+    "message": "Vybrán $COUNT$ mod",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_modsSelectedMany": {
+    "message": "Vybrané mody: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_clearSelection": {
+    "message": "Zrušit výběr"
+  },
+  "content_clearSelectionTooltip": {
+    "message": "Odškrtnout každý vybraný mod"
+  },
+  "content_downloadAll": {
+    "message": "Stáhnout vše"
+  },
+  "content_downloadMode": {
+    "message": "Režim stahování"
+  },
+  "content_downloadModeManual": {
+    "message": "Ručně"
+  },
+  "content_downloadModeVortex": {
+    "message": "Vortex"
+  },
+  "content_stopButton": {
+    "message": "Zastavit"
+  },
+  "content_stopButtonTooltip": {
+    "message": "Zastavit probíhající stahování. Již zahájené soubory se neruší."
+  },
+  "content_apiRemaining": {
+    "message": "API: zbývá $REMAINING$",
+    "placeholders": {
+      "remaining": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectMod": {
+    "message": "Vybrat"
+  },
+  "content_selectModNamed": {
+    "message": "Vybrat $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectThisMod": {
+    "message": "Vybrat tento mod"
+  },
+  "content_summaryEntry": {
+    "message": "$STATUS$: $COUNT$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_summaryLastChecked": {
+    "message": "Naposledy zkontrolováno: $STATUS$",
+    "placeholders": {
+      "status": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_preparingDownload": {
+    "message": "Příprava stahování..."
+  },
+  "content_downloadStarted": {
+    "message": "Stahování zahájeno"
+  },
+  "content_downloadStartedDetail": {
+    "message": "Soubor najdete mezi staženými soubory prohlížeče."
+  },
+  "content_downloadFailed": {
+    "message": "Stahování se nezdařilo"
+  },
+  "content_noFileToDownload": {
+    "message": "Soubor ke stažení se nepodařilo najít"
+  },
+  "content_noDownloadableFile": {
+    "message": "Žádný soubor ke stažení"
+  },
+  "content_noDownloadableFileDetail": {
+    "message": "Tento mod možná nemá hlavní soubor nebo vyžaduje ruční výběr."
+  },
+  "content_skippedAtFilePrompt": {
+    "message": "Přeskočeno při výběru souboru"
+  },
+  "content_skippedAtFilePromptDetail": {
+    "message": "Pro tento mod nebyl vybrán žádný soubor."
+  },
+  "content_downloadRunStopped": {
+    "message": "Stahování zastaveno"
+  },
+  "content_downloadRunStoppedDetail": {
+    "message": "Průběh skončil dřív, než byl pro tento mod vybrán soubor."
+  },
+  "content_vortexUnavailable": {
+    "message": "Stažení přes Vortex není dostupné"
+  },
+  "content_vortexUnavailableDetail": {
+    "message": "Odkaz NXM se nepodařilo sestavit. Ujistěte se, že jste přihlášeni na nexusmods.com."
+  },
+  "content_handedToVortex": {
+    "message": "Předáno Vortexu"
+  },
+  "content_handedToVortexDetail": {
+    "message": "Prohlížeč předal Vortexu odkaz nxm://. Prohlížeč nedokáže potvrdit, že ho Vortex přijal."
+  },
+  "content_vortexBlocked": {
+    "message": "Předání Vortexu zablokováno"
+  },
+  "content_vortexBlockedDetail": {
+    "message": "Prohlížeč odmítl otevřít odkaz nxm://."
+  },
+  "content_vortexHandoff": {
+    "message": "Tyto mody se posílají Vortexu přes odkazy nxm://."
+  },
+  "content_vortexHandoffDetail": {
+    "message": "Pokud Vortex není nainstalovaný a zaregistrovaný pro odkazy nxm, nestane se nic, a prohlížeče mohou opakované spouštění protokolu z jednoho kliknutí blokovat. Pokud nic nedorazí, přepněte režim na Ručně."
+  },
+  "content_batchEmpty": {
+    "message": "Není co stáhnout: současnému výběru a filtrům neodpovídá žádný mod."
+  },
+  "content_batchBusy": {
+    "message": "Stahování už probíhá."
+  },
+  "content_batchVerbQueued": {
+    "message": "ve frontě"
+  },
+  "content_batchVerbVortex": {
+    "message": "předáno Vortexu"
+  },
+  "content_batchSummary": {
+    "message": "$COUNT$ $VERB$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchSummaryWithFailures": {
+    "message": "$COUNT$ $VERB$, $FAILED$ se nezdařilo.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "verb": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_batchFailureDetail": {
+    "message": "$ITEM$: $REASON$",
+    "placeholders": {
+      "item": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_batchLabelDownloading": {
+    "message": "Stahování"
+  },
+  "content_batchLabelDownloadingAll": {
+    "message": "Stahování všeho"
+  },
+  "content_batchProgress": {
+    "message": "$LABEL$ ($DONE$/$TOTAL$)...",
+    "placeholders": {
+      "label": {
+        "content": "$1"
+      },
+      "done": {
+        "content": "$2"
+      },
+      "total": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_reasonAlreadyDownloading": {
+    "message": "už se stahuje"
+  },
+  "content_reasonNoDownloadableFile": {
+    "message": "žádný soubor ke stažení"
+  },
+  "content_reasonRunStopped": {
+    "message": "stahování bylo zastaveno"
+  },
+  "content_reasonSkippedRequirements": {
+    "message": "přeskočeno u dotazu na požadavky"
+  },
+  "content_reasonSkippedFilePrompt": {
+    "message": "přeskočeno u výběru souboru"
+  },
+  "content_reasonFileListUnreadable": {
+    "message": "seznam souborů se nepodařilo načíst"
+  },
+  "content_reasonNoNxmLink": {
+    "message": "žádný odkaz NXM"
+  },
+  "content_reasonNxmRefused": {
+    "message": "prohlížeč odmítl odkaz nxm://"
+  },
+  "content_reasonHiddenByFilters": {
+    "message": "skryto současnými filtry"
+  },
+  "content_reasonAnotherRunInProgress": {
+    "message": "probíhá jiné stahování"
+  },
+  "content_modalOk": {
+    "message": "OK"
+  },
+  "content_selectFilesTitle": {
+    "message": "Vyberte soubory ke stažení"
+  },
+  "content_skipMod": {
+    "message": "Přeskočit mod"
+  },
+  "content_skipThisMod": {
+    "message": "Přeskočit tento mod"
+  },
+  "content_skipTheseMods": {
+    "message": "Přeskočit tyto mody"
+  },
+  "content_downloadAnyway": {
+    "message": "Přesto stáhnout"
+  },
+  "content_requirementsUnverifiedTitle": {
+    "message": "Požadavky se nepodařilo ověřit"
+  },
+  "content_requirementsUnverifiedBody": {
+    "message": "$SUBJECT$ může mít vyžadované mody, ale jejich seznam se nepodařilo načíst: $REASON$",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      },
+      "reason": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_requirementsUnverifiedRunNote": {
+    "message": " To obvykle selže pro celý průběh, takže se vaše odpověď použije na jeho zbytek."
+  },
+  "content_requirementsIntro": {
+    "message": "$SUBJECT$ má tyto požadavky. Vyberte, které nainstalovat:",
+    "placeholders": {
+      "subject": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_thisMod": {
+    "message": "Tento mod"
+  },
+  "content_quotedModName": {
+    "message": "„$MODNAME$“",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsForMod": {
+    "message": "Požadavky modu $MODNAME$",
+    "placeholders": {
+      "modname": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_requirementsDetected": {
+    "message": "Zjištěny požadavky"
+  },
+  "content_installWithRequirements": {
+    "message": "Nainstalovat s požadavky"
+  },
+  "content_installWithoutRequirements": {
+    "message": "Nainstalovat bez požadavků"
+  },
+  "content_unknownMod": {
+    "message": "Neznámý mod"
+  },
+  "content_noLinkProvided": {
+    "message": "Odkaz nebyl uveden"
+  },
+  "content_requirementsUnreadable": {
+    "message": "Seznam požadavků se nepodařilo přečíst."
+  },
+  "content_requirementsPartial": {
+    "message": "Zahájeno $STARTED$ z $TOTAL$ požadavků, nezdařilo se: $FAILED$.",
+    "placeholders": {
+      "started": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "failed": {
+        "content": "$3"
+      }
+    }
+  },
+  "content_errorKeyRejected": {
+    "message": "Váš klíč API Nexusu byl odmítnut. Zadejte ho znovu v okně rozšíření."
+  },
+  "content_errorForbidden": {
+    "message": "Nexus tento požadavek odmítl. Může být potřeba účet Premium nebo aktivní přihlášení na nexusmods.com."
+  },
+  "content_errorNotFound": {
+    "message": "Tento mod není dostupný (smazaný, skrytý, nebo špatná hra)."
+  },
+  "content_errorRateLimited": {
+    "message": "Byl dosažen limit API Nexusu. Kontroly budou pokračovat po jeho obnovení."
+  },
+  "content_errorNexusDown": {
+    "message": "Nexus právě neodpovídá."
+  },
+  "content_errorOffline": {
+    "message": "Žádné spojení s Nexusem."
+  },
+  "content_errorNoApiKey": {
+    "message": "Není nastaven žádný klíč API Nexusu. Přidejte ho v okně rozšíření."
+  },
+  "content_errorUnexpected": {
+    "message": "Něco se pokazilo."
+  },
+  "content_errorPortTimeout": {
+    "message": "Kontrola trvala příliš dlouho a byla opuštěna."
+  },
+  "content_errorNoBackground": {
+    "message": "Ztraceno spojení s pozadím rozšíření. Zkouší se znovu."
+  },
+  "content_errorContextInvalid": {
+    "message": "Rozšíření bylo aktualizováno. Načtěte tuto stránku znovu."
+  },
+  "content_errorDisabled": {
+    "message": "Rozšíření je vypnuté."
+  },
+  "content_errorCanceled": {
+    "message": "Kontrola zrušena."
+  },
+  "content_errorUnknownMessaging": {
+    "message": "Neznámá chyba komunikace."
+  },
+  "content_errorTooManyRequests": {
+    "message": "Příliš mnoho nevyřízených požadavků."
+  },
+  "content_errorBackground": {
+    "message": "Chyba v pozadí."
+  },
+  "content_shortKeyRejected": {
+    "message": "klíč odmítnut"
+  },
+  "content_shortAccessRefused": {
+    "message": "přístup odepřen"
+  },
+  "content_shortNotAvailable": {
+    "message": "není dostupné"
+  },
+  "content_shortRateLimited": {
+    "message": "limit požadavků"
+  },
+  "content_shortNexusDown": {
+    "message": "Nexus nefunguje"
+  },
+  "content_shortOffline": {
+    "message": "bez připojení"
+  },
+  "content_shortTimedOut": {
+    "message": "vypršel čas"
+  },
+  "content_shortNoBackground": {
+    "message": "bez pozadí"
+  },
+  "content_shortNeedsReload": {
+    "message": "vyžaduje načtení"
+  },
+  "content_shortSwitchedOff": {
+    "message": "vypnuto"
+  },
+  "content_shortCanceled": {
+    "message": "zrušeno"
+  },
+  "content_shortCheckFailed": {
+    "message": "kontrola selhala"
+  },
+  "content_shortRequestRefused": {
+    "message": "požadavek odmítnut"
+  },
+  "content_shortNotSetUp": {
+    "message": "nenastaveno"
+  },
+  "content_shortOtherGame": {
+    "message": "jiná hra"
+  },
+  "content_shortNoVersionDerived": {
+    "message": "verze neodvozena"
+  },
+  "content_shortSuperseded": {
+    "message": "nahrazeno"
+  },
+  "content_shortPageNotRecognized": {
+    "message": "stránka nerozpoznána"
+  },
+  "content_dismiss": {
+    "message": "Zavřít"
+  },
+  "content_reloadPage": {
+    "message": "Načíst stránku znovu"
+  },
+  "content_contextInvalidatedNotice": {
+    "message": "Nexus Mods Assistant byl aktualizován. Načtěte tuto stránku znovu, ať můžete pokračovat."
+  },
+  "content_selectionRestoredOne": {
+    "message": "$COUNT$ mod, který jste vybrali dříve, je stále vybraný.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredMany": {
+    "message": "Mody vybrané dříve ($COUNT$) jsou stále vybrané.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionRestoredDetail": {
+    "message": "Výběr se na této kartě uchová, dokud ho nezrušíte nebo kartu nezavřete."
+  },
+  "content_clearSelectionAction": {
+    "message": "Zrušit výběr"
+  },
+  "content_selectionDroppedOne": {
+    "message": "$COUNT$ vybraný mod z jiné hry byl vynechán.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_selectionDroppedMany": {
+    "message": "Vybrané mody z jiné hry ($COUNT$) byly vynechány.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_noticeNoApiKey": {
+    "message": "Kontroly kompatibility jsou vypnuté, dokud nepřidáte klíč API Nexusu."
+  },
+  "content_noticeNoApiKeyDetail": {
+    "message": "Všechno ostatní na této stránce dál funguje."
+  },
+  "content_openSettings": {
+    "message": "Otevřít nastavení"
+  },
+  "content_noticeOtherGame": {
+    "message": "Kompatibilita je nastavena pro $TARGETGAME$ a tato stránka je $PAGEGAME$.",
+    "placeholders": {
+      "targetgame": {
+        "content": "$1"
+      },
+      "pagegame": {
+        "content": "$2"
+      }
+    }
+  },
+  "content_noticeNoTarget": {
+    "message": "Vyberte verzi hry, kterou hrajete, abyste dostávali štítky kompatibility."
+  },
+  "content_noticeNotTargetedDetail": {
+    "message": "Raději nezobrazujeme žádné verdikty, než verdikty spočítané podle jiné hry."
+  },
+  "content_useThisGame": {
+    "message": "Použít tuto hru"
+  },
+  "content_noticeOpenPopupManually": {
+    "message": "Nastavení změníte v okně Nexus Mods Assistant, které otevřete z panelu nástrojů prohlížeče."
+  },
+  "content_targetModalTitle": {
+    "message": "Zaměřit tuto hru"
+  },
+  "content_targetPromptQuestion": {
+    "message": "Kterou verzi hry $GAME$ hrajete? Mody se posuzují podle ní.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionPlaceholder": {
+    "message": "např. 1.3.4"
+  },
+  "content_targetVersionsDeriving": {
+    "message": "Odvozování verzí této hry z veřejných zdrojů..."
+  },
+  "content_targetVersionsNone": {
+    "message": "Žádný veřejný zdroj neuvádí verzi této hry, takže není co nabídnout. Pokud verzi, kterou hrajete, znáte, zadejte ji."
+  },
+  "content_targetVersionsFoundOne": {
+    "message": "Pro tuto hru byla odvozena $COUNT$ verze. Otevřete seznam v poli výše, nebo zadejte vlastní.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFoundMany": {
+    "message": "Pro tuto hru byly odvozeny verze: $COUNT$. Otevřete seznam v poli výše, nebo zadejte vlastní.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_targetVersionsFailed": {
+    "message": "Hledání verzí nemohlo doběhnout ($REASON$), takže je tento seznam prázdný pro nedostatek odpovědi, ne pro nedostatek dat. Zadejte verzi, kterou hrajete.",
+    "placeholders": {
+      "reason": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_save": {
+    "message": "Uložit"
+  },
+  "content_cancel": {
+    "message": "Zrušit"
+  },
+  "content_targetNotSaved": {
+    "message": "Nebyla zadána žádná verze, takže se nic neuložilo a tato stránka je stále bez zaměření."
+  },
+  "content_targetNotSavedDetail": {
+    "message": "Vyberte jednu z odvozených verzí, nebo zadejte verzi, kterou hrajete."
+  },
+  "content_tryAgain": {
+    "message": "Zkusit znovu"
+  },
+  "content_noModsOnPage": {
+    "message": "Na této stránce nejsou žádné mody."
+  },
+  "content_layoutStillLoading": {
+    "message": "Seznam modů se ještě nenačetl. Pokud to tak zůstane, mohl Nexus změnit rozvržení."
+  },
+  "content_layoutNotFound": {
+    "message": "Na této stránce se nepodařilo najít seznam modů. Nexus mohl změnit rozvržení."
+  },
+  "content_layoutBrokenSelectors": {
+    "message": "Selektory, které přestaly odpovídat: $NAMES$",
+    "placeholders": {
+      "names": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_layoutSelectorGrid": {
+    "message": "mřížka"
+  },
+  "content_detailLayoutUnrecognized": {
+    "message": "Tato stránka modu nevypadá jako rozvržení, které asistent zná, takže žádný štítek nepřidal."
+  },
+  "content_translationSignalMissing": {
+    "message": "Překlady se mají skrývat, ale žádná dlaždice modu na této stránce neuvádí, do jaké kategorie patří, takže se nic neskrylo."
+  },
+  "content_translationSignalMissingDetail": {
+    "message": "Nexus mohl změnit kód svých stránek. Nic před vámi nebylo skryto."
+  },
+  "content_dateFilterNotApplied": {
+    "message": "Filtr dat se neuplatňuje: žádná dlaždice modu na této stránce neuvádí datum aktualizace."
+  },
+  "content_dateSelectorBroken": {
+    "message": "Filtr „Poslední aktualizace“ nedokázal na této stránce přečíst žádná data, takže se neuplatnil."
+  },
+  "content_dateSelectorBrokenDetail": {
+    "message": "Nexus mohl změnit kód svých stránek."
+  },
+  "content_undatedHiddenOne": {
+    "message": "Skryt $COUNT$ mod: není podle jakého data aktualizace ho posoudit.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_undatedHiddenMany": {
+    "message": "Skryté mody bez data aktualizace k posouzení: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenOne": {
+    "message": "$COUNT$ mod s překladem skryt nastavením v okně rozšíření.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_translationsHiddenMany": {
+    "message": "Mody s překlady skryté nastavením v okně rozšíření: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "content_rescanDeferred": {
+    "message": "Nastavení se změnilo. Štítky se obnoví, jakmile doběhne probíhající stahování."
+  },
+  "popup_appName": {
+    "message": "Nexus Mods Assistant"
+  },
+  "popup_subtitle": {
+    "message": "Alkeari Labs LLC · Společník pro kompatibilitu"
+  },
+  "popup_extensionToggle": {
+    "message": "Zapnout nebo vypnout asistenta"
+  },
+  "popup_sectionGameVersion": {
+    "message": "Hra a verze"
+  },
+  "popup_suggestedGameDefault": {
+    "message": "Karta, kterou máte otevřenou, je stránka hry na Nexusu."
+  },
+  "popup_useThisGame": {
+    "message": "Použít tuto hru"
+  },
+  "popup_gameLabel": {
+    "message": "Hra"
+  },
+  "popup_gameSearchPlaceholder": {
+    "message": "Hledat podle názvu"
+  },
+  "popup_gameSuggestionsLabel": {
+    "message": "Odpovídající hry"
+  },
+  "popup_versionRangeLabel": {
+    "message": "Rozsah verzí"
+  },
+  "popup_versionMinAriaLabel": {
+    "message": "Nejstarší verze hry"
+  },
+  "popup_versionMinPlaceholder": {
+    "message": "Začátek (např. 1.3.8)"
+  },
+  "popup_versionMaxAriaLabel": {
+    "message": "Nejnovější verze hry, volitelné"
+  },
+  "popup_versionMaxPlaceholder": {
+    "message": "Volitelný konec"
+  },
+  "popup_versionSuggestionsLabel": {
+    "message": "Odvozené verze hry"
+  },
+  "popup_refreshVersions": {
+    "message": "Obnovit verze"
+  },
+  "popup_refreshVersionsTitle": {
+    "message": "Znovu prohledat veřejné zdroje a najít verze této hry"
+  },
+  "popup_exclusionLabel": {
+    "message": "Vyloučit mody obsahující"
+  },
+  "popup_exclusionPlaceholder": {
+    "message": "např. patch, překlad"
+  },
+  "popup_exclusionTitle": {
+    "message": "Více klíčových slov oddělujte čárkami"
+  },
+  "popup_hideTranslationsTitle": {
+    "message": "Přidá vlastní filtr překladů Nexusu do výpisu, který toto tlačítko otevře"
+  },
+  "popup_hideTranslations": {
+    "message": "Otevřít výpis bez překladů"
+  },
+  "popup_openCompatibleMods": {
+    "message": "Otevřít kompatibilní mody"
+  },
+  "popup_sectionConnection": {
+    "message": "Připojení"
+  },
+  "popup_apiKeyLabel": {
+    "message": "Klíč API Nexusu"
+  },
+  "popup_apiKeyDisplayAriaLabel": {
+    "message": "Uložený klíč API Nexusu"
+  },
+  "popup_revealKey": {
+    "message": "Zobrazit uložený klíč API"
+  },
+  "popup_hideKey": {
+    "message": "Skrýt uložený klíč API"
+  },
+  "popup_show": {
+    "message": "Zobrazit"
+  },
+  "popup_hide": {
+    "message": "Skrýt"
+  },
+  "popup_replaceKey": {
+    "message": "Vyměnit klíč"
+  },
+  "popup_disconnect": {
+    "message": "Odpojit"
+  },
+  "popup_disconnectExplain": {
+    "message": "Odpojení odstraní z tohoto prohlížeče klíč i všechny uložené odpovědi Nexusu. Vašeho účtu na Nexusu se to nedotkne."
+  },
+  "popup_keepKey": {
+    "message": "Ponechat klíč"
+  },
+  "popup_apiKeyInputLabel": {
+    "message": "Osobní klíč API Nexusu"
+  },
+  "popup_apiKeyPlaceholder": {
+    "message": "Vložte svůj klíč API"
+  },
+  "popup_save": {
+    "message": "Uložit"
+  },
+  "popup_needKey": {
+    "message": "Potřebujete klíč?"
+  },
+  "popup_cancel": {
+    "message": "Zrušit"
+  },
+  "popup_connectionOptionalNote": {
+    "message": "Volitelné. Procházení, filtry a zaměření verze fungují i bez něj. Štítky kompatibility a stahování klíč potřebují, protože Nexus odpovídá jen účtu."
+  },
+  "popup_ssoHeading": {
+    "message": "Jednotné přihlášení Nexus Mods"
+  },
+  "popup_ssoDescription": {
+    "message": "Autorizujte jednou a klíč se vyplní za vás. Kdykoli to můžete spustit znovu a uložený klíč tím vyměnit."
+  },
+  "popup_authorizeSso": {
+    "message": "Autorizovat SSO"
+  },
+  "popup_cancelSso": {
+    "message": "Zrušit SSO"
+  },
+  "popup_ssoReady": {
+    "message": "Připraveno zahájit handshake SSO s Nexus Mods."
+  },
+  "popup_startingSso": {
+    "message": "Spouštění SSO..."
+  },
+  "popup_ssoCanceled": {
+    "message": "SSO zrušeno."
+  },
+  "popup_sectionDownloads": {
+    "message": "Stahování"
+  },
+  "popup_downloadModeLabel": {
+    "message": "Režim stahování"
+  },
+  "popup_downloadModeManual": {
+    "message": "Ručně: soubor uloží prohlížeč"
+  },
+  "popup_downloadModeVortex": {
+    "message": "Vortex: odkaz převezme váš správce modů"
+  },
+  "popup_downloadModeNoteBefore": {
+    "message": "Totéž nastavení jako to na liště akcí na stránce s výpisem na Nexusu: změna tady ho změní tam a naopak. Režim Vortex otevře odkaz"
+  },
+  "popup_downloadModeNoteAfter": {
+    "message": "a ten váš operační systém předá tomu správci modů, který si tento protokol zaregistroval."
+  },
+  "popup_fileListsLegend": {
+    "message": "Seznamy souborů"
+  },
+  "popup_fileListsNote": {
+    "message": "Které kategorie souborů se objeví, když se otevře seznam souborů modu. Tytéž čtyři přepínače jsou i v panelu na stránce."
+  },
+  "popup_showOldFilesTitle": {
+    "message": "Zobrazit starší verze souborů modu"
+  },
+  "popup_showOldFiles": {
+    "message": "Staré soubory"
+  },
+  "popup_showUpdateFilesTitle": {
+    "message": "Zobrazit aktualizační soubory modu"
+  },
+  "popup_showUpdateFiles": {
+    "message": "Aktualizační soubory"
+  },
+  "popup_showOptionalFilesTitle": {
+    "message": "Zobrazit volitelné soubory modu"
+  },
+  "popup_showOptionalFiles": {
+    "message": "Volitelné soubory"
+  },
+  "popup_showMiscFilesTitle": {
+    "message": "Zobrazit různé soubory modu"
+  },
+  "popup_showMiscFiles": {
+    "message": "Různé soubory"
+  },
+  "popup_sectionAdvanced": {
+    "message": "Pokročilé"
+  },
+  "popup_advancedNote": {
+    "message": "Místní úložiště a diagnostika. Vymazání mezipaměti hned znovu načte seznam her z Nexusu, pokud je připojen klíč; nic jiného tady na síť nesahá."
+  },
+  "popup_debugLoggingTitle": {
+    "message": "Zapisuje podrobnou činnost procesu na pozadí do konzole service workeru"
+  },
+  "popup_debugLogging": {
+    "message": "Podrobné zápisy do konzole"
+  },
+  "popup_clearCache": {
+    "message": "Vymazat uložená data Nexusu"
+  },
+  "popup_sourceStorePatchNote": {
+    "message": "poznámka k patchi v obchodě"
+  },
+  "popup_sourceStoreBranch": {
+    "message": "větev v obchodě"
+  },
+  "popup_sourceArticleText": {
+    "message": "text článku, neověřeno"
+  },
+  "popup_sourceModText": {
+    "message": "text modu"
+  },
+  "popup_sourceCollectionMetadata": {
+    "message": "metadata kolekce"
+  },
+  "popup_provenanceCorroboration": {
+    "message": "$SOURCES$ x$COUNT$",
+    "placeholders": {
+      "sources": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_versionOptionAriaLabel": {
+    "message": "$VERSION$, zdroj: $SOURCE$",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      },
+      "source": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_gameSuggestionRow": {
+    "message": "$NAME$ ($DOMAIN$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      },
+      "domain": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_failureNoApiKey": {
+    "message": "Není připojen žádný klíč API, takže Nexus neodpoví. Přidejte ho v části Připojení."
+  },
+  "popup_failureInvalidKey": {
+    "message": "Nexus odmítl váš klíč API. Vyměňte ho v části Připojení."
+  },
+  "popup_failureForbidden": {
+    "message": "Nexus požadavek odmítl. Může být potřeba účet Premium nebo aktivní přihlášení na nexusmods.com."
+  },
+  "popup_failureNotFound": {
+    "message": "Nexus o té hře ani o tom modu nic neví. Mohly být skryty nebo odstraněny."
+  },
+  "popup_failureRateLimited": {
+    "message": "Vyčerpali jste svůj příděl API Nexusu. Kontroly budou pokračovat po jeho obnovení, obvykle do hodiny."
+  },
+  "popup_failureServerError": {
+    "message": "Nexus právě neodpovídá. Zkuste to za pár minut."
+  },
+  "popup_failureBadRequest": {
+    "message": "Nexus odmítl požadavek jako chybný. Zkontrolujte hru a verzi a zkuste to znovu."
+  },
+  "popup_failureNotConfigured": {
+    "message": "Zatím není nastaveno nic, co by šlo kontrolovat. Vyberte výše hru a počáteční verzi."
+  },
+  "popup_failureUnsupportedGame": {
+    "message": "Pro tuto hru zatím nebyla odvozena žádná verze hry, takže není s čím mod porovnat. Podporovaná je každá hra; tahle jen nemá veřejná data o verzích, která by asistent našel. Zadejte verzi, kterou hrajete, a zkontrolujte to i tak."
+  },
+  "popup_failureOffline": {
+    "message": "Žádné spojení s Nexusem. Zkontrolujte síť a zkuste to znovu."
+  },
+  "popup_failureHostPermissionMissing": {
+    "message": "Rozšíření nesmí na nexusmods.com. Vaše síť je v pořádku: oprávnění k přístupu na web bylo odmítnuto nebo odebráno. Udělte ho znovu v nastavení rozšíření svého prohlížeče (Firefox: about:addons, pak toto rozšíření, pak Permissions)."
+  },
+  "popup_failureTimeout": {
+    "message": "Nexus odpovídal příliš dlouho. Zkuste to znovu."
+  },
+  "popup_failureDisabled": {
+    "message": "Asistent je vypnutý. Zapněte ho přepínačem vpravo nahoře."
+  },
+  "popup_failureNoBackground": {
+    "message": "Pozadí rozšíření neodpovědělo. Otevřete toto okno znovu, nebo rozšíření načtěte znovu."
+  },
+  "popup_failureCanceled": {
+    "message": "Ten požadavek byl zrušen, než skončil."
+  },
+  "popup_failureBackgroundError": {
+    "message": "Pozadí rozšíření nedokázalo ten požadavek dokončit."
+  },
+  "popup_failureContextInvalid": {
+    "message": "Rozšíření bylo aktualizováno. Načtěte znovu všechny otevřené karty Nexusu."
+  },
+  "popup_unexpectedFailure": {
+    "message": "Neočekávaná chyba: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedFailureNoDetail": {
+    "message": "Neočekávaná chyba, bez jakýchkoli podrobností."
+  },
+  "popup_requestFailed": {
+    "message": "Požadavek se nezdařil."
+  },
+  "popup_settingsReadFailed": {
+    "message": "Okno nedokázalo načíst vaše nastavení: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_settingsUpdateFailed": {
+    "message": "Uložená nastavení se nepodařilo aktualizovat: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storageFull": {
+    "message": "Úložiště je plné, takže se to nastavení neuložilo. Použijte níže „Vymazat uložená data Nexusu“ a zkuste to znovu."
+  },
+  "popup_settingSaveFailed": {
+    "message": "To nastavení se nepodařilo uložit: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_noKeyCatalogNote": {
+    "message": "Bez klíče API můžete zaměřit hru z otevřené karty Nexusu, ale celý katalog Nexusu prohledávat nelze a štítky kompatibility nejde načíst."
+  },
+  "popup_pasteReplacementKey": {
+    "message": "Vložte nový klíč a stiskněte Uložit."
+  },
+  "popup_pasteKeyFirst": {
+    "message": "Nejdřív vložte klíč. Vygenerovat si ho můžete přes „Potřebujete klíč?“."
+  },
+  "popup_keySaved": {
+    "message": "Klíč uložen."
+  },
+  "popup_keyUpdated": {
+    "message": "Klíč aktualizován."
+  },
+  "popup_disconnecting": {
+    "message": "Odpojování..."
+  },
+  "popup_keyClearFailed": {
+    "message": "Klíč se nepodařilo odstranit: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_keyRemoved": {
+    "message": "Klíč odstraněn. Vaše hra a zaměřená verze zůstaly zachovány."
+  },
+  "popup_keyRemovedWithLeftovers": {
+    "message": "Klíč odstraněn a vaše hra i zaměřená verze zůstaly zachovány. Nicméně $ISSUES$: použijte níže „Vymazat uložená data Nexusu“.",
+    "placeholders": {
+      "issues": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_leftBehindBackground": {
+    "message": "pozadí neodpovědělo, takže uložené odpovědi Nexusu jsou stále na disku"
+  },
+  "popup_leftBehindSteamCache": {
+    "message": "mezipaměť verzí ze Steamu se nepodařilo přečíst, takže je stále na disku"
+  },
+  "popup_leftBehindSeparator": {
+    "message": " a "
+  },
+  "popup_noReadableVersion": {
+    "message": "Žádnou z verzí odvozených pro tuto hru nešlo přečíst jako číslo verze, takže se nic nevyplnilo. Zadejte verzi hry, kterou hrajete."
+  },
+  "popup_startVersionFilled": {
+    "message": "Počáteční verze vyplněna jako $VERSION$, nejnovější nalezená verze této hry. Pokud hrajete starší, změňte ji.",
+    "placeholders": {
+      "version": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_invertedRange": {
+    "message": "Koncová verze $END$ je starší než počáteční verze $START$, takže by se nikdy netrefil žádný mod. Ten rozsah nebyl uložen a vaše dosavadní zaměření se nezměnilo.",
+    "placeholders": {
+      "end": {
+        "content": "$1"
+      },
+      "start": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_chooseGameFirstForVersion": {
+    "message": "Nejdřív vyberte hru: samotná verze nemá s čím být porovnána."
+  },
+  "popup_chooseGameFirstForHarvest": {
+    "message": "Nejdřív vyberte hru, pak pro ni půjde odvodit verze."
+  },
+  "popup_chooseGameBeforeContinuing": {
+    "message": "Než budete pokračovat, vyberte hru."
+  },
+  "popup_openTabIsGame": {
+    "message": "Vaše otevřená karta Nexusu je $GAME$.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_savedTabMismatch": {
+    "message": "Uloženo. Vaše otevřená karta Nexusu je $GAME$, takže se na ni toto zaměření nevztahuje.",
+    "placeholders": {
+      "game": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_saved": {
+    "message": "Uloženo."
+  },
+  "popup_gameListNeedsKey": {
+    "message": "Seznam her potřebuje klíč API. Tlačítkem výše zaměřte hru z otevřené karty."
+  },
+  "popup_derivingVersions": {
+    "message": "Odvozování verzí z veřejných zdrojů..."
+  },
+  "popup_versionSearchIncomplete": {
+    "message": "Hledání verzí nemohlo doběhnout, takže tu nic není zjištěním."
+  },
+  "popup_noVersionsFound": {
+    "message": "Žádný veřejný zdroj neuvádí verzi této hry. Tento seznam je prázdný proto, že ta data neexistují, ne proto, že by hra nebyla podporována."
+  },
+  "popup_searching": {
+    "message": "Prohledávání veřejných zdrojů..."
+  },
+  "popup_searchingAgain": {
+    "message": "Opětovné prohledávání veřejných zdrojů..."
+  },
+  "popup_versionSearchFailure": {
+    "message": "Hledání verzí: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersion": {
+    "message": "Odvozena $COUNT$ verze.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedManyVersions": {
+    "message": "Odvozené verze: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_derivedOneVersionOneSource": {
+    "message": "Odvozena $COUNT$ verze z $SOURCES$ zdroje.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedOneVersionManySources": {
+    "message": "Odvozena $COUNT$ verze ze zdrojů: $SOURCES$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsOneSource": {
+    "message": "Odvozené verze: $COUNT$, z $SOURCES$ zdroje.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_derivedManyVersionsManySources": {
+    "message": "Odvozené verze: $COUNT$, ze zdrojů: $SOURCES$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "sources": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_noVersionsSummary": {
+    "message": "Žádný veřejný zdroj neuvádí verzi této hry, takže se nic nevyplnilo. Pokud verzi, kterou hrajete, znáte, zadejte ji; nechat pole prázdné je také v pořádku."
+  },
+  "popup_oneRequestThisRefresh": {
+    "message": "$COUNT$ požadavek při tomto obnovení.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_requestsThisRefresh": {
+    "message": "Požadavky při tomto obnovení: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_storeNotBound": {
+    "message": "Položku této hry v obchodě nešlo určit s jistotou, takže byly zdroje z obchodu přeskočeny, aby se neriskovala čísla jiné hry."
+  },
+  "popup_downloadModeVortexSaved": {
+    "message": "Stahování se předává vašemu správci modů jako odkazy nxm://, tady i na každé otevřené kartě Nexusu."
+  },
+  "popup_downloadModeManualSaved": {
+    "message": "Stahování ukládá prohlížeč, tady i na každé otevřené kartě Nexusu."
+  },
+  "popup_verboseLoggingOn": {
+    "message": "Podrobné zápisy zapnuty od příštího spuštění procesu na pozadí."
+  },
+  "popup_verboseLoggingOff": {
+    "message": "Podrobné zápisy vypnuty od příštího spuštění procesu na pozadí."
+  },
+  "popup_openWithoutVersionTarget": {
+    "message": "Otevřít bez zaměřené verze"
+  },
+  "popup_noStartVersionWarning": {
+    "message": "Není nastavena počáteční verze, takže štítky místo posouzení modu ohlásí, že není s čím porovnávat. Filtrování a stahování dál fungují. Stiskněte znovu, ať se výpis přesto otevře."
+  },
+  "popup_clearing": {
+    "message": "Maže se..."
+  },
+  "popup_clearCacheBothFailed": {
+    "message": "Pozadí rozšíření neodpovědělo a mezipaměť verzí ze Steamu se nepodařilo přečíst, takže nešlo vymazat ani jedno. Uložený seznam her byl vymazán."
+  },
+  "popup_clearCacheBackgroundFailed": {
+    "message": "Pozadí rozšíření neodpovědělo, takže mezipaměť odpovědí o modech nešlo vymazat. Uložený seznam her a mezipaměť verzí ze Steamu byly vymazány."
+  },
+  "popup_clearCacheSteamFailed": {
+    "message": "Vymazané uložené položky: $COUNT$, uvolněno $KB$ KB. Mezipaměť verzí ze Steamu se nepodařilo přečíst, takže může být stále na disku.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheDone": {
+    "message": "Vymazané uložené položky: $COUNT$, uvolněno $KB$ KB.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "kb": {
+        "content": "$2"
+      }
+    }
+  },
+  "popup_clearCacheNothing": {
+    "message": "Nebyly hlášeny žádné uložené položky, takže se nic neuvolnilo."
+  },
+  "popup_noGameListCached": {
+    "message": "Zatím není uložen žádný seznam her."
+  },
+  "popup_gameListCached": {
+    "message": "Seznam her uložen $WHEN$.",
+    "placeholders": {
+      "when": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoJustNow": {
+    "message": "právě teď"
+  },
+  "popup_timeAgoMinute": {
+    "message": "před $COUNT$ minutou",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoMinutes": {
+    "message": "před $COUNT$ min",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHour": {
+    "message": "před $COUNT$ hodinou",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoHours": {
+    "message": "před $COUNT$ hod.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDay": {
+    "message": "před $COUNT$ dnem",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_timeAgoDays": {
+    "message": "před $COUNT$ dny",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_loadedTitles": {
+    "message": "Načtené tituly: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_gameListFailure": {
+    "message": "Seznam her: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_unexpectedGameList": {
+    "message": "Pozadí vrátilo neočekávaný seznam her."
+  },
+  "popup_loadedTitlesOne": {
+    "message": "Načten 1 titul."
+  },
+  "popup_clearCacheDoneOne": {
+    "message": "Vymazána 1 uložená položka, uvolněno $KB$ KB.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_clearCacheSteamFailedOne": {
+    "message": "Vymazána 1 uložená položka, uvolněno $KB$ KB. Mezipaměť verzí ze Steamu se nepodařilo přečíst, takže může být stále na disku.",
+    "placeholders": {
+      "kb": {
+        "content": "$1"
+      }
+    }
+  }
+}
