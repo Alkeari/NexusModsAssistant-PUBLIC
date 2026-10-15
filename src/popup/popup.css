@@ -1,0 +1,490 @@
+/* Alkeari design system. Declaration site for the popup; content.css declares the same set for injected pages. */
+:root {
+    color-scheme: dark;
+    font-family: 'JetBrains Mono', Consolas, 'Cascadia Mono', monospace;
+    --nma-obsidian-black: #000000;
+    --nma-forged-gold: #FFDA00;
+    --nma-soft-champagne: #FFF1B3;
+    --nma-steel-gray: #A6A6A6;
+    --nma-deep-graphite: #1A1A1A;
+    --nma-alert-amber: #FFB000;
+    --nma-success-olive: #8F8B2E;
+    --nma-warm-gold-shadow: #C9A800;
+
+    /* The five hueless neutrals. Structural only, never accents. */
+    --nma-hairline: #333333;
+    --nma-surface-raised: #2E2E2E;
+    --nma-surface-raised-hover: #3D3D3D;
+    --nma-text-disabled: #6E6E6E;
+    --nma-text-muted: #8A8A8A;
+
+    /* The only permitted translucents: Forged Gold at 12, 25 or 35 percent. */
+    --nma-gold-hairline: rgba(255, 218, 0, 0.25);
+    --nma-gold-line: rgba(255, 218, 0, 0.35);
+    --nma-gold-wash: rgba(255, 218, 0, 0.12);
+    --nma-gold-wash-strong: rgba(255, 218, 0, 0.25);
+    --nma-field-bg: #2E2E2E;
+    --nma-field-border: #333333;
+    --nma-hairline-soft: #333333;
+}
+
+body {
+    margin: 0;
+    background: var(--nma-obsidian-black);
+    color: var(--nma-steel-gray);
+}
+
+.shell {
+    width: 360px;
+    padding: 18px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+}
+
+/* Opened as a tab by the background fallback rather than as an action popup. */
+body.standalone .shell {
+    margin: 0 auto;
+}
+
+.shell.extension-disabled {
+    opacity: 0.6;
+}
+
+/* Power Toggle (Switch) */
+.power-toggle {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+
+.power-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--nma-deep-graphite);
+    transition: .3s;
+    border-radius: 4px;
+    border: 1px solid var(--nma-gold-line);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--nma-steel-gray);
+    transition: .3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--nma-gold-wash-strong);
+    border-color: var(--nma-forged-gold);
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px);
+    background-color: var(--nma-forged-gold);
+}
+
+.power-toggle input:focus-visible + .slider {
+    outline: 2px solid var(--nma-forged-gold);
+    outline-offset: 2px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+/* Right-side column for version and logo */
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.subtitle {
+    margin: 4px 0 0;
+    color: var(--nma-steel-gray);
+    font-size: 12px;
+}
+
+#version-display {
+    font-size: 11px;
+    color: var(--nma-steel-gray);
+}
+
+/* Small brand mark in the top-right of the popup */
+.brand-mark {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: 0;
+    opacity: 0.95;
+}
+
+.card {
+    background: var(--nma-deep-graphite);
+    border-radius: 0;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 1px solid var(--nma-gold-hairline);
+}
+
+.card-title {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--nma-soft-champagne);
+}
+
+.field-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.field-row.version-range {
+    flex-wrap: wrap;
+    justify-content: flex-start; /* anchor inputs to the left with the standard gap */
+}
+
+.field-row.version-range input {
+    flex: 1 1 120px;
+    min-width: 110px;
+    max-width: calc(50% - 6px);
+}
+
+.field-row.vertical {
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 10px;
+    border-radius: 0;
+    border: 1px solid var(--nma-field-border);
+    background: var(--nma-field-bg);
+    color: var(--nma-soft-champagne);
+    font-family: inherit;
+}
+
+input[readonly] {
+    color: var(--nma-text-muted);
+}
+
+select {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 10px;
+    border-radius: 0;
+    border: 1px solid var(--nma-field-border);
+    background: var(--nma-field-bg);
+    color: var(--nma-soft-champagne);
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* The card supplies the grouping; the fieldset is here for the legend. */
+fieldset.group {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset.group legend {
+    padding: 0;
+}
+
+code {
+    font-family: inherit;
+    color: var(--nma-soft-champagne);
+}
+
+button {
+    border: none;
+    border-radius: 0;
+    padding: 8px 12px;
+    background: var(--nma-gold-wash);
+    color: var(--nma-forged-gold);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-family: inherit;
+}
+
+button.primary {
+    width: 100%;
+    background: var(--nma-forged-gold);
+    color: var(--nma-obsidian-black);
+}
+
+button.ghost {
+    width: 100%;
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--nma-gold-line);
+}
+
+button.ghost.inline {
+    width: auto;
+    flex: 1;
+    margin-top: 0;
+}
+
+button.caution {
+    color: var(--nma-alert-amber);
+    border-color: var(--nma-alert-amber);
+}
+
+button.caution:hover {
+    background: var(--nma-surface-raised-hover);
+}
+
+button.icon-btn {
+    width: auto;
+    flex: 0 0 auto;
+    background: var(--nma-surface-raised);
+    color: var(--nma-soft-champagne);
+}
+
+button.icon-btn:hover {
+    background: var(--nma-surface-raised-hover);
+}
+
+button:hover:not(:disabled) {
+    background: var(--nma-gold-wash-strong);
+}
+
+button.primary:hover:not(:disabled) {
+    background: var(--nma-soft-champagne);
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Every control in this popup has a visible keyboard focus state. */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+.suggestion-item:focus-visible {
+    outline: 2px solid var(--nma-forged-gold);
+    outline-offset: 2px;
+}
+
+.field-label {
+    display: block;
+    font-size: 12px;
+    color: var(--nma-steel-gray);
+    margin-bottom: 4px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.suggested-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 0;
+    border: 1px solid var(--nma-gold-line);
+    background: var(--nma-gold-wash);
+    font-size: 12px;
+    color: var(--nma-soft-champagne);
+}
+
+#suggested-game-text {
+    flex: 1;
+}
+
+.suggested-row button {
+    flex: 0 0 auto;
+}
+
+#game-suggestions,
+#version-suggestions {
+    max-height: 140px;
+    overflow-y: auto;
+    border: 1px solid var(--nma-hairline);
+    border-radius: 0;
+    background: var(--nma-field-bg);
+}
+
+#game-suggestions:empty,
+#version-suggestions:empty {
+    display: none;
+}
+
+#version-suggestions {
+    margin-bottom: 12px;
+}
+
+.suggestion-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--nma-hairline-soft);
+    font-size: 12px;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background: var(--nma-gold-wash);
+}
+
+/* A version row carries where the number came from, so a number that looks
+   wrong can be traced to the source that supplied it. */
+.suggestion-item.version-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.version-provenance {
+    flex: 0 0 auto;
+    font-size: 10px;
+    color: var(--nma-text-muted);
+    text-align: right;
+}
+
+/* Not an option: a running, empty or failed search states itself in the same
+   box the options would occupy, so an empty list can never read as a complete
+   one. Cursor and hover deliberately differ from a selectable row. */
+.suggestion-note {
+    padding: 8px 10px;
+    font-size: 12px;
+    color: var(--nma-text-muted);
+    cursor: default;
+}
+
+.suggestion-note.error {
+    color: var(--nma-alert-amber);
+}
+
+/* Keyboard navigation highlight for suggestions */
+.suggestion-item.active {
+    background: var(--nma-gold-wash);
+    color: var(--nma-soft-champagne);
+}
+
+.confirm {
+    border: 1px solid var(--nma-alert-amber);
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.confirm .footnote {
+    margin-top: 0;
+}
+
+#sso-auth-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 0;
+    border: 1px solid var(--nma-gold-line);
+    background: var(--nma-obsidian-black);
+}
+
+.sso-label {
+    color: var(--nma-forged-gold);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+.sso-description {
+    color: var(--nma-soft-champagne);
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#authorize-sso-btn {
+    background: var(--nma-forged-gold);
+    color: var(--nma-obsidian-black);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+#authorize-sso-btn:hover:not(:disabled) {
+    background: var(--nma-soft-champagne);
+}
+
+#sso-status {
+    color: var(--nma-text-muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#sso-status.error {
+    color: var(--nma-alert-amber);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.footnote {
+    margin: 8px 0 0;
+    font-size: 11px;
+    line-height: 1.45;
+    color: var(--nma-steel-gray);
+}
+
+.footnote:empty {
+    display: none;
+}
+
+.footnote.error {
+    color: var(--nma-alert-amber);
+}
+
+.input-error {
+    border-color: var(--nma-alert-amber) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}

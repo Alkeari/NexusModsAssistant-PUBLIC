@@ -1,0 +1,1034 @@
+/* Alkeari design system. Declaration site for injected pages; popup.css declares the same set for the popup. */
+:root {
+    --nma-header-offset: 56px; /* default header offset used before JS measures header */
+    --nma-obsidian-black: #000000;
+    --nma-forged-gold: #FFDA00;
+    --nma-soft-champagne: #FFF1B3;
+    --nma-steel-gray: #A6A6A6;
+    --nma-deep-graphite: #1A1A1A;
+    --nma-alert-amber: #FFB000;
+    --nma-success-olive: #8F8B2E;
+    --nma-warm-gold-shadow: #C9A800;
+
+    /* The five hueless neutrals. Structural only, never accents. */
+    --nma-hairline: #333333;
+    --nma-surface-raised: #2E2E2E;
+    --nma-surface-raised-hover: #3D3D3D;
+    --nma-text-disabled: #6E6E6E;
+    --nma-text-muted: #8A8A8A;
+
+    /* The only translucent variants the palette allows (section 2.1). */
+    --nma-gold-wash: var(--nma-gold-wash);
+    --nma-steel-hairline: rgba(166, 166, 166, 0.22);
+    --nma-scrim: var(--nma-scrim);
+}
+
+/* ── Filter bar (sticky above mod grid) ──────────────────────────────── */
+#nma-filter-bar {
+    position: sticky;
+    top: var(--nma-header-offset, 56px);
+    z-index: 100;
+    background: var(--nma-deep-graphite);
+    border: 1px solid var(--nma-warm-gold-shadow);
+    border-radius: 0;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    color: var(--nma-steel-gray);
+    font-family: 'JetBrains Mono', Consolas, 'Cascadia Mono', monospace;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-sizing: border-box;
+}
+
+#nma-filter-bar button {
+    font-family: inherit;
+}
+
+/* Collapsible sections */
+.nma-bar-section-hidden {
+    display: none !important;
+}
+
+/* ── Filter bar header ───────────────────────────────────────────────── */
+.nma-bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.nma-bar-header-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ── Filter bar rows ─────────────────────────────────────────────────── */
+.nma-bar-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.nma-bar-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+/* ── Filter bar summary ──────────────────────────────────────────────── */
+.nma-bar-summary {
+    border-top: 1px solid var(--nma-steel-hairline);
+    padding-top: 4px;
+}
+
+/* No verdicts are possible, so the tally is absent: without its content the rule
+   above would draw an empty bordered strip. */
+.nma-bar-summary-quiet {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* ── Action bar (fixed bottom) ───────────────────────────────────────── */
+#nma-action-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2147483645;
+    background: var(--nma-deep-graphite);
+    border-top: 1px solid var(--nma-warm-gold-shadow);
+    padding: 8px 16px;
+    color: var(--nma-steel-gray);
+    font-family: 'JetBrains Mono', Consolas, 'Cascadia Mono', monospace;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: transform 250ms ease;
+}
+
+#nma-action-bar.nma-action-hidden {
+    transform: translateY(100%);
+    pointer-events: none;
+}
+
+#nma-action-bar button {
+    font-family: inherit;
+}
+
+.nma-action-count {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--nma-forged-gold);
+    white-space: nowrap;
+}
+
+.nma-action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.nma-action-rate {
+    font-size: 11px;
+    color: var(--nma-steel-gray);
+    white-space: nowrap;
+    margin-left: auto;
+}
+
+.nma-rate-warning {
+    color: var(--nma-alert-amber) !important;
+    font-weight: 700;
+}
+
+/* ── Collapse toggle ─────────────────────────────────────────────────── */
+.nma-collapse-toggle {
+    padding: 4px 10px;
+    min-height: 24px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* ── Pagination controls ─────────────────────────────────────────────── */
+.nma-pagination-controls {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+#nma-page-input {
+    width: 48px;
+    text-align: center;
+    background: var(--nma-deep-graphite);
+    color: var(--nma-soft-champagne);
+    border: 1px solid var(--nma-warm-gold-shadow);
+    border-radius: 0;
+    padding: 4px;
+    font-size: 12px;
+    height: 28px;
+    box-sizing: border-box;
+}
+
+/* ── Date helpers ────────────────────────────────────────────────────── */
+.nma-date-label {
+    font-size: 12px;
+    color: var(--nma-steel-gray);
+    white-space: nowrap;
+}
+
+.nma-date-sep {
+    color: var(--nma-steel-gray);
+    font-size: 12px;
+}
+
+.nma-chip-sm {
+    padding: 4px 10px;
+    min-height: 24px;
+    font-size: 11px;
+}
+
+.nma-filter-date {
+    background: var(--nma-deep-graphite);
+    color: var(--nma-soft-champagne);
+    border: 1px solid var(--nma-warm-gold-shadow);
+    border-radius: 0;
+    padding: 4px 8px;
+    font-size: 11px;
+    height: 28px;
+    box-sizing: border-box;
+}
+
+.nma-filter-wrapper {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nma-panel-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.nma-panel-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nma-panel-subtitle {
+    font-size: 12px;
+    color: var(--nma-steel-gray);
+}
+
+.nma-chip {
+    background: transparent;
+    border: 1px solid var(--nma-warm-gold-shadow);
+    color: var(--nma-soft-champagne);
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    min-height: 28px;
+}
+
+.nma-chip:hover {
+    background: var(--nma-gold-wash);
+}
+
+/* The way out of a running batch, in the same control the run was started from. */
+.nma-chip-stop {
+    border-color: var(--nma-alert-amber);
+    color: var(--nma-alert-amber);
+    font-weight: 700;
+}
+
+.nma-chip-stop:hover {
+    background: var(--nma-surface-raised-hover);
+}
+
+.nma-chip:focus-visible,
+.nma-collapse-toggle:focus-visible {
+    outline: 2px solid var(--nma-forged-gold);
+    outline-offset: 2px;
+}
+
+/* Every focusable control the extension adds, not only the chips. The exclusion
+   input sets outline:none in its base rule, so without this it is possible to
+   tab into it with nothing on screen saying so. */
+#nma-filter-bar input:focus-visible,
+#nma-filter-bar select:focus-visible,
+#nma-filter-bar button:focus-visible,
+#nma-action-bar input:focus-visible,
+#nma-action-bar select:focus-visible,
+#nma-action-bar button:focus-visible,
+.nma-select-anchor input:focus-visible,
+.nma-inline-flag button:focus-visible,
+.nma-files-dropdown input:focus-visible,
+.nma-files-dropdown button:focus-visible,
+.nma-modal button:focus-visible,
+.nma-modal input:focus-visible,
+#nma-notice-host button:focus-visible {
+    outline: 2px solid var(--nma-forged-gold);
+    outline-offset: 2px;
+}
+
+/* Present to assistive technology, absent from the layout. Used where an icon
+   or a bare control needs a name that the design has no room to show. */
+.nma-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.nma-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    background: var(--nma-deep-graphite);
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.nma-toggle input {
+    accent-color: var(--nma-forged-gold);
+}
+
+.nma-exclusion-wrapper {
+    flex: 1 1 200px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+#nma-exclusion-input {
+    width: 100%;
+    background: var(--nma-deep-graphite);
+    color: var(--nma-soft-champagne);
+    border: 1px solid var(--nma-warm-gold-shadow);
+    border-radius: 0;
+    padding: 6px 14px;
+    font-size: 12px;
+    outline: none;
+    transition: border-color 0.2s;
+    height: 28px;
+    box-sizing: border-box;
+}
+
+#nma-exclusion-input:focus {
+    border-color: var(--nma-forged-gold);
+}
+
+.nma-status-list {
+    font-size: 11px;
+    color: var(--nma-steel-gray);
+    /* Allow the log to expand fully; no inner scroll */
+    max-height: none;
+    overflow: visible;
+    border-top: 1px solid var(--nma-steel-hairline);
+    padding-top: 6px;
+    flex: 1 1 100%;
+    min-width: 100%;
+}
+
+.nma-summary-entry + .nma-summary-entry {
+    margin-top: 4px;
+}
+
+.nma-inline-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.nma-inline-flag {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 0;
+    font-family: 'JetBrains Mono', Consolas, 'Cascadia Mono', monospace;
+    font-size: 11px;
+    /* The badge paints its own background, so it has to paint its own text too:
+       inherited from Nexus, the verdict's contrast was whatever the site's theme
+       happened to be that week. Steel Gray rather than a brighter neutral keeps
+       the region at two accents (this one and the Olive or Amber of the dot),
+       and measures 7.19:1 at worst over the composited badge black, 8.55:1 on
+       the dark theme. */
+    color: var(--nma-steel-gray);
+    background: var(--nma-deep-graphite);
+    border: 1px solid var(--nma-steel-hairline);
+    min-width: 140px;
+    pointer-events: auto;
+}
+
+.nma-inline-flag .nma-flag-text {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Small status icon placed before the text label */
+.nma-flag-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 0;
+}
+
+.nma-flag-detail {
+    color: var(--nma-steel-gray);
+    font-size: 10px;
+}
+
+.nma-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.nma-inline-flag .nma-dot {
+    background: var(--nma-steel-gray);
+}
+
+.tone-success {
+    border-color: var(--nma-success-olive);
+}
+
+.tone-success .nma-dot {
+    background: var(--nma-success-olive);
+}
+
+.tone-danger {
+    border-color: var(--nma-alert-amber);
+}
+
+.tone-danger .nma-dot {
+    background: var(--nma-alert-amber);
+}
+
+.tone-muted {
+    border-color: var(--nma-steel-hairline);
+}
+
+/* Likely compatible shares the Success accent rather than introducing a third
+   one, and is told apart by a hollow dot and a dashed edge. */
+.tone-likely {
+    border-color: var(--nma-success-olive);
+    border-style: dashed;
+}
+
+.tone-likely .nma-dot {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px var(--nma-success-olive);
+}
+
+/* "Could not check" is not "this mod is broken": neutral, dashed, hollow dot. */
+.nma-status-FAILED {
+    border-style: dashed;
+    border-color: var(--nma-steel-hairline);
+}
+
+.nma-status-FAILED .nma-dot {
+    background: transparent;
+    box-shadow: inset 0 0 0 2px var(--nma-steel-gray);
+}
+
+/* Nothing is set up yet. Calm, never alarming. */
+.nma-status-NOT_CONFIGURED {
+    border-style: dotted;
+    border-color: var(--nma-steel-hairline);
+    opacity: 0.85;
+}
+
+.nma-status-NOT_CONFIGURED .nma-dot {
+    background: var(--nma-text-muted);
+}
+
+.nma-inline-loading {
+    animation: nma-pulse 1.2s linear infinite;
+}
+
+@keyframes nma-pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+/* Badge tooltip: styled popup on hover */
+.nma-badge-tooltip {
+    display: none;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 0;
+    background: var(--nma-obsidian-black);
+    border: 1px solid var(--nma-warm-gold-shadow);
+    border-radius: 0;
+    padding: 6px 10px;
+    font-size: 10px;
+    color: var(--nma-steel-gray);
+    white-space: pre-line;
+    max-width: 280px;
+    width: max-content;
+    line-height: 1.35;
+    z-index: 200;
+    pointer-events: none;
+}
+
+/* focus-within, not only hover: the evidence behind a verdict has to be
+   reachable by keyboard, and the Files button inside the badge is the focus
+   stop that reveals it. No extra tab stop is added to do it. */
+.nma-inline-flag:hover .nma-badge-tooltip,
+.nma-inline-flag:focus-within .nma-badge-tooltip {
+    display: block;
+}
+
+.nma-mini-download {
+    align-self: stretch;
+    border: none;
+    border-radius: 0;
+    padding: 4px 12px;
+    font-size: 10px;
+    background: var(--nma-forged-gold);
+    color: var(--nma-obsidian-black);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nma-mini-download:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.nma-select-host {
+    position: relative;
+}
+
+.nma-select-anchor {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    background: var(--nma-deep-graphite);
+    border-radius: 0;
+    padding: 4px 10px;
+    border: 1px solid var(--nma-warm-gold-shadow);
+    pointer-events: auto;
+    z-index: 6;
+}
+
+.nma-select-anchor input {
+    accent-color: var(--nma-forged-gold);
+}
+
+.nma-hidden {
+    display: none !important;
+}
+
+/* File Selector UI */
+.nma-files-button {
+    align-self: stretch;
+    border: none;
+    border-radius: 0;
+    padding: 4px 12px;
+    font-size: 10px;
+    background: var(--nma-surface-raised);
+    color: var(--nma-steel-gray);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.nma-files-button:hover {
+    background: var(--nma-surface-raised-hover);
+}
+
+.nma-files-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--nma-deep-graphite);
+    border: 1px solid var(--nma-forged-gold);
+    border-radius: 0;
+    margin-top: 4px;
+    padding: 8px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.nma-file-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background 0.1s ease;
+    cursor: pointer;
+}
+
+.nma-file-item:hover {
+    background: var(--nma-gold-wash);
+}
+
+.nma-file-item input {
+    accent-color: var(--nma-forged-gold);
+    flex-shrink: 0;
+}
+
+.nma-file-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.nma-file-name {
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--nma-soft-champagne);
+}
+
+.nma-file-meta {
+    font-size: 9px;
+    color: var(--nma-steel-gray);
+}
+
+.nma-file-desc {
+    font-size: 10px;
+    color: var(--nma-text-muted);
+    margin: 2px 0;
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.nma-download-selected {
+    margin-top: 8px;
+    border: none;
+    border-radius: 0;
+    padding: 6px 12px;
+    font-size: 11px;
+    background: var(--nma-forged-gold);
+    color: var(--nma-obsidian-black);
+    cursor: pointer;
+    font-weight: 700;
+    position: sticky;
+    bottom: 0;
+}
+
+.nma-download-selected:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nma-category-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--nma-forged-gold);
+    text-transform: uppercase;
+    margin-top: 8px;
+    border-bottom: 1px solid var(--nma-warm-gold-shadow);
+    padding-bottom: 2px;
+}
+
+/* Detail Page Badge */
+.nma-detail-badge-container {
+    display: inline-flex;
+    margin-top: 8px;
+}
+
+.nma-detail-badge-container .nma-inline-wrapper {
+    margin-top: 0;
+}
+
+.nma-req-status-badge {
+    display: inline-block;
+    color: var(--nma-steel-gray);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.nma-req-status-badge.tone-likely {
+    background: transparent;
+    border: 1px dashed var(--nma-success-olive);
+    color: var(--nma-success-olive);
+}
+
+.nma-req-status-badge.nma-status-FAILED {
+    background: transparent;
+    border: 1px dashed var(--nma-steel-gray);
+    color: var(--nma-steel-gray);
+}
+
+/* Two accents only in the badge region: Success Olive-Gold and Alert Amber.
+   Unknown and Failed fall back to the neutral tone rather than a third accent. */
+.nma-req-status-badge.tone-success { background: var(--nma-success-olive); border-color: var(--nma-success-olive); color: var(--nma-obsidian-black); }
+.nma-req-status-badge.tone-danger { background: var(--nma-alert-amber); border-color: var(--nma-alert-amber); color: var(--nma-obsidian-black); }
+.nma-req-status-badge.tone-muted { background: var(--nma-surface-raised); border-color: var(--nma-surface-raised); color: var(--nma-steel-gray); }
+
+/* Download mode select styling */
+#nma-download-mode,
+.nma-download-mode {
+    background: var(--nma-deep-graphite);
+    color: var(--nma-soft-champagne);
+    border: 1px solid var(--nma-warm-gold-shadow);
+    padding: 6px 10px;
+    border-radius: 0;
+    min-height: 28px;
+    font-size: 12px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+#nma-download-mode option {
+    background: var(--nma-deep-graphite);
+    color: var(--nma-soft-champagne);
+}
+
+/* Modal Overlay & Dialog */
+.nma-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--nma-scrim);
+    backdrop-filter: blur(4px);
+    z-index: 2147483647;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nma-modal {
+    background: var(--nma-deep-graphite);
+    border: 1px solid var(--nma-forged-gold);
+    border-radius: 0;
+    padding: 24px;
+    width: 90%;
+    max-width: 480px;
+    color: var(--nma-steel-gray);
+    font-family: 'JetBrains Mono', Consolas, 'Cascadia Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nma-modal-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--nma-forged-gold);
+}
+
+.nma-modal-body {
+    font-size: 14px;
+    line-height: 1.5;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.nma-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.nma-modal button {
+    padding: 8px 20px;
+    border-radius: 0;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+.nma-modal button.primary {
+    background: var(--nma-forged-gold);
+    color: var(--nma-obsidian-black);
+}
+
+.nma-modal button.secondary {
+    background: var(--nma-surface-raised);
+    color: var(--nma-steel-gray);
+}
+
+.nma-req-item {
+    padding: 10px;
+    border-bottom: 1px solid var(--nma-hairline);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background 0.1s ease;
+}
+
+.nma-req-item:hover {
+    background: var(--nma-surface-raised);
+}
+
+.nma-req-item input[type="checkbox"] {
+    accent-color: var(--nma-forged-gold);
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+.nma-req-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.nma-req-name {
+    font-weight: 600;
+    color: var(--nma-soft-champagne);
+}
+
+.nma-req-link {
+    font-size: 11px;
+    color: var(--nma-steel-gray);
+    word-break: break-all;
+    text-decoration: none;
+}
+
+.nma-req-link:hover {
+    text-decoration: underline;
+    color: var(--nma-forged-gold);
+}
+
+.nma-req-notes {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--nma-steel-gray);
+    background: var(--nma-surface-raised);
+    padding: 8px;
+    border-radius: 0;
+    border-left: 2px solid var(--nma-forged-gold);
+    font-style: italic;
+    white-space: pre-wrap;
+}
+
+.nma-modal-file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nma-modal-file-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--nma-surface-raised);
+    padding: 10px;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.nma-modal-file-item:hover {
+    background: var(--nma-surface-raised-hover);
+}
+
+.nma-modal-file-item input {
+    accent-color: var(--nma-forged-gold);
+}
+
+/* ── Notices: one error channel, visible without hovering ───────────── */
+#nma-notice-host {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    z-index: 2147483646;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: min(420px, calc(100vw - 24px));
+    font-family: 'JetBrains Mono', Consolas, 'Cascadia Mono', monospace;
+    pointer-events: none;
+}
+
+.nma-notice {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 32px 10px 12px;
+    border-radius: 0;
+    background: var(--nma-deep-graphite);
+    border: 1px solid var(--nma-steel-hairline);
+    color: var(--nma-steel-gray);
+    font-size: 12px;
+    line-height: 1.4;
+    pointer-events: auto;
+}
+
+.nma-notice-info {
+    border-color: var(--nma-warm-gold-shadow);
+}
+
+.nma-notice-warn,
+.nma-notice-error {
+    border-color: var(--nma-alert-amber);
+}
+
+.nma-notice-text {
+    flex: 1 1 100%;
+    color: var(--nma-soft-champagne);
+}
+
+.nma-notice-detail {
+    flex: 1 1 100%;
+    font-size: 11px;
+    color: var(--nma-text-muted);
+}
+
+.nma-notice-action {
+    background: var(--nma-forged-gold);
+    color: var(--nma-obsidian-black);
+    border: none;
+    border-radius: 0;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.nma-notice-dismiss {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: var(--nma-steel-gray);
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+#nma-reload-notice {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    z-index: 2147483646;
+    max-width: min(420px, calc(100vw - 24px));
+    font-family: 'JetBrains Mono', Consolas, 'Cascadia Mono', monospace;
+}
+
+/* ── Panel note (filter diagnostics) ────────────────────────────────── */
+.nma-bar-note {
+    margin-top: 4px;
+    font-size: 11px;
+    color: var(--nma-text-muted);
+}
+
+.nma-bar-note-hidden {
+    display: none;
+}
+
+/* ── Per-file download feedback ─────────────────────────────────────── */
+.nma-file-outcome:empty {
+    display: none;
+}
+
+.nma-file-outcome {
+    font-size: 10px;
+    color: var(--nma-success-olive);
+    margin-top: 2px;
+}
+
+.nma-file-outcome-failed {
+    color: var(--nma-alert-amber);
+}
+
+.nma-files-status:empty {
+    display: none;
+}
+
+.nma-files-status {
+    font-size: 11px;
+    color: var(--nma-steel-gray);
+    padding: 6px 2px;
+}
+
+.nma-files-status-failed {
+    color: var(--nma-alert-amber);
+}
+
+.nma-files-note {
+    font-size: 10px;
+    color: var(--nma-text-muted);
+    padding: 6px 2px;
+}
+
+/* Says what the list beside it is doing: still searching, searched and found
+   nothing, or could not search. An empty list must never read as a full one. */
+.nma-modal-note {
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--nma-text-muted);
+}
+
+/* ── Inline text input inside a modal ───────────────────────────────── */
+.nma-modal-input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 0;
+    background: var(--nma-obsidian-black);
+    border: 1px solid var(--nma-warm-gold-shadow);
+    color: var(--nma-soft-champagne);
+    font-family: inherit;
+    font-size: 13px;
+    box-sizing: border-box;
+}
