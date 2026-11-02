@@ -6,14 +6,15 @@ By downloading, installing, copying, or otherwise using any Work(s) covered by t
 - **Licensor**: Alkeari, the sole creator and rights holder of the Work(s).
 - **Licensee**: Any person, group, or entity obtaining, using, or distributing the Work(s).
 - **Work(s)**: Any digital file, script, executable, archive, mod, configuration, data package, or other electronic material created or distributed by the Licensor.
-- **Official Source**: Any distribution channel directly maintained or authorized in writing by the Licensor. All other channels are unauthorized unless explicitly approved in writing.
+- **Official Source**: Any platform, site, or channel on which the Licensor publishes the Work(s) under the Licensor's own account or team, such as Nexus Mods, Thunderstore, Steam Workshop, CurseForge, Modrinth, Chrome Web Store, Firefox Add-ons, Paradox Mods, CivFanatics, GitHub, and alkeari.com, together with the mod managers, launchers, and tools that download the Work(s) from them, and any other channel authorized in writing by the Licensor. All other channels are unauthorized unless explicitly approved in writing.
+  - Downloads, caches, dependency installs, modpacks, and profile codes served by an Official Source or its mod managers are not mirrors, unauthorized hosting, or redistribution outside an Official Source.
 
 ---
 
 ### 2. Grant of License
 The Licensor grants the Licensee a **non-exclusive, worldwide, royalty-free, revocable license** to:
 - Use the Work(s) for private, personal, educational, or public purposes.
-- Include unmodified copies of the Work(s) in a collection, package, or distribution (commercial or non-commercial) provided all terms of this Agreement are followed.
+- Include the unmodified Work(s) in a collection, modpack, profile, or package (commercial or non-commercial) that references or installs the Work(s) from an Official Source, provided all terms of this Agreement are followed.
 
 ---
 
@@ -22,12 +23,14 @@ Without explicit written authorization from the Licensor, the Licensee shall not
 - Modify, adapt, or create derivative works of the Work(s).
   - Translations of text-only content are permitted if no binary or structural changes are made and the translation is clearly marked as unofficial.
   - Compatibility or interoperability patches are permitted if the patch does not itself contain or redistribute any part of the Work(s), the patch is made freely available to anyone who owns the Work(s) it patches, and the patch is clearly marked as an unofficial third-party addition.
-- Reverse engineer, decompile, or otherwise attempt to extract source code or proprietary components, except to the extent such restriction is unenforceable under mandatory law in the Licensee's jurisdiction (for example, laws granting a right to reverse engineer solely to achieve interoperability).
+- Reverse engineer, decompile, or otherwise attempt to extract source code or proprietary components, except as permitted by the Platform Moderation Exception below or to the extent such restriction is unenforceable under mandatory law in the Licensee's jurisdiction (for example, laws granting a right to reverse engineer solely to achieve interoperability).
 - Use the Work(s), or any portion of their content or source, to train, fine-tune, evaluate, or otherwise develop any artificial intelligence or machine learning model, without explicit written authorization from the Licensor.
-- Host, mirror, or provide direct downloads of the Work(s) outside an Official Source, whether as a standalone file or as part of a collection.
+- Host, mirror, or provide direct downloads of the Work(s) outside an Official Source, whether as a standalone file or as part of a collection. A collection, modpack, or profile that references or installs the Work(s) from an Official Source is not hosting under this clause.
 - Remove, alter, or obscure author credits, version data, or licensing information.
 - Claim ownership or redistribute the Work(s) under a different identity or name.
 - Sell, rent, sublicense, or otherwise commercialize the Work(s) beyond what Section 4 permits.
+
+**Platform Moderation Exception.** Operators of a platform on which the Licensor submits or publishes the Work(s), and reviewers authorized by those operators, may inspect, reverse engineer, decompile, and analyze the Work(s), and make copies reasonably necessary for those activities, solely to assess security, functionality, and compliance with that platform's rules. They may retain review records and communicate findings as reasonably necessary for platform moderation. This permission does not authorize the use of source code, decompiled code, or non-public implementation details obtained through that review to develop, modify, or improve any other software, or for any other purpose outside platform moderation. Disclosure of such material is permitted only to persons reasonably necessary for that moderation or as required by law. All other restrictions in this Agreement remain in effect.
 
 ---
 
@@ -35,8 +38,8 @@ Without explicit written authorization from the Licensor, the Licensee shall not
 The Licensee may include the Work(s) as part of a larger collection, toolkit, or package only if:
 - The Work(s) remain unmodified and retain all original metadata and this license file.
 - The distribution credits Alkeari as the creator and links to an Official Source.
-- The Work(s) are not independently hosted or redistributed outside the collection.
-- Upon written request from the Licensor, the Licensee removes and deletes the Work(s) within **seven (7) days**.
+- The Work(s) are installed or referenced from an Official Source and are not independently hosted or redistributed outside an Official Source.
+- Upon written request from the Licensor, the Licensee removes the Work(s) from the collection and ceases distributing them within **seven (7) days**, subject to Section 7.
 
 ---
 
@@ -44,19 +47,21 @@ The Licensee may include the Work(s) as part of a larger collection, toolkit, or
 Commercial inclusion is permitted provided that:
 - The Work(s) remain unmodified and attribution to Alkeari is maintained.
 - All terms of this Agreement are followed.
-- The Licensor reserves the right to revoke permission for any use or distribution by written notice. Upon such notice, the Licensee must cease all distribution and remove all copies within **seven (7) days**.
+- The Licensor reserves the right to revoke permission for any use or distribution by written notice. Upon such notice, the Licensee must cease all further distribution and remove the Work(s) from anything the Licensee distributes within **seven (7) days**, subject to Section 7.
 
 ---
 
 ### 6. Source Integrity
-The only verified distributions of the Work(s) are through Official Sources. Unverified or mirrored copies are unauthorized and must be deleted immediately upon discovery.
+The only verified distributions of the Work(s) are through Official Sources, including the downloads, caches, and dependency installs they or their mod managers serve. Unverified or mirrored copies obtained from outside an Official Source are unauthorized and must be deleted immediately upon discovery.
 
 ---
 
 ### 7. Revocation & Termination
 The Licensor may revoke or terminate this license at any time, for any reason. Upon notification, the Licensee must:
-- Cease all use and distribution immediately.
-- Permanently delete all copies of the Work(s), including backups, within **seven (7) days**.
+- Cease all further use and distribution under the revoked terms immediately.
+- Permanently delete all copies of the Work(s) held outside an Official Source, including backups, within **seven (7) days**.
+
+Revocation or termination ends future distribution and use under the revoked terms. It does not require the Licensee to delete copies of versions already published on an Official Source that the Licensee obtained there, and does not require an Official Source to remove a published version.
 
 Violation of any condition in this Agreement automatically terminates the license without further notice. This clause survives termination.
 
@@ -110,6 +115,6 @@ For authorization requests, questions, or notices regarding this Agreement, cont
 
 ---
 
-**License Version 2.3 — Effective August 25, 2026**
+**License Version 2.5 — Effective November 1, 2026**
 This license applies universally to any digital Work(s) authored or distributed by Alkeari, regardless of file type, format, or platform.
 
